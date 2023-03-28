@@ -1,4 +1,4 @@
-# Tailwind.css 2023 (HTML, CSS, JS, GULP, WEBPACK)
+# Gulp 2023 (HTML, CSS, Tailwindcss, JS, GULP, WEBPACK)
 ### /docs - compiled folder
 ### for start develop :
 1. install the packages: (npm install)
