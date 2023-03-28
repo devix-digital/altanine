@@ -14,20 +14,15 @@ export const scss = () => {
   return app.gulp.src(app.path.src.scss, {sourcemaps: app.isDev})
 
     .pipe(sass({outputStyle: "expanded"}))
-    // .pipe(groupCssMediaQueries())
     .pipe(gulpautoprefixer({
       grid: true,
       overrideBrowserlist: ["last 3 versions"],
       cascade: true
     }))
-    //не зжатий
     .pipe(
       postcss([tailwindcss('./tailwind.config.cjs'), autoprefixer()]),
     )
+    .pipe(groupCssMediaQueries())
     .pipe(app.gulp.dest(app.path.build.css))
-    //=====
-    // .pipe(cleanCss())
-    // .pipe(rename({extname: ".min.scss"}))
-    // .pipe(app.gulp.dest(app.path.build.css))
     .pipe(app.plugins.browsersync.stream())
 }
