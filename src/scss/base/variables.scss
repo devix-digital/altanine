@@ -1,0 +1,48 @@
+/* Breakpoints */
+$xs: 575;
+$sm: 768;
+$md: 991;
+$lg: 1200;
+$xl: 1400;
+
+:root {
+	/* Fonts */
+	--font-family-primary: 'Inter';
+	
+	/* Headings */
+	--font-h1: 500 80rem / 104% var(--font-family-primary);
+	--font-h2: 500 56rem / 124% var(--font-family-primary);
+	--font-h3: 500 48rem / 124% var(--font-family-primary);
+	--font-h4: 500 32rem / 124% var(--font-family-primary);
+	--font-h5: 500 24rem / 124% var(--font-family-primary);
+	
+	/* Body */
+	--font-body-r: 400 16rem / 145% var(--font-family-primary);
+	--font-body-m: 500 16rem / 145% var(--font-family-primary);
+	--font-body-l: 500 18rem / 145% var(--font-family-primary);
+	--font-body-b: 700 16rem / 145% var(--font-family-primary);
+	--font-body-s: 400 13rem / 150% var(--font-family-primary);
+	--font-body-u: 700 14rem / 120% var(--font-family-primary);
+	
+	/* Colors */
+	--color-primary-1:            #00EFD1;
+	--color-primary-2:            #00ACEA;
+	--color-primary-gradient:     linear-gradient(297deg, var(--color-primary-1) 0%, var(--color-primary-2) 100%);
+	--color-black:                #213245;
+	--color-blue:                 #01B7E6;
+	--color-blue-100:             #BFD4E4;
+	--color-gray-700:             #353E4D;
+	--color-gray-600:             #606C7A;
+	--color-gray-500:             #686F79;
+	--color-gray-400:             #B3B7BC;
+	--color-gray-300:             #E5E7E8;
+	--color-gray-200:             #F2F6F8;
+	--color-white:                #FFFFFF;
+	
+	--color-success:              #21D184;
+	--color-error:                #FF5C5C;
+	--color-link:                 #3870FF;
+	
+	--transition-duration:        0.5s;
+	--transition-easing:          ease;
+}

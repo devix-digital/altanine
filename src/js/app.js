@@ -1,3 +1,6 @@
-import {hi} from "./modules/functions.js";
+import './router/index.js';
+import {initHover} from './modules/buttons/initHover.js';
+import {initFooterAbstractMoving} from './modules/footer/abstractMoving.js';
 
-hi()
+initHover();
+initFooterAbstractMoving()

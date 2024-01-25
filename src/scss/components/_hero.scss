@@ -1,0 +1,48 @@
+.hero{
+	height: calc(100svh - 16rem);
+	min-height: 600rem;
+	
+		&-banner{
+			position: absolute;
+			inset: 0;
+			background-color: var(--color-blue-100);
+			border-radius: 12px;
+			pointer-events: none;
+			overflow: hidden;
+			
+				&:before{
+					content: '';
+					position: absolute;
+					inset: 0;
+					opacity: 0.3;
+					background: linear-gradient(262deg, rgba(1, 21, 29, 0.00) -0.28%, #01151D 95.72%);
+					background-blend-mode: soft-light;
+					z-index: 1;
+					pointer-events: none;
+				}
+		}
+		
+		&-content{
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end;
+			padding-bottom: 41rem;
+		}
+	
+		&-title{
+			margin: 15rem 0;
+		}
+	
+		.h1{
+			color: var(--color-white);
+		}
+	
+		.progress{
+			margin: 37rem 0;
+		}
+	
+		.container{
+			z-index: 1;
+		}
+}

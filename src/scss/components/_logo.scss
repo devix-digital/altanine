@@ -1,0 +1,9 @@
+.logo{
+	width: 152rem;
+	height: 42rem;
+	display: inline-block;
+	
+		img{
+			@include imageContain(center);
+		}
+}

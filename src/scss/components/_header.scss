@@ -1,0 +1,89 @@
+.header{
+	position: absolute;
+	top: 16rem;
+	left: 16rem;
+	right: 16rem;
+	z-index: 2;
+		
+		&-panel{
+			display: flex;
+			gap: 8rem;
+			
+				&-logo{
+					padding: 16rem 40rem 16rem 24rem;
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					border-radius: 8px;
+					background: rgba(243, 243, 247, 0.40);
+					max-width: 532rem;
+					flex: 1;
+				}
+			
+				&-nav{
+					flex: 1;
+					border-radius: 8px;
+					background: rgba(243, 243, 247, 0.40);
+					padding: 26rem 40rem;
+					
+						ul{
+							display: flex;
+							gap: 64rem;
+						}
+					
+						li{
+							position: relative;
+								
+								&:not(:last-child){
+									&:before{
+										content: '';
+										position: absolute;
+										width: 1rem;
+										height: 20rem;
+										top: 50%;
+										margin-top: -10rem;
+										right: -32rem;
+										background-color: var(--color-gray-300);
+									}
+								}
+						}
+					
+						a{
+							font: var(--font-body-m);
+							color: var(--color-black);
+							text-transform: capitalize;
+							white-space: nowrap;
+							transition: color var(--transition-duration) var(--transition-easing);
+							
+								@include hover($md){
+									&:hover{
+                    color: var(--color-blue);
+                  }
+								}
+						}
+				}
+			
+				&-action{
+				
+				}
+		}
+	
+		&-contacts{
+			display: flex;
+			flex-direction: column;
+			align-items: flex-end;
+			text-align: right;
+			
+				&-item{
+					color: var(--color-gray-500);
+					font: var(--font-body-s);
+					transition: color var(--transition-duration) var(--transition-easing);
+					
+						@include hover($md){
+							&:hover{
+								color: var(--color-blue);
+							}
+						}
+				}
+		}
+}

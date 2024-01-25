@@ -23,7 +23,7 @@ import {svgSprite} from "./gulp/tasks/svgSprite.js"
 
 function watcher() {
   gulp.watch(path.watch.files, copy);
-  gulp.watch(path.watch.html, gulp.series(html, scss));
+  gulp.watch(path.watch.html, html);
   gulp.watch(path.watch.scss, scss);
   gulp.watch(path.watch.js, js);
   gulp.watch(path.watch.images, images);
@@ -36,8 +36,10 @@ const mainTasks = gulp.parallel(copy, html, scss, js, images, svgSprite, ttfToWo
 
 const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server));
 const build = gulp.series(reset, mainTasks);
+const serve = gulp.series(server);
 
 export {dev}
 export {build}
+export {serve}
 
 gulp.task("default", dev);

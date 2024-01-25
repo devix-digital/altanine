@@ -1,0 +1,184 @@
+.footer{
+	border-radius: 14px;
+	background-color: var(--color-black);
+	padding: 58rem 0 34rem;
+	margin-top: 8rem;
+	position: relative;
+	overflow: hidden;
+	
+		&-abstract{
+			position: absolute;
+			inset: -150rem;
+			
+				img{
+					@include imageCover(center);
+				}
+		}
+	
+		&-label{
+			text-transform: uppercase;
+			font-size: 10rem;
+			font-weight: 500;
+			letter-spacing: 0.04em;
+			color: var(--color-gray-500);
+			margin-bottom: 20rem;
+		}
+	
+		&-nav{
+			color: var(--color-white);
+			
+				ul{
+					margin: 20rem 0;
+					display: flex;
+					flex-direction: column;
+					gap: 8rem;
+				}
+				
+				a{
+					@extend h5;
+					color: inherit;
+					text-transform: capitalize;
+					transition: color var(--transition-duration) var(--transition-easing);
+					
+						@include hover($md){
+							&:hover{
+								color: var(--color-blue)
+							}
+						}
+				}
+		}
+	
+		&-contacts,
+		&-social,
+		&-logo{
+			padding-top: 48rem;
+		}
+	
+		&-contacts{
+				&-list{
+					display: flex;
+					flex-direction: column;
+					gap: 12rem;
+				}
+			
+				&-item{
+					color: var(--color-gray-400);
+					display: inline-block;
+					transition: color var(--transition-duration) var(--transition-easing);
+					
+						@include hover($md){
+							&:hover{
+								color: var(--color-blue)
+							}
+						}
+				}
+		}
+	
+		&-social{
+				&-list{
+					display: flex;
+					flex-direction: column;
+					gap: 15rem;
+				}
+				&-item{
+					color: var(--color-gray-400);
+					transition: color var(--transition-duration) var(--transition-easing);
+					
+						@include hover($md){
+							&:hover{
+								color: var(--color-blue)
+							}
+						}
+				}
+		}
+	
+		&-logo{
+			text-align: right;
+				
+				.logo{
+					margin: 5rem 0;
+				}
+		}
+	
+		&-developer,
+		&-copyright,
+		&-additional{
+			color: var(--color-gray-500);
+			font: var(--font-body-s);
+			margin-top: 101rem;
+			
+				a{
+					color: var(--color-gray-500);
+				}
+		}
+	
+		&-developer{
+			display: inline-flex;
+			align-items: center;
+			gap: 12rem;
+			
+				&-logo{
+					width: 121rem;
+					height: 20rem;
+					position: relative;
+					display: inline-block;
+						
+						img{
+							position: absolute;
+							top: 0;
+							left: 0;
+							@include imageContain(center);
+							transition: opacity var(--transition-duration) var(--transition-easing);
+							
+								&:nth-child(1){
+									opacity: 1;
+								}
+							
+								&:nth-child(2){
+									opacity: 0;
+								}
+						}
+				}
+			
+				@include hover($md){
+					&:hover{
+							img{
+								&:nth-child(1){
+									opacity: 0;
+								}
+								
+								&:nth-child(2){
+									opacity: 1;
+								}
+							}
+					}
+				}
+		}
+	
+		&-additional{
+			text-align: right;
+			
+				ul{
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: flex-end;
+					align-items: center;
+					gap: 12rem;
+				}
+			
+				a{
+					transition: color var(--transition-duration) var(--transition-easing);
+					
+						@include hover($md){
+							&:hover{
+								color: var(--color-blue)
+							}
+						}
+				}
+		}
+	
+		.hr{
+			background-color: var(--color-gray-500);
+			margin: 5rem 0 -5rem;
+		}
+}

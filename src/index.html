@@ -1,21 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <title>gulp 2023</title>
+  <meta charset="UTF-8" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Altanine</title>
+	
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+	
+	<meta name="msapplication-TileColor" content="#ffffff" />
+	<meta name="theme-color" content="#ffffff">
+	<meta name="msapplication-navbutton-color" content="#ffffff" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="#ffffff" />
+	
+	<link rel="preload" href="fonts/Inter-Regular.woff" as="font" type="font/woff" crossorigin="anonymous" />
+	<link rel="preload" href="fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+	<link rel="preload" href="fonts/Inter-Medium.woff" as="font" type="font/woff" crossorigin="anonymous" />
+	<link rel="preload" href="fonts/Inter-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+	<link rel="preload" href="fonts/Inter-Bold.woff" as="font" type="font/woff" crossorigin="anonymous" />
+	<link rel="preload" href="fonts/Inter-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+	
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<!--@@include('html/header.html', {})-->
-<main>
-  <div class="w-screen h-screen bg-black flex justify-center items-center">
-    <h1 class="font-bold text-white text-3xl  lg:text-5xl">
-      Welcome to Presto team
-    </h1>
-  </div>
+<main class="wrapper" id="wrapper">
+	@@include('html/header.html', {})
+	<div data-router-wrapper>
+		<div data-router-view="home">
+			@@include('html/home/hero.html', {})
+			@@include('html/home/faq.html', {})
+			@@include('html/home/products.html', {})
+			@@include('html/home/enhancements.html', {})
+			@@include('html/home/benefits.html', {})
+			@@include('html/home/process.html', {})
+			@@include('html/home/investigations.html', {})
+			<div class="container">
+				<hr class="hr"/>
+			</div>
+			@@include('html/home/blog.html', {})
+			@@include('html/home/content.html', {})
+		</div>
+	</div>
+	@@include('html/footer.html', {})
 </main>
-<!--@@include('html/footer.html', {})-->
 <script src="js/app.min.js"></script>
 </body>
 </html>

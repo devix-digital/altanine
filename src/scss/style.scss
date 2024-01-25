@@ -1,5 +1,10 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-
+@import "base/variables";
+@import "base/mixins";
+@import "base/null";
+@import "base/fonts";
+@import "base/typography";
+@import "base/classes";
+@import "libs/grid";
+@import "libs/splide.min";
+@import "components";
+@import "pages";

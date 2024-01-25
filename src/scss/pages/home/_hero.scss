@@ -1,0 +1,17 @@
+.hero-home{
+	
+		.users{
+			position: absolute;
+			top: 145rem;
+			right: 17rem;
+			width: 100%;
+			max-width: 235rem;
+		}
+	
+		.video{
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: center;
+		}
+}

@@ -1,0 +1,75 @@
+.benefits{
+	padding: 85rem 0;
+	
+		&-card{
+			background-color: var(--color-white);
+			padding: 32rem;
+			border-radius: 8px;
+			margin: 24rem 0;
+			position: relative;
+			
+				&-number{
+					position: absolute;
+					top: 32rem;
+					left: 32rem;
+					font: var(--font-body-s);
+					color: var(--color-gray-600);
+					pointer-events: none;
+				}
+			
+				&-border{
+					position: absolute;
+          inset: 0;
+					border-radius: 8px;
+					border: 1rem rgba(#00ACEA, 0.2) solid;
+					pointer-events: none;
+				}
+			
+				&-icon{
+					width: 64rem;
+					height: 64rem;
+					margin: 0 0 67rem auto;
+					position: relative;
+					pointer-events: none;
+					
+						&:before{
+							content: '';
+							position: absolute;
+							width: 150rem;
+							height: 150rem;
+							top: 50%;
+							left: 50%;
+							transform: translate(-50%, -50%);
+							background-image: url(../../../img/home/benefits-icon-shadow.png);
+							background-size: contain;
+							background-position: center;
+							pointer-events: none;
+						}
+					
+						img{
+							@include imageContain(center);
+						}
+				}
+			
+				&-title{
+					font: var(--font-body-l);
+					margin: 12rem 0;
+					pointer-events: none;
+				}
+			
+				&-description{
+					display: -webkit-box;
+					-webkit-box-orient: vertical;
+					-webkit-line-clamp: 3;
+					overflow: hidden;
+					pointer-events: none;
+				}
+		}
+	
+		.section{
+			
+				&-subtitle{
+					margin-top: 24rem;
+				}
+		}
+}

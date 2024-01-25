@@ -1,0 +1,22 @@
+.faq{
+	padding: 132rem 0 50rem;
+	
+		&-sticky{
+			padding-top: 13rem;
+			position: sticky;
+			top: 0;
+		}
+	
+		.section{
+			
+				&-description{
+					max-width: 415rem;
+				}
+			
+				&-banner{
+					width: 240rem;
+					height: 280rem;
+					margin: 142rem 0 0 64rem;
+				}
+		}
+}
