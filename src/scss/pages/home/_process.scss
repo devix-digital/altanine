@@ -10,6 +10,13 @@
 	justify-content: space-between;
 	align-items: flex-start;
 	
+		@include maxWidth($sm){
+      margin: 53rem 0 24rem;
+			padding: 40rem 0;
+			height: calc(100svh - 12rem);
+			justify-content: flex-start;
+    }
+	
 		&-banners{
 			pointer-events: none;
 			position: absolute;
@@ -21,6 +28,10 @@
 					
 						&-slide{
 							height: 720rem;
+							
+								@include maxWidth($sm){
+									height: calc(100svh - 12rem);
+                }
 							
 								&:before,
 								&:after{
@@ -53,10 +64,12 @@
 				&-description{
 				
 						p{
-							display: -webkit-box;
-							-webkit-box-orient: vertical;
-							-webkit-line-clamp: 4;
-							overflow: hidden;
+								@include minWidth($sm + 1){
+									display: -webkit-box;
+									-webkit-box-orient: vertical;
+									-webkit-line-clamp: 4;
+									overflow: hidden;
+								}
 						}
 				}
 			
@@ -64,6 +77,10 @@
 					color: var(--color-white);
 					font: var(--font-body-l);
 					line-height: 140%;
+					
+						@include maxWidth($sm){
+              font: var(--font-body-l-mobile);
+            }
 					
 						.process-carousel-description{
 							transform: translateY(50rem);
@@ -98,11 +115,19 @@
 					
 						.btn{
 							margin-top: 32rem;
+							
+								@include maxWidth($sm){
+                  margin-top: 24rem;
+                }
 						}
 				}
 		}
 	
 		.progress{
 			margin: 20rem 0 80rem;
+			
+				@include maxWidth($sm){
+					margin: 10rem 0 198rem;
+				}
 		}
 }

@@ -2,6 +2,10 @@
 	height: calc(100svh - 16rem);
 	min-height: 600rem;
 	
+		@include maxWidth($sm){
+			min-height: 480rem;
+		}
+	
 		&-banner{
 			position: absolute;
 			inset: 0;
@@ -28,10 +32,18 @@
 			flex-direction: column;
 			justify-content: flex-end;
 			padding-bottom: 41rem;
+			
+				@include maxWidth($sm){
+					padding-bottom: 36rem;
+				}
 		}
 	
 		&-title{
 			margin: 15rem 0;
+			
+				@include maxWidth($sm){
+					margin: 12rem 0;
+				}
 		}
 	
 		.h1{
@@ -40,6 +52,10 @@
 	
 		.progress{
 			margin: 37rem 0;
+			
+				@include maxWidth($sm){
+					margin: 31rem 0;
+				}
 		}
 	
 		.container{

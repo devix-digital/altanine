@@ -6,9 +6,14 @@
 	position: relative;
 	overflow: hidden;
 	
+		@include maxWidth($sm){
+			padding: 45rem 0 41rem;
+    }
+	
 		&-abstract{
 			position: absolute;
 			inset: -150rem;
+			pointer-events: none;
 			
 				img{
 					@include imageCover(center);
@@ -32,6 +37,16 @@
 					display: flex;
 					flex-direction: column;
 					gap: 8rem;
+					
+						@include maxWidth($sm){
+              gap: 12rem;
+            }
+				}
+			
+				li{
+						@include maxWidth($sm){
+							width: 100%;
+						}
 				}
 				
 				a{
@@ -52,6 +67,10 @@
 		&-social,
 		&-logo{
 			padding-top: 48rem;
+			
+				@include maxWidth($sm){
+					padding-top: 20rem;
+				}
 		}
 	
 		&-contacts{
@@ -94,9 +113,19 @@
 	
 		&-logo{
 			text-align: right;
-				
+			
+				@include maxWidth($sm){
+          text-align: left;
+					padding-top: 34rem;
+        }
+			
 				.logo{
 					margin: 5rem 0;
+						
+						@include maxWidth($sm){
+							width: 152rem;
+							height: 42rem;
+            }
 				}
 		}
 	
@@ -107,6 +136,10 @@
 			font: var(--font-body-s);
 			margin-top: 101rem;
 			
+				@include maxWidth($sm){
+					margin-top: 12rem;
+				}
+			
 				a{
 					color: var(--color-gray-500);
 				}
@@ -116,6 +149,10 @@
 			display: inline-flex;
 			align-items: center;
 			gap: 12rem;
+			
+				@include maxWidth($sm){
+					margin-top: 40rem;
+				}
 			
 				&-logo{
 					width: 121rem;
@@ -180,5 +217,9 @@
 		.hr{
 			background-color: var(--color-gray-500);
 			margin: 5rem 0 -5rem;
+			
+				@include maxWidth($sm){
+          margin: 21rem 0 0;
+        }
 		}
 }

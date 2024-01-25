@@ -5,12 +5,26 @@
 	position: relative;
 	margin-top: 30rem;
 	
+		@include maxWidth($sm){
+			margin-top: 40rem;
+			padding: 40rem 0 0;
+			overflow: hidden;
+		}
+	
 		&-banner{
 			position: absolute;
 			bottom: 0;
 			right: 73rem;
 			width: 623rem;
 			height: 450rem;
+			
+				@include maxWidth($sm){
+					position: relative;
+					width: 100%;
+					right: 0;
+					height: auto;
+					margin: 27rem -11rem -10rem 0;
+				}
 		}
 	
 		.section{
@@ -25,6 +39,10 @@
 			left: 50%;
 			transform: translateX(-58%);
 			width: 166rem;
+			
+				@include maxWidth($sm){
+          display: none;
+        }
 			
 				&-description{
 					align-items: flex-start;

@@ -1,9 +1,18 @@
 .accordion{
 
+		@include maxWidth($sm){
+			padding: 4rem 0;
+		}
+	
 		&-item{
 			border-bottom: 1rem var(--color-gray-400) solid;
 			padding-bottom: 19rem;
 			margin-bottom: 20rem;
+			
+				@include maxWidth($sm){
+					padding-bottom: 12rem;
+					margin-bottom: 12rem;
+				}
 			
 				&-header{
 					padding: 12rem 56rem 12rem 0;
@@ -25,6 +34,10 @@
 			
 				&-title{
 					font: var(--font-body-l);
+					
+						@include maxWidth($sm){
+              font: var(--font-body-l-mobile);
+            }
 				}
 				
 				&-icon{
@@ -36,47 +49,19 @@
 					transform: rotate(90deg);
 					transition: transform var(--transition-duration) var(--transition-easing), top var(--transition-duration) var(--transition-easing);
 					
-						//.btn{
-						//		&-icon{
-						//			height: 16rem;
-						//			width: 16rem;
-						//		}
-						//		&-arrow {
-						//			min-height: 24rem;
-						//			min-width: 24rem;
-						//
-						//			.btn-icon{
-						//				color: var(--color-black);
-						//					&-item {
-						//						&:nth-child(1) {
-						//							height: 10rem;
-						//						}
-						//
-						//						&:nth-child(2) {
-						//							top: 6rem;
-						//						}
-						//
-						//						&:nth-child(3) {
-						//							width: 10rem;
-						//							top: 3rem;
-						//							transform: rotate(50deg);
-						//						}
-						//
-						//						&:nth-child(4) {
-						//							transform: rotate(-50deg);
-						//							width: 10rem;
-						//							top: 9rem;
-						//						}
-						//					}
-						//			}
-						//		}
-						//}
+						.btn-arrow{
+							color: var(--color-black);
+						}
 				}
 			
 				&-body{
 					padding-right: 56rem;
 					height: 0;
 					overflow: hidden;
+					
+						@include maxWidth($sm){
+							padding-right: 25rem;
+						}
 					
 						.btn-arrow,
 						.btn{
@@ -87,6 +72,11 @@
 				&-description{
 					margin-bottom: 22rem;
 					padding-top: 10rem;
+					
+						@include maxWidth($sm){
+							padding-top: 3rem;
+							margin-bottom: 17rem;
+            }
 					
 						p:not(:last-child){
 							margin-bottom: 8rem;

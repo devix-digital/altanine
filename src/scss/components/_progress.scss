@@ -25,12 +25,20 @@
 			top: 33rem;
 			right: 0;
 			
+				@include maxWidth($sm){
+					width: 100%;
+					top: 20rem;
+        }
+			
 				&-item{
 					display: inline-block;
 				}
 			
 				.btn-arrow{
 					margin-left: 25rem;
+					position: absolute;
+					top: 0;
+					right: 0;
 					
 						.btn-icon{
 							color: currentColor;
@@ -42,5 +50,9 @@
 			position: absolute;
 			right: 0;
 			top: 32rem;
+				
+				@include maxWidth($sm){
+					display: none;
+				}
 		}
 }

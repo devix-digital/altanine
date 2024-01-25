@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <title>Altanine</title>
 	
 	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
@@ -43,6 +44,18 @@
 				  <li><a href="#">Blog</a></li>
 			  </ul>
 		  </nav>
+		  <div class="header-contacts">
+			  <a href="tel:+66 666 66 66 666" class="header-contacts-item">+66 666 66 66 666</a>
+			  <a href="mailto:info@altanine.com" class="header-contacts-item">info@altanine.com</a>
+		  </div>
+		  <a href="#" class="btn btn-gradient">
+			  <span class="btn-bg"></span>
+			  <span class="btn-labels">
+					<span class="btn-labels-item">Contact us</span>
+					<span class="btn-labels-item">Contact us</span>
+					<span class="btn-labels-item">Contact us</span>
+				</span>
+		  </a>
 	  </div>
 	  <div class="header-panel-action">
 		  <a href="#" class="btn btn-gradient">
@@ -53,6 +66,13 @@
 					<span class="btn-labels-item">Contact us</span>
 				</span>
 		  </a>
+		  <button class="burger">
+			  <span class="burger-box">
+				  <span class="burger-box-arrow"></span>
+				  <span class="burger-box-arrow"></span>
+				  <span class="burger-box-arrow"></span>
+			  </span>
+		  </button>
 	  </div>
   </div>
 </header>
@@ -105,7 +125,7 @@
 				<div class="progress-bar" id="hero-progress-bar">
 					<div class="progress-bar-follower"></div>
 				</div>
-				<div class="scroll-action">
+				<div class="scroll-action" data-target="#faq">
 					<p class="scroll-action-label">Scroll down</p>
 					<div class="scroll-action-icon">
 						<svg><use xlink:href="img/icons/icons.svg#arrow-down"></use></svg>
@@ -144,7 +164,7 @@
 						<div class="accordion-item-header">
 							<p class="accordion-item-title">Metformin: Effective First-Line Treatment for Type 2 Diabetes with Common Gastrointestinal Side Effects</p>
 							<div class="accordion-item-icon">
-								<button class="btn btn-arrow btn-arrow-md">
+								<button class="btn btn-arrow btn-arrow-md color-gray">
 									<span class="btn-icon">
 										<span class="btn-icon-item"></span>
 										<span class="btn-icon-item"></span>
@@ -176,7 +196,7 @@
 						<div class="accordion-item-header">
 							<p class="accordion-item-title">Metformin's benefits may extend far beyond diabetes</p>
 							<div class="accordion-item-icon">
-								<button class="btn btn-arrow btn-arrow-md">
+								<button class="btn btn-arrow btn-arrow-md color-gray">
 									<span class="btn-icon">
 										<span class="btn-icon-item"></span>
 										<span class="btn-icon-item"></span>
@@ -208,7 +228,7 @@
 						<div class="accordion-item-header">
 							<p class="accordion-item-title">Metformin may also have health benefits for people who don't have diabetes</p>
 							<div class="accordion-item-icon">
-								<button class="btn btn-arrow btn-arrow-md">
+								<button class="btn btn-arrow btn-arrow-md color-gray">
 									<span class="btn-icon">
 										<span class="btn-icon-item"></span>
 										<span class="btn-icon-item"></span>
@@ -240,7 +260,7 @@
 						<div class="accordion-item-header">
 							<p class="accordion-item-title">Prediabetes.</p>
 							<div class="accordion-item-icon">
-								<button class="btn btn-arrow btn-arrow-md">
+								<button class="btn btn-arrow btn-arrow-md color-gray">
 									<span class="btn-icon">
 										<span class="btn-icon-item"></span>
 										<span class="btn-icon-item"></span>
@@ -272,7 +292,7 @@
 						<div class="accordion-item-header">
 							<p class="accordion-item-title">Gestational diabetes.</p>
 							<div class="accordion-item-icon">
-								<button class="btn btn-arrow btn-arrow-md">
+								<button class="btn btn-arrow btn-arrow-md color-gray">
 									<span class="btn-icon">
 										<span class="btn-icon-item"></span>
 										<span class="btn-icon-item"></span>
@@ -304,7 +324,7 @@
 						<div class="accordion-item-header">
 							<p class="accordion-item-title">Polycystic ovary syndrome (PCOS).</p>
 							<div class="accordion-item-icon">
-								<button class="btn btn-arrow btn-arrow-md">
+								<button class="btn btn-arrow btn-arrow-md color-gray">
 									<span class="btn-icon">
 										<span class="btn-icon-item"></span>
 										<span class="btn-icon-item"></span>
@@ -336,7 +356,7 @@
 						<div class="accordion-item-header">
 							<p class="accordion-item-title">Weight gain from antipsychotic medicines.</p>
 							<div class="accordion-item-icon">
-								<button class="btn btn-arrow btn-arrow-md">
+								<button class="btn btn-arrow btn-arrow-md color-gray">
 									<span class="btn-icon">
 										<span class="btn-icon-item"></span>
 										<span class="btn-icon-item"></span>
@@ -683,7 +703,14 @@
 			<section class="section investigations">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-4">
+			<div class="col-md-6 offset-md-1 order-md-2">
+				<div class="investigations-sticky">
+					<p class="font-uppercase color-gradient section-subtitle">Clinical Investigations</p>
+					<h3 class="h3 section-title">Evidence of Excellence: <i>Our Metformin's Journey Through Clinical Trials.</i></h3>
+					<p class="section-description">We understand the importance of rigorous testing. Learn more about the successful clinical trials that demonstrate the safety, efficacy, and reliability of our Metformin delivery system.</p>
+				</div>
+			</div>
+			<div class="col-md-4 order-md-1">
 				<div class="certificates">
 					<div class="certificates-item">
 						<div class="certificates-item-thumbnail">
@@ -736,13 +763,6 @@
 							</span>
 						</a>
 					</div>
-				</div>
-			</div>
-			<div class="col-md-6 offset-md-1">
-				<div class="investigations-sticky">
-					<p class="font-uppercase color-gradient section-subtitle">Clinical Investigations</p>
-					<h3 class="h3 section-title">Evidence of Excellence: <i>Our Metformin's Journey Through Clinical Trials.</i></h3>
-					<p class="section-description">We understand the importance of rigorous testing. Learn more about the successful clinical trials that demonstrate the safety, efficacy, and reliability of our Metformin delivery system.</p>
 				</div>
 			</div>
 		</div>
@@ -933,12 +953,12 @@
 	</div>
   <div class="container">
 	  <div class="row">
-		  <div class="col-md-7 offset-md-5">
+		  <div class="col-md-7 offset-md-5 d-none d-md-block">
 			  <hr class="hr"/>
 		  </div>
 	  </div>
 	  <div class="row">
-		  <div class="col-md-5">
+		  <div class="col-md-5 order-md-1">
 			  <div class="footer-nav">
 				  <p class="footer-label">Site map</p>
 				  <ul>
@@ -951,18 +971,12 @@
 				  </ul>
 			  </div>
 		  </div>
-		  <div class="col-md-2">
-			  <div class="footer-contacts">
-			    <p class="footer-label">Contacts us</p>
-				  <div class="footer-contacts-list">
-				    <a href="tel:+66 666 66 66 666" class="footer-contacts-item">+66 666 66 66 666</a>
-				    <a href="mailto:info@altanine.com" class="footer-contacts-item">info@altanine.com</a>
-				  </div>
-			  </div>
+		  <div class="col-12 d-md-none">
+			  <hr class="hr"/>
 		  </div>
-		  <div class="col-md-2">
+		  <div class="col-md-2 order-md-3 col-6">
 			  <div class="footer-social">
-			    <p class="footer-label">Social networks</p>
+				  <p class="footer-label">Social networks</p>
 				  <div class="footer-social-list">
 					  <a href="#" target="_blank" class="btn btn-arrow color-gray-400 footer-social-item">
 							<span class="btn-icon">
@@ -971,7 +985,7 @@
 								<span class="btn-icon-item"></span>
 								<span class="btn-icon-item"></span>
 							</span>
-				      <span class="btn-labels">
+						  <span class="btn-labels">
 								<span class="btn-labels-item">Instagram</span>
 							</span>
 					  </a>
@@ -1000,7 +1014,16 @@
 				  </div>
 			  </div>
 		  </div>
-		  <div class="col-md-3">
+		  <div class="col-md-2 order-md-2 col-6">
+			  <div class="footer-contacts">
+			    <p class="footer-label">Contacts us</p>
+				  <div class="footer-contacts-list">
+				    <a href="tel:+66 666 66 66 666" class="footer-contacts-item">+66 666 66 66 666</a>
+				    <a href="mailto:info@altanine.com" class="footer-contacts-item">info@altanine.com</a>
+				  </div>
+			  </div>
+		  </div>
+		  <div class="col-md-3 order-md-4">
 			  <div class="footer-logo">
 				  <a href="/" class="logo">
 					  <img src="../img/logo-white.svg" alt="Altanine"/>
@@ -1009,7 +1032,17 @@
 		  </div>
 	  </div>
 	  <div class="row">
-		  <div class="col-md-5">
+		  <div class="col-md-4 order-md-2 col-6">
+			  <p class="footer-copyright">&copy; 2024 — Altanine, All Rights Reserved</p>
+		  </div>
+		  <div class="col-md-3 order-md-3 col-6">
+			  <div class="footer-additional">
+				  <ul>
+					  <li><a href="#">Privacy policy</a></li>
+				  </ul>
+			  </div>
+		  </div>
+		  <div class="col-md-5 order-md-1">
 			  <a href="https://www.studiopresto.com/" target="_blank" class="footer-developer">
 				  Made by
 				  <span class="footer-developer-logo">
@@ -1017,16 +1050,6 @@
 					  <img src="../img/developer-logo-blue.svg" alt="Studiopresto" />
 				  </span>
 			  </a>
-		  </div>
-		  <div class="col-md-4">
-			  <p class="footer-copyright">&copy; 2024 — Altanine, All Rights Reserved</p>
-		  </div>
-		  <div class="col-md-3">
-			  <div class="footer-additional">
-				  <ul>
-					  <li><a href="#">Privacy policy</a></li>
-				  </ul>
-			  </div>
 		  </div>
 	  </div>
   </div>

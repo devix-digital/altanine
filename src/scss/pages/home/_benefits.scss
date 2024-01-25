@@ -1,12 +1,21 @@
 .benefits{
 	padding: 85rem 0;
 	
+		@include maxWidth($sm){
+			padding: 28rem 0;
+		}
+	
 		&-card{
 			background-color: var(--color-white);
 			padding: 32rem;
 			border-radius: 8px;
 			margin: 24rem 0;
 			position: relative;
+			
+				@include maxWidth($sm){
+					padding: 26rem;
+					margin: 24rem 0 0;
+				}
 			
 				&-number{
 					position: absolute;
@@ -15,6 +24,12 @@
 					font: var(--font-body-s);
 					color: var(--color-gray-600);
 					pointer-events: none;
+					
+						@include maxWidth($sm){
+							font: var(--font-body-s-mobile);
+							top: 26rem;
+							left: 26rem;
+						}
 				}
 			
 				&-border{
@@ -31,6 +46,10 @@
 					margin: 0 0 67rem auto;
 					position: relative;
 					pointer-events: none;
+					
+						@include maxWidth($sm){
+							margin: 0 0 70rem auto;
+						}
 					
 						&:before{
 							content: '';
@@ -55,6 +74,10 @@
 					font: var(--font-body-l);
 					margin: 12rem 0;
 					pointer-events: none;
+					
+						@include maxWidth($sm){
+							font: var(--font-body-l-mobile);
+						}
 				}
 			
 				&-description{

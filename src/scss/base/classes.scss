@@ -2,6 +2,10 @@
 		&-uppercase {
 			font: var(--font-body-u);
 			text-transform: uppercase;
+			
+				@include maxWidth($sm){
+					font: var(--font-body-u-mobile);
+				}
 		}
 }
 

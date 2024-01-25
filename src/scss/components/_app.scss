@@ -1,9 +1,7 @@
-@import "../base/variables";
-
 html {
 	font-size: calc(100vw / 1440);
 	
-		@media (max-width: $xs) {
+		@include maxWidth($sm){
 			font-size: calc(100vw / 360);
 		}
 }
@@ -20,6 +18,10 @@ body{
 	text-rendering: geometricPrecision;
 	font: var(--font-body-r);
 	color: var(--color-black);
+	
+		@include maxWidth($sm){
+			font: var(--font-body-r-mobile);
+		}
 }
 
 svg{
@@ -27,11 +29,24 @@ svg{
 	height: 100%;
 }
 
+.wrapper{
+	position:relative;
+	padding: 8rem;
+	
+		@include maxWidth($sm){
+			padding: 6rem;
+		}
+}
+
 .section{
 	position: relative;
 	
 		&-title{
 			margin: 16rem 0 24rem;
+			
+				@include maxWidth($sm){
+          margin: 13rem 0 15rem;
+        }
 			
 				span, i{
 					color: var(--color-gray-600);

@@ -1,6 +1,10 @@
 .investigations{
 	padding: 110rem 0 70rem;
 	
+		@include maxWidth($sm){
+			padding: 60rem 0 30rem;
+		}
+	
 		&-sticky{
 			height: 100%;
 			display: flex;
@@ -18,12 +22,22 @@
           max-width: 528rem;
         }
 		}
+	
+		& + .container {
+			.hr{
+				display: none;
+			}
+		}
 }
 
 .certificates{
 	display: flex;
 	flex-wrap: wrap;
 	gap: 16rem;
+	
+		@include maxWidth($sm){
+			padding: 42rem 0;
+    }
 	
 		&-item,
 		&-link{
@@ -38,12 +52,21 @@
 			flex-direction: column;
 			justify-content: center;
 			
+				@include maxWidth($sm){
+					padding: 7rem 0 15rem;
+        }
+			
 				&-thumbnail{
 					width: 94rem;
 					height: 94rem;
 					margin: 0 auto 12rem;
 					overflow: hidden;
-						
+					
+						@include maxWidth($sm){
+							width: 90rem;
+							height: 90rem;
+						}
+					
 						img{
 							@include imageContain(center);
 						}
@@ -54,6 +77,10 @@
 					color: var(--color-gray-700);
 					text-align: center;
 					position: relative;
+					
+						@include maxWidth($sm){
+              font: var(--font-body-s-mobile);
+            }
 				}
 		}
 	
@@ -61,6 +88,10 @@
 			color: var(--color-white);
 			justify-content: space-between;
 			padding: 24rem 22rem;
+			
+				@include maxWidth($sm){
+          padding: 15rem;
+        }
 			
 				&:after{
 					content: '';

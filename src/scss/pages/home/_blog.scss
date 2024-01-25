@@ -1,12 +1,21 @@
 .blog{
 	padding: 74rem 0 80rem;
 	
+		@include maxWidth($sm){
+			padding: 8rem 0;
+		}
+	
 		&-action{
 			height: 100%;
 			display: flex;
 			align-items: flex-end;
 			justify-content: flex-end;
 			padding: 24rem 0;
+			
+				@include maxWidth($sm){
+					justify-content: flex-start;
+					padding: 8rem 0;
+				}
 		}
 	
 		&-carousel{
@@ -16,9 +25,17 @@
 			overflow: hidden;
 			cursor: none;
 			
+				@include maxWidth($sm){
+					padding-top: 32rem;
+				}
+			
 				&-slide{
 					max-width: 528rem;
 					padding-bottom: 32rem;
+					
+						@include maxWidth($sm){
+              max-width: 280rem;
+            }
 				}
 			
 				.splide__list{
@@ -57,11 +74,24 @@
 			border: 1px solid #2E7F9A;
 			background: rgba(255, 255, 255, 0.05);
 			backdrop-filter: blur(32px);
+			
+				@include maxWidth($sm){
+          font: var(--font-body-s-mobile);
+        }
 		}
 	
 		&-title{
 			font: var(--font-body-l);
 			margin: 12rem 0;
+			display: -webkit-box;
+			-webkit-box-orient: vertical;
+			-webkit-line-clamp: 2;
+			overflow: hidden;
+			
+				@include maxWidth($sm){
+          font: var(--font-body-l-mobile);
+					margin: 12rem 0 9rem;
+        }
 		}
 	
 		&-description{
@@ -71,10 +101,18 @@
 			-webkit-line-clamp: 2;
 			overflow: hidden;
 			color: var(--color-gray-600);
+			
+				@include maxWidth($sm){
+					margin: 9rem 0;
+				}
     }
 	
 		&-action{
 			margin-top: 24rem;
+			
+				@include maxWidth($sm){
+          margin-top: 20rem;
+        }
 			
 				.btn{
 					pointer-events: auto;

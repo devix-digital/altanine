@@ -17,6 +17,12 @@ export const initBlogCarousel = () => {
       easing: 'linear',
 	    gap: '32rem',
       padding: { left: '64rem', right: '64rem' },
+      breakpoints: {
+        767: {
+          padding: { left: '24rem', right: '24rem' },
+          gap: '24rem',
+        },
+      }
     });
     
     splide.on('mounted', () => {

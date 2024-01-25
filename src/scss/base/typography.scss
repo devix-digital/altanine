@@ -1,26 +1,46 @@
 h1, .h1 {
 	font: var(--font-h1);
 	letter-spacing: -0.024em;
+	
+		@include maxWidth($sm){
+			font: var(--font-h1-mobile);
+		}
 }
 
 h2, .h2 {
 	font: var(--font-h2);
 	letter-spacing: -0.02em;
+	
+		@include maxWidth($sm){
+      font: var(--font-h2-mobile);
+    }
 }
 
 h3,.h3 {
   font: var(--font-h3);
   letter-spacing: -0.02em;
+	
+	  @include maxWidth($sm){
+      font: var(--font-h3-mobile);
+    }
 }
 
 h4,.h4 {
   font: var(--font-h4);
   letter-spacing: -0.032em;
+	
+	  @include maxWidth($sm){
+      font: var(--font-h4-mobile);
+    }
 }
 
 h5,.h5 {
   font: var(--font-h5);
   letter-spacing: -0.024em;
+	
+	  @include maxWidth($sm){
+      font: var(--font-h5-mobile);
+    }
 }
 
 p{

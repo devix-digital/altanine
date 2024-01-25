@@ -4,6 +4,7 @@ import {initAccordion} from '../../modules/accordion/initAccordion.js';
 import {initProcessCarousel} from '../../modules/carousels/processCarousel.js';
 import {initBlogCarousel} from '../../modules/carousels/blogCarousel.js';
 import {cardsMouseFollow} from '../../modules/benefits/cardsMouseFollow.js';
+import {scrollTo} from '../../modules/common/scrollTo.js';
 
 class HomeRenderer extends Highway.Renderer {
 	onEnter() {
@@ -15,6 +16,7 @@ class HomeRenderer extends Highway.Renderer {
 		console.log('Entering on Home page');
 	}
 	onEnterCompleted() {
+		scrollTo();
 		console.log('Completed Enter on Home page');
 	}
 }

@@ -51,7 +51,7 @@ export const initProcessCarousel = () => {
       autoWidth: false,
       speed: 500,
       easing: 'linear',
-      autoplay: true,
+      // autoplay: true,
 			updateOnMove: true,
       interval: 4000,
 			pauseOnFocus: false,
