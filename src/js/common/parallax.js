@@ -14,15 +14,16 @@ export const parallax = () => {
 		});
 	});
 	
-	/* parallax for content section */
-	let contentTl = Tween.timeline({
+	/* benefits */
+	let benefitsTl = Tween.timeline({
 		scrollTrigger: {
-			trigger: '.content',
-			start: 'top 50%',
+			trigger: '.benefits',
+			start: 'top 30%',
 		}
 	});
-	contentTl.to('.show-on-scroll', {
+	benefitsTl.to('.benefits-card', {
 		y: 0,
+		stagger: 0.1,
 		duration: transition.skew.duration,
 		ease: transition.skew.ease,
 	});
@@ -34,6 +35,19 @@ export const parallax = () => {
 		}
 	});
 	investigationsTl.to('.certificates-column', {
+		y: 0,
+		duration: transition.skew.duration,
+		ease: transition.skew.ease,
+	});
+	
+	/* parallax for content section */
+	let contentTl = Tween.timeline({
+		scrollTrigger: {
+			trigger: '.content',
+			start: 'top 50%',
+		}
+	});
+	contentTl.to('.show-on-scroll', {
 		y: 0,
 		duration: transition.skew.duration,
 		ease: transition.skew.ease,

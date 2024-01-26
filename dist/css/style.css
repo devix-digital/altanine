@@ -2806,6 +2806,7 @@ svg {
   border-radius: 8px;
   margin: 24rem 0;
   position: relative;
+  transform: translateY(50rem);
 }
 
 .benefits-card-number {
