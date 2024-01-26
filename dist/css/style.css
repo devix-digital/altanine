@@ -1876,6 +1876,22 @@ svg {
   background-color: var(--color-gray-200);
 }
 
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-white);
+  z-index: 3;
+}
+
+.word {
+  opacity: 0;
+  transform: translateY(50rem);
+  display: inline-block;
+}
+
 .header {
   position: absolute;
   top: 16rem;
@@ -2096,9 +2112,6 @@ svg {
 
 .progress-pagination .btn-arrow {
   margin-left: 25rem;
-  position: absolute;
-  top: 0;
-  right: 0;
 }
 
 .progress-pagination .btn-arrow .btn-icon {
@@ -2562,6 +2575,7 @@ svg {
 .footer-social-list {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   gap: 15rem;
 }
 
@@ -2884,10 +2898,6 @@ svg {
   height: 100%;
 }
 
-.process-banners .full-carousel-slide {
-  height: 720rem;
-}
-
 .process-banners .full-carousel-slide:before,
 .process-banners .full-carousel-slide:after {
   content: "";
@@ -2913,6 +2923,10 @@ svg {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+}
+
+.process-banner {
+  height: 720rem;
 }
 
 .process-carousel {
@@ -2957,7 +2971,7 @@ svg {
 }
 
 .investigations {
-  padding: 110rem 0 70rem;
+  padding: 100rem 0 63rem;
 }
 
 .investigations-sticky {
@@ -2981,14 +2995,20 @@ svg {
 
 .certificates {
   display: flex;
-  flex-wrap: wrap;
   gap: 16rem;
+}
+
+.certificates-column {
+  display: flex;
+  flex-direction: column;
+  width: calc(50% - 8rem);
+  -moz-column-gap: 16rem;
+       column-gap: 16rem;
 }
 
 .certificates-item,
 .certificates-link {
   padding: 24rem 32rem;
-  width: calc(50% - 8rem);
   border-radius: 8px;
   border: 1px rgba(0, 172, 234, 0.2) solid;
   background: var(--color-white);
@@ -2997,6 +3017,8 @@ svg {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 8rem 0;
+  min-height: 176rem;
 }
 
 .certificates-item-thumbnail,
@@ -6654,6 +6676,12 @@ svg {
     top: 20rem;
   }
 
+  .progress-pagination .btn-arrow {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
   .progress .scroll-action {
     display: none;
   }
@@ -6851,7 +6879,7 @@ svg {
     justify-content: flex-start;
   }
 
-  .process-banners .full-carousel-slide {
+  .process-banner {
     height: calc(100svh - 12rem);
   }
 
@@ -6872,12 +6900,13 @@ svg {
   }
 
   .certificates {
-    padding: 42rem 0;
+    padding: 33rem 0;
   }
 
   .certificates-item,
   .certificates-link {
     padding: 7rem 0 15rem;
+    min-height: 144rem;
   }
 
   .certificates-item-thumbnail,

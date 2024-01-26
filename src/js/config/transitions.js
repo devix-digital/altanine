@@ -1,4 +1,4 @@
-import { Power3 } from 'gsap';
+import { Power1, Power3 } from 'gsap';
 
 export const transition = {
 	move: {
@@ -13,4 +13,8 @@ export const transition = {
     duration: 0.5,
     ease: Power3.easeOut,
   },
+	skew: {
+		duration: 1,
+    ease: Power1.easeOut,
+	}
 }

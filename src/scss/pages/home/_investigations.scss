@@ -1,5 +1,5 @@
 .investigations{
-	padding: 110rem 0 70rem;
+	padding: 100rem 0 63rem;
 	
 		@include maxWidth($sm){
 			padding: 60rem 0 30rem;
@@ -32,17 +32,22 @@
 
 .certificates{
 	display: flex;
-	flex-wrap: wrap;
 	gap: 16rem;
 	
 		@include maxWidth($sm){
-			padding: 42rem 0;
+			padding: 33rem 0;
     }
+	
+		&-column{
+			display: flex;
+      flex-direction: column;
+			width: calc(50% - 8rem);
+			column-gap: 16rem;
+		}
 	
 		&-item,
 		&-link{
 			padding: 24rem 32rem;
-			width: calc(50% - 8rem);
 			border-radius: 8px;
 			border: 1px rgba(#00ACEA, 0.2) solid;
 			background: var(--color-white);
@@ -51,9 +56,12 @@
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
+			margin: 8rem 0;
+			min-height: 176rem;
 			
 				@include maxWidth($sm){
 					padding: 7rem 0 15rem;
+					min-height: 144rem;
         }
 			
 				&-thumbnail{

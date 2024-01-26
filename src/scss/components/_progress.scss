@@ -36,9 +36,12 @@
 			
 				.btn-arrow{
 					margin-left: 25rem;
-					position: absolute;
-					top: 0;
-					right: 0;
+					
+						@include maxWidth($sm){
+							position: absolute;
+							top: 0;
+							right: 0;
+            }
 					
 						.btn-icon{
 							color: currentColor;

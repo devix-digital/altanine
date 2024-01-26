@@ -1,15 +1,15 @@
 <section class="section hero hero-home">
-	<div class="hero-banner">
+	<div class="hero-banner" id="hero-banner">
 		<div class="full-carousel splide" id="hero-carousel">
 			<div class="splide__track">
 				<div class="splide__list">
 					<div class="splide__slide full-carousel-slide">
-						<video class="video" muted playsinline webkit-playsinline loop autoplay>
+						<video class="video" muted playsinline webkit-playsinline loop>
 							<source src="../../files/video1.mp4" type="video/mp4" />
 						</video>
 					</div>
 					<div class="splide__slide full-carousel-slide">
-						<video class="video" muted playsinline webkit-playsinline loop autoplay>
+						<video class="video" muted playsinline webkit-playsinline loop>
 							<source src="../../files/video2.mp4" type="video/mp4" />
 						</video>
 					</div>
@@ -18,7 +18,7 @@
 		</div>
 	</div>
 	<div class="container">
-		<div class="users">
+		<div class="users" data-load-order="2">
 			<div class="users-list">
 				<div class="users-list-item">
 					<img src="https://media.istockphoto.com/id/92347250/uk/%D1%84%D0%BE%D1%82%D0%BE/portrait-of-a-doctor.jpg?s=612x612&w=0&k=20&c=LzTAA0O_bSuxh55KiH_SkHd9HM7T3vuBHvaG3-xH1sU=" alt="Alt" />
@@ -41,7 +41,7 @@
 	</div>
 	<div class="hero-content">
 		<div class="container">
-			<div class="progress">
+			<div class="progress" id="progress">
 				<div class="progress-bar" id="hero-progress-bar">
 					<div class="progress-bar-follower"></div>
 				</div>
@@ -54,8 +54,8 @@
 			</div>
 			<div class="row">
 				<div class="col-md-8">
-					<p class="hero-subtitle font-uppercase color-white">Engineering Excellence</p>
-					<h1 class="hero-title h1">Creating Innovative Metformin Products.</h1>
+					<p class="hero-subtitle font-uppercase color-white" data-load-order="1">Engineering Excellence</p>
+					<h1 class="hero-title h1" data-split-text>Creating Innovative Metformin Products.</h1>
 				</div>
 			</div>
 		</div>

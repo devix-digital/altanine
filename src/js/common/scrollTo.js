@@ -1,3 +1,5 @@
+import {lenis} from './scroll.js';
+
 export const scrollTo = () => {
 	const scrollButtons = document.querySelectorAll('.scroll-action');
 	if (scrollButtons.length) {
@@ -6,7 +8,8 @@ export const scrollTo = () => {
         const target = document.querySelector(button.dataset.target);
         if (target) {
           // window.scrollTo(0, target.offsetTop);
-	        target.scrollIntoView({ behavior: 'smooth' });
+	        lenis.scrollTo(target, { duration: 1.5 });
+	        // target.scrollIntoView({ behavior: 'smooth' });
         }
       });
     });

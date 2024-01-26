@@ -27,12 +27,6 @@
 					height: 100%;
 					
 						&-slide{
-							height: 720rem;
-							
-								@include maxWidth($sm){
-									height: calc(100svh - 12rem);
-                }
-							
 								&:before,
 								&:after{
 									content: '';
@@ -55,6 +49,14 @@
 									@include imageCover(center);
 								}
 						}
+				}
+		}
+	
+		&-banner{
+			height: 720rem;
+			
+				@include maxWidth($sm){
+					height: calc(100svh - 12rem);
 				}
 		}
 	
