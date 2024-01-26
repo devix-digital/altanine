@@ -17,6 +17,7 @@
 			right: 73rem;
 			width: 623rem;
 			height: 450rem;
+			transform: translateY(70rem);
 			
 				@include maxWidth($sm){
 					position: relative;
@@ -36,8 +37,8 @@
 		.users{
 			position: absolute;
 			top: -22rem;
-			left: 50%;
-			transform: translateX(-58%);
+			left: 43%;
+			transform: translateY(100rem);
 			width: 166rem;
 			
 				@include maxWidth($sm){

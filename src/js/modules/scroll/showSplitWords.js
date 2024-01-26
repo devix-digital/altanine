@@ -1,5 +1,5 @@
 import Tween from 'gsap';
-import {transition} from '../config/transitions.js';
+import {transition} from '../../config/transitions.js';
 
 export const showSplitWords = () => {
 	const rows = document.querySelectorAll('[data-split-text]');

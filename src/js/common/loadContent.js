@@ -1,6 +1,6 @@
 import Tween from 'gsap';
 import {transition} from '../config/transitions.js';
-import {showSplitWords} from './showSplitWords.js';
+import {showSplitWords} from '../modules/scroll/showSplitWords.js';
 
 export const loadContent = () => {
 	const preloader = document.querySelector('#preloader');

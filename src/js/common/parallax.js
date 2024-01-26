@@ -8,25 +8,32 @@ gsap.registerPlugin(ScrollTrigger);
 export const parallax = () => {
 	const els = document.querySelectorAll('[data-parallax]');
 	els.forEach((el) => {
-		const parallax = new Ukiyo(el, {
+		new Ukiyo(el, {
 			scale: 1.2,
 			willChange: true,
 		});
 	});
 	
-	const banner = document.querySelector('.content-banner');
-	
-	const bannerTl = Tween.timeline({
+	/* parallax for content section */
+	let contentTl = Tween.timeline({
 		scrollTrigger: {
-			trigger: document.querySelector('.content'),
-			scrub: true,
-			start: 'top center',
+			trigger: '.content',
+			start: 'top 50%',
 		}
 	});
+	contentTl.to('.show-on-scroll', {
+		y: 0,
+		duration: transition.skew.duration,
+		ease: transition.skew.ease,
+	});
 	
-	bannerTl.from(banner, {
-		y: 100,
-	}).to(banner, {
+	/* parallax for investigations section */
+	let investigationsTl = Tween.timeline({
+		scrollTrigger: {
+			trigger: '.investigations',
+		}
+	});
+	investigationsTl.to('.certificates-column', {
 		y: 0,
 		duration: transition.skew.duration,
 		ease: transition.skew.ease,

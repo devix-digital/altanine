@@ -70,9 +70,9 @@
 						@include maxWidth($sm){
 							display: none;
 							position: fixed;
-							top: 6rem;
-							left: 6rem;
-							right: 6rem;
+							top: -6rem;
+							left: -6rem;
+							right: -6rem;
 							background-color: var(--color-gray-200);
 							padding: 98rem 18rem 18rem;
 							max-height: 100svh;

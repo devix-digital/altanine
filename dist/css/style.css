@@ -3006,6 +3006,14 @@ svg {
        column-gap: 16rem;
 }
 
+.certificates-column:nth-child(1) {
+  transform: translateY(-50rem);
+}
+
+.certificates-column:nth-child(2) {
+  transform: translateY(50rem);
+}
+
 .certificates-item,
 .certificates-link {
   padding: 24rem 32rem;
@@ -3197,6 +3205,7 @@ svg {
   right: 73rem;
   width: 623rem;
   height: 450rem;
+  transform: translateY(70rem);
 }
 
 .content .section-description {
@@ -3206,8 +3215,8 @@ svg {
 .content .users {
   position: absolute;
   top: -22rem;
-  left: 50%;
-  transform: translateX(-58%);
+  left: 43%;
+  transform: translateY(100rem);
   width: 166rem;
 }
 
@@ -6599,9 +6608,9 @@ svg {
   .header-panel-nav {
     display: none;
     position: fixed;
-    top: 6rem;
-    left: 6rem;
-    right: 6rem;
+    top: -6rem;
+    left: -6rem;
+    right: -6rem;
     background-color: var(--color-gray-200);
     padding: 98rem 18rem 18rem;
     max-height: 100svh;

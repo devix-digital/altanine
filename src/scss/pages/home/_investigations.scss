@@ -43,6 +43,14 @@
       flex-direction: column;
 			width: calc(50% - 8rem);
 			column-gap: 16rem;
+			
+				&:nth-child(1){
+					transform: translateY(-50rem);
+				}
+			
+				&:nth-child(2){
+					transform: translateY(50rem);
+				}
 		}
 	
 		&-item,
