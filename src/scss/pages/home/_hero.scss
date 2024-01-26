@@ -23,5 +23,14 @@
 				@include maxWidth($sm){
 					min-height: 480rem;
 				}
+			
+				&-poster{
+					position: absolute;
+          inset: 0;
+					
+						img{
+							@include imageCover(center);
+						}
+				}
 		}
 }

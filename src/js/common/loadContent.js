@@ -10,6 +10,7 @@ export const loadContent = () => {
 	const content = document.querySelectorAll('[data-load-order]');
 	
 	if (preloader) {
+		/* preloader */
     Tween.fromTo(preloader,
 	    {
 				height: '100%',
@@ -22,34 +23,34 @@ export const loadContent = () => {
           preloader.remove();
         }
 	    });
-  }
-	if (heroBanner) {
+		
+		/* banner */
 		Tween.fromTo(heroBanner,
-      {
-        y: 300,
-      },
-      {
-        y: 0,
-        duration: transition.skew.duration,
-        ease: transition.skew.ease,
-      });
-	}
-	if (header) {
+			{
+				y: 300,
+			},
+			{
+				y: 0,
+				duration: transition.skew.duration,
+				ease: transition.skew.ease,
+			});
+		
+		/* header */
 		Tween.fromTo(header,
-      {
-        yPercent: -100,
-      },
-      {
-        yPercent: 0,
-	      delay: 0.3,
-        duration: transition.skew.duration,
-        ease: transition.skew.ease,
-	      onComplete: () => {
-		      showSplitWords();
-	      }
-      });
-	}
-	if (content.length) {
+			{
+				yPercent: -100,
+			},
+			{
+				yPercent: 0,
+				delay: 0.3,
+				duration: transition.skew.duration,
+				ease: transition.skew.ease,
+				onComplete: () => {
+					showSplitWords();
+				}
+			});
+		
+		/* content */
 		Tween.fromTo(content,
 			{
 				opacity: 0,
@@ -58,19 +59,21 @@ export const loadContent = () => {
 				opacity: 1,
 				y: 0,
 				delay: 0.8,
-        duration: transition.skew.duration,
-        ease: transition.skew.ease,
+				duration: transition.skew.duration,
+				ease: transition.skew.ease,
 			});
-	}
-	if (progress) {
+		
+		/* progress */
 		Tween.fromTo(progress,
-      {
-        opacity: 0,
-      }, {
-        opacity: 1,
+			{
+				opacity: 0,
+			}, {
+				opacity: 1,
 				delay: 1,
-        duration: transition.skew.duration,
-        ease: transition.skew.ease,
-      });
+				duration: transition.skew.duration,
+				ease: transition.skew.ease,
+			});
+  } else {
+		showSplitWords();
 	}
 }
