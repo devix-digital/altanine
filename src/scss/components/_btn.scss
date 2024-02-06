@@ -216,7 +216,27 @@
 						}
 				}
 		}
-	
+		&-line{
+	 		background: transparent;
+			color: var(--color-gray-700);
+			border:1rem solid var(--color-gray-300);
+			.btn-bg{
+				background: var(--color-primary-gradient);
+				color: var(--color-white);
+			}
+			&:hover{
+				cursor: pointer;
+				color: var(--color-white);
+				.btn{
+					&-labels{
+						color: var(--color-white);
+						&-item{
+							color: var(--color-white);
+						}
+					}
+				}
+			}
+		}
 		/* states */
 		&[disabled]{
 			opacity: .2;

@@ -1,0 +1,41 @@
+.hero-blog{
+  background-color: var(--color-gray-200);
+  padding: 144rem 0 64rem;
+  border-radius: 14px;
+  background-image: url('../../../img/home/enhancements-abstract.svg');
+  background-size: cover;
+  background-position: center;
+  height: auto;
+}
+.hero__blog-title{
+  margin-bottom: 5.6rem;
+  h1, .h1{
+    color: var(--color-black);
+    i{
+      font-style: normal;
+      color: var(--color-gray-600);
+    }
+  }
+}
+.hero__blog-post{
+  .post{
+    display: flex;
+    justify-content: space-between;
+   &-thumbnail{
+     max-width: 864rem;
+     width: 100%;
+     height: auto;
+   }
+    &-time{
+      position: relative;
+      left: 0;
+      right: 0;
+      top: 0;
+      display: inline-block;
+    }
+    &-info{
+      max-width: 384rem;
+      padding-top: 32px;
+    }
+  }
+}

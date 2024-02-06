@@ -1,6 +1,7 @@
 import Highway from '@dogstudio/highway';
 import {initHeroCarousel} from '../../modules/carousels/heroCarousel.js';
 import {initAccordion} from '../../modules/accordion/initAccordion.js';
+import {initAccordionCore} from '../../modules/accordion/initAccordion.js';
 import {initProcessCarousel} from '../../modules/carousels/processCarousel.js';
 import {initBlogCarousel} from '../../modules/carousels/blogCarousel.js';
 import {cardsMouseFollow} from '../../modules/benefits/cardsMouseFollow.js';
@@ -13,6 +14,7 @@ class HomeRenderer extends Highway.Renderer {
 		splitText();
 		initHeroCarousel();
 		initAccordion();
+		initAccordionCore();
 		initProcessCarousel();
 		initBlogCarousel();
 		cardsMouseFollow();

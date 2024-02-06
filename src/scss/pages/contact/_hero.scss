@@ -1,0 +1,108 @@
+.hero-contact{
+  padding: 200rem 0 140rem;
+  height: auto;
+  .h1, h1{
+    color: var(--color-black);
+    margin-bottom: 40rem;
+  }
+
+
+}
+.contact__info{
+  width: 100%;
+  max-width: 416rem ;
+  ul{
+    li{
+      color: var(--color-gray-600);
+      font-size: 16rem;
+      line-height: 145%;
+      padding-left: 34rem;
+      margin-bottom: 16rem;
+      position: relative;
+      &:before{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        width: 18rem;
+        height: 18rem;
+        background-image: url("data:image/svg+xml,%3Csvg width='18' height='19' viewBox='0 0 18 19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect y='0.5' width='18' height='18' rx='9' fill='%23213245'/%3E%3Cpath d='M13.125 7.25L7.96875 12.5L5.625 10.1136' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}
+.contact__info-time{
+  margin-top: 60rem;
+  font-size: 13rem;
+  line-height: 150%;
+  position: relative;
+  padding-left: 104rem;
+  color: var(--color-black);
+  span{
+    display: block;
+    color: var(--color-gray-600);
+    margin-top: 4rem;
+  }
+  &:before{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 80rem;
+    height: 80rem;
+    background-image: url("data:image/svg+xml,%3Csvg width='82' height='82' viewBox='0 0 82 82' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='41' cy='41' r='40' stroke='%23B3B7BC' stroke-linecap='round' stroke-dasharray='3 8'/%3E%3Cpath d='M32.2725 10.4545L41.727 41.7273' stroke='url(%23paint0_linear_14631_3284)' stroke-width='1.5' stroke-linecap='round'/%3E%3Cpath d='M22.0078 40.2567L41.7273 41.7273' stroke='%23213245' stroke-width='1.5' stroke-linecap='round'/%3E%3Cpath d='M48.6016 51.0229L41.7273 41.7273' stroke='%23213245' stroke-width='1.5' stroke-linecap='round'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_14631_3284' x1='40.7698' y1='42.0167' x2='43.5801' y2='40.9755' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%2300EFD1'/%3E%3Cstop offset='1' stop-color='%2300ACEA'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+.contact__form{
+  width: 100%;
+  max-width: 752rem;
+  form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  label{
+    display: block;
+    width: 100%;
+    margin-bottom: 16rem;
+    border: 1rem solid var(--color-blue-100);
+    border-radius: 8rem;
+    padding: 8rem 16rem 12rem;
+    font-size: 12rem;
+    color: var(--color-gray-400);
+    input, textarea{
+      width: 100%;
+      display: block;
+      border: 0;
+      background: transparent;
+      color: var(--color-black);
+    }
+    textarea{
+      height: 100rem;
+    }
+  }
+  p{
+    margin-top: 32rem;
+    font: var(--font-body-m);
+    max-width: 416rem;
+    a{
+      background: var(--color-primary-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  button{
+    margin-top: 32rem;
+  }
+}
+.contact{
+  .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
