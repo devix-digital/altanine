@@ -28,14 +28,17 @@
 	<div data-router-wrapper>
 		<div data-router-view="home">
 			@@include('html/product/hero.html', {})
-			@@include('html/about-us/about.html', {})
+			@@include('html/product/about.html', {})
+			@@include('html/product/products.html', {})
+			@@include('html/product/enhancements.html', {})
+			@@include('html/product/investigations.html', {})
+			@@include('html/product/enhancements-dark.html', {})
+
 			<div class="container">
 				<hr class="hr"/>
 			</div>
-			@@include('html/about-us/our-mission.html', {})
-			@@include('html/about-us/our-mission-core.html', {})
-			@@include('html/about-us/team.html', {})
-			@@include('html/home/content.html', {})
+			@@include('html/product/faq.html', {})
+			@@include('html/product/content.html', {})
 		</div>
 	</div>
 	@@include('html/footer.html', {})
