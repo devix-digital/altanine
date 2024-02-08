@@ -1,16 +1,29 @@
 .about{
-  padding: 144rem 0 72rem;
+  padding: 144rem 0 47rem;
+  @include maxWidth($sm){
+    padding: 80rem 0 47rem;
+  }
   .section-title{
     margin-bottom: 96rem;
+    @include maxWidth($sm){
+      margin-bottom: 40rem;
+    }
   }
-
   &__media{
-    margin-left: -30rem;
+    margin-left: -56rem;
+    @include maxWidth($sm){
+      margin-left: 0;
+    }
     &-small{
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
       height: 100%;
+      max-width: 175rem;
+      margin: 2rem 0 0 16rem;
+      @include maxWidth($sm){
+        display: none;
+      }
     }
 
   }
@@ -21,11 +34,15 @@
       margin-bottom: 24rem;
     }
     b{
-      margin-bottom: 32rem;
+      margin-bottom: 34rem;
+      display: block;
       i{
         font-style: normal;
         color:  var(--color-blue);
       }
+    }
+    p{
+      margin-bottom: 7rem;
     }
   }
 }

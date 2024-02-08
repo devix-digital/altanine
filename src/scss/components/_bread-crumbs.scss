@@ -1,12 +1,16 @@
 .bread-crumbs{
 	position: absolute;
-	top: 113rem;
+	top: 105rem;
 	left: 0;
 	right: 0;
 	margin: 0 auto;
 	ul{
 		display: flex;
 		flex-wrap: wrap;
+		margin: 0 -24rem;
+		@include maxWidth($sm){
+			margin: 0 0;
+		}
 	}
 	li{
 		position: relative;

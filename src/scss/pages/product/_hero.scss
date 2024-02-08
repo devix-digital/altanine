@@ -1,7 +1,9 @@
 .hero-product{
+	min-height: 690rem;
 	.hero-text{
 		max-width: 528rem;
 		font: var(--font-body-m);
 		color: var(--color-white);
+		margin:  25rem 0 14rem 0;
 	}
 }

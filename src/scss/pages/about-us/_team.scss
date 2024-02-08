@@ -1,4 +1,29 @@
 .team{
-  padding: 144rem 0 111rem;
-
+  padding: 129rem 0 111rem;
+  @include maxWidth($sm){
+    padding: 80rem 0 ;
+  }
+  .section-subtitle{
+    margin-top: 40rem;
+  }
+  .section-title {
+    margin: 16rem 0 23rem;
+  }
+  &__item{
+    border-radius: 8rem;
+    border: var(--line-percent);
+    border: 1px rgba(#00ACEA, 0.2) solid;
+    &-media{
+      img{
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+    &-desc{
+      padding: 32rem 24rem;
+    }
+    &-title{
+      margin: 0 0 12rem;
+    }
+  }
 }
