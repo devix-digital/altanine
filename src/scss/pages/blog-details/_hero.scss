@@ -1,0 +1,24 @@
+.hero-blog-details{
+  padding: 207rem 0 0;
+  background-color: var(--color-gray-200);
+  border-radius: 12px;
+  pointer-events: none;
+  overflow: hidden;
+  .post-time{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    margin-bottom: 16rem;
+  }
+  .hero__blog-title{
+    margin-bottom: 24rem;
+  }
+  .post-info-description{
+    margin-bottom: 64rem;
+  }
+  .post-thumbnail{
+    margin-bottom: 0;
+    height: 600rem;
+  }
+}

@@ -1,0 +1,53 @@
+.what-need{
+  background-color: var(--color-gray-200);
+  padding: 144rem 0;
+  margin: 44rem 0;
+  border-radius: 14px;
+  background-image: url('../../../img/home/enhancements-abstract.svg');
+  background-size: cover;
+  background-position: center;
+  .section{
+
+    &-description{
+      max-width: 415rem;
+
+      @include maxWidth($sm){
+        max-width: 90%;
+      }
+    }
+
+    &-banner{
+      width: 240rem;
+      height: 280rem;
+      margin: 142rem 0 0 64rem;
+
+      @include maxWidth($sm){
+        margin: 24rem 0;
+        width: 100%;
+        height: 176rem;
+      }
+    }
+  }
+  .h3{
+    margin-bottom: 32rem;
+  }
+  .text-xl-left{
+    font: var(--font-body-l);
+    color: var(--color-black);
+    margin-bottom: 12rem;
+  }
+  .btn-gradient{
+    margin-top: 40rem;
+  }
+}
+.unlocking-insights{
+  padding: 144rem 0 72rem;
+  .text-xl-left{
+    font: var(--font-body-l);
+    color: var(--color-black);
+    margin-bottom: 32rem;
+  }
+}
+.characteristics{
+  padding: 72rem 0 72rem;
+}

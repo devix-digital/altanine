@@ -24,6 +24,15 @@
 					z-index: 1;
 					pointer-events: none;
 				}
+			
+				&-item{
+					width: 100%;
+					height: 100%;
+					
+						img{
+							@include imageCover(center);
+						}
+				}
 		}
 		
 		&-content{
@@ -52,6 +61,7 @@
 	
 		.progress{
 			margin: 37rem 0;
+			opacity: 0;
 			
 				@include maxWidth($sm){
 					margin: 31rem 0;
@@ -61,11 +71,4 @@
 		.container{
 			z-index: 1;
 		}
-	.full-carousel-slide{
-		video, img{
-			width: 100%;
-			height: 100%;
-		}
-	}
-
 }

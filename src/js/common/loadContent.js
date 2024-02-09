@@ -11,18 +11,18 @@ export const loadContent = () => {
 	
 	if (preloader) {
 		/* preloader */
-    Tween.fromTo(preloader,
-	    {
+		Tween.fromTo(preloader,
+			{
 				height: '100%',
-	    },
-	    {
+			},
+			{
 				height: 0,
-		    duration: transition.skew.duration,
-		    ease: transition.skew.ease,
-        onComplete: () => {
-          preloader.remove();
-        }
-	    });
+				duration: transition.skew.duration,
+				ease: transition.skew.ease,
+				onComplete: () => {
+					preloader.remove();
+				}
+			});
 		
 		/* banner */
 		Tween.fromTo(heroBanner,
@@ -49,31 +49,31 @@ export const loadContent = () => {
 					showSplitWords();
 				}
 			});
-		
-		/* content */
-		Tween.fromTo(content,
-			{
-				opacity: 0,
-				y: 50,
-			}, {
-				opacity: 1,
-				y: 0,
-				delay: 0.8,
-				duration: transition.skew.duration,
-				ease: transition.skew.ease,
-			});
-		
-		/* progress */
-		Tween.fromTo(progress,
-			{
-				opacity: 0,
-			}, {
-				opacity: 1,
-				delay: 1,
-				duration: transition.skew.duration,
-				ease: transition.skew.ease,
-			});
-  } else {
+	} else {
 		showSplitWords();
 	}
+	
+	/* content */
+	Tween.fromTo(content,
+		{
+			opacity: 0,
+			y: 50,
+		}, {
+			opacity: 1,
+			y: 0,
+			delay: 0.8,
+			duration: transition.skew.duration,
+			ease: transition.skew.ease,
+		});
+	
+	/* progress */
+	Tween.fromTo(progress,
+		{
+			opacity: 0,
+		}, {
+			opacity: 1,
+			delay: 1,
+			duration: transition.skew.duration,
+			ease: transition.skew.ease,
+		});
 }

@@ -220,23 +220,36 @@
 	 		background: transparent;
 			color: var(--color-gray-700);
 			border:1rem solid var(--color-gray-300);
-			.btn-bg{
+			
+				.btn{
+						&-bg{
+							background: var(--color-primary-gradient);
+						}
+						&-labels{
+								&-item{
+									&:nth-child(2){
+										color: var(--color-white);
+										transform: translateY(100%);
+										background: transparent;
+										-webkit-background-clip: text;
+										-webkit-text-fill-color: var(--color-white);
+									}
+								}
+						}
+				}
+			
+			@include hover($md){
+				&:hover{
+					cursor: pointer;
+				}
+			}
+			
+			&.is-active{
 				background: var(--color-primary-gradient);
 				color: var(--color-white);
 			}
-			&:hover{
-				cursor: pointer;
-				color: var(--color-white);
-				.btn{
-					&-labels{
-						color: var(--color-white);
-						&-item{
-							color: var(--color-white);
-						}
-					}
-				}
-			}
 		}
+	
 		/* states */
 		&[disabled]{
 			opacity: .2;

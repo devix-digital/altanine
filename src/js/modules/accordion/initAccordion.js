@@ -65,7 +65,7 @@ export const initAccordionCore = () => {
 				accordionHeader.addEventListener('click', () => {
 					const activeAttr = accordionHeader.parentElement.getAttribute('data-core');
 					const dataCoreImage = document.querySelector("[data-core-image='"+activeAttr+"'");
-					var elems = document.querySelectorAll(".core-image");
+					var elems = document.querySelectorAll('.section-banner');
 
 					[].forEach.call(elems, function(el) {
 						el.classList.remove("is-active");

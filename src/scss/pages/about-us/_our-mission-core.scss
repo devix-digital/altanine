@@ -1,113 +1,133 @@
 .our-mission-core{
   background-color: var(--color-gray-200);
-  padding: 64rem 0 9rem;
-  margin: 32rem 0 0;
+  padding: 64rem 0;
+  margin-top: 36rem;
   border-radius: 14px;
   background-image: url('../../../img/home/enhancements-abstract.svg');
   background-size: cover;
   background-position: center;
-  .section-title{
-    margin-bottom: 120rem;
+  
     @include maxWidth($sm){
-      margin-bottom: 12rem;
-      .d-md-none{
-        margin-bottom: 40rem;
-      }
+      margin-top: 48rem;
+      padding: 80rem 0;
     }
-
-  }
-  @include maxWidth($sm){
-    .container{
-      .row{
-        flex-direction: column-reverse;
-      }
+  
+    .section-title{
+      margin-bottom: 95rem;
     }
-  }
 }
+
 .mission{
   &__core {
     &-item{
-      margin-bottom: 24rem;
-      padding-bottom: 24rem;
-      border-bottom: 1rem solid var(--color-gray-300);
-      @include maxWidth($sm){
-        margin-bottom: 12rem;
-        padding-bottom: 12rem;
-      }
-      &.is-active{
-        .mission__core-desc{
-          opacity: 1;
-          position: relative;
-          visibility: visible;
-          z-index: 1;
+      padding: 26rem 0 23rem;
+      position: relative;
+      
+        &:before,
+        &:after{
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 1rem;
+          background-color: var(--color-gray-300);
+          pointer-events: none;
         }
-        .mission__core-title{
-          h4, .h4{
+      
+        &:after{
+          display: none;
+        }
+      
+        &:nth-child(1){
+          &:after{
+            display: block;
+            top: 0;
+            bottom: auto;
+          }
+        }
+      
+        @include maxWidth($sm){
+          padding: 18rem 0 15rem;
+        }
+      
+        &.is-active{
+          .mission__core-title{
             color: var(--color-black);
           }
         }
-      }
     }
     &-title{
-      cursor: pointer;
-      h4, .h4{
-        color: var(--color-gray-400);
-        margin-bottom: 16rem;
-      }
+      color: var(--color-gray-400);
+      transition: color var(--transition-duration) var(--transition-easing);
+      
+        @include hover($md){
+          &:hover{
+            cursor: pointer;
+          }
+        }
     }
+    
     &-desc{
-      opacity: 0;
-      position: absolute;
-      visibility: hidden;
-      z-index: -1;
-      transition: all ease 300ms;
+      height: 0;
+      overflow: hidden;
+      color: var(--color-gray-700);
+      
+        p{
+          margin-top: 15rem;
+          
+            @include maxWidth($sm){
+              margin-top: 12rem;
+            }
+        }
     }
     &-media{
       position: relative;
-      width: 100%;
-      height: 100%;
-      @include maxWidth($sm){
-        height: 230rem;
-      }
-      img{
-        position: absolute;
-        z-index: 0;
-        width: 100%;
-        max-width: 383rem;
+      width: 382rem;
+      height: 252rem;
+      margin: 51rem 0 0 auto;
+      
         @include maxWidth($sm){
-
-          max-width: 190rem;
+          width: 185rem;
+          height: 122rem;
+          margin: 37rem auto 73rem;
+          transform: translateX(7rem);
         }
-        &:nth-child(1){
+      
+        .section-banner{
+          position: absolute;
+          top: 0;
           left: 0;
-          bottom: 55rem;
-          z-index: 2;
-          @include maxWidth($sm){
-            bottom: 0rem;
-          }
+          width: 100%;
+          height: 100%;
+          border-radius: 8px;
+          
+            &:nth-child(2){
+              top: -67rem;
+              left: -55rem;
+              z-index: 1;
+              
+                @include maxWidth($sm){
+                  top: -33rem;
+                  left: -27rem;
+                }
+            }
+          
+            &:nth-child(1){
+              top: 70rem;
+              left: -146rem;
+              z-index: 2;
+              
+                @include maxWidth($sm){
+                  top: 33rem;
+                  left: -71rem;
+                }
+            }
+          
+            &.is-active{
+              z-index: 3;
+            }
         }
-        &:nth-child(2){
-          left: 34rem;
-          right: 0;
-          z-index: 1;
-          margin: 0 auto;
-          bottom: 193rem;
-          @include maxWidth($sm){
-            bottom: 83rem;
-          }
-        }
-        &:nth-child(3){
-          left: auto;
-          right: 0;
-          bottom: 125rem;
-          @include maxWidth($sm){
-            bottom: 35rem;
-          }
-        }
-        &.is-active{
-          z-index: 3;
-        }
-      }
     }
   }
 }
