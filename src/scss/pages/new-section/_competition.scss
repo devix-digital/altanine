@@ -1,5 +1,8 @@
 .competition{
 	padding: 56rem 0;
+	@include maxWidth($sm){
+		padding: 42rem 0 24rem;
+	}
 	&-wrap{
 		margin-top: 63rem;
 	}
@@ -10,10 +13,17 @@
 		padding-bottom: 16rem;
 		margin-bottom: 16rem;
 		border-bottom: 1px solid rgba(229, 231, 232, 6);
+		@include maxWidth($sm){
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+		}
 		&:first-of-type{
 			padding-bottom: 0;
 			margin-bottom: 33rem;
 			border-bottom: 0;
+
 			@include maxWidth($sm){
 				display: none;
 			}
@@ -29,6 +39,10 @@
 			align-items: center;
 			font: var(--font-body-s);
 			color: var(--color-gray-700);
+			@include maxWidth($sm){
+				justify-content: center;
+				margin-bottom: 8rem;
+			}
 		}
 		&-icon{
 			//width: 40rem;
@@ -38,10 +52,16 @@
 		}
 		&-logo{
 			max-width: 115rem;
+			@include maxWidth($sm){
+				margin-bottom: 8rem;
+			}
 		}
 		&-text{
 			width: 100%;
 			max-width: 304rem;
+			@include maxWidth($sm){
+				margin-bottom: 12rem;
+			}
 			h4{
 				color: var(--color-gray-700);
 			}
@@ -85,6 +105,7 @@
 				display: none;
 				@include maxWidth($sm){
 					display: block;
+					margin-bottom: 8rem;
 				}
 			}
 		}

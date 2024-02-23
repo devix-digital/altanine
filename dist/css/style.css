@@ -3678,6 +3678,11 @@ svg {
   margin-top: -8rem;
 }
 
+.about__desc h2 i {
+  font-style: normal;
+  color: var(--color-gray-600);
+}
+
 .about__desc b {
   margin-bottom: 34rem;
   display: block;
@@ -3701,6 +3706,28 @@ svg {
   max-width: 420rem;
 }
 
+.about__desc ul {
+  margin: 24rem 0;
+}
+
+.about__desc ul li {
+  position: relative;
+  margin-bottom: 8rem;
+  color: var(--color-black);
+  padding-left: 24rem;
+}
+
+.about__desc ul li:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 8rem;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  background: var(--color-primary-gradient);
+}
+
 .about.about-page {
   padding: 144rem 0 60rem;
   margin-bottom: 0;
@@ -3721,6 +3748,45 @@ svg {
 
 .about.about-page .about__desc p:last-of-type {
   margin-bottom: 7rem;
+}
+
+.about-list {
+  display: flex;
+  -moz-column-gap: 32rem;
+       column-gap: 32rem;
+  flex-wrap: wrap;
+  margin-bottom: 40rem;
+}
+
+.about-list-item {
+  max-width: 192rem;
+  margin-bottom: 24rem;
+}
+
+.about-list-title {
+  font: var(--font-body-l);
+  color: var(--color-black);
+  margin-bottom: 8rem;
+  padding-left: 34rem;
+  position: relative;
+  display: block;
+}
+
+.about-list-title:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("data:image/svg+xml,%3Csvg width='22' height='23' viewBox='0 0 22 23' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='11' cy='11.5' r='11' fill='url(%23paint0_linear_15218_20072)'/%3E%3Cpath d='M10.0015 16.5V6.5H11.9911V16.5H10.0015ZM6 12.4911V10.5015H16V12.4911H6Z' fill='white'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_15218_20072' x1='22' y1='22.5' x2='-4.40226' y2='9.31589' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%2300EFD1'/%3E%3Cstop offset='1' stop-color='%2300ACEA'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
+  width: 22rem;
+  height: 23rem;
+}
+
+.about-list-text {
+  font: var(--font-body-m);
+  color: var(--color-gray-700);
 }
 
 .team {
@@ -5209,6 +5275,93 @@ svg {
 
 .market.market-content + .enhancements-still .enhancements-sticky .section-description {
   max-width: 424rem;
+}
+
+.market.market-investor {
+  padding: 48rem 0 65rem;
+  overflow: hidden;
+}
+
+.market.market-investor .market-data {
+  height: 750rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  z-index: 2;
+  position: relative;
+}
+
+.market.market-investor .market-data:after {
+  position: absolute;
+  content: "";
+  border-radius: 50%;
+  width: 824rem;
+  height: 824rem;
+  right: -60rem;
+  bottom: -180rem;
+  z-index: -1;
+  border: 2rem solid rgba(255, 255, 255, 0.72);
+  background-color: var(--color-gray-200);
+}
+
+.market.market-investor .market-data-item {
+  border-radius: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  border: 2rem transparent solid;
+  position: sticky;
+}
+
+.market.market-investor .market-data-item:nth-child(1) {
+  width: 416rem;
+  height: 416rem;
+  border-color: transparent;
+  padding: 56rem 64rem;
+  top: 88rem;
+  background: transparent;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 0 0 110rem;
+}
+
+.market.market-investor .market-data-icon {
+  margin-bottom: 16rem;
+}
+
+.market.market-investor .market-data-desc {
+  max-width: 260rem;
+  margin-bottom: 16rem;
+  font: var(--font-h5);
+  color: var(--color-gray-600);
+}
+
+.market.market-investor .market-data-number {
+  font: var(--font-h3);
+  color: var(--color-black);
+}
+
+.market.market-investor .market-sticky {
+  height: auto;
+  padding-top: 0;
+}
+
+.market-content-icon {
+  display: block;
+  margin: 55rem 0 24rem;
+}
+
+.market-content-title {
+  color: var(--color-gray-700);
+  margin-bottom: 8rem;
+  font: var(--font-body-l);
+}
+
+.market-content-desc {
+  font: var(--font-body-r);
+  color: var(--color-gray-600);
 }
 
 .market-content-icon {
@@ -9625,7 +9778,7 @@ svg {
   .benefits-card {
     padding: 26rem;
     margin: 24rem 0 0;
-    min-height: 286px;
+    min-height: 286rem;
     height: auto;
   }
 
@@ -9784,6 +9937,10 @@ svg {
 
   .about__desc p {
     margin-bottom: 8rem;
+  }
+
+  .about.about-page {
+    padding: 42rem 0 60rem;
   }
 
   .team {
@@ -10458,6 +10615,41 @@ svg {
     width: 110rem;
   }
 
+  .market.market-investor {
+    padding: 32rem 0 32rem;
+  }
+
+  .market.market-investor .market-data:after {
+    width: 354rem;
+    height: 354rem;
+    right: -60rem;
+    bottom: -20px;
+  }
+
+  .market.market-investor .market-data {
+    padding-top: 40rem;
+    height: auto;
+  }
+
+  .market.market-investor .market-data-item:nth-child(1) {
+    padding: 40rem;
+    width: 312rem;
+    height: 312rem;
+    margin: 0 auto;
+  }
+
+  .market.market-investor .market-data-desc {
+    font: var(--font-h5-mobile);
+  }
+
+  .market.market-investor .market-data-number {
+    font: var(--font-h3-mobile);
+  }
+
+  .market-content-icon {
+    margin: 24rem 0;
+  }
+
   .market-content-icon {
     margin: 24rem 0;
   }
@@ -10522,12 +10714,37 @@ svg {
     top: 19rem;
   }
 
+  .competition {
+    padding: 42rem 0 24rem;
+  }
+
+  .competition-item {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
   .competition-item:first-of-type {
     display: none;
   }
 
+  .competition-item-title {
+    justify-content: center;
+    margin-bottom: 8rem;
+  }
+
+  .competition-item-logo {
+    margin-bottom: 8rem;
+  }
+
+  .competition-item-text {
+    margin-bottom: 12rem;
+  }
+
   .competition-item-text span {
     display: block;
+    margin-bottom: 8rem;
   }
 
   .property {
