@@ -10714,20 +10714,18 @@ svg {
     padding: 42rem 0 24rem;
   }
 
-  .competition-item {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  .competition-wrap {
+    width: 100%;
+    overflow: auto;
   }
 
-  .competition-item:first-of-type {
-    display: none;
+  .competition-item {
+    width: 600rem;
+    white-space: nowrap;
   }
 
   .competition-item-title {
-    justify-content: center;
-    margin-bottom: 8rem;
+    width: 150rem;
   }
 
   .competition-item-logo {
@@ -10735,12 +10733,7 @@ svg {
   }
 
   .competition-item-text {
-    margin-bottom: 12rem;
-  }
-
-  .competition-item-text span {
-    display: block;
-    margin-bottom: 8rem;
+    width: 200rem;
   }
 
   .property {

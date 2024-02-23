@@ -5,6 +5,10 @@
 	}
 	&-wrap{
 		margin-top: 63rem;
+		@include maxWidth($sm){
+			width: 100%;
+			overflow: auto;
+		}
 	}
 	&-item{
 		display: flex;
@@ -14,19 +18,13 @@
 		margin-bottom: 16rem;
 		border-bottom: 1px solid rgba(229, 231, 232, 6);
 		@include maxWidth($sm){
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			text-align: center;
+			width: 600rem;
+			white-space: nowrap;
 		}
 		&:first-of-type{
 			padding-bottom: 0;
 			margin-bottom: 33rem;
 			border-bottom: 0;
-
-			@include maxWidth($sm){
-				display: none;
-			}
 			.competition-item-text{
 				color: var(--color-black);
 				font: var(--font-body-l);
@@ -40,8 +38,7 @@
 			font: var(--font-body-s);
 			color: var(--color-gray-700);
 			@include maxWidth($sm){
-				justify-content: center;
-				margin-bottom: 8rem;
+				width: 150rem;
 			}
 		}
 		&-icon{
@@ -60,7 +57,7 @@
 			width: 100%;
 			max-width: 304rem;
 			@include maxWidth($sm){
-				margin-bottom: 12rem;
+				width: 200rem;
 			}
 			h4{
 				color: var(--color-gray-700);
@@ -103,10 +100,6 @@
 			}
 			span{
 				display: none;
-				@include maxWidth($sm){
-					display: block;
-					margin-bottom: 8rem;
-				}
 			}
 		}
 	}
