@@ -1,16 +1,25 @@
 import Highway from '@dogstudio/highway';
 import Fade from './transitions/fade.js';
-import HomeRenderer from './renderers/home.js';
-import AboutRenderer from './renderers/about.js';
-import BlogRenderer from './renderers/blog.js';
+import {updateScroll} from '../common/scroll.js';
+import DefaultRenderer from './renderers/default.js';
+import {toggleNav} from '../modules/nav/toggleNav.js';
+import {initClock} from '../common/initClock.js';
 
 export const router = new Highway.Core({
 	renderers: {
-		home: HomeRenderer,
-		about: AboutRenderer,
-		blog: BlogRenderer,
+		default: DefaultRenderer,
 	},
   transitions: {
     default: Fade,
   },
-})
+});
+
+router.on('NAVIGATE_IN', () => {
+	updateScroll();
+	console.log('NAVIGATE_IN');
+});
+
+router.on('NAVIGATE_OUT', () => {
+	toggleNav(false);
+	console.log('NAVIGATE_OUT')
+});

@@ -24,24 +24,26 @@
 <body>
 <main class="wrapper" id="wrapper">
 	<div class="preloader" id="preloader"></div>
-	@@include('html/header.html', {})
+	@@include('html/components/header.html', {})
 	<div data-router-wrapper>
-		<div data-router-view="home">
+		<div data-router-view="default">
 			@@include('html/product/hero.html', {})
-			@@include('html/product/about.html', {})
+<!--			@@include('html/product/about.html', {})-->
 			@@include('html/product/products.html', {})
 			@@include('html/product/enhancements.html', {})
-			@@include('html/product/investigations.html', {})
+			@@include('html/product/enhancements-transparent.html', {})
 			@@include('html/product/enhancements-dark.html', {})
-
+			@@include('html/product/benefits.html', {})
 			<div class="container">
 				<hr class="hr"/>
 			</div>
-			@@include('html/product/faq.html', {})
-			@@include('html/product/content.html', {})
+			@@include('html/home/property.html', {})
+			@@include('html/components/content-2.html', {})
 		</div>
 	</div>
-	@@include('html/footer.html', {})
+	@@include('html/components/footer.html', {})
+	@@include('html/components/modal-investor.html', {})
+	@@include('html/components/modal-thanks.html', {})
 </main>
 <script src="js/app.min.js"></script>
 </body>

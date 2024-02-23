@@ -1,24 +1,40 @@
 .hero-blog-details{
-  padding: 207rem 0 0;
-  background-color: var(--color-gray-200);
-  border-radius: 12px;
-  pointer-events: none;
-  overflow: hidden;
-  .post-time{
-    position: relative;
-    top: 0;
-    left: 0;
-    display: inline-block;
-    margin-bottom: 16rem;
-  }
-  .hero__blog-title{
-    margin-bottom: 24rem;
-  }
-  .post-info-description{
-    margin-bottom: 64rem;
-  }
-  .post-thumbnail{
-    margin-bottom: 0;
-    height: 600rem;
-  }
+	padding: 200rem 0 0;
+	background-color: var(--color-gray-200);
+	border-radius: 14px 14px 8px 8px;
+	overflow: hidden;
+	
+		@include maxWidth($sm){
+			padding: 176rem 0 0;
+		}
+	
+		.post-time{
+			position: relative;
+			top: 0;
+			left: 0;
+			display: inline-block;
+		}
+	
+		.hero{
+				&-description{
+					margin: 23rem 0;
+					max-width: 80%;
+					
+						@include maxWidth($sm){
+							margin: 17rem 0;
+							max-width: 90%;
+						}
+				}
+		}
+	
+		.section-banner{
+			border-radius: 8px;
+			margin-top: 41rem;
+			height: 600rem;
+			
+				@include maxWidth($sm){
+					margin-top: 24rem;
+					height: 370rem;
+				}
+		}
 }

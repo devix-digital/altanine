@@ -36,11 +36,20 @@ h4,.h4 {
 
 h5,.h5 {
   font: var(--font-h5);
-  letter-spacing: -0.024em;
+  letter-spacing: -0.01em;
 	
 	  @include maxWidth($sm){
       font: var(--font-h5-mobile);
     }
+}
+
+h6, .h6{
+	font: var(--font-body-l);
+	letter-spacing: -0.01em;
+	
+		@include maxWidth($sm){
+			font: var(--font-body-l-mobile);
+		}
 }
 
 p{
@@ -49,4 +58,10 @@ p{
 
 strong, b{
 	font-weight: 700;
+}
+
+.h1, .h2, .h3, .h4, .h5 {
+		i{
+			font-style: normal;
+		}
 }

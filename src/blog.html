@@ -24,9 +24,9 @@
 <body>
 <main class="wrapper" id="wrapper">
 	<div class="preloader" id="preloader"></div>
-	@@include('html/header.html', {})
+	@@include('html/components/header.html', {})
 	<div data-router-wrapper>
-		<div data-router-view="blog">
+		<div data-router-view="default">
 			@@include('html/blog/hero.html', {})
 			@@include('html/blog/blog.html', {})
 			<div class="container">
@@ -37,10 +37,12 @@
 				<hr class="hr"/>
 			</div>
 			@@include('html/blog/blog-third.html', {})
-			@@include('html/blog/join.html', {})
+			@@include('html/components/join.html', {})
 		</div>
 	</div>
-	@@include('html/footer.html', {})
+	@@include('html/components/footer.html', {})
+	@@include('html/components/modal-investor.html', {})
+	@@include('html/components/modal-thanks.html', {})
 </main>
 <script src="js/app.min.js"></script>
 </body>

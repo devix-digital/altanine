@@ -24,9 +24,9 @@
 <body>
 <main class="wrapper" id="wrapper">
 	<div class="preloader" id="preloader"></div>
-	@@include('html/header.html', {})
+	@@include('html/components/header.html', {})
 	<div data-router-wrapper>
-		<div data-router-view="about">
+		<div data-router-view="default">
 			@@include('html/about-us/hero.html', {})
 			@@include('html/about-us/about.html', {})
 			<div class="container">
@@ -35,10 +35,12 @@
 			@@include('html/about-us/our-mission.html', {})
 			@@include('html/about-us/our-mission-core.html', {})
 			@@include('html/about-us/team.html', {})
-			@@include('html/home/content.html', {})
+			@@include('html/components/content-2.html', {})
 		</div>
 	</div>
-	@@include('html/footer.html', {})
+	@@include('html/components/footer.html', {})
+	@@include('html/components/modal-investor.html', {})
+	@@include('html/components/modal-thanks.html', {})
 </main>
 <script src="js/app.min.js"></script>
 </body>

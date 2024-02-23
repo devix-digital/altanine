@@ -1,0 +1,124 @@
+.field{
+	display: block;
+	position: relative;
+
+		&-label{
+			font: var(--font-body-s);
+			font-size: 10rem;
+			font-weight: 500;
+			text-transform: uppercase;
+			color: var(--color-gray-400);
+			position: absolute;
+			top: 8rem;
+			left: 16rem;
+			display: inline-block;
+			letter-spacing: 0.04em;
+			pointer-events: none;
+		}
+	
+		&-item{
+			height: 63rem;
+			width: 100%;
+			font: var(--font-body-m);
+			color: var(--color-black);
+			padding: 30rem 16rem 16rem;
+			border: 1rem var(--color-gray-300) solid;
+			border-radius: 8px;
+			background-color: transparent;
+			transition: border-color var(--transition-duration) var(--transition-easing);
+			
+				&:hover,
+				&:focus{
+					border-color: var(--color-gray-600);
+				}
+				
+				@include maxWidth($sm){
+					font: var(--font-body-m-mobile);
+					padding: 27rem 14rem 16rem;
+				}
+			
+				&::-webkit-input-placeholder {
+					color: var(--color-black);
+				}
+				&::-moz-placeholder {
+					color: var(--color-black);
+				}
+				&:-ms-input-placeholder {
+					color: var(--color-black);
+				}
+				&:-moz-placeholder {
+					color: var(--color-black);
+				}
+		}
+	
+		textarea.field-item{
+			resize: vertical;
+			min-height: 63rem;
+			height: 150rem;
+			
+				&::-webkit-resizer{
+					display: none;
+				}
+		}
+	
+		&-message{
+			position: absolute;
+			font: var(--font-body-s);
+			font-size: 10rem;
+			font-weight: 500;
+			letter-spacing: 0.04em;
+			top: 8rem;
+			right: 16rem;
+			text-transform: uppercase;
+			pointer-events: none;
+			display: none;
+			
+				&.__success{
+					color: var(--color-success);
+				}
+			
+				&.__error{
+					color: var(--color-error);
+				}
+		}
+	
+		&-resize{
+			position: absolute;
+			width: 17rem;
+			height: 16rem;
+			bottom: 10rem;
+			right: 2rem;
+			background-image: url(../img/icons/resize.svg);
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position: center;
+			pointer-events: none;
+		}
+	
+		/* states */
+		&.__success{
+			.field{
+					&-item{
+						border-color: var(--color-success);
+					}
+					&-message{
+						&.__success{
+							display: inline-block;
+						}
+					}
+			}
+		}
+		
+		&.__error{
+			.field{
+					&-item{
+						border-color: var(--color-error);
+					}
+					&-message{
+						&.__error{
+							display: inline-block;
+						}
+					}
+			}
+		}
+}

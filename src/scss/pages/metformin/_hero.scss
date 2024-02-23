@@ -1,0 +1,18 @@
+.hero-metformin{
+	
+		.bread-crumbs{
+			li{
+				&:last-child{
+					color: var(--color-gray-300);
+				}
+			}
+		}
+	
+		& + .faq{
+			padding-top: 132rem;
+			
+				@include maxWidth($sm){
+					padding: 80rem 0 23rem;
+				}
+		}
+}

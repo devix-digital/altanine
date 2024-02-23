@@ -8,3 +8,7 @@ function raf(time) {
 }
 
 requestAnimationFrame(raf);
+
+export const updateScroll = () => {
+	lenis.resize();
+}

@@ -1,5 +1,16 @@
 .hero-home{
+		@include minWidth($sm + 1){
+			margin-bottom: 72rem;
+		}
 	
+		.bread-crumbs{
+			li{
+				span{
+					color: var(--color-gray-300);
+				}
+			}
+		}
+		
 		.users{
 			position: absolute;
 			top: 145rem;

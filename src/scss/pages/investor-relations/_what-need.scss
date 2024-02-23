@@ -7,20 +7,16 @@
   background-size: cover;
   background-position: center;
   .section{
-
     &-description{
       max-width: 415rem;
-
       @include maxWidth($sm){
         max-width: 90%;
       }
     }
-
     &-banner{
       width: 240rem;
       height: 280rem;
       margin: 142rem 0 0 64rem;
-
       @include maxWidth($sm){
         margin: 24rem 0;
         width: 100%;

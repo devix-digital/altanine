@@ -109,4 +109,44 @@
 						}
 				}
 		}
+	
+		&-md{
+			
+				.accordion{
+						&-item{
+							padding: 24rem 0 23rem;
+							margin-bottom: 0;
+							
+								&:nth-child(1){
+									border-top: 1rem var(--color-gray-400) solid;
+								}
+							
+								&-header{
+									padding: 0;
+								}
+							
+								&-title{
+									@extend .h5;
+									color: var(--color-gray-400);
+								}
+							
+								&-description{
+									margin-bottom: 0;
+									padding-top: 12rem;
+								}
+							
+								&-body{
+									padding-right: 0;
+								}
+							
+								&.is-active{
+										.accordion-item-title{
+											color: var(--color-black);
+											-webkit-text-fill-color: var(--color-black);
+											background: none;
+										}
+								}
+						}
+				}
+		}
 }

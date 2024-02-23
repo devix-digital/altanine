@@ -1,0 +1,75 @@
+.delivery{
+	padding: 75rem 0;
+	
+		@include maxWidth($sm){
+			padding: 40rem 0;
+		}
+	
+		&-cards{
+			display: flex;
+			align-items: flex-start;
+			padding-top: 96rem;
+			column-gap: 32rem;
+			height: 100%;
+			
+				@include maxWidth($sm){
+					padding-top: 10rem;
+					flex-direction: column;
+					column-gap: 0;
+				}
+		}
+		
+		&-card{
+			padding: 32rem 0;
+			
+				@include maxWidth($sm){
+					padding: 16rem 0;
+				}
+			
+				&-icon{
+					@extend .benefits-card-icon;
+					position: relative;
+					top: 0;
+					left: 0;
+					
+						@include maxWidth($sm){
+							margin: 0;
+							width: 56rem;
+							height: 56rem;
+						}
+					
+						img{
+							@include imageCover(center);
+						}
+				}
+			
+				&-title{
+					font: var(--font-body-l);
+					color: var(--color-gray-700);
+					margin: 16rem 0 15rem;
+					
+						@include maxWidth($sm){
+							font: var(--font-body-l-mobile);
+							margin: 10rem 0 13rem;
+						}
+				}
+			
+				&-description{
+					color: var(--color-gray-600);
+					max-width: 360rem;
+				}
+		}
+	
+		.section{
+			
+				&-banner{
+					margin: 48rem 0 46rem -56rem;
+					height: 373rem;
+					
+						@include maxWidth($sm){
+							height: 333rem;
+							margin: 21rem 0 16rem;
+						}
+				}
+		}
+}

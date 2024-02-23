@@ -25,12 +25,13 @@ export const initHover = () => {
 			
 			if (bg) {
 				button.addEventListener('mousemove', ({offsetY, offsetX}) => {
+					const distance = button.getBoundingClientRect().width;
 					animateBackground(bg, {
-						top: offsetY - 150,
-						left: offsetX - 150,
-						width: 300,
-						height: 300,
-						scale: 1.75,
+						top: offsetY - (distance / 2),
+						left: offsetX - (distance / 2),
+						width: distance,
+						height: distance,
+						scale: 2,
 					});
 				});
 			}

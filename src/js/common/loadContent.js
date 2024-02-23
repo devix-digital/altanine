@@ -25,55 +25,64 @@ export const loadContent = () => {
 			});
 		
 		/* banner */
-		Tween.fromTo(heroBanner,
-			{
-				y: 300,
-			},
-			{
-				y: 0,
-				duration: transition.skew.duration,
-				ease: transition.skew.ease,
-			});
+		if (heroBanner) {
+			Tween.fromTo(heroBanner,
+				{
+					y: 300,
+				},
+				{
+					y: 0,
+					duration: transition.skew.duration,
+					ease: transition.skew.ease,
+				});
+		}
 		
 		/* header */
-		Tween.fromTo(header,
-			{
-				yPercent: -100,
-			},
-			{
-				yPercent: 0,
-				delay: 0.3,
-				duration: transition.skew.duration,
-				ease: transition.skew.ease,
-				onComplete: () => {
-					showSplitWords();
-				}
-			});
+		if (header) {
+			Tween.fromTo(header,
+				{
+					yPercent: -100,
+				},
+				{
+					yPercent: 0,
+					delay: 0.3,
+					duration: transition.skew.duration,
+					ease: transition.skew.ease,
+					onComplete: () => {
+						showSplitWords();
+					}
+				});
+		}
 	} else {
 		showSplitWords();
 	}
 	
 	/* content */
-	Tween.fromTo(content,
-		{
-			opacity: 0,
-			y: 50,
-		}, {
-			opacity: 1,
-			y: 0,
-			delay: 0.8,
-			duration: transition.skew.duration,
-			ease: transition.skew.ease,
-		});
+	if (content.length) {
+		Tween.fromTo(content,
+			{
+				opacity: 0,
+				y: 50,
+			}, {
+				opacity: 1,
+				y: 0,
+				delay: 0.8,
+				stagger: 0.1,
+				duration: transition.skew.duration,
+				ease: transition.skew.ease,
+			});
+	}
 	
 	/* progress */
-	Tween.fromTo(progress,
-		{
-			opacity: 0,
-		}, {
-			opacity: 1,
-			delay: 1,
-			duration: transition.skew.duration,
-			ease: transition.skew.ease,
-		});
+	if (progress) {
+		Tween.fromTo(progress,
+			{
+				opacity: 0,
+			}, {
+				opacity: 1,
+				delay: 1,
+				duration: transition.skew.duration,
+				ease: transition.skew.ease,
+			});
+	}
 }

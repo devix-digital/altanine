@@ -28,7 +28,7 @@
   <div class="header-panel">
 	  <div class="header-panel-logo">
 		  <a href="/" class="logo">
-			  <img src="../img/logo.svg" alt="Altanine"/>
+			  <img src="../../img/logo.svg" alt="Altanine"/>
 		  </a>
 		  <div class="header-contacts">
 			  <a href="tel:+66 666 66 66 666" class="header-contacts-item">+66 666 66 66 666</a>
@@ -38,18 +38,19 @@
 	  <div class="header-panel-nav">
 		  <nav>
 			  <ul>
-				  <li><a href="about.html">About us</a></li>
-				  <li><a href="#">Metformin</a></li>
-				  <li><a href="#">Products</a></li>
-				  <li><a href="#">Investor relations</a></li>
-				  <li><a href="#">Blog</a></li>
+				  <li><a href="about-us.html">About us</a></li>
+				  <li><a href="metformin.html">Metformin</a></li>
+				  <li><a href="product.html">Products</a></li>
+				  <li><a href="investor.html">Investor relations</a></li>
+				  <li><a href="blog.html">Blog</a></li>
+				  <li><a href="new-section.html">new section</a></li>
 			  </ul>
 		  </nav>
 		  <div class="header-contacts">
 			  <a href="tel:+66 666 66 66 666" class="header-contacts-item">+66 666 66 66 666</a>
 			  <a href="mailto:info@altanine.com" class="header-contacts-item">info@altanine.com</a>
 		  </div>
-		  <a href="#" class="btn btn-gradient">
+		  <a href="contact-us.html" class="btn btn-gradient">
 			  <span class="btn-bg"></span>
 			  <span class="btn-labels">
 					<span class="btn-labels-item">Contact us</span>
@@ -59,7 +60,7 @@
 		  </a>
 	  </div>
 	  <div class="header-panel-action">
-		  <a href="#" class="btn btn-gradient">
+		  <a href="contact-us.html" class="btn btn-gradient">
 			  <span class="btn-bg"></span>
 			  <span class="btn-labels">
 					<span class="btn-labels-item">Contact us</span>
@@ -78,28 +79,23 @@
   </div>
 </header>
 	<div data-router-wrapper>
-		<div data-router-view="home">
-			<section class="section hero hero-home">
+		<div data-router-view="default">
+			<section class="section hero hero-about">
 	<div class="bread-crumbs">
 		<div class="container">
 			<ul>
 				<li><a href="#">Home</a></li>
-				<li>
-					About Us
-				</li>
+				<li><span>About Us</span></li>
 			</ul>
 		</div>
 	</div>
 	<div class="hero-banner" id="hero-banner">
-		<div class="full-carousel splide" id="hero-carousel">
-			<div class="splide__track">
-				<div class="splide__list">
-					<div class="splide__slide full-carousel-slide">
-						<video class="video" autoplay loop muted playsinline poster="../../img/about-us/hero-img.png">
-						</video>
-					</div>
-				</div>
-			</div>
+		<div class="hero-banner-item">
+			<picture>
+				<source srcset="../../img/about-us/hero-img.webp" type="image/webp">
+				<source srcset="../../img/about-us/hero-img.jpg" type="image/jpeg">
+				<img src="../../img/about-us/hero-img.jpg">
+			</picture>
 		</div>
 	</div>
 	<div class="hero-content">
@@ -107,29 +103,33 @@
 			<div class="row">
 				<div class="col-md-8">
 					<p class="hero-subtitle font-uppercase color-white" data-load-order="1">About Us</p>
-					<h1 class="hero-title h1" data-split-text>Our Story Unbending, Yet Agile.</h1>
+					<h1 class="hero-title h1" data-split-text>Our Story is Unbending, Yet Agile</h1>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
-			<section class="section about">
+			<section class="section about about-page">
 	<div class="container">
 		<div class="row">
-			<div class="col">
+			<div class="col-12">
 				<p class="font-uppercase color-gradient section-subtitle">Some words about the company</p>
-				<h3 class="h3 section-title">We are a global biopharmaceutical company changing patients’ <i>lives in over 120 countries by finding new and affordable ways to treat diabetes  and other illnesses.</i></h3>
+				<h3 class="h3 section-title">Altanine is a global biopharmaceutical company changing patients’ <i>lives in over 120 countries by finding new and affordable ways to treat diabetes  and other illnesses.</i></h3>
 			</div>
 		</div>
 	</div>
 	<div class="container">
 		<div class="row">
 			<div class="col-md-4">
-				<div class="about__media">
-					<img src="../../img/about-us/about-media.png" alt="about-media">
+				<div class="banner section-banner" data-parallax>
+					<picture>
+						<source srcset="../../img/home/enhancements-2.webp" type="image/webp">
+						<source srcset="../../img/home/enhancements-2.jpg" type="image/jpeg">
+						<img src="../../img/home/enhancements-2.jpg">
+					</picture>
 				</div>
 			</div>
-			<div class="col-md-6">
+			<div class="col-md-5 offset-md-1">
 				<div class="about__desc">
 					<h4>Worldwide, more than half a billion people have diabetes.</h4>
 					<b>
@@ -141,11 +141,20 @@
 					<p>
 						When glucose is not properly managed, it may lead to serious complications, including kidney disease, nerve damage, heart attack and stroke.
 					</p>
+					<br>
+					<p>
+						Diabetes is accelerating at an alarming rate globally. Today, over 475 million people across all age groups and social classes, live with the chronic condition. What is even more worrying is the fact that this mostly goes undetected until it reaches life-threatening proportions. The needs of people with type 2 diabetes continue to evolve over time, and treatment approaches need to reflect that.
+					</p>
+					<b>Our innovative products repurpose a traditional and effective diabetes therapy allowing patients to increase compliance without suffering side effects or related difficulties with swallowing large pills.</b>
 				</div>
 			</div>
-			<div class="col-md-2">
-				<div class="about__media-small">
-					<img src="../../img/about-us/about-media-s.png" alt="about-media">
+			<div class="col-md-2 d-none d-md-block">
+				<div class="section-banner section-banner-small" data-parallax>
+					<picture>
+						<source srcset="../../img/about-us/about-media-s.webp" type="image/webp">
+						<source srcset="../../img/about-us/about-media-s.jpg" type="image/jpeg">
+						<img src="../../img/about-us/about-media-s.jpg">
+					</picture>
 				</div>
 			</div>
 		</div>
@@ -172,8 +181,8 @@
 					<div class="benefits-card-icon">
 						<img src="../../img/home/benefits-1.svg" alt="Easier Administration."/>
 					</div>
-					<p class="benefits-card-title">Easier Administration.</p>
-					<p class="benefits-card-description">Our innovative solution makes taking medication a breeze, ensuring a hassle-free experience for users.</p>
+					<p class="benefits-card-title">Company Mission Innovate Drug Delivery: </p>
+					<p class="benefits-card-description">Our mission is to revolutionize the pharmaceutical market by developing advanced delivery mechanisms for Metformin, aimed at enhancing efficacy and minimizing side effects for diabetes patients.</p>
 				</div>
 			</div>
 			<div class="col-md-4">
@@ -183,8 +192,8 @@
 					<div class="benefits-card-icon">
 						<img src="../../img/home/benefits-2.svg" alt="Reduced Side Effects."/>
 					</div>
-					<p class="benefits-card-title">Reduced Side Effects.</p>
-					<p class="benefits-card-description">Experience the benefits of Metformin with fewer associated side effects, enhancing overall well-being.</p>
+					<p class="benefits-card-title">Enhance Patient Experience: </p>
+					<p class="benefits-card-description">We are committed to simplifying medication routines for our customers by offering products that are easier to administer, aiming to improve adherence and outcomes in diabetes management.</p>
 				</div>
 			</div>
 			<div class="col-md-4">
@@ -194,8 +203,8 @@
 					<div class="benefits-card-icon">
 						<img src="../../img/home/benefits-3.svg" alt="Enhanced Efficiency."/>
 					</div>
-					<p class="benefits-card-title">Enhanced Efficiency.</p>
-					<p class="benefits-card-description">Our delivery mechanism optimizes the effectiveness of Metformin, providing superior results compared to traditional options.</p>
+					<p class="benefits-card-title">Global Accessibility:</p>
+					<p class="benefits-card-description">Our goal is to distribute our innovative drugs worldwide, ensuring that patients across the globe have access to safer, more effective, and efficient diabetes treatment options.</p>
 				</div>
 			</div>
 		</div>
@@ -206,49 +215,59 @@
 		<div class="row">
 			<div class="col-md-12">
 				<p class="font-uppercase color-gradient section-subtitle">Our Mission</p>
-				<h2 class="h2 section-title">Our core   <i>values.</i></h2>
-				<p class="d-md-none">We offer enhancements for patients with specific needs and requirements.</p>
+				<h2 class="h2 section-title">Our core <i>values.</i></h2>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-5">
+			<div class="col-md-5 offset-md-2 order-md-2">
+				<div class="mission__core-media">
+					<div class="section-banner" data-core-image="1">
+						<picture>
+							<source srcset="../../img/about-us/mission-core-1.webp" type="image/webp">
+							<source srcset="../../img/about-us/mission-core-1.jpg" type="image/jpeg">
+							<img src="../../img/about-us/mission-core-1.jpg">
+						</picture>
+					</div>
+					<div class="section-banner" data-core-image="2">
+						<picture>
+							<source srcset="../../img/about-us/mission-core-2.webp" type="image/webp">
+							<source srcset="../../img/about-us/mission-core-2.jpg" type="image/jpeg">
+							<img src="../../img/about-us/mission-core-2.jpg">
+						</picture>
+					</div>
+					<div class="section-banner" data-core-image="3">
+						<picture>
+							<source srcset="../../img/about-us/mission-core-3.webp" type="image/webp">
+							<source srcset="../../img/about-us/mission-core-3.jpg" type="image/jpeg">
+							<img src="../../img/about-us/mission-core-3.jpg">
+						</picture>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-5 order-md-1">
 				<div class="mission__core-item" data-core="1">
 					<div class="mission__core-title">
-						<h4>Service</h4>
+						<p class="h4">Key Values Innovation: </p>
 					</div>
 					<div class="mission__core-desc">
-						<p>
-							At Hematogenix, our high-quality science is coupled with an exceptional customer experience. Our expert staff is known for their supportive and professional manner. It is our goal to go above and beyond your expectations to support your success.
-						</p>
+						<p>We prioritize research and development to create products that offer unique benefits, such as reduced side effects and improved ease of use, setting us apart from generic Metformin manufacturers.</p>
 					</div>
 				</div>
 				<div class="mission__core-item" data-core="2">
 					<div class="mission__core-title">
-						<h4>Accessibility</h4>
+						<p class="h4">Safety and Efficacy:</p>
 					</div>
 					<div class="mission__core-desc">
-						<p>
-							At Hematogenix, our high-quality science is coupled with an exceptional customer experience. Our expert staff is known for their supportive and professional manner. It is our goal to go above and beyond your expectations to support your success.
-						</p>
+						<p>Our commitment to producing drugs that are both safe and highly effective is at the core of everything we do. We strive to exceed the industry standards and ensure our customers receive the best possible treatment options.</p>
 					</div>
 				</div>
 				<div class="mission__core-item" data-core="3">
 					<div class="mission__core-title">
-						<h4>Personal</h4>
+						<p class="h4">Customer-Centricity: </p>
 					</div>
 					<div class="mission__core-desc">
-						<p>
-							At Hematogenix, our high-quality science is coupled with an exceptional customer experience. Our expert staff is known for their supportive and professional manner. It is our goal to go above and beyond your expectations to support your success.
-						</p>
+						<p>Understanding the needs and challenges of our customers is fundamental. We aim to build trust and confidence among our customers by providing them with superior drug options that improve their quality of life, making us their preferred choice for diabetes treatment.</p>
 					</div>
-				</div>
-			</div>
-			<div class="col-md-2"></div>
-			<div class="col-md-5">
-				<div class="mission__core-media">
-					<img src="../../img/about-us/mission-core-1.png" alt="media" class="core-image" data-core-image="1">
-					<img src="../../img/about-us/mission-core-2.png" alt="media" class="core-image" data-core-image="2">
-					<img src="../../img/about-us/mission-core-3.png" alt="media" class="core-image" data-core-image="3">
 				</div>
 			</div>
 		</div>
@@ -271,44 +290,60 @@
 				<div class="splide__slide team-carousel-slide">
 					<div class="team__item">
 						<div class="team__item-media">
-							<img src="../../img/about-us/team-1.png" alt="team-1" />
+							<picture>
+								<source srcset="../../img/about-us/team-1.webp" type="image/webp">
+								<source srcset="../../img/about-us/team-1.jpg" type="image/jpeg">
+								<img src="../../img/about-us/team-1.jpg">
+							</picture>
 						</div>
 						<div class="team__item-desc">
-							<div class="team__item-title h4">Dr. Hytham Masri</div>
-							<div class="team__item-text"><p>President & CEO</p></div>
+							<p class="team__item-title h4">Dr. Hytham Masri</p>
+							<p class="team__item-text">President & CEO</p>
 						</div>
 					</div>
 				</div>
 				<div class="splide__slide team-carousel-slide">
 					<div class="team__item">
 						<div class="team__item-media">
-							<img src="../../img/about-us/team-2.png" alt="team2" />
+							<picture>
+								<source srcset="../../img/about-us/team-2.webp" type="image/webp">
+								<source srcset="../../img/about-us/team-2.jpg" type="image/jpeg">
+								<img src="../../img/about-us/team-2.jpg">
+							</picture>
 						</div>
 						<div class="team__item-desc">
-							<div class="team__item-title h4">Mahdy Amine</div>
-							<div class="team__item-text"><p>SVP, General Counsel</p></div>
+							<p class="team__item-title h4">Mahdy Amine</p>
+							<p class="team__item-text">SVP, General Counsel</p>
 						</div>
 					</div>
 				</div>
 				<div class="splide__slide team-carousel-slide">
 					<div class="team__item">
 						<div class="team__item-media">
-							<img src="../../img/about-us/team-3.png" alt="team-3" />
+							<picture>
+								<source srcset="../../img/about-us/team-3.webp" type="image/webp">
+								<source srcset="../../img/about-us/team-3.jpg" type="image/jpeg">
+								<img src="../../img/about-us/team-3.jpg">
+							</picture>
 						</div>
 						<div class="team__item-desc">
-							<div class="team__item-title h4">Nathan Kundtz</div>
-							<div class="team__item-text"><p>Vice President of Global Operations</p></div>
+							<p class="team__item-title h4">Nathan Kundtz</p>
+							<p class="team__item-text">Vice President of Global Operations</p>
 						</div>
 					</div>
 				</div>
 				<div class="splide__slide team-carousel-slide">
 					<div class="team__item">
 						<div class="team__item-media">
-							<img src="../../img/about-us/team-2.png" alt="team-2" />
+							<picture>
+								<source srcset="../../img/about-us/team-2.webp" type="image/webp">
+								<source srcset="../../img/about-us/team-2.jpg" type="image/jpeg">
+								<img src="../../img/about-us/team-2.jpg">
+							</picture>
 						</div>
 						<div class="team__item-desc">
-							<div class="team__item-title h4">Mahdy Amine</div>
-							<div class="team__item-text"><p>SVP, General Counsel</p></div>
+							<p class="team__item-title h4">Mahdy Amine</p>
+							<p class="team__item-text">SVP, General Counsel</p>
 						</div>
 					</div>
 				</div>
@@ -319,13 +354,32 @@
 		<p class="carousel-cursor-label">Drag</p>
 	</div>
 </section>
-			<section class="section content">
+			<section class="section content content-second">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-5">
-				<p class="font-uppercase color-gradient section-subtitle">Content</p>
-				<h3 class="h3 section-title">Take Control of Your <i>Health Today</i></h3>
-				<p class="section-description">Inquire about our innovative <strong>Metformin delivery system</strong> during your next doctor's appointment.</p>
+				<p class="font-uppercase color-gradient section-subtitle">Stay up-to-date </p>
+				<h3 class="h3 section-title">Join our free<i>e-newsletter today</i></h3>
+				<div class="join-box-form">
+					<form>
+						<label class="field">
+							<span class="field-label">And a-mail*</span>
+							<input type="email" placeholder="Your Email" class="field-item">
+							<span class="field-message __success">Success message</span>
+							<span class="field-message __error">Error message</span>
+						</label>
+						<button class="btn btn-gradient btn-md btn-full-width">
+							<span class="btn-bg"></span>
+							<span class="btn-icon"><svg><use xlink:href="img/icons/icons.svg#arrow-right"></use></svg></span>
+							<span class="btn-labels">
+								<span class="btn-labels-item">Subscribe</span>
+								<span class="btn-labels-item">Subscribe</span>
+									<span class="btn-labels-item">Subscribe</span>
+								</span>
+						</button>
+					</form>
+				</div>
+				<p class="content-info"><i class="color-gradient">* </i> Inquire about our innovative Metformin products during your next doctor's appointment. </p>
 			</div>
 		</div>
 		<div class="users show-on-scroll">
@@ -352,8 +406,8 @@
 	<div class="content-banner show-on-scroll">
 		<picture>
 			<source srcset="../../img/home/content-1.webp" type="image/webp">
-			<source srcset="../../img/home/content-1.jpg" type="image/jpeg">
-			<img src="../../img/home/content-1.jpg">
+			<source srcset="../../img/home/content-1.png" type="image/jpeg">
+			<img src="../../img/home/content-1.png">
 		</picture>
 	</div>
 </section>
@@ -361,7 +415,7 @@
 	</div>
 	<footer class="footer">
 	<div class="footer-abstract">
-		<img src="../img/footer-abstract.svg" alt="Alt" />
+		<img src="../../img/footer-abstract.svg" alt="Alt" />
 	</div>
   <div class="container">
 	  <div class="row">
@@ -374,12 +428,12 @@
 			  <div class="footer-nav">
 				  <p class="footer-label">Site map</p>
 				  <ul>
-					  <li><a href="#">About us</a></li>
-					  <li><a href="#">Metformin</a></li>
-					  <li><a href="#">Product</a></li>
-					  <li><a href="#">Investor Relations</a></li>
-					  <li><a href="#">Blog</a></li>
-					  <li><a href="#">Contact us</a></li>
+					  <li><a href="about-us.html">About us</a></li>
+					  <li><a href="metformin.html">Metformin</a></li>
+					  <li><a href="product.html">Product</a></li>
+					  <li><a href="investor.html">Investor Relations</a></li>
+					  <li><a href="blog.html">Blog</a></li>
+					  <li><a href="contact-us.html">Contact us</a></li>
 				  </ul>
 			  </div>
 		  </div>
@@ -438,7 +492,7 @@
 		  <div class="col-md-3 order-md-4">
 			  <div class="footer-logo">
 				  <a href="/" class="logo">
-					  <img src="../img/logo-white.svg" alt="Altanine"/>
+					  <img src="../../img/logo-white.svg" alt="Altanine"/>
 				  </a>
 			  </div>
 		  </div>
@@ -450,7 +504,7 @@
 		  <div class="col-md-3 order-md-3 col-6">
 			  <div class="footer-additional">
 				  <ul>
-					  <li><a href="#">Privacy policy</a></li>
+					  <li><a href="text-template.html">Privacy policy</a></li>
 				  </ul>
 			  </div>
 		  </div>
@@ -458,14 +512,88 @@
 			  <a href="https://www.studiopresto.com/" target="_blank" class="footer-developer">
 				  Made by
 				  <span class="footer-developer-logo">
-					  <img src="../img/developer-logo.svg" alt="Studiopresto" />
-					  <img src="../img/developer-logo-blue.svg" alt="Studiopresto" />
+					  <img src="../../img/developer-logo.svg" alt="Studiopresto" />
+					  <img src="../../img/developer-logo-blue.svg" alt="Studiopresto" />
 				  </span>
 			  </a>
 		  </div>
 	  </div>
   </div>
 </footer>
+	<div class="modal" id="investor-modal">
+	<div class="modal-bg"></div>
+	<div class="modal-close" data-modal-close="#investor-modal"></div>
+	<div class="modal-box" data-lenis-prevent>
+		<div class="modal-box-item">
+			<div class="investor-modal">
+				<div class="modal-close-btn" data-modal-close="#investor-modal">
+					<svg><use xlink:href="img/icons/icons.svg#close"></use></svg>
+				</div>
+				<div class="investor-modal-content">
+					<h5 class="h5">We’d love to hear from you.</h5>
+					<form>
+						<label class="field">
+							<span class="field-label">You should have a name and last name*</span>
+							<input type="email" placeholder="Full name" class="field-item" />
+							<span class="field-message __success">Success message</span>
+							<span class="field-message __error">Error message</span>
+						</label>
+						<label class="field">
+							<span class="field-label">And e-mail*</span>
+							<input type="email" placeholder="You email" class="field-item" />
+							<span class="field-message __success">Success message</span>
+							<span class="field-message __error">Error message</span>
+						</label>
+						<label class="field">
+							<span class="field-label">Now write down message*</span>
+							<span class="field-resize"></span>
+							<textarea placeholder="You message" class="field-item"></textarea>
+							<span class="field-message __success">Success message</span>
+							<span class="field-message __error">Error message</span>
+						</label>
+						<button class="btn btn-gradient btn-md btn-full-width">
+							<span class="btn-bg"></span>
+							<span class="btn-icon"><svg><use xlink:href="img/icons/icons.svg#arrow-right"></use></svg></span>
+							<span class="btn-labels">
+								<span class="btn-labels-item">Become an investor</span>
+								<span class="btn-labels-item">Become an investor</span>
+								<span class="btn-labels-item">Become an investor</span>
+							</span>
+						</button>
+					</form>
+				</div>
+				<div class="investor-modal-thumbnail">
+					<picture>
+						<source srcset="../../img/investor/modal-banner.webp" type="image/webp">
+						<source srcset="../../img/investor/modal-banner.jpg" type="image/jpeg">
+						<img src="../../img/investor/modal-banner.jpg">
+					</picture>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	<div class="modal" id="thanks">
+	<div class="modal-bg"></div>
+	<div class="modal-close" data-modal-close="#thanks"></div>
+	<div class="modal-box" data-lenis-prevent>
+		<div class="modal-box-item">
+			<div class="thanks">
+				<div class="modal-close-btn" data-modal-close="#thanks">
+					<svg><use xlink:href="img/icons/icons.svg#close"></use></svg>
+				</div>
+				<div class="thanks-content">
+					<h4 class="h4 thanks-content-title">Thank You<i>!</i></h4>
+					<p class="thanks-content-subtitle">Your submission has been received!</p>
+					<p class="thanks-content-description">We will reach out to you shortly.</p>
+				</div>
+				<div class="thanks-thumbnail">
+					<img src="../img/logo-mini.svg" alt="Altanine" />
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 </main>
 <script src="js/app.min.js"></script>
 </body>

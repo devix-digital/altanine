@@ -1,0 +1,380 @@
+.market{
+	background-color: var(--color-gray-200);
+	padding: 88rem 0 0;
+	margin-top: 72rem;
+	border-radius: 14px;
+	background-image: none;
+	
+		@include maxWidth($sm){
+			margin-top: 54rem;
+			padding: 80rem 0 50rem;
+		}
+	
+		&-sticky{
+			position: sticky;
+			top: 0;
+			display: flex;
+			flex-direction: column;
+			align-items: stretch;
+			justify-content: center;
+			height: 100svh;
+			padding-top: 60rem;
+				
+				@include maxWidth($sm){
+					height: auto;
+					padding-top: 0;
+				}
+		}
+	
+		&-values{
+			display: flex;
+			position: relative;
+			padding: 8rem 0;
+			column-gap: 32rem;
+			
+				@include maxWidth($sm){
+					padding: 7rem 0;
+					column-gap: 25rem;
+				}
+			
+				&:before{
+					content: '';
+					position: absolute;
+					width: 100%;
+					height: 9rem;
+					background-image: url(../img/metformin/market-arrow.svg);
+					background-repeat: no-repeat;
+					background-size: contain;
+					background-position: left center;
+					left: 0;
+					top: 50%;
+					margin-top: -4rem;
+					pointer-events: none;
+				}
+			
+				&-item{
+					position: relative;
+					display: flex;
+					flex-direction: column;
+					row-gap: 32rem;
+					flex: 1;
+					
+						@include maxWidth($sm){
+							row-gap: 30rem;
+						}
+						
+						&:nth-child(2){
+							.market-values-num{
+								color: var(--color-blue);
+							}
+						}
+					
+						&:before{
+							content: '';
+							position: absolute;
+							width: 6rem;
+							height: 6rem;
+							border-radius: 50%;
+							background-color: var(--color-gray-600);
+							left: 0;
+							top: 50%;
+							margin-top: -2rem;
+							pointer-events: none;
+						}
+					
+						&:after{
+							content: '';
+							position: absolute;
+							border-radius: 50%;
+							width: 14rem;
+							height: 14rem;
+							top: 50%;
+							left: -4rem;
+							margin-top: -6rem;
+							background: linear-gradient(243.19deg, rgba(0, 172, 234, 0.2) 0%, rgba(182, 198, 215, 0.2) 100%);
+							pointer-events: none;
+						}
+				}
+			
+				&-num{
+					font: var(--font-body-l);
+					text-transform: uppercase;
+				}
+			
+				&-year{
+					color: var(--color-gray-600);
+				}
+		}
+	
+		&-details{
+			display: flex;
+			column-gap: 48rem;
+			align-items: center;
+			background: linear-gradient(0deg, #F2F6F8, #F2F6F8), linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+			padding: 32rem 24rem;
+			border-radius: 8px;
+			position: relative;
+			margin-top: 56rem;
+			
+				@include maxWidth($sm){
+					flex-direction: column;
+					row-gap: 27rem;
+					align-items: flex-start;
+					//background: rgba(255,255,255,0.72);
+					margin-top: 34rem;
+					padding: 22rem 18rem;
+				}
+			
+				&:before{
+						@include maxWidth($sm){
+							content: '';
+							position: absolute;
+							background-color: var(--color-gray-300);
+							left: 16rem;
+							right: 16rem;
+							height: 1rem;
+							top: 48%;
+						}
+				}
+			
+				&-label{
+					color: var(--color-gray-600);
+					font: var(--font-body-s);
+					width: 115rem;
+					position: relative;
+					
+						@include maxWidth($sm){
+							width: 100%;
+							font: var(--font-body-s-mobile);
+						}
+					
+						&:before{
+							content: '';
+							position: absolute;
+							height: 60rem;
+							width: 1rem;
+							background-color: var(--color-gray-300);
+							right: -25rem;
+							top: 50%;
+							transform: translateY(-50%);
+							pointer-events: none;
+							
+								@include maxWidth($sm){
+									display: none;
+								}
+						}
+				}
+			
+				&-value{
+					max-width: 205rem;
+					
+						@include maxWidth($sm){
+							max-width: 100%;
+						}
+					
+						i{
+							color: var(--color-blue);
+						}
+				}
+		}
+	
+		&-data{
+			height: 1594rem;
+			
+				@include maxWidth($sm){
+					padding-top: 40rem;
+					height: 988rem;
+				}
+			
+				&-item{
+					border-radius: 50%;
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: center;
+					border: 2rem transparent solid;
+					position: sticky;
+					
+						&:nth-child(1){
+							width: 592rem;
+							height: 592rem;
+							background: linear-gradient(0deg, #F2F6F8, #F2F6F8), linear-gradient(0deg, rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.72));
+							border-color: var(--color-white);
+							padding-bottom: 15rem;
+							margin-bottom: 88rem;
+							top: 88rem;
+							
+								@include maxWidth($sm){
+									width: 312rem;
+									height: 312rem;
+									margin-bottom: 32rem;
+								}
+						}
+					
+						&:nth-child(2){
+							background: linear-gradient(0deg, #BFD4E4, #BFD4E4), linear-gradient(0deg, rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.72));
+							border-color: rgba(255,255,255,0.72);
+							width: 442rem;
+							height: 442rem;
+							margin: 0 86rem 86rem auto;
+							top: 238rem;
+							
+								@include maxWidth($sm){
+									width: 248rem;
+									height: 248rem;
+									margin: 0 auto 32rem;
+									top: 154rem;
+								}
+							
+								.market-data{
+									&-value,
+									&-description{
+										max-width: 145rem;
+									}
+								}
+						}
+					
+						&:nth-child(3){
+							background: linear-gradient(296.54deg, #00EFD1 0%, #00ACEA 100%), linear-gradient(0deg, rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.72));
+							border-color: rgba(255,255,255,0.72);
+							width: 296rem;
+							height: 296rem;
+							margin: 0 34rem 88rem auto;
+							top: 384rem;
+							padding-bottom: 14rem;
+							
+								@include maxWidth($sm){
+									width: 201rem;
+									height: 201rem;
+									margin: 0 auto 32rem;
+									top: 200rem;
+								}
+							
+								.market-data{
+										&-value,
+										&-description{
+											color: var(--color-white);
+											max-width: 185rem;
+											
+												@include maxWidth($sm){
+													max-width: 150rem;
+												}
+										}
+								}
+						}
+				}
+			
+				&-value{
+					color: var(--color-blue);
+					text-transform: uppercase;
+					margin: 16rem 0;
+				}
+			
+				&-value,
+				&-description{
+					text-align: center;
+					max-width: 258rem;
+				}
+		}
+	&.market-home{
+		margin-top: 24rem;
+		padding: 98rem 0 0;
+		.market{
+			&-sticky{
+				justify-content: flex-start;
+			}
+			&-data{
+				height: 2242rem;
+				@include maxWidth($sm){
+					padding-top: 40rem;
+					height: 988rem;
+				}
+				&-item {
+					&:nth-child(1) {
+						.market-data-text, .color-blue{
+							max-width: 365rem;
+						}
+					}
+					&:nth-child(2) {
+						top: 158rem;
+						width: 522rem;
+						height: 522rem;
+						.market-data-text, .color-blue{
+							max-width: 319rem;
+						}
+					}
+					&:nth-child(3) {
+						background: linear-gradient(0deg, #BFD4E4, #BFD4E4), linear-gradient(0deg, rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.72));
+						border-color: rgba(255,255,255,0.72);
+						top: 238rem;
+						width: 442rem;
+						height: 442rem;
+						.market-data-text, .color-blue{
+							max-width: 305rem;
+						}
+					}
+					&:nth-child(4) {
+						top: 306rem;
+						width: 374rem;
+						height: 374rem;
+						margin: 0 0 88rem auto;
+						padding-bottom: 14rem;
+						background: var(--color-primary-gradient);
+						border-color: rgba(255,255,255,0.72);
+						.market-data-text{
+							color: var(--color-white);
+							max-width: 185rem;
+						}
+					}
+					.color-blue{
+						margin: 0 auto 12rem;
+						text-align: center;
+						color: var(--color-blue);
+					}
+					.text-gradient-btn{
+						margin: 0 auto 24rem;
+							display: inline-block;
+							font: var(--font-body-s-mobile);
+							color: var(--color-black);
+							padding: 8rem 12rem;
+							border-radius: 8px;
+							z-index: 2;
+							position: relative;
+							&:before,
+							&:after{
+								position: absolute;
+								content: '';
+								border-radius: inherit;
+							}
+							&:before{
+								width: calc(100% - 2px);
+								height: calc(100% - 2px);
+								background: var(--color-primary-4);
+								left: 1px;
+								top: 1px;
+								z-index: -1;
+								border-radius: 7px;
+							}
+							&:after{
+								left: 0;
+								top: 0;
+								width: 100%;
+								height: 100%;
+								background: var(--color-primary-gradient);
+								z-index: -2;
+							}
+					}
+				}
+				&-text{
+					margin: 0 auto;
+					text-align: center;
+					font: var(--font-body-m);
+					color: var(--color-black);
+				}
+				&-icon{
+					margin-bottom: 32rem;
+				}
+			}
+		}
+	}
+}

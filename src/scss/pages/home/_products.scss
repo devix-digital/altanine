@@ -1,12 +1,12 @@
 .products{
-	padding: 73rem 0 100rem;
+	padding: 146rem 0 100rem;
 	
 		@include maxWidth($sm){
 			padding: 34rem 0;
 		}
 	
 		&-sticky{
-			padding: 97rem 0 50rem;
+			padding: 94rem 0 50rem;
 			position: sticky;
 			top: 0;
 			
@@ -101,6 +101,7 @@
 					font: var(--font-body-s);
 					margin: 8rem 0;
 					line-height: 154%;
+					color: var(--color-gray-600);
 					
 						@include maxWidth($sm){
               font: var(--font-body-s-mobile);

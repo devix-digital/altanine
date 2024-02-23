@@ -6,7 +6,7 @@ export const initAccordion = () => {
 
 	if (accordions.length) {
 		accordions.forEach(accordion => {
-			const accordionRows = Tween.utils.toArray('.accordion-item');
+			const accordionRows = accordion.querySelectorAll('.accordion-item');
 			let currentAccordionRow = null;
 			
 			accordionRows.forEach((accordionRow, i) => {

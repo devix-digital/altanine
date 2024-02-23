@@ -1,0 +1,87 @@
+.enhancements-metformin{
+	padding: 64rem 0 28rem;
+	margin: 23rem 0;
+		@include maxWidth($sm){
+			padding: 198rem 0 50rem;
+		}
+		&-banner{
+			position: absolute;
+			width: 902rem;
+			top: 0;
+			right: 55rem;
+				@include maxWidth($sm){
+					width: 100%;
+					right: 0;
+				}
+		}
+		&-cards{
+			display: flex;
+			column-gap: 32rem;
+			padding: 26rem 0;
+			margin-top: 132rem;
+			
+				@include maxWidth($sm){
+					flex-direction: column;
+					margin-top: 0;
+					column-gap: 0;
+					padding: 10rem 0;
+				}
+		}
+		
+		&-icon{
+			width: 46rem;
+			height: 18rem;
+			margin: 20rem 0;
+			
+				@include maxWidth($sm){
+					margin: 12rem 0;
+				}
+		}
+	
+		&-title{
+			color: var(--color-gray-700);
+			font: var(--font-body-l);
+			margin: 8rem 0;
+		}
+	
+		&-description{
+			color: var(--color-gray-600);
+			margin: 8rem 0;
+				
+				@include maxWidth($sm){
+					margin-bottom: 0;
+				}
+		}
+	
+		&-card{
+			@include maxWidth($sm){
+				padding-bottom: 10rem;
+			}
+				&:nth-child(1){
+						@include minWidth($sm + 1){
+							width: 416rem;
+							margin-right: 112rem;
+							padding-top: 17rem;
+						}
+					
+						.enhancements-metformin-title{
+							@extend .h4;
+						}
+				}
+				&:nth-child(2){
+						@include minWidth($sm + 1){
+							width: 304rem;
+							padding-top: 8rem;
+						}
+				}
+				&:nth-child(3){
+						@include minWidth($sm + 1){
+							width: 416rem;
+						}
+					
+						.enhancements-metformin-description{
+							font: var(--font-body-s);
+						}
+				}
+		}
+}

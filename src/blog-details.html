@@ -3,7 +3,7 @@
 <head>
 	<meta name="viewport"
 	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <title>Altanine</title>
+	<title>Altanine</title>
 	
 	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
 	
@@ -24,16 +24,18 @@
 <body>
 <main class="wrapper" id="wrapper">
 	<div class="preloader" id="preloader"></div>
-	@@include('html/header.html', {})
+	@@include('html/components/header.html', {})
 	<div data-router-wrapper>
-		<div data-router-view="blog">
+		<div data-router-view="default">
 			@@include('html/blog-details/hero.html', {})
-			@@include('html/blog-details/blog-details.html', {})
-			@@include('html/blog-details/blog.html', {})
-			@@include('html/blog-details/join.html', {})
+			@@include('html/blog-details/body.html', {})
+			@@include('html/blog-details/last-news.html', {})
+			@@include('html/components/join.html', {})
 		</div>
 	</div>
-	@@include('html/footer.html', {})
+	@@include('html/components/footer.html', {})
+	@@include('html/components/modal-investor.html', {})
+	@@include('html/components/modal-thanks.html', {})
 </main>
 <script src="js/app.min.js"></script>
 </body>

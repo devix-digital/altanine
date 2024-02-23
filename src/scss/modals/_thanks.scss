@@ -1,0 +1,64 @@
+.thanks{
+	width: 448rem;
+	background-color: var(--color-white);
+	border-radius: 8px;
+	display: flex;
+	column-gap: 45rem;
+	overflow: hidden;
+	padding: 40rem 32rem;
+	position: relative;
+	
+		@include maxWidth($sm){
+			width: calc(100vw - 48rem);
+			margin: 0 auto;
+			flex-direction: column;
+			align-items: center;
+			padding: 88rem 0 30rem;
+		}
+	
+		&-content{
+				@include maxWidth($sm){
+					text-align: center;
+					order: 2;
+					padding: 17rem 0;
+				}
+			
+				&-title{
+					margin: 8rem 0;
+				}
+			
+				&-subtitle{
+					color: var(--color-gray-700);
+					margin: 8rem 0;
+					max-width: 190rem;
+				}
+			
+				&-description{
+					color: var(--color-gray-400);
+					font: var(--font-body-s);
+					margin: 24rem 0 8rem;
+					max-width: 230rem;
+					
+						@include maxWidth($sm){
+							font: var(--font-body-s-mobile);
+						}
+				}
+		}
+	
+		&-thumbnail{
+			width: 130rem;
+			height: 100%;
+			padding: 13rem 0;
+			
+				@include maxWidth($sm){
+					order: 1;
+					width: 110rem;
+					height: 108rem;
+					padding: 0;
+				}
+			
+				img{
+					@include imageContain(center);
+				}
+		}
+}

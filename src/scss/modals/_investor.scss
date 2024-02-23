@@ -1,0 +1,80 @@
+.investor-modal{
+	display: flex;
+	background-color: var(--color-white);
+	border-radius: 14px;
+	padding: 8rem;
+	width: 863rem;
+	
+		@include maxWidth($sm){
+			width: calc(100vw - 12rem);
+			flex-direction: column;
+			padding: 18rem;
+		}
+	
+		&-content{
+			padding: 32rem;
+			
+				@include minWidth($sm){
+					flex: 1;
+				}
+			
+				@include maxWidth($sm){
+					padding: 32rem 0 0;
+				}
+			
+				.h5{
+					margin-bottom: 25rem;
+				}
+			
+				.field{
+						&:not(:last-of-type){
+							margin-bottom: 12rem;
+						}
+				}
+			
+				textarea.field-item{
+					max-height: 200rem;
+				}
+			
+				.btn{
+					margin-top: 25rem;
+				}
+		}
+	
+		&-thumbnail{
+			width: 360rem;
+			height: 503rem;
+			border-radius: 8px;
+			overflow: hidden;
+			
+				@include maxWidth($sm){
+					height: 207rem;
+					width: 100%;
+					margin-top: 32rem;
+				}
+			
+				img{
+					@include imageCover(center);
+				}
+		}
+	
+		.modal-close-btn{
+			
+				@include minWidth($sm){
+					color: var(--color-white);
+					top: 30rem;
+					right: 30rem;
+				}
+			
+				@include maxWidth($sm){
+					top: 22rem;
+					right: 22rem;
+				}
+			
+				@include hover($md){
+					&:hover{
+						color: var(--color-white);
+					}
+				}
+		}
+}

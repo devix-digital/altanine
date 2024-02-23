@@ -55,6 +55,14 @@
 				}
 		}
 	
+		&-undertitle{
+			margin: 24rem 0 32rem;
+			
+				@include maxWidth($sm){
+					margin: 17rem 0 23rem;
+				}
+		}
+	
 		.h1{
 			color: var(--color-white);
 		}

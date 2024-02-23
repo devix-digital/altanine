@@ -28,7 +28,7 @@
   <div class="header-panel">
 	  <div class="header-panel-logo">
 		  <a href="/" class="logo">
-			  <img src="../img/logo.svg" alt="Altanine"/>
+			  <img src="../../img/logo.svg" alt="Altanine"/>
 		  </a>
 		  <div class="header-contacts">
 			  <a href="tel:+66 666 66 66 666" class="header-contacts-item">+66 666 66 66 666</a>
@@ -38,18 +38,19 @@
 	  <div class="header-panel-nav">
 		  <nav>
 			  <ul>
-				  <li><a href="about.html">About us</a></li>
-				  <li><a href="#">Metformin</a></li>
-				  <li><a href="#">Products</a></li>
-				  <li><a href="#">Investor relations</a></li>
-				  <li><a href="#">Blog</a></li>
+				  <li><a href="about-us.html">About us</a></li>
+				  <li><a href="metformin.html">Metformin</a></li>
+				  <li><a href="product.html">Products</a></li>
+				  <li><a href="investor.html">Investor relations</a></li>
+				  <li><a href="blog.html">Blog</a></li>
+				  <li><a href="new-section.html">new section</a></li>
 			  </ul>
 		  </nav>
 		  <div class="header-contacts">
 			  <a href="tel:+66 666 66 66 666" class="header-contacts-item">+66 666 66 66 666</a>
 			  <a href="mailto:info@altanine.com" class="header-contacts-item">info@altanine.com</a>
 		  </div>
-		  <a href="#" class="btn btn-gradient">
+		  <a href="contact-us.html" class="btn btn-gradient">
 			  <span class="btn-bg"></span>
 			  <span class="btn-labels">
 					<span class="btn-labels-item">Contact us</span>
@@ -59,7 +60,7 @@
 		  </a>
 	  </div>
 	  <div class="header-panel-action">
-		  <a href="#" class="btn btn-gradient">
+		  <a href="contact-us.html" class="btn btn-gradient">
 			  <span class="btn-bg"></span>
 			  <span class="btn-labels">
 					<span class="btn-labels-item">Contact us</span>
@@ -78,59 +79,80 @@
   </div>
 </header>
 	<div data-router-wrapper>
-		<div data-router-view="home">
+		<div data-router-view="default">
 			<section class="section hero hero-contact">
 	<div class="bread-crumbs">
 		<div class="container">
 			<ul>
 				<li><a href="#">Home</a></li>
-				<li>
-					Contact Us
-				</li>
+				<li><span>Contact Us</span></li>
 			</ul>
 		</div>
 	</div>
 	<div class="contact">
 		<div class="container">
-			<div class="contact__info">
-				<h1 class="h1">Let's talk.</h1>
-				<ul>
-					<li>We will respond to you within 24 hours.</li>
-					<li>We’ll sign an NDA if requested.</li>
-					<li>Access to dedicated product specialists</li>
-				</ul>
-				<div class="contact__info-time">
-					US Legal Address
-					<span>Hematogenix 8150 W 185th St. <br> Tinley Park, IL 60487</span>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="contact-info">
+						<h1 class="h1 hero-title" data-split-text>Let's talk.</h1>
+						<ul data-load-order>
+							<li>We will respond to you within 24 hours.</li>
+							<li>We’ll sign an NDA if requested.</li>
+							<li>Access to dedicated product specialists</li>
+						</ul>
+						<div class="contact-time" data-load-order>
+							<div class="clock">
+								<svg viewBox="0 0 82 82" fill="none" class="clock-border">
+									<circle cx="41" cy="41" r="40" stroke="currentColor" stroke-linecap="round" stroke-dasharray="3 8"/>
+									<span class="clock-arrow hours"><span class="clock-arrow-item"></span></span>
+									<span class="clock-arrow minutes"><span class="clock-arrow-item"></span></span>
+									<span class="clock-arrow seconds"><span class="clock-arrow-item"></span></span>
+								</svg>
+							</div>
+							<div>
+								<p class="contact-time-title">US Legal Address</p>
+								<p class="contact-time-subtitle">Hematogenix 8150 W 185th St. Tinley Park, IL 60487</p>
+							</div>
+						</div>
+					</div>
 				</div>
-			</div>
-			<div class="contact__form">
-				<form>
-					<label>
-						<span>You should have a name end last name* </span>
-						<input type="text" placeholder="Full name">
-					</label>
-					<label>
-						<span>And a-mail*</span>
-						<input type="email" placeholder="Your Email">
-					</label>
-					<label>
-						<span>Now write down your message *</span>
-						<textarea placeholder="Your message"></textarea>
-					</label>
-					<p>
-						By sending this form I confirm that I have read and accept the <a href="#">Privacy Policy</a>
-					</p>
-					<button class="btn btn-gradient btn-md">
-						<span class="btn-bg"></span>
-						<span class="btn-icon"><svg><use xlink:href="img/icons/icons.svg#arrow-right"></use></svg></span>
-						<span class="btn-labels">
-							<span class="btn-labels-item">Sent </span>
-							<span class="btn-labels-item">Sent </span>
-							<span class="btn-labels-item">Sent </span>
-						</span>
-					</button>
-				</form>
+				<div class="col-md-7 offset-md-1">
+					<div class="contact-form" data-load-order>
+						<form>
+							<label class="field">
+								<span class="field-label">You should have a name and last name*</span>
+								<input type="email" placeholder="Full name" class="field-item" />
+								<span class="field-message __success">Success message</span>
+								<span class="field-message __error">Error message</span>
+							</label>
+							<label class="field">
+								<span class="field-label">And e-mail*</span>
+								<input type="email" placeholder="You email" class="field-item" />
+								<span class="field-message __success">Success message</span>
+								<span class="field-message __error">Error message</span>
+							</label>
+							<label class="field">
+								<span class="field-label">Now write down message*</span>
+								<span class="field-resize"></span>
+								<textarea placeholder="You message" class="field-item"></textarea>
+								<span class="field-message __success">Success message</span>
+								<span class="field-message __error">Error message</span>
+							</label>
+							<div class="contact-form-action">
+								<p>By sending this form I confirm that I have read and accept the <a href="#">Privacy Policy</a></p>
+								<button class="btn btn-gradient btn-md">
+									<span class="btn-bg"></span>
+									<span class="btn-icon"><svg><use xlink:href="img/icons/icons.svg#arrow-right"></use></svg></span>
+									<span class="btn-labels">
+										<span class="btn-labels-item">Sent </span>
+										<span class="btn-labels-item">Sent </span>
+										<span class="btn-labels-item">Sent </span>
+									</span>
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -177,7 +199,7 @@
 	</div>
 	<footer class="footer">
 	<div class="footer-abstract">
-		<img src="../img/footer-abstract.svg" alt="Alt" />
+		<img src="../../img/footer-abstract.svg" alt="Alt" />
 	</div>
   <div class="container">
 	  <div class="row">
@@ -190,12 +212,12 @@
 			  <div class="footer-nav">
 				  <p class="footer-label">Site map</p>
 				  <ul>
-					  <li><a href="#">About us</a></li>
-					  <li><a href="#">Metformin</a></li>
-					  <li><a href="#">Product</a></li>
-					  <li><a href="#">Investor Relations</a></li>
-					  <li><a href="#">Blog</a></li>
-					  <li><a href="#">Contact us</a></li>
+					  <li><a href="about-us.html">About us</a></li>
+					  <li><a href="metformin.html">Metformin</a></li>
+					  <li><a href="product.html">Product</a></li>
+					  <li><a href="investor.html">Investor Relations</a></li>
+					  <li><a href="blog.html">Blog</a></li>
+					  <li><a href="contact-us.html">Contact us</a></li>
 				  </ul>
 			  </div>
 		  </div>
@@ -254,7 +276,7 @@
 		  <div class="col-md-3 order-md-4">
 			  <div class="footer-logo">
 				  <a href="/" class="logo">
-					  <img src="../img/logo-white.svg" alt="Altanine"/>
+					  <img src="../../img/logo-white.svg" alt="Altanine"/>
 				  </a>
 			  </div>
 		  </div>
@@ -266,7 +288,7 @@
 		  <div class="col-md-3 order-md-3 col-6">
 			  <div class="footer-additional">
 				  <ul>
-					  <li><a href="#">Privacy policy</a></li>
+					  <li><a href="text-template.html">Privacy policy</a></li>
 				  </ul>
 			  </div>
 		  </div>
@@ -274,15 +296,90 @@
 			  <a href="https://www.studiopresto.com/" target="_blank" class="footer-developer">
 				  Made by
 				  <span class="footer-developer-logo">
-					  <img src="../img/developer-logo.svg" alt="Studiopresto" />
-					  <img src="../img/developer-logo-blue.svg" alt="Studiopresto" />
+					  <img src="../../img/developer-logo.svg" alt="Studiopresto" />
+					  <img src="../../img/developer-logo-blue.svg" alt="Studiopresto" />
 				  </span>
 			  </a>
 		  </div>
 	  </div>
   </div>
 </footer>
+	<div class="modal" id="investor-modal">
+	<div class="modal-bg"></div>
+	<div class="modal-close" data-modal-close="#investor-modal"></div>
+	<div class="modal-box" data-lenis-prevent>
+		<div class="modal-box-item">
+			<div class="investor-modal">
+				<div class="modal-close-btn" data-modal-close="#investor-modal">
+					<svg><use xlink:href="img/icons/icons.svg#close"></use></svg>
+				</div>
+				<div class="investor-modal-content">
+					<h5 class="h5">We’d love to hear from you.</h5>
+					<form>
+						<label class="field">
+							<span class="field-label">You should have a name and last name*</span>
+							<input type="email" placeholder="Full name" class="field-item" />
+							<span class="field-message __success">Success message</span>
+							<span class="field-message __error">Error message</span>
+						</label>
+						<label class="field">
+							<span class="field-label">And e-mail*</span>
+							<input type="email" placeholder="You email" class="field-item" />
+							<span class="field-message __success">Success message</span>
+							<span class="field-message __error">Error message</span>
+						</label>
+						<label class="field">
+							<span class="field-label">Now write down message*</span>
+							<span class="field-resize"></span>
+							<textarea placeholder="You message" class="field-item"></textarea>
+							<span class="field-message __success">Success message</span>
+							<span class="field-message __error">Error message</span>
+						</label>
+						<button class="btn btn-gradient btn-md btn-full-width">
+							<span class="btn-bg"></span>
+							<span class="btn-icon"><svg><use xlink:href="img/icons/icons.svg#arrow-right"></use></svg></span>
+							<span class="btn-labels">
+								<span class="btn-labels-item">Become an investor</span>
+								<span class="btn-labels-item">Become an investor</span>
+								<span class="btn-labels-item">Become an investor</span>
+							</span>
+						</button>
+					</form>
+				</div>
+				<div class="investor-modal-thumbnail">
+					<picture>
+						<source srcset="../../img/investor/modal-banner.webp" type="image/webp">
+						<source srcset="../../img/investor/modal-banner.jpg" type="image/jpeg">
+						<img src="../../img/investor/modal-banner.jpg">
+					</picture>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	<div class="modal" id="thanks">
+	<div class="modal-bg"></div>
+	<div class="modal-close" data-modal-close="#thanks"></div>
+	<div class="modal-box" data-lenis-prevent>
+		<div class="modal-box-item">
+			<div class="thanks">
+				<div class="modal-close-btn" data-modal-close="#thanks">
+					<svg><use xlink:href="img/icons/icons.svg#close"></use></svg>
+				</div>
+				<div class="thanks-content">
+					<h4 class="h4 thanks-content-title">Thank You<i>!</i></h4>
+					<p class="thanks-content-subtitle">Your submission has been received!</p>
+					<p class="thanks-content-description">We will reach out to you shortly.</p>
+				</div>
+				<div class="thanks-thumbnail">
+					<img src="../img/logo-mini.svg" alt="Altanine" />
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 </main>
 <script src="js/app.min.js"></script>
+<script src="files/modals.js"></script>
 </body>
 </html>

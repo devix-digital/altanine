@@ -1,5 +1,5 @@
 .benefits{
-	padding: 85rem 0;
+	padding: 85rem 0 48rem;
 	
 		@include maxWidth($sm){
 			padding: 28rem 0;
@@ -10,12 +10,19 @@
 			padding: 32rem;
 			border-radius: 8px;
 			margin: 24rem 0;
+			height: 314rem;
 			position: relative;
 			transform: translateY(50rem);
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: flex-end;
 			
 				@include maxWidth($sm){
 					padding: 26rem;
 					margin: 24rem 0 0;
+					min-height: 286px;
+					height: auto;
 				}
 			
 				&-number{
@@ -44,8 +51,9 @@
 				&-icon{
 					width: 64rem;
 					height: 64rem;
-					margin: 0 0 67rem auto;
-					position: relative;
+					top: 32rem;
+					right: 32rem;
+					position: absolute;
 					pointer-events: none;
 					
 						@include maxWidth($sm){

@@ -24,15 +24,18 @@
 <body>
 <main class="wrapper" id="wrapper">
 	<div class="preloader" id="preloader"></div>
-	@@include('html/header.html', {})
+	@@include('html/components/header.html', {})
 	<div data-router-wrapper>
-		<div data-router-view="home">
-			@@include('html/contact-us/hero.html', {})
-			@@include('html/contact-us/content.html', {})
+		<div data-router-view="default">
+			@@include('html/contact-us/body.html', {})
+			@@include('html/components/content.html', {})
 		</div>
 	</div>
-	@@include('html/footer.html', {})
+	@@include('html/components/footer.html', {})
+	@@include('html/components/modal-investor.html', {})
+	@@include('html/components/modal-thanks.html', {})
 </main>
 <script src="js/app.min.js"></script>
+<script src="files/modals.js"></script>
 </body>
 </html>

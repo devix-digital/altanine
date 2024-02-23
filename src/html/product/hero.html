@@ -3,31 +3,27 @@
 		<div class="container">
 			<ul>
 				<li><a href="#">Home</a></li>
-				<li>
-					Product
-				</li>
+				<li><span>Product</span></li>
 			</ul>
 		</div>
 	</div>
 	<div class="hero-banner" id="hero-banner">
-		<div class="full-carousel splide" id="hero-carousel">
-			<div class="splide__track">
-				<div class="splide__list">
-					<div class="splide__slide full-carousel-slide">
-						<video class="video" autoplay loop muted playsinline poster="../../img/product/hero.jpg">
-						</video>
-					</div>
-				</div>
-			</div>
+		<div class="hero-banner-item">
+			<img src="../../img/product/hero.jpg">
+			<picture>
+				<source srcset="../../img/product/hero.webp" type="image/webp">
+				<source srcset="../../img/product/hero.jpg" type="image/jpeg">
+				<img src="../../img/product/hero.jpg">
+			</picture>
 		</div>
 	</div>
 	<div class="hero-content">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-8">
-					<p class="hero-subtitle font-uppercase color-white" data-load-order="1">Products & Technology</p>
+				<div class="col-md-6">
+					<p class="hero-subtitle font-uppercase color-white" data-load-order>Products & Technology</p>
 					<h1 class="hero-title h1" data-split-text>Meeting unmet patient needs</h1>
-					<p class="hero-text" data-split-text>Altanine is addressing global medical needs through a portfolio of differentiated and high quality therapeutics.</p>
+					<p class="hero-description" data-load-order>Altanine addresses global medical needs with innovative science, enhancing Metformin delivery for affordable access to advanced therapies for millions worldwide.</p>
 				</div>
 			</div>
 		</div>

@@ -1,14 +1,22 @@
 .page-blog{
   padding: 126rem 0 53rem;
   
+    @include maxWidth($sm){
+      padding: 67rem 0;
+    }
+  
   .blog{
-    &-wrap{
-      margin-top: 23rem;
-    }
-    
-    &__item{
-      margin-bottom: 44rem;
-    }
+      &-wrap{
+        margin-top: 23rem;
+      }
+      
+      &__item{
+        margin-bottom: 44rem;
+        
+          @include maxWidth($sm){
+            margin-bottom: 22rem;
+          }
+      }
   }
 }
 .blog{
@@ -33,22 +41,23 @@
       justify-content: flex-end;
       position: relative;
       
-        &:before{
-          content: '';
-          position: absolute;
-          top: 0;
-          right: 0;
-          width: 20rem;
-          height: 100%;
-          background: rgb(255,255,255);
-          background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 58%, rgba(255,255,255,1) 100%);
-          z-index: 1;
-        }
-      
         @include maxWidth($sm){
           margin: 0 -22rem;
           overflow: hidden;
-          height: 90rem;
+          height: 75rem;
+          padding: 3rem 0;
+          
+            &:before{
+              content: '';
+              position: absolute;
+              top: 0;
+              right: 0;
+              width: 20rem;
+              height: 100%;
+              background: rgb(255,255,255);
+              background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 58%, rgba(255,255,255,1) 100%);
+              z-index: 1;
+            }
         }
       
         &-row{
@@ -70,9 +79,12 @@
               margin-bottom: 5rem;
                 
                 @include maxWidth($sm){
-                  &:not(:last-child){
-                    margin-right: 5rem;
-                  }
+                  height: 50rem;
+                  padding: 0 16rem;
+                  
+                    &:not(:last-child){
+                      margin-right: 5rem;
+                    }
                 }
             }
         }

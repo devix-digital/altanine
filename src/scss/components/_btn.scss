@@ -12,6 +12,7 @@
 	overflow: hidden;
 	cursor: default;
 	height: 74rem;
+	min-height: 74rem;
 	
 		&-labels{
 			display: inline-block;
@@ -80,6 +81,7 @@
 		/* sizes */
 		&-md{
 			height: 54rem;
+			min-height: 54rem;
 			padding: 0 24rem;
 		}
 	
@@ -248,6 +250,14 @@
 				background: var(--color-primary-gradient);
 				color: var(--color-white);
 			}
+		}
+	
+		&-full{
+				
+				&-width{
+					width: 100%;
+					text-align: center;
+				}
 		}
 	
 		/* states */

@@ -45,7 +45,7 @@
 					align-items: center;
 					justify-content: space-between;
 					border-radius: 8px;
-					background: rgba(243, 243, 247, 0.40);
+					background: rgba(255, 255, 255, 0.72);
 					max-width: 532rem;
 					flex: 1;
 					position: relative;
@@ -59,7 +59,7 @@
 				&-nav{
 					flex: 1;
 					border-radius: 8px;
-					background: rgba(243, 243, 247, 0.40);
+					background: rgba(255, 255, 255, 0.72);
 					padding: 26rem 40rem;
 					
 						@include minWidth($sm + 1){
@@ -180,7 +180,7 @@
 					
 						@include maxWidth($sm){
 							border-radius: 8px;
-							background: rgba(243, 243, 247, 0.40);
+							background: rgba(255, 255, 255, 0.72);
 							padding: 16rem 24rem;
             }
 					

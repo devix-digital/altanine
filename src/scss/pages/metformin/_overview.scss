@@ -1,0 +1,139 @@
+.overview{
+	padding: 120rem 0 72rem;
+		@include maxWidth($sm){
+			padding: 53rem 0 40rem;
+		}
+	
+		&-sticky{
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: center;
+		}
+	
+		&-banners{
+			display: flex;
+			column-gap: 12rem;
+			
+				@include maxWidth($sm){
+					column-gap: 6rem;
+					margin: 40rem -16rem 0;
+				}
+			
+				.section-banner{
+					height: 474rem;
+					border-radius: 8px;
+					
+						@include maxWidth($sm){
+							height: 216rem;
+						}
+					
+						&:nth-child(1){
+							width: 448rem;
+							
+								@include maxWidth($sm){
+									width: 204rem;
+								}
+						}
+						
+						&:nth-child(2){
+							flex: 1;
+						}
+				}
+		}
+	
+		&-detail{
+			display: flex;
+			align-items: center;
+			column-gap: 27rem;
+			margin-top: 32rem;
+			
+				@include maxWidth($sm){
+					column-gap: 22rem;
+					margin-top: 26rem;
+				}
+			
+				&-value{
+					color: var(--color-blue);
+					text-transform: uppercase;
+				}
+			
+				&-label{
+					font: var(--font-body-s);
+					color: var(--color-gray-600);
+					max-width: 140rem;
+					
+						@include maxWidth($sm){
+							font: var(--font-body-s-mobile);
+						}
+				}
+			ul{
+				margin: 24rem 0;
+				li{
+					position: relative;
+					margin-bottom: 8rem;
+					color: var(--color-black);
+					padding-left: 24rem;
+					&:before{
+						position: absolute;
+						content: '';
+						left: 0;
+						top: 8rem;
+						width: 8rem;
+						height: 8rem;
+						border-radius: 50%;
+						background: var(--color-primary-gradient);
+					}
+				}
+			}
+		}
+	
+		.section{
+				&-title{
+					max-width: 520rem;
+					
+						@include maxWidth($sm){
+							max-width: 95%;
+						}
+				}
+			
+				&-description{
+					color: var(--color-gray-600);
+					max-width: 416rem;
+				}
+		}
+	&.overview-one{
+		padding: 105rem 0 145rem;
+		@include maxWidth($sm){
+			padding: 53rem 0 40rem;
+		}
+		.overview{
+			&-sticky{
+				justify-content: flex-start;
+				margin-top: 75rem;
+				.section-title{
+					margin-bottom: 16rem;
+				}
+			}
+			&-detail{
+				margin-top: 8rem;
+			}
+			&-banners{
+				display: flex;
+				column-gap: 12rem;
+				.section-banner{
+					border-radius: 0;
+					&:nth-child(1){
+						height: 602rem;
+						width: 655rem;
+						@include maxWidth($sm){
+							max-height: 355rem;
+							max-width: 355rem;
+						}
+					}
+				}
+			}
+		}
+	}
+}

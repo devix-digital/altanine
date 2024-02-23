@@ -1,9 +1,9 @@
 .our-mission-core{
   background-color: var(--color-gray-200);
-  padding: 64rem 0;
-  margin-top: 36rem;
+  padding: 64rem 0 84rem;
+  margin-top: 80rem;
   border-radius: 14px;
-  background-image: url('../../../img/home/enhancements-abstract.svg');
+  background-image: url(../img/abstract-bg-grey.jpg);
   background-size: cover;
   background-position: center;
   
@@ -123,9 +123,15 @@
                   left: -71rem;
                 }
             }
-          
+            //img{
+            //  transition: all ease 300ms;
+            //  opacity: .9;
+            //}
             &.is-active{
               z-index: 3;
+              //img{
+              //  opacity: 1;
+              //}
             }
         }
     }

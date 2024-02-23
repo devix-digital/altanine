@@ -1,0 +1,34 @@
+.pnf-box{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-end;
+	height: calc(100svh - 16rem);
+	min-height: 500rem;
+	padding: 56rem 0;
+	
+		@include maxWidth($sm){
+			padding: 54rem 0;
+		}
+	
+		.section{
+				&-title{
+					font-size: 132rem;
+					margin: 16rem 0 30rem;
+						
+						@include maxWidth($sm){
+							font-size: 64rem;
+							margin: 12rem 0 40rem;
+						}
+				}
+				&-description{
+					color: var(--color-gray-600);
+					max-width: 416rem;
+					margin: 32rem 0;
+					
+						@include maxWidth($sm){
+							margin: 24rem 0;
+						}
+				}
+		}
+}

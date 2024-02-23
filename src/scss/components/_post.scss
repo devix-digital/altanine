@@ -1,0 +1,70 @@
+.post{
+	position: relative;
+	
+		&-thumbnail{
+			margin-bottom: 16rem;
+			height: 272rem;
+			border-radius: 8px;
+			overflow: hidden;
+			
+				img{
+					@include imageCover(center);
+				}
+		}
+		
+		&-time{
+			font: var(--font-body-s);
+			position: absolute;
+			top: 24rem;
+			left: 24rem;
+			padding: 8rem 12rem;
+			border-radius: 8px;
+			border: 1px solid rgba(#2E7F9A, 0.2);
+			background: rgba(255, 255, 255, 0.05);
+			backdrop-filter: blur(32px);
+			display: inline-block;
+			
+				@include maxWidth($sm){
+					font: var(--font-body-s-mobile);
+				}
+		}
+		
+		&-title{
+			font: var(--font-body-l);
+			margin: 12rem 0;
+			display: -webkit-box;
+			-webkit-box-orient: vertical;
+			-webkit-line-clamp: 2;
+			overflow: hidden;
+			
+				@include maxWidth($sm){
+					font: var(--font-body-l-mobile);
+					margin: 12rem 0 9rem;
+				}
+		}
+		
+		&-description{
+			margin: 12rem 0 24rem;
+			display: -webkit-box;
+			-webkit-box-orient: vertical;
+			-webkit-line-clamp: 2;
+			overflow: hidden;
+			color: var(--color-gray-600);
+			
+				@include maxWidth($sm){
+					margin: 9rem 0;
+				}
+		}
+		
+		&-action{
+			margin-top: 24rem;
+			
+				@include maxWidth($sm){
+					margin-top: 20rem;
+				}
+				
+				.btn{
+					pointer-events: auto;
+				}
+		}
+}

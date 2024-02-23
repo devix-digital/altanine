@@ -1,0 +1,50 @@
+.enhancements-transparent{
+	background-image: none;
+	background-color: transparent;
+	margin: 0;
+	padding: 100rem 0 75rem;
+	
+		@include maxWidth($sm){
+			padding: 54rem 0 28rem;
+		}
+	
+		.section-title{
+				@include minWidth($sm){
+					margin-top: -18rem;
+				}
+		}
+	
+		.products-card{
+			margin-left: 0;
+			margin-top: 66rem;
+			max-width: 310rem;
+			
+				@include maxWidth($sm){
+					margin-top: 24rem;
+				}
+			
+				&-thumbnail{
+					width: 224rem;
+					
+						@include maxWidth($sm){
+							width: 100%;
+							height: 195rem;
+						}
+				}
+			
+				&-description{
+					font: var(--font-body-m);
+					
+						@include maxWidth($sm){
+							font: var(--font-body-m-mobile);
+						}
+				}
+		}
+	
+		[class*="-4"]{
+			
+			@include minWidth($sm + 1){
+				display: block;
+			}
+		}
+}

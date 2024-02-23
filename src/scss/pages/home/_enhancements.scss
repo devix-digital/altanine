@@ -1,9 +1,9 @@
 .enhancements{
 	background-color: var(--color-gray-200);
-	padding: 144rem 0;
+	padding: 144rem 0 122rem;
 	margin: 44rem 0;
 	border-radius: 14px;
-	background-image: url(../../../img/home/enhancements-abstract.svg);
+	background-image: url(../img/abstract-bg-grey.jpg);
 	background-size: cover;
 	background-position: center;
 	
@@ -13,8 +13,10 @@
 		}
 	
 		&-sticky{
-			padding: 66rem 0;
-			
+			padding: 32rem 0;
+			.section-description{
+				margin: 14rem 0 32rem;
+			}
 				@include maxWidth($sm){
 					padding: 0;
 				}
@@ -41,12 +43,21 @@
 		}
 	
 		.products-card{
-			margin-top: 68rem;
+			//margin-top: 68rem;
 			margin-left: -11rem;
 			
 				@include maxWidth($sm){
           margin-left: 0;
 					margin-top: 12rem;
         }
+		}
+	
+		[class*="-4"]{
+			
+				@include minWidth($sm + 1){
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+				}
 		}
 }

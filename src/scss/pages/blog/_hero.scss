@@ -1,69 +1,77 @@
 .hero-blog{
   background-color: var(--color-gray-200);
-  padding: 199rem 0 81rem;
+  padding: 184rem 0 58rem;
   border-radius: 14px;
-  background-image: url('../../../img/home/enhancements-abstract.svg');
+  background-image: url(../img/abstract-bg-grey.jpg);
   background-size: cover;
   background-position: center;
   height: auto;
   
     @include maxWidth($sm){
-      padding: 177rem 0 81rem;
-    }
-}
-.hero__blog-title{
-  margin-bottom: 56rem;
-  
-    @include maxWidth($sm){
-      width: 95%;
+      padding: 165rem 0 80rem;
     }
   
-    .h1{
+    .hero-title{
       color: var(--color-black);
       
-        i{
-          font-style: normal;
-          color: var(--color-gray-600);
+        @include maxWidth($sm){
+          margin-bottom: 40rem;
         }
     }
 }
-.hero__blog-post{
-  .post{
-    display: flex;
-    justify-content: space-between;
-      @include maxWidth($sm){
-        flex-direction: column;
-      }
-    
-     &-thumbnail{
-       max-width: 864rem;
-       width: 100%;
-       height: auto;
-     }
-    
-      &-time{
-        position: relative;
-        left: 0;
-        right: 0;
-        top: 0;
-        display: inline-block;
-      }
-    
-      &-info{
-        max-width: 384rem;
-        padding-top: 32px;
-      }
-    
-      &-info-title{
-        font: var(--font-h5);
-        margin: 24rem 0 10rem 0;
-        display: -webkit-box;
-        overflow: hidden;
-        color: var(--color-black);
-      }
-    
-      &-info-description{
-        margin-bottom: 40rem;
-      }
-  }
+
+.post-hero{
+  
+    &-content{
+      padding: 73rem 0 0 32rem;
+      
+        @include maxWidth($sm){
+          padding: 0;
+        }
+    }
+  
+    .post{
+        &-thumbnail{
+          height: 470rem;
+          margin: 40rem 0;
+          
+            @include maxWidth($sm){
+              height: 287rem;
+              margin: 24rem 0 12rem;
+            }
+        }
+      
+        &-time{
+          position: relative;
+          top: 0;
+          left: 0;
+        }
+      
+        &-title{
+          @extend .h5;
+          display: block;
+          margin: 23rem 0 0;
+          
+            @include maxWidth($sm){
+              margin: 11rem 0 0;
+            }
+        }
+      
+        &-description{
+          display: block;
+          margin: 12rem 0 38rem;
+          
+            @include maxWidth($sm){
+              margin: 12rem 0 17rem;
+            }
+        }
+      
+        &-action{
+          margin-top: 38rem;
+          
+            @include maxWidth($sm){
+              margin-top: 17rem;
+            }
+        }
+    }
 }

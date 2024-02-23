@@ -1,6 +1,8 @@
 .about{
-  padding: 144rem 0 72rem;
-  
+  padding: 144rem 0 144rem;
+  background-color: var(--color-gray-200);
+  border-radius: 14px;
+  margin-bottom: 68rem;
     @include maxWidth($sm){
       padding: 80rem 0 31rem;
     }
@@ -51,19 +53,25 @@
     }
   
   &__desc{
-    margin: 40rem auto 0;
-    max-width: 416rem;
+    margin: 8rem 0 0;
+    max-width: 97%;
+    color: var(--color-gray-600);
     
       @include maxWidth($sm){
         margin: 25rem auto 0;
       }
     
-      h4{
-        margin-bottom: 24rem;
+      h1, h2, h3, h4, h5, h6{
+        margin-bottom: 32rem;
+        color: var(--color-black);
         
           @include maxWidth($sm){
             width: 95%;
             margin-bottom: 15rem;
+          }
+        
+          & + b{
+            margin-top: -8rem;
           }
       }
     
@@ -87,6 +95,34 @@
           @include maxWidth($sm){
             margin-bottom: 8rem;
           }
+        &:last-of-type{
+          margin-bottom: 32rem;
+        }
       }
+    
+      p, b{
+        max-width: 420rem;
+      }
+  }
+  &.about-page{
+    padding: 144rem 0 60rem;
+    margin-bottom: 0;
+    background: transparent;
+    .about{
+      &__desc{
+        margin-top: 43rem;
+        h4{
+          margin-bottom: 22rem;
+        }
+        b{
+          margin-bottom: 24rem;
+        }
+        p{
+          &:last-of-type{
+            margin-bottom: 7rem;
+          }
+        }
+      }
+    }
   }
 }

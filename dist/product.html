@@ -28,7 +28,7 @@
   <div class="header-panel">
 	  <div class="header-panel-logo">
 		  <a href="/" class="logo">
-			  <img src="../img/logo.svg" alt="Altanine"/>
+			  <img src="../../img/logo.svg" alt="Altanine"/>
 		  </a>
 		  <div class="header-contacts">
 			  <a href="tel:+66 666 66 66 666" class="header-contacts-item">+66 666 66 66 666</a>
@@ -38,18 +38,19 @@
 	  <div class="header-panel-nav">
 		  <nav>
 			  <ul>
-				  <li><a href="about.html">About us</a></li>
-				  <li><a href="#">Metformin</a></li>
-				  <li><a href="#">Products</a></li>
-				  <li><a href="#">Investor relations</a></li>
-				  <li><a href="#">Blog</a></li>
+				  <li><a href="about-us.html">About us</a></li>
+				  <li><a href="metformin.html">Metformin</a></li>
+				  <li><a href="product.html">Products</a></li>
+				  <li><a href="investor.html">Investor relations</a></li>
+				  <li><a href="blog.html">Blog</a></li>
+				  <li><a href="new-section.html">new section</a></li>
 			  </ul>
 		  </nav>
 		  <div class="header-contacts">
 			  <a href="tel:+66 666 66 66 666" class="header-contacts-item">+66 666 66 66 666</a>
 			  <a href="mailto:info@altanine.com" class="header-contacts-item">info@altanine.com</a>
 		  </div>
-		  <a href="#" class="btn btn-gradient">
+		  <a href="contact-us.html" class="btn btn-gradient">
 			  <span class="btn-bg"></span>
 			  <span class="btn-labels">
 					<span class="btn-labels-item">Contact us</span>
@@ -59,7 +60,7 @@
 		  </a>
 	  </div>
 	  <div class="header-panel-action">
-		  <a href="#" class="btn btn-gradient">
+		  <a href="contact-us.html" class="btn btn-gradient">
 			  <span class="btn-bg"></span>
 			  <span class="btn-labels">
 					<span class="btn-labels-item">Contact us</span>
@@ -78,77 +79,39 @@
   </div>
 </header>
 	<div data-router-wrapper>
-		<div data-router-view="home">
+		<div data-router-view="default">
 			<section class="section hero hero-product">
 	<div class="bread-crumbs">
 		<div class="container">
 			<ul>
 				<li><a href="#">Home</a></li>
-				<li>
-					Product
-				</li>
+				<li><span>Product</span></li>
 			</ul>
 		</div>
 	</div>
 	<div class="hero-banner" id="hero-banner">
-		<div class="full-carousel splide" id="hero-carousel">
-			<div class="splide__track">
-				<div class="splide__list">
-					<div class="splide__slide full-carousel-slide">
-						<video class="video" autoplay loop muted playsinline poster="../../img/product/hero.jpg">
-						</video>
-					</div>
-				</div>
-			</div>
+		<div class="hero-banner-item">
+			<img src="../../img/product/hero.jpg">
+			<picture>
+				<source srcset="../../img/product/hero.webp" type="image/webp">
+				<source srcset="../../img/product/hero.jpg" type="image/jpeg">
+				<img src="../../img/product/hero.jpg">
+			</picture>
 		</div>
 	</div>
 	<div class="hero-content">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-8">
-					<p class="hero-subtitle font-uppercase color-white" data-load-order="1">Products & Technology</p>
+				<div class="col-md-6">
+					<p class="hero-subtitle font-uppercase color-white" data-load-order>Products & Technology</p>
 					<h1 class="hero-title h1" data-split-text>Meeting unmet patient needs</h1>
-					<p class="hero-text" data-split-text>Altanine is addressing global medical needs through a portfolio of differentiated and high quality therapeutics.</p>
+					<p class="hero-description" data-load-order>Altanine addresses global medical needs with innovative science, enhancing Metformin delivery for affordable access to advanced therapies for millions worldwide.</p>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
-			<section class="section about">
-	<div class="container">
-		<div class="row">
-			<div class="col">
-				<p class="font-uppercase color-gradient section-subtitle">About products</p>
-				<h3 class="h3 section-title">Our products use a proprietary, patent-protected technology <i>– that applies a special coating to Metformin.  </i></h3>
-			</div>
-		</div>
-	</div>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-4">
-				<div class="about__media">
-					<img src="../../img/about-us/about-media.png" alt="about-media">
-				</div>
-			</div>
-			<div class="col-md-6">
-				<div class="about__desc">
-					<h4>The coating prevents the Metformin from being released in the stomach and instead causes it to be released in the small intestine.</h4>
-					<p>
-						Releasing Metformin in the small intestine not only avoids the typical side-effects associated with Metformin but also improves the bioavailability of the drug.
-					</p>
-					<p>
-						As a result, bioavailability using the proprietary coating is around 85%.  This means that we need to use less Metformin to get the patient the same net amount.
-					</p>
-				</div>
-			</div>
-			<div class="col-md-2">
-				<div class="about__media-small">
-					<img src="../../img/about-us/about-media-s.png" alt="about-media">
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
+
 			<section class="section products">
 	<div class="container">
 		<div class="row">
@@ -156,7 +119,7 @@
 				<div class="products-sticky">
 					<p class="font-uppercase color-gradient section-subtitle">Products</p>
 					<h3 class="h3 section-title">Our products include different configurations and <i>formulations of Metformin.</i></h3>
-					<p class="section-description">We offer Metformin in both effervescent liquid and lozenge form.</p>
+<!--					<p class="section-description">We offer Metformin in both effervescent liquid and lozenge form.</p>-->
 				</div>
 			</div>
 			<div class="col-md-7">
@@ -164,30 +127,25 @@
 					<div class="row">
 						<div class="col-md-8">
 							<div class="banner section-banner" data-parallax>
-								<img src="../../img/home/products-1.jpg">
+								<picture>
+									<source srcset="../../img/product/product-1.png" type="image/png">
+									<source srcset="../../img/product/product-1.webp" type="image/webp">
+									<img src="../../img/product/product-1.png">
+								</picture>
 							</div>
 						</div>
 						<div class="col-md-4">
 							<div class="products-card">
 								<div class="products-card-thumbnail" data-parallax>
-									<img src="../../img/home/products-3.jpg">
+									<picture>
+										<source srcset="../../img/product/product-2.png" type="image/png">
+										<source srcset="../../img/product/product-2.webp" type="image/webp">
+										<img src="../../img/product/product-2.png">
+									</picture>
 								</div>
 								<div class="products-card-body">
 									<p class="products-card-title">Crystalized Metformin</p>
 									<p class="products-card-description">Our effervescent version of Metformin provides a sachet of Metformin crystals that, when mixed with water, provides a drinkable solution for taking Metformin.  The Metformin crystals come in different flavor options.</p>
-									<div class="products-card-action">
-										<a href="#" class="btn btn-arrow">
-										<span class="btn-icon">
-											<span class="btn-icon-item"></span>
-											<span class="btn-icon-item"></span>
-											<span class="btn-icon-item"></span>
-											<span class="btn-icon-item"></span>
-										</span>
-											<span class="btn-labels">
-											<span class="btn-labels-item">Learn more</span>
-										</span>
-										</a>
-									</div>
 								</div>
 							</div>
 						</div>
@@ -197,30 +155,26 @@
 					<div class="row">
 						<div class="col-md-8">
 							<div class="banner section-banner" data-parallax>
-								<img src="../../img/home/products-2.jpg">
+								<picture>
+									<source srcset="../../img/product/product-4.png" type="image/png">
+									<source srcset="../../img/product/product-4.webp" type="image/webp">
+									<img src="../../img/product/product-4.png">
+								</picture>
+
 							</div>
 						</div>
 						<div class="col-md-4">
 							<div class="products-card">
 								<div class="products-card-thumbnail" data-parallax>
-									<img src="../../img/home/products-3.jpg">
+									<picture>
+										<source srcset="../../img/product/product-3.png" type="image/png">
+										<source srcset="../../img/product/product-3.webp" type="image/webp">
+										<img src="../../img/product/product-3.png">
+									</picture>
 								</div>
 								<div class="products-card-body">
 									<p class="products-card-title">Metformin Gummies</p>
 									<p class="products-card-description">Our gummy version of Metformin is as simple as if one were eating a gummy candy.  The gummies are infused with Metformin and provide an easier option for patients who struggle with swallowing pills or related side effects.</p>
-									<div class="products-card-action">
-										<a href="#" class="btn btn-arrow">
-										<span class="btn-icon">
-											<span class="btn-icon-item"></span>
-											<span class="btn-icon-item"></span>
-											<span class="btn-icon-item"></span>
-											<span class="btn-icon-item"></span>
-										</span>
-										<span class="btn-labels">
-											<span class="btn-labels-item">Learn more</span>
-										</span>
-									</a>
-									</div>
 								</div>
 							</div>
 						</div>
@@ -236,8 +190,8 @@
 			<div class="col-md-5">
 				<div class="enhancements-sticky">
 					<p class="font-uppercase color-gradient section-subtitle">Enhancements</p>
-					<h3 class="h3 section-title">In addition to our base versions of <i>Crystalized Metformin and Metformin Gummies.</i></h3>
-					<p class="section-description">We offer enhancements for patients with specific needs and requirements.</p>
+					<p class="section-description">In addition to our base versions of Crystalized Metformin and Metformin Gummies. </p>
+					<h3 class="h3 section-title">We offer enhancements for patients with specific needs and requirements.</h3>
 				</div>
 			</div>
 			<div class="col-md-7">
@@ -245,30 +199,25 @@
 					<div class="row">
 						<div class="col-md-8">
 							<div class="banner section-banner" data-parallax>
-								<img src="../../img/home/enhancements-2.jpg">
+								<picture>
+									<source srcset="../../img/home/enhancements-2.webp" type="image/webp">
+									<source srcset="../../img/home/enhancements-2.jpg" type="image/jpeg">
+									<img src="../../img/home/enhancements-2.jpg">
+								</picture>
 							</div>
 						</div>
 						<div class="col-md-4">
 							<div class="products-card">
 								<div class="products-card-thumbnail" data-parallax>
-									<img src="../../img/home/enhancements-1.jpg">
+									<picture>
+										<source srcset="../../img/home/enhancements-1.webp" type="image/webp">
+										<source srcset="../../img/home/enhancements-1.jpg" type="image/jpeg">
+										<img src="../../img/home/enhancements-1.jpg">
+									</picture>
 								</div>
 								<div class="products-card-body">
 									<p class="products-card-title">We offer a Metformin + Vitamin B12 product </p>
-									<p class="products-card-description">Because patients who take Metformin over extended periods of time show Vitamin B12 deficiencies,</p>
-									<div class="products-card-action">
-										<a href="#" class="btn btn-arrow">
-										<span class="btn-icon">
-											<span class="btn-icon-item"></span>
-											<span class="btn-icon-item"></span>
-											<span class="btn-icon-item"></span>
-											<span class="btn-icon-item"></span>
-										</span>
-											<span class="btn-labels">
-											<span class="btn-labels-item">Learn more</span>
-										</span>
-										</a>
-									</div>
+									<p class="products-card-description">Because patients who take Metformin over extended periods of time show Vitamin B12 deficiencies, we offer a Metformin + Vitamin B12 product</p>
 								</div>
 							</div>
 						</div>
@@ -278,57 +227,29 @@
 		</div>
 	</div>
 </section>
-			<section class="section investigations">
+			<section class="section enhancements enhancements-transparent">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-6 offset-md-1 order-md-2">
-				<div class="investigations-sticky">
-					<p class="font-uppercase color-gradient section-subtitle">Clinical Investigations</p>
-					<h3 class="h3 section-title">Evidence of Excellence: <i>Our Metformin's Journey Through Clinical Trials.</i></h3>
-					<p class="section-description">We understand the importance of rigorous testing. Learn more about the successful clinical trials that demonstrate the safety, efficacy, and reliability of our Metformin delivery system.</p>
-				</div>
+			<div class="col-12">
+				<p class="font-uppercase color-gradient section-subtitle">Enhancements</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-8 order-md-2">
+				<h3 class="h3 section-title">Additionally, and perhaps of much greater interest, is that most diabetics are overweight. <i>Studies have shown that when Metformin is combined with liraglutide, diabetic patients lose weight and show other improvements</i></h3>
 			</div>
 			<div class="col-md-4 order-md-1">
-				<div class="certificates">
-					<div class="certificates-column">
-						<div class="certificates-item">
-							<div class="certificates-item-thumbnail">
-								<img src="../../img/home/certificate-1.svg" alt="AS9100D Certified" />
-							</div>
-							<p class="certificates-item-label">AS9100D Certified</p>
-						</div>
-						<div class="certificates-item">
-							<div class="certificates-item-thumbnail">
-								<img src="../../img/home/certificate-3.svg" alt="CGP Registered" />
-							</div>
-							<p class="certificates-item-label">CGP Registered</p>
-						</div>
-						<div class="certificates-item">
-							<div class="certificates-item-thumbnail">
-								<img src="../../img/home/certificate-5.svg" alt="GMP Quality" />
-							</div>
-							<p class="certificates-item-label">GMP Quality</p>
-						</div>
+				<div class="products-card">
+					<div class="products-card-thumbnail" data-parallax>
+						<picture>
+							<source srcset="../../img/home/enhancements-1.webp" type="image/webp">
+							<source srcset="../../img/home/enhancements-1.jpg" type="image/jpeg">
+							<img src="../../img/home/enhancements-1.jpg">
+						</picture>
 					</div>
-					<div class="certificates-column">
-						<div class="certificates-item">
-							<div class="certificates-item-thumbnail">
-								<img src="../../img/home/certificate-2.svg" alt="Certified 9001:2015" />
-							</div>
-							<p class="certificates-item-label">Certified 9001:2015</p>
-						</div>
-						<div class="certificates-item">
-							<div class="certificates-item-thumbnail">
-								<img src="../../img/home/certificate-4.svg" alt="CWB Certified" />
-							</div>
-							<p class="certificates-item-label">CWB Certified</p>
-						</div>
-						<div class="certificates-item">
-							<div class="certificates-item-thumbnail">
-								<img src="../../img/home/certificate-6.svg" alt="CWB Certified" />
-							</div>
-							<p class="certificates-item-label">GMP Quality</p>
-						</div>
+					<div class="products-card-body">
+						<p class="products-card-title">As a result:</p>
+						<p class="products-card-description">We offer a Metformin Gummy with Liraglutide designed to address weight-loss and glucose levels simultaneously.</p>
 					</div>
 				</div>
 			</div>
@@ -340,8 +261,8 @@
 		<div class="row">
 			<div class="col-md-5">
 				<div class="enhancements-sticky">
-					<p class="font-uppercase color-gradient section-subtitle">Metformin</p>
-					<h3 class="h3 section-title">We also need to recognize that Metformin has applications beyond the diabetes world.</h3>
+					<p class="font-uppercase color-gradient section-subtitle">Beyond Diabetes </p>
+					<h4 class="h4 section-title">We also need to recognize that Metformin has applications beyond the diabetes world.</h4>
 					<p class="section-description">Due to its anti-inflammatory properties, Metformin has become widely regarded as an “anti aging” treatment</p>
 					<p class="section-description">As a result, our products can be used for anti-aging applications as well as other diseases where Metformin is a commonly prescribed treatment.</p>
 				</div>
@@ -351,30 +272,25 @@
 					<div class="row">
 						<div class="col-md-8">
 							<div class="banner section-banner" data-parallax>
-								<img src="../../img/home/enhancements-2-1.jpg">
+								<picture>
+									<source srcset="../../img/home/enhancements-2.webp" type="image/webp">
+									<source srcset="../../img/home/enhancements-2.jpg" type="image/jpeg">
+									<img src="../../img/product/enhancements-banner-1.jpg">
+								</picture>
 							</div>
 						</div>
 						<div class="col-md-4">
 							<div class="products-card">
 								<div class="products-card-thumbnail" data-parallax>
-									<img src="../../img/home/enhancements-1-1.jpg">
+									<picture>
+										<source srcset="../../img/home/enhancements-2.webp" type="image/webp">
+										<source srcset="../../img/home/enhancements-2.jpg" type="image/jpeg">
+										<img src="../../img/product/enhancements-banner-2.jpg">
+									</picture>
 								</div>
 								<div class="products-card-body">
-									<p class="products-card-title">All of our products are manufactured by a licensed compounding pharmacy. </p>
+									<p class="products-card-title">All of our products are manufactured by a licensed compounding pharmacy.</p>
 									<p class="products-card-description">Patients must send a doctor-issued prescription to the compounding pharmacy in order to receive our products.</p>
-									<div class="products-card-action">
-										<a href="#" class="btn btn-arrow">
-										<span class="btn-icon">
-											<span class="btn-icon-item"></span>
-											<span class="btn-icon-item"></span>
-											<span class="btn-icon-item"></span>
-											<span class="btn-icon-item"></span>
-										</span>
-											<span class="btn-labels">
-											<span class="btn-labels-item">Learn more</span>
-										</span>
-										</a>
-									</div>
 								</div>
 							</div>
 						</div>
@@ -384,261 +300,124 @@
 		</div>
 	</div>
 </section>
-
-			<div class="container">
-				<hr class="hr"/>
-			</div>
-			<section class="section faq" id="faq">
-	<div class="container">
-		<div class="row">
-      <div class="col-md-5">
-	      <div class="faq-sticky">
-		      <p class="font-uppercase color-gradient section-subtitle">Metformin</p>
-          <h2 class="h2 section-title">What is <i>Metformin?</i></h2>
-	        <p class="section-description">Currently, over 150 million people worldwide are using metformin.</p>
-		      <div class="banner section-banner" data-parallax>
-				  <img src="../../img/home/faq-banner.jpg">
-		      </div>
-	      </div>
-      </div>
-			<div class="col-md-7">
-				<div class="accordion">
-					<div class="accordion-item">
-						<div class="accordion-item-header">
-							<p class="accordion-item-title">Metformin: Effective First-Line Treatment for Type 2 Diabetes with Common Gastrointestinal Side Effects</p>
-							<div class="accordion-item-icon">
-								<button class="btn btn-arrow btn-arrow-md color-gray">
-									<span class="btn-icon">
-										<span class="btn-icon-item"></span>
-										<span class="btn-icon-item"></span>
-										<span class="btn-icon-item"></span>
-										<span class="btn-icon-item"></span>
-									</span>
-								</button>
-							</div>
-						</div>
-						<div class="accordion-item-body">
-							<div class="accordion-item-description">
-								<p>Metformin is the most common drug used and is the first-line agent in type 2 diabetes management. It is also considered one of the safest pharmacological agents for the treatment of the disease.</p>
-								<p>However, gastrointestinal side effects are common, occurring in up to 75% of those who take metformin (2). These side effects may include diarrhea, nausea, vomiting, abdominal discomfort, and/or flatulence, with severity ranging from mild to severe. These complications are more common with immediate-release preparations of metformin than with its extended-release formulation. Discontinuation and nonadherence rates have been as high as 46% with metformin because of these issues (3).</p>
-							</div>
-							<button class="btn btn-arrow">
-								<span class="btn-icon">
-									<span class="btn-icon-item"></span>
-									<span class="btn-icon-item"></span>
-									<span class="btn-icon-item"></span>
-									<span class="btn-icon-item"></span>
-								</span>
-								<span class="btn-labels">
-									<span class="btn-labels-item">Learn more</span>
-								</span>
-							</button>
-						</div>
-					</div>
-					<div class="accordion-item">
-						<div class="accordion-item-header">
-							<p class="accordion-item-title">Metformin's benefits may extend far beyond diabetes</p>
-							<div class="accordion-item-icon">
-								<button class="btn btn-arrow btn-arrow-md color-gray">
-									<span class="btn-icon">
-										<span class="btn-icon-item"></span>
-										<span class="btn-icon-item"></span>
-										<span class="btn-icon-item"></span>
-										<span class="btn-icon-item"></span>
-									</span>
-								</button>
-							</div>
-						</div>
-						<div class="accordion-item-body">
-							<div class="accordion-item-description">
-								<p>Metformin is the most common drug used and is the first-line agent in type 2 diabetes management. It is also considered one of the safest pharmacological agents for the treatment of the disease.</p>
-								<p>However, gastrointestinal side effects are common, occurring in up to 75% of those who take metformin (2). These side effects may include diarrhea, nausea, vomiting, abdominal discomfort, and/or flatulence, with severity ranging from mild to severe. These complications are more common with immediate-release preparations of metformin than with its extended-release formulation. Discontinuation and nonadherence rates have been as high as 46% with metformin because of these issues (3).</p>
-							</div>
-							<button class="btn btn-arrow">
-								<span class="btn-icon">
-									<span class="btn-icon-item"></span>
-									<span class="btn-icon-item"></span>
-									<span class="btn-icon-item"></span>
-									<span class="btn-icon-item"></span>
-								</span>
-								<span class="btn-labels">
-									<span class="btn-labels-item">Learn more</span>
-								</span>
-							</button>
-						</div>
-					</div>
-					<div class="accordion-item">
-						<div class="accordion-item-header">
-							<p class="accordion-item-title">Metformin may also have health benefits for people who don't have diabetes</p>
-							<div class="accordion-item-icon">
-								<button class="btn btn-arrow btn-arrow-md color-gray">
-									<span class="btn-icon">
-										<span class="btn-icon-item"></span>
-										<span class="btn-icon-item"></span>
-										<span class="btn-icon-item"></span>
-										<span class="btn-icon-item"></span>
-									</span>
-								</button>
-							</div>
-						</div>
-						<div class="accordion-item-body">
-							<div class="accordion-item-description">
-								<p>Metformin is the most common drug used and is the first-line agent in type 2 diabetes management. It is also considered one of the safest pharmacological agents for the treatment of the disease.</p>
-								<p>However, gastrointestinal side effects are common, occurring in up to 75% of those who take metformin (2). These side effects may include diarrhea, nausea, vomiting, abdominal discomfort, and/or flatulence, with severity ranging from mild to severe. These complications are more common with immediate-release preparations of metformin than with its extended-release formulation. Discontinuation and nonadherence rates have been as high as 46% with metformin because of these issues (3).</p>
-							</div>
-							<button class="btn btn-arrow">
-								<span class="btn-icon">
-									<span class="btn-icon-item"></span>
-									<span class="btn-icon-item"></span>
-									<span class="btn-icon-item"></span>
-									<span class="btn-icon-item"></span>
-								</span>
-								<span class="btn-labels">
-									<span class="btn-labels-item">Learn more</span>
-								</span>
-							</button>
-						</div>
-					</div>
-					<div class="accordion-item">
-						<div class="accordion-item-header">
-							<p class="accordion-item-title">Prediabetes.</p>
-							<div class="accordion-item-icon">
-								<button class="btn btn-arrow btn-arrow-md color-gray">
-									<span class="btn-icon">
-										<span class="btn-icon-item"></span>
-										<span class="btn-icon-item"></span>
-										<span class="btn-icon-item"></span>
-										<span class="btn-icon-item"></span>
-									</span>
-								</button>
-							</div>
-						</div>
-						<div class="accordion-item-body">
-							<div class="accordion-item-description">
-								<p>Metformin is the most common drug used and is the first-line agent in type 2 diabetes management. It is also considered one of the safest pharmacological agents for the treatment of the disease.</p>
-								<p>However, gastrointestinal side effects are common, occurring in up to 75% of those who take metformin (2). These side effects may include diarrhea, nausea, vomiting, abdominal discomfort, and/or flatulence, with severity ranging from mild to severe. These complications are more common with immediate-release preparations of metformin than with its extended-release formulation. Discontinuation and nonadherence rates have been as high as 46% with metformin because of these issues (3).</p>
-							</div>
-							<button class="btn btn-arrow">
-								<span class="btn-icon">
-									<span class="btn-icon-item"></span>
-									<span class="btn-icon-item"></span>
-									<span class="btn-icon-item"></span>
-									<span class="btn-icon-item"></span>
-								</span>
-								<span class="btn-labels">
-									<span class="btn-labels-item">Learn more</span>
-								</span>
-							</button>
-						</div>
-					</div>
-					<div class="accordion-item">
-						<div class="accordion-item-header">
-							<p class="accordion-item-title">Gestational diabetes.</p>
-							<div class="accordion-item-icon">
-								<button class="btn btn-arrow btn-arrow-md color-gray">
-									<span class="btn-icon">
-										<span class="btn-icon-item"></span>
-										<span class="btn-icon-item"></span>
-										<span class="btn-icon-item"></span>
-										<span class="btn-icon-item"></span>
-									</span>
-								</button>
-							</div>
-						</div>
-						<div class="accordion-item-body">
-							<div class="accordion-item-description">
-								<p>Metformin is the most common drug used and is the first-line agent in type 2 diabetes management. It is also considered one of the safest pharmacological agents for the treatment of the disease.</p>
-								<p>However, gastrointestinal side effects are common, occurring in up to 75% of those who take metformin (2). These side effects may include diarrhea, nausea, vomiting, abdominal discomfort, and/or flatulence, with severity ranging from mild to severe. These complications are more common with immediate-release preparations of metformin than with its extended-release formulation. Discontinuation and nonadherence rates have been as high as 46% with metformin because of these issues (3).</p>
-							</div>
-							<button class="btn btn-arrow">
-								<span class="btn-icon">
-									<span class="btn-icon-item"></span>
-									<span class="btn-icon-item"></span>
-									<span class="btn-icon-item"></span>
-									<span class="btn-icon-item"></span>
-								</span>
-								<span class="btn-labels">
-									<span class="btn-labels-item">Learn more</span>
-								</span>
-							</button>
-						</div>
-					</div>
-					<div class="accordion-item">
-						<div class="accordion-item-header">
-							<p class="accordion-item-title">Polycystic ovary syndrome (PCOS).</p>
-							<div class="accordion-item-icon">
-								<button class="btn btn-arrow btn-arrow-md color-gray">
-									<span class="btn-icon">
-										<span class="btn-icon-item"></span>
-										<span class="btn-icon-item"></span>
-										<span class="btn-icon-item"></span>
-										<span class="btn-icon-item"></span>
-									</span>
-								</button>
-							</div>
-						</div>
-						<div class="accordion-item-body">
-							<div class="accordion-item-description">
-								<p>Metformin is the most common drug used and is the first-line agent in type 2 diabetes management. It is also considered one of the safest pharmacological agents for the treatment of the disease.</p>
-								<p>However, gastrointestinal side effects are common, occurring in up to 75% of those who take metformin (2). These side effects may include diarrhea, nausea, vomiting, abdominal discomfort, and/or flatulence, with severity ranging from mild to severe. These complications are more common with immediate-release preparations of metformin than with its extended-release formulation. Discontinuation and nonadherence rates have been as high as 46% with metformin because of these issues (3).</p>
-							</div>
-							<button class="btn btn-arrow">
-								<span class="btn-icon">
-									<span class="btn-icon-item"></span>
-									<span class="btn-icon-item"></span>
-									<span class="btn-icon-item"></span>
-									<span class="btn-icon-item"></span>
-								</span>
-								<span class="btn-labels">
-									<span class="btn-labels-item">Learn more</span>
-								</span>
-							</button>
-						</div>
-					</div>
-					<div class="accordion-item">
-						<div class="accordion-item-header">
-							<p class="accordion-item-title">Weight gain from antipsychotic medicines.</p>
-							<div class="accordion-item-icon">
-								<button class="btn btn-arrow btn-arrow-md color-gray">
-									<span class="btn-icon">
-										<span class="btn-icon-item"></span>
-										<span class="btn-icon-item"></span>
-										<span class="btn-icon-item"></span>
-										<span class="btn-icon-item"></span>
-									</span>
-								</button>
-							</div>
-						</div>
-						<div class="accordion-item-body">
-							<div class="accordion-item-description">
-								<p>Metformin is the most common drug used and is the first-line agent in type 2 diabetes management. It is also considered one of the safest pharmacological agents for the treatment of the disease.</p>
-								<p>However, gastrointestinal side effects are common, occurring in up to 75% of those who take metformin (2). These side effects may include diarrhea, nausea, vomiting, abdominal discomfort, and/or flatulence, with severity ranging from mild to severe. These complications are more common with immediate-release preparations of metformin than with its extended-release formulation. Discontinuation and nonadherence rates have been as high as 46% with metformin because of these issues (3).</p>
-							</div>
-							<button class="btn btn-arrow">
-								<span class="btn-icon">
-									<span class="btn-icon-item"></span>
-									<span class="btn-icon-item"></span>
-									<span class="btn-icon-item"></span>
-									<span class="btn-icon-item"></span>
-								</span>
-								<span class="btn-labels">
-									<span class="btn-labels-item">Learn more</span>
-								</span>
-							</button>
-						</div>
-					</div>
-				</div>
-			</div>
-    </div>
-	</div>
-</section>
-			<section class="section content">
+			<section class="section benefits">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-5">
-				<p class="font-uppercase color-gradient section-subtitle">Content</p>
-				<h3 class="h3 section-title">Take Control of Your <i>Health Today</i></h3>
-				<p class="section-description">Inquire about our innovative <strong>Metformin delivery system</strong> during your next doctor's appointment.</p>
+				<p class="font-uppercase color-gradient section-subtitle">Altanine products have non-diabetic applications:</p>
+			</div>
+			<div class="col-md-7">
+				<h3 class="h3 section-title">Altanine therapies beyond Diabetes</h3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="benefits-card">
+					<p class="benefits-card-number">01</p>
+					<div class="benefits-card-border"></div>
+					<div class="benefits-card-icon">
+						<img src="../../img/home/benefits-1.svg" alt="Anti-aging tretment"/>
+					</div>
+					<p class="benefits-card-title">Anti-aging tretment</p>
+					<p class="benefits-card-description">Due to its anti-inflammatory properties, Metformin may also mitigate age-related diseases, extend lifespan and increase health span.</p>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="benefits-card">
+					<p class="benefits-card-number">02</p>
+					<div class="benefits-card-border"></div>
+					<div class="benefits-card-icon">
+						<img src="../../img/home/benefits-4.svg" alt="Polycystic Ovary Syndrome (PCOS)"/>
+					</div>
+					<p class="benefits-card-title">Polycystic Ovary Syndrome (PCOS)</p>
+					<p class="benefits-card-description">Metformin is a beneficial ovulation induction agent for non-obese PCOS women, with advantages over other initial treatments. It is an effective step for women resistant to clomiphene in treating anovulatory infertility.</p>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="benefits-card">
+					<p class="benefits-card-number">03</p>
+					<div class="benefits-card-border"></div>
+					<div class="benefits-card-icon">
+						<img src="../../img/home/benefits-5.svg" alt="Weight loss therapy"/>
+					</div>
+					<p class="benefits-card-title">Weight loss therapy</p>
+					<p class="benefits-card-description">Altanine’s technology can be applied to liraglutide, a powerful weight loss drug. Altanine can provide liraglutide in a gummy or crystal form avoiding injections and GI side effects.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+			<div class="container">
+				<hr class="hr"/>
+			</div>
+			<section class="section property">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="property-media">
+					<div class="property-media-id">
+						<span class="property-media-icon"><img src="../../img/home/property-icon.svg" alt="property-icon"></span>
+						IP protections filed under <br> PCT/US2023/081775
+					</div>
+					<div class="property-media-info">
+						*Altanine is considering new regulatory filings to broaden its sales, including orphan drug designation for Metformin in treating specific non-diabetic conditions, generic drug designation for Metformin gummies, and medical device designation for future Metformin-related applications.
+					</div>
+					<div class="property-media-img" data-parallax>
+						<picture>
+							<source srcset="../../img/home/property-img.png" type="image/png">
+							<source srcset="../../img/home/property-img.webp" type="image/webp">
+							<img src="../../img/home/property-img.png">
+						</picture>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-7 offset-md-1">
+				<div class="property-desc">
+					<p class="font-uppercase color-gradient section-subtitle">content</p>
+					<h3 class="h3 section-title">Our Intellectual property</h3>
+					<p>Altanine has an <b>exclusive, worldwide license </b> for the enteric coating for Metformin (including Metformin and Liraglutide combinations)</p>
+					<ul>
+						<li>
+							Metformin & Liraglutide are generic drugs previously approved by the US Food & Drug Administration (FDA)
+						</li>
+						<li>
+							Altanine can sell its products throughout the US using 503A and 503B compounding pharmacies to fill prescriptions
+						</li>
+						<li>
+							Regulatory & IP have been vetted by GreenbergTraurig
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+			<section class="section content content-second">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-5">
+				<p class="font-uppercase color-gradient section-subtitle">Stay up-to-date </p>
+				<h3 class="h3 section-title">Join our free<i>e-newsletter today</i></h3>
+				<div class="join-box-form">
+					<form>
+						<label class="field">
+							<span class="field-label">And a-mail*</span>
+							<input type="email" placeholder="Your Email" class="field-item">
+							<span class="field-message __success">Success message</span>
+							<span class="field-message __error">Error message</span>
+						</label>
+						<button class="btn btn-gradient btn-md btn-full-width">
+							<span class="btn-bg"></span>
+							<span class="btn-icon"><svg><use xlink:href="img/icons/icons.svg#arrow-right"></use></svg></span>
+							<span class="btn-labels">
+								<span class="btn-labels-item">Subscribe</span>
+								<span class="btn-labels-item">Subscribe</span>
+									<span class="btn-labels-item">Subscribe</span>
+								</span>
+						</button>
+					</form>
+				</div>
+				<p class="content-info"><i class="color-gradient">* </i> Inquire about our innovative Metformin products during your next doctor's appointment. </p>
 			</div>
 		</div>
 		<div class="users show-on-scroll">
@@ -663,14 +442,18 @@
 		</div>
 	</div>
 	<div class="content-banner show-on-scroll">
-		<img src="../../img/home/content-1.jpg">
+		<picture>
+			<source srcset="../../img/home/content-1.webp" type="image/webp">
+			<source srcset="../../img/home/content-1.png" type="image/jpeg">
+			<img src="../../img/home/content-1.png">
+		</picture>
 	</div>
 </section>
 		</div>
 	</div>
 	<footer class="footer">
 	<div class="footer-abstract">
-		<img src="../img/footer-abstract.svg" alt="Alt" />
+		<img src="../../img/footer-abstract.svg" alt="Alt" />
 	</div>
   <div class="container">
 	  <div class="row">
@@ -683,12 +466,12 @@
 			  <div class="footer-nav">
 				  <p class="footer-label">Site map</p>
 				  <ul>
-					  <li><a href="#">About us</a></li>
-					  <li><a href="#">Metformin</a></li>
-					  <li><a href="#">Product</a></li>
-					  <li><a href="#">Investor Relations</a></li>
-					  <li><a href="#">Blog</a></li>
-					  <li><a href="#">Contact us</a></li>
+					  <li><a href="about-us.html">About us</a></li>
+					  <li><a href="metformin.html">Metformin</a></li>
+					  <li><a href="product.html">Product</a></li>
+					  <li><a href="investor.html">Investor Relations</a></li>
+					  <li><a href="blog.html">Blog</a></li>
+					  <li><a href="contact-us.html">Contact us</a></li>
 				  </ul>
 			  </div>
 		  </div>
@@ -747,7 +530,7 @@
 		  <div class="col-md-3 order-md-4">
 			  <div class="footer-logo">
 				  <a href="/" class="logo">
-					  <img src="../img/logo-white.svg" alt="Altanine"/>
+					  <img src="../../img/logo-white.svg" alt="Altanine"/>
 				  </a>
 			  </div>
 		  </div>
@@ -759,7 +542,7 @@
 		  <div class="col-md-3 order-md-3 col-6">
 			  <div class="footer-additional">
 				  <ul>
-					  <li><a href="#">Privacy policy</a></li>
+					  <li><a href="text-template.html">Privacy policy</a></li>
 				  </ul>
 			  </div>
 		  </div>
@@ -767,14 +550,88 @@
 			  <a href="https://www.studiopresto.com/" target="_blank" class="footer-developer">
 				  Made by
 				  <span class="footer-developer-logo">
-					  <img src="../img/developer-logo.svg" alt="Studiopresto" />
-					  <img src="../img/developer-logo-blue.svg" alt="Studiopresto" />
+					  <img src="../../img/developer-logo.svg" alt="Studiopresto" />
+					  <img src="../../img/developer-logo-blue.svg" alt="Studiopresto" />
 				  </span>
 			  </a>
 		  </div>
 	  </div>
   </div>
 </footer>
+	<div class="modal" id="investor-modal">
+	<div class="modal-bg"></div>
+	<div class="modal-close" data-modal-close="#investor-modal"></div>
+	<div class="modal-box" data-lenis-prevent>
+		<div class="modal-box-item">
+			<div class="investor-modal">
+				<div class="modal-close-btn" data-modal-close="#investor-modal">
+					<svg><use xlink:href="img/icons/icons.svg#close"></use></svg>
+				</div>
+				<div class="investor-modal-content">
+					<h5 class="h5">We’d love to hear from you.</h5>
+					<form>
+						<label class="field">
+							<span class="field-label">You should have a name and last name*</span>
+							<input type="email" placeholder="Full name" class="field-item" />
+							<span class="field-message __success">Success message</span>
+							<span class="field-message __error">Error message</span>
+						</label>
+						<label class="field">
+							<span class="field-label">And e-mail*</span>
+							<input type="email" placeholder="You email" class="field-item" />
+							<span class="field-message __success">Success message</span>
+							<span class="field-message __error">Error message</span>
+						</label>
+						<label class="field">
+							<span class="field-label">Now write down message*</span>
+							<span class="field-resize"></span>
+							<textarea placeholder="You message" class="field-item"></textarea>
+							<span class="field-message __success">Success message</span>
+							<span class="field-message __error">Error message</span>
+						</label>
+						<button class="btn btn-gradient btn-md btn-full-width">
+							<span class="btn-bg"></span>
+							<span class="btn-icon"><svg><use xlink:href="img/icons/icons.svg#arrow-right"></use></svg></span>
+							<span class="btn-labels">
+								<span class="btn-labels-item">Become an investor</span>
+								<span class="btn-labels-item">Become an investor</span>
+								<span class="btn-labels-item">Become an investor</span>
+							</span>
+						</button>
+					</form>
+				</div>
+				<div class="investor-modal-thumbnail">
+					<picture>
+						<source srcset="../../img/investor/modal-banner.webp" type="image/webp">
+						<source srcset="../../img/investor/modal-banner.jpg" type="image/jpeg">
+						<img src="../../img/investor/modal-banner.jpg">
+					</picture>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	<div class="modal" id="thanks">
+	<div class="modal-bg"></div>
+	<div class="modal-close" data-modal-close="#thanks"></div>
+	<div class="modal-box" data-lenis-prevent>
+		<div class="modal-box-item">
+			<div class="thanks">
+				<div class="modal-close-btn" data-modal-close="#thanks">
+					<svg><use xlink:href="img/icons/icons.svg#close"></use></svg>
+				</div>
+				<div class="thanks-content">
+					<h4 class="h4 thanks-content-title">Thank You<i>!</i></h4>
+					<p class="thanks-content-subtitle">Your submission has been received!</p>
+					<p class="thanks-content-description">We will reach out to you shortly.</p>
+				</div>
+				<div class="thanks-thumbnail">
+					<img src="../img/logo-mini.svg" alt="Altanine" />
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 </main>
 <script src="js/app.min.js"></script>
 </body>

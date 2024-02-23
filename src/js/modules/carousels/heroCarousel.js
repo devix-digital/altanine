@@ -21,28 +21,10 @@ export const initHeroCarousel = () => {
 			interval: 4000,
 		});
 		
-		// splide.on('mounted', () => {
-		// 	stopAllVideos(heroCarousel);
-		// 	slides[0].querySelector('.video').play();
-		// });
-		
 		splide.mount();
 		/* fill after each slide change */
 		splide.on( 'autoplay:playing', function (rate) {
 			setProgressBar(progressBar, rate)
 		});
-		
-		// splide.on('moved', (a, b, c, d) => {
-		// 	stopAllVideos(heroCarousel);
-		// 	slides[a].querySelector('.video').play();
-		// });
 	}
 }
-
-// const stopAllVideos = (carousel) => {
-// 	const videos = carousel.querySelectorAll('.video');
-//   for (let video of videos) {
-// 		video.pause();
-// 		video.currentTime = 0;
-//   }
-// }

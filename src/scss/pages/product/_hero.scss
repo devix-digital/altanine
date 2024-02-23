@@ -1,9 +1,21 @@
 .hero-product{
 	min-height: 690rem;
-	.hero-text{
-		max-width: 528rem;
-		font: var(--font-body-m);
-		color: var(--color-white);
-		margin:  25rem 0 14rem 0;
-	}
+	
+		.bread-crumbs{
+			li{
+				&:last-child{
+					color: var(--color-gray-300);
+				}
+			}
+		}
+	
+		.hero-description{
+			max-width: 528rem;
+			color: var(--color-white);
+			margin:  25rem 0 14rem;
+			
+				@include maxWidth($sm){
+					margin: 16rem 0 14rem;
+				}
+		}
 }

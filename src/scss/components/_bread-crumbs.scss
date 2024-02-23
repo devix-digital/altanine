@@ -11,7 +11,7 @@
 	
 		ul{
 			display: flex;
-			flex-wrap: wrap;
+			align-items: center;
 			margin: 0 -24rem;
 			
 				@include maxWidth($sm){
@@ -22,6 +22,13 @@
 		li{
 			position: relative;
 			margin-right: 28rem;
+			max-width: 385rem;
+			display: inline-block;
+			height: 24rem;
+			
+				@include maxWidth($sm){
+					max-width: 200rem;
+				}
 			
 				&:after{
 					position: absolute;
@@ -35,12 +42,23 @@
 					background-image: url("data:image/svg+xml,%3Csvg width='12' height='13' viewBox='0 0 12 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.49977 11.4999L8.43311 6.49988L3.49977 1.49988' stroke='url(%23paint0_linear_14650_745)' stroke-width='2'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_14650_745' x1='3.49977' y1='1.49988' x2='10.4734' y2='3.21782' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%2300EFD1'/%3E%3Cstop offset='1' stop-color='%2300ACEA'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
 					pointer-events: none;
 				}
-				&:last-of-type{
-					color: var(--color-gray-300);
+			
+				&:last-child{
+					color: var(--color-gray-400);
+					margin-right: 0;
 					
 						&:after{
 							display: none;
 						}
+				}
+			
+				a, span{
+					white-space: nowrap;
+					display: inline-block;
+					max-width: 100%;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					line-height: 24rem;
 				}
 		}
 	
