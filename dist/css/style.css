@@ -3267,14 +3267,6 @@ svg {
   pointer-events: none;
 }
 
-.benefits-card-description {
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
-  overflow: hidden;
-  pointer-events: none;
-}
-
 .benefits .section-subtitle {
   margin-top: 24rem;
 }
@@ -10573,6 +10565,10 @@ svg {
     height: 180rem;
     margin: 0 auto;
     top: 78rem;
+  }
+
+  .market.market-home .market-data-item:nth-child(4) .market-data-img {
+    max-width: 50rem;
   }
 
   .market.market-content {
