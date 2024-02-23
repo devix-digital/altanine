@@ -286,12 +286,17 @@
 				height: 2292rem;
 				@include maxWidth($sm){
 					padding-top: 40rem;
-					height: 988rem;
+					height: 1209rem;
 				}
 				&-item {
 					&:nth-child(1) {
 						.market-data-text, .color-blue{
 							max-width: 365rem;
+						}
+						@include maxWidth($sm){
+							width: 320rem;
+							height: 320rem;
+							top: 18rem;
 						}
 					}
 					&:nth-child(2) {
@@ -300,6 +305,11 @@
 						height: 522rem;
 						.market-data-text, .color-blue{
 							max-width: 319rem;
+						}
+						@include maxWidth($sm){
+							width: 300rem;
+							height: 300rem;
+							top: 40rem;
 						}
 					}
 					&:nth-child(3) {
@@ -310,6 +320,14 @@
 						height: 442rem;
 						.market-data-text, .color-blue{
 							max-width: 305rem;
+						}
+						@include maxWidth($sm){
+							width: 240rem;
+							height: 240rem;
+							top: 100rem;
+							.market-data-text{
+								max-width: 195rem;
+							}
 						}
 					}
 					&:nth-child(4) {
@@ -323,6 +341,12 @@
 						.market-data-text{
 							color: var(--color-white);
 							max-width: 185rem;
+						}
+						@include maxWidth($sm){
+							width: 180rem;
+							height: 180rem;
+							margin: 0 auto;
+							top: 78rem;
 						}
 					}
 					.color-blue{

@@ -3606,6 +3606,10 @@ svg {
   margin: 24rem 0 12rem;
 }
 
+.content.content-third {
+  padding: 130rem 0;
+}
+
 .hero-about .bread-crumbs li:last-child {
   color: var(--color-gray-300);
 }
@@ -10382,7 +10386,36 @@ svg {
 
   .market.market-home .market-data {
     padding-top: 40rem;
-    height: 988rem;
+    height: 1209rem;
+  }
+
+  .market.market-home .market-data-item:nth-child(1) {
+    width: 320rem;
+    height: 320rem;
+    top: 18rem;
+  }
+
+  .market.market-home .market-data-item:nth-child(2) {
+    width: 300rem;
+    height: 300rem;
+    top: 40rem;
+  }
+
+  .market.market-home .market-data-item:nth-child(3) {
+    width: 240rem;
+    height: 240rem;
+    top: 100rem;
+  }
+
+  .market.market-home .market-data-item:nth-child(3) .market-data-text {
+    max-width: 195rem;
+  }
+
+  .market.market-home .market-data-item:nth-child(4) {
+    width: 180rem;
+    height: 180rem;
+    margin: 0 auto;
+    top: 78rem;
   }
 
   .market.market-content {
@@ -10466,6 +10499,10 @@ svg {
 
   .what-metformin-icon {
     top: -30rem;
+  }
+
+  .what-metformin-link {
+    transform: translate(0, 0);
   }
 
   .enhancements-line {

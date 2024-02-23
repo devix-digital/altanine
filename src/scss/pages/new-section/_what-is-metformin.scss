@@ -104,5 +104,8 @@
 		transform: translate(0, -32rem);
 		position: relative;
 		z-index: 3;
+		@include maxWidth($sm){
+			transform: translate(0, 0);
+		}
 	}
 }
