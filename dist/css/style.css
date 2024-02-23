@@ -2593,7 +2593,7 @@ svg {
 }
 
 .accordion-item-description {
-  margin-bottom: 22rem;
+  margin-bottom: 13rem;
   padding-top: 10rem;
 }
 
@@ -4522,7 +4522,7 @@ svg {
 
 .enhancements-metformin {
   padding: 64rem 0 28rem;
-  margin: 23rem 0;
+  margin: 23rem 0 73rem;
 }
 
 .enhancements-metformin-banner {
@@ -4562,7 +4562,7 @@ svg {
 }
 
 .overview {
-  padding: 120rem 0 72rem;
+  padding: 74rem 0 120rem;
 }
 
 .overview-sticky {
@@ -4753,6 +4753,10 @@ svg {
   right: 16rem;
   width: 176rem;
   height: 174rem;
+}
+
+.problem + .overview-one {
+  padding: 100rem 0 72rem;
 }
 
 .enhancements-still {
@@ -5067,13 +5071,14 @@ svg {
 }
 
 .market.market-content {
-  padding: 64rem 0 0;
+  padding: 50rem 0 0;
+  margin-top: 22rem;
   overflow: hidden;
 }
 
 .market.market-content .market-data {
-  margin-top: 64rem;
-  min-height: 506rem;
+  margin-top: 0;
+  min-height: 530rem;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -5086,8 +5091,8 @@ svg {
   position: absolute;
   content: "";
   border-radius: 50%;
-  width: 824rem;
-  height: 824rem;
+  width: 702rem;
+  height: 702rem;
   right: -60rem;
   bottom: -180rem;
   z-index: -1;
@@ -5101,7 +5106,7 @@ svg {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-end;
-  border: 2rem transparent solid;
+  border: 0;
   position: sticky;
 }
 
@@ -5109,13 +5114,12 @@ svg {
   width: 260rem;
   height: 506rem;
   border-color: transparent;
-  padding: 56rem 64rem;
-  top: 88rem;
+  padding: 18rem 0 0 134rem;
   background: transparent;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  margin: 0 0 0 110rem;
+  margin: 18rem 0 0 134rem;
 }
 
 .market.market-content .market-data-icon {
@@ -5136,9 +5140,11 @@ svg {
 
 .market.market-content .market-data-info {
   position: absolute;
-  left: -270rem;
-  top: 0;
+  left: -314rem;
+  top: 40rem;
   text-align: center;
+  width: 100%;
+  max-width: 187rem;
 }
 
 .market.market-content .market-data-info .info-media {
@@ -5148,8 +5154,8 @@ svg {
 .market.market-content .market-data-info .info-media:after {
   position: absolute;
   content: "";
-  right: -259rem;
-  top: 0;
+  right: -235rem;
+  top: 8rem;
   background-image: url("data:image/svg+xml,%3Csvg width='259' height='90' viewBox='0 0 259 90' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='258.842' y1='89.4743' x2='3.84189' y2='4.47434' stroke='url(%23paint0_linear_16702_4598)'/%3E%3Ccircle cx='4.5' cy='4.5' r='4.5' fill='url(%23paint1_linear_16702_4598)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_16702_4598' x1='4.31621' y1='3.05131' x2='3.38799' y2='5.90672' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%2300EFD1'/%3E%3Cstop offset='1' stop-color='%2300ACEA'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint1_linear_16702_4598' x1='9' y1='9' x2='-1.80092' y2='3.6065' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%2300EFD1'/%3E%3Cstop offset='1' stop-color='%2300ACEA'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
   background-repeat: no-repeat;
   background-size: cover;
@@ -5159,15 +5165,46 @@ svg {
 
 .market.market-content .market-data-element {
   padding: 24rem;
+  width: 100%;
   margin-bottom: 28rem;
   border-radius: 8px;
   background: var(--color-blur);
   border: 1rem solid var(--color-primary-4);
 }
 
+.market.market-content .market-data-element .color-gradient,
+.market.market-content .market-data-element .accordion-item.is-active .accordion-item-title,
+.accordion-item.is-active .market.market-content .market-data-element .accordion-item-title,
+.market.market-content .market-data-element .contact-form-action a,
+.contact-form-action .market.market-content .market-data-element a,
+.market.market-content .market-data-element .blog-details-info blockquote,
+.blog-details-info .market.market-content .market-data-element blockquote {
+  margin-bottom: 7rem;
+}
+
 .market.market-content .market-sticky {
   height: auto;
   padding-top: 0;
+}
+
+.market.market-content .market-sticky .section-title {
+  margin-bottom: 18rem;
+}
+
+.market.market-content .market-sticky .market-content-desc {
+  margin-bottom: 8rem;
+}
+
+.market.market-content + .enhancements-still .enhancements-sticky {
+  padding: 90rem 0 0;
+}
+
+.market.market-content + .enhancements-still .enhancements-sticky .section-title {
+  margin-bottom: 32rem;
+}
+
+.market.market-content + .enhancements-still .enhancements-sticky .section-description {
+  max-width: 424rem;
 }
 
 .market-content-icon {
@@ -10349,7 +10386,7 @@ svg {
   }
 
   .market.market-content {
-    padding: 32rem 0 32rem;
+    padding: 32rem 0 0;
   }
 
   .market.market-content .market-data:after {
@@ -10361,14 +10398,12 @@ svg {
 
   .market.market-content .market-data {
     padding-top: 40rem;
-    height: auto;
+    min-height: 360rem;
   }
 
   .market.market-content .market-data-item:nth-child(1) {
-    padding: 40rem;
-    width: 312rem;
-    height: 312rem;
-    margin: 0 auto;
+    width: 130rem;
+    height: 246rem;
   }
 
   .market.market-content .market-data-desc {
@@ -10377,6 +10412,17 @@ svg {
 
   .market.market-content .market-data-number {
     font: var(--font-h3-mobile);
+  }
+
+  .market.market-content .market-data-info {
+    left: -170rem;
+    top: -46rem;
+  }
+
+  .market.market-content .market-data-info .info-media:after {
+    right: -97rem;
+    top: 12rem;
+    width: 110rem;
   }
 
   .market-content-icon {
