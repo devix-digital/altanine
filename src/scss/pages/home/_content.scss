@@ -67,5 +67,6 @@
 	}
 	&.content-third{
 		padding: 130rem 0;
+		@include maxWidth($sm){ padding: 70rem 0 0;}
 	}
 }

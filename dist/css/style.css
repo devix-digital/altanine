@@ -9882,6 +9882,10 @@ svg {
     display: none;
   }
 
+  .content.content-third {
+    padding: 70rem 0 0;
+  }
+
   .about {
     padding: 80rem 0 31rem;
   }
