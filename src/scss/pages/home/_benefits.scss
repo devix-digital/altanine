@@ -10,7 +10,7 @@
 			padding: 32rem;
 			border-radius: 8px;
 			margin: 24rem 0;
-			height: 314rem;
+			height: 354rem;
 			position: relative;
 			transform: translateY(50rem);
 			display: flex;
@@ -21,7 +21,7 @@
 				@include maxWidth($sm){
 					padding: 26rem;
 					margin: 24rem 0 0;
-					min-height: 286rem;
+					min-height: 354rem;
 					height: auto;
 				}
 			
