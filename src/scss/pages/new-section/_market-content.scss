@@ -136,6 +136,12 @@
 					margin-bottom: 8rem;
 				}
 			}
+			&-content{
+				&-image{
+					width: 110rem;
+					height: 80rem;
+				}
+			}
 		}
 		& + .enhancements-still{
 			.enhancements-sticky{
@@ -151,6 +157,7 @@
 		}
 	}
 	&.market-investor{
+		margin-top: 8rem;
 				padding: 48rem 0 65rem;
 				overflow: hidden;
 				@include maxWidth($sm){
