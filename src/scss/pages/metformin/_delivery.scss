@@ -1,5 +1,5 @@
 .delivery{
-	padding: 75rem 0;
+	padding: 75rem 0 78rem;
 	
 		@include maxWidth($sm){
 			padding: 40rem 0;
@@ -20,7 +20,7 @@
 		}
 		
 		&-card{
-			padding: 32rem 0;
+			padding: 35rem 0;
 			
 				@include maxWidth($sm){
 					padding: 16rem 0;

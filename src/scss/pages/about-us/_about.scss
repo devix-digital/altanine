@@ -52,7 +52,7 @@
       }
     }
   
-  &__desc{
+  &-desc{
     margin: 8rem 0 0;
     max-width: 97%;
     color: var(--color-gray-600);
@@ -137,7 +137,7 @@
       padding: 42rem 0 60rem;
     }
     .about{
-      &__desc{
+      &-desc{
         margin-top: 43rem;
         h4{
           margin-bottom: 22rem;
@@ -192,5 +192,14 @@
   }
 
 
-
+  &-media{
+    &-big{
+      width: 472rem;
+      height: 504rem;
+    }
+    &-small{
+      width: 176rem;
+      height: 174rem;
+    }
+  }
 }

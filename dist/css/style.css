@@ -2213,8 +2213,7 @@ svg {
 
 .users-list {
   display: flex;
-  justify-content: center;
-  padding: 8rem 0;
+  padding: 8rem 5rem;
 }
 
 .users-list-item {
@@ -3562,16 +3561,21 @@ svg {
   transform: translateY(70rem);
 }
 
+.content-banner-image {
+  width: 623rem;
+  height: 450rem;
+}
+
 .content .section-description {
   max-width: 415rem;
 }
 
 .content .users {
   position: absolute;
-  top: -22rem;
+  top: 22rem;
   left: 43%;
   transform: translateY(100rem);
-  width: 166rem;
+  width: 164rem;
 }
 
 .content .users-description {
@@ -3639,77 +3643,77 @@ svg {
   margin-bottom: -30px;
 }
 
-.about__desc {
+.about-desc {
   margin: 8rem 0 0;
   max-width: 97%;
   color: var(--color-gray-600);
 }
 
-.about__desc h1,
-.about__desc h2,
-.about__desc h3,
-.about__desc h4,
-.about__desc h5,
-.about__desc .progress-pagination,
-.about__desc .footer-nav a,
-.footer-nav .about__desc a,
-.about__desc h6 {
+.about-desc h1,
+.about-desc h2,
+.about-desc h3,
+.about-desc h4,
+.about-desc h5,
+.about-desc .progress-pagination,
+.about-desc .footer-nav a,
+.footer-nav .about-desc a,
+.about-desc h6 {
   margin-bottom: 32rem;
   color: var(--color-black);
 }
 
-.about__desc h1 + b,
-.about__desc h2 + b,
-.about__desc h3 + b,
-.about__desc h4 + b,
-.about__desc h5 + b,
-.about__desc .progress-pagination + b,
-.about__desc .footer-nav a + b,
-.footer-nav .about__desc a + b,
-.about__desc h6 + b {
+.about-desc h1 + b,
+.about-desc h2 + b,
+.about-desc h3 + b,
+.about-desc h4 + b,
+.about-desc h5 + b,
+.about-desc .progress-pagination + b,
+.about-desc .footer-nav a + b,
+.footer-nav .about-desc a + b,
+.about-desc h6 + b {
   margin-top: -8rem;
 }
 
-.about__desc h2 i {
+.about-desc h2 i {
   font-style: normal;
   color: var(--color-gray-600);
 }
 
-.about__desc b {
+.about-desc b {
   margin-bottom: 34rem;
   display: block;
 }
 
-.about__desc b i {
+.about-desc b i {
   font-style: normal;
   color: var(--color-blue);
 }
 
-.about__desc p {
+.about-desc p {
   margin-bottom: 7rem;
 }
 
-.about__desc p:last-of-type {
+.about-desc p:last-of-type {
   margin-bottom: 32rem;
 }
 
-.about__desc p,
-.about__desc b {
+.about-desc p,
+.about-desc b {
   max-width: 420rem;
 }
 
-.about__desc ul {
+.about-desc ul {
   margin: 24rem 0;
 }
 
-.about__desc ul li {
+.about-desc ul li {
   position: relative;
   margin-bottom: 8rem;
   color: var(--color-black);
   padding-left: 24rem;
 }
 
-.about__desc ul li:before {
+.about-desc ul li:before {
   position: absolute;
   content: "";
   left: 0;
@@ -3726,19 +3730,19 @@ svg {
   background: transparent;
 }
 
-.about.about-page .about__desc {
+.about.about-page .about-desc {
   margin-top: 43rem;
 }
 
-.about.about-page .about__desc h4 {
+.about.about-page .about-desc h4 {
   margin-bottom: 22rem;
 }
 
-.about.about-page .about__desc b {
+.about.about-page .about-desc b {
   margin-bottom: 24rem;
 }
 
-.about.about-page .about__desc p:last-of-type {
+.about.about-page .about-desc p:last-of-type {
   margin-bottom: 7rem;
 }
 
@@ -3779,6 +3783,16 @@ svg {
 .about-list-text {
   font: var(--font-body-m);
   color: var(--color-gray-700);
+}
+
+.about-media-big {
+  width: 472rem;
+  height: 504rem;
+}
+
+.about-media-small {
+  width: 176rem;
+  height: 174rem;
 }
 
 .team {
@@ -4535,7 +4549,7 @@ svg {
 }
 
 .delivery {
-  padding: 75rem 0;
+  padding: 75rem 0 78rem;
 }
 
 .delivery-cards {
@@ -4548,7 +4562,7 @@ svg {
 }
 
 .delivery-card {
-  padding: 32rem 0;
+  padding: 35rem 0;
 }
 
 .delivery-card-icon {
@@ -4710,12 +4724,12 @@ svg {
 }
 
 .overview.overview-one {
-  padding: 105rem 0 145rem;
+  padding: 72rem 0 145rem;
 }
 
 .overview.overview-one .overview-sticky {
   justify-content: flex-start;
-  margin-top: 75rem;
+  margin-top: 104rem;
 }
 
 .overview.overview-one .overview-sticky .section-title {
@@ -4737,8 +4751,9 @@ svg {
 }
 
 .overview.overview-one .overview-banners .section-banner:nth-child(1) {
-  height: 602rem;
-  width: 655rem;
+  height: 632.24rem;
+  width: 695rem;
+  margin: 0 auto 0 57rem;
 }
 
 .problem {
@@ -5028,15 +5043,20 @@ svg {
 
 .market.market-home {
   margin-top: 24rem;
-  padding: 98rem 0 0;
+  padding: 88rem 0 0;
 }
 
 .market.market-home .market-sticky {
   justify-content: flex-start;
+  padding-top: 70rem;
 }
 
 .market.market-home .market-data {
   height: 2292rem;
+}
+
+.market.market-home .market-data-item:nth-child(1) {
+  margin: 0 0 88rem 112rem;
 }
 
 .market.market-home .market-data-item:nth-child(1) .market-data-text,
@@ -5044,10 +5064,16 @@ svg {
   max-width: 365rem;
 }
 
+.market.market-home .market-data-item:nth-child(1) .market-data-image {
+  width: 58rem;
+  height: 53rem;
+}
+
 .market.market-home .market-data-item:nth-child(2) {
   top: 158rem;
   width: 522rem;
   height: 522rem;
+  margin: 0 86rem 88rem 182rem;
 }
 
 .market.market-home .market-data-item:nth-child(2) .market-data-text,
@@ -5061,18 +5087,23 @@ svg {
   top: 238rem;
   width: 442rem;
   height: 442rem;
+  margin: 0 48rem 90rem auto;
 }
 
 .market.market-home .market-data-item:nth-child(3) .market-data-text,
 .market.market-home .market-data-item:nth-child(3) .color-blue {
-  max-width: 305rem;
+  max-width: 255rem;
+}
+
+.market.market-home .market-data-item:nth-child(3) .text-gradient-btn {
+  margin: 22rem auto 24rem;
 }
 
 .market.market-home .market-data-item:nth-child(4) {
   top: 306rem;
   width: 374rem;
   height: 374rem;
-  margin: 0 0 88rem auto;
+  margin: 0 48px 88rem auto;
   padding-bottom: 14rem;
   background: var(--color-primary-gradient);
   border-color: rgba(255, 255, 255, 0.72);
@@ -5081,6 +5112,11 @@ svg {
 .market.market-home .market-data-item:nth-child(4) .market-data-text {
   color: var(--color-white);
   max-width: 185rem;
+}
+
+.market.market-home .market-data-item:nth-child(4) .what-metformin-image {
+  width: 145rem;
+  height: 178rem;
 }
 
 .market.market-home .market-data-item .color-blue {
@@ -5134,7 +5170,16 @@ svg {
 }
 
 .market.market-home .market-data-icon {
-  margin-bottom: 32rem;
+  margin: 32rem 0 32rem 0;
+}
+
+.market.market-home .market-data-img {
+  margin: 31rem 0 12rem;
+}
+
+.market.market-home .market-data-image {
+  width: 145rem;
+  height: 178rem;
 }
 
 .market.market-content {
@@ -5410,7 +5455,7 @@ svg {
   width: 223rem;
   height: 292rem;
   display: block;
-  margin: 41rem 72rem 0 auto;
+  margin: 25rem 72rem 0 auto;
 }
 
 .what-metformin-wrap {
@@ -5418,6 +5463,7 @@ svg {
   justify-content: space-between;
   z-index: 2;
   position: relative;
+  margin: 8rem 0 0 0;
 }
 
 .what-metformin-wrap:before {
@@ -5655,7 +5701,7 @@ svg {
 }
 
 .property {
-  padding: 72rem 0 108rem;
+  padding: 54rem 0 62rem;
 }
 
 .property-media-id {
@@ -5666,9 +5712,14 @@ svg {
   margin-bottom: 16rem;
 }
 
-.property-media-icon {
+.property-media-bg {
   padding: 7rem 6rem 7rem 5rem;
   margin: 0 24rem 0 0;
+}
+
+.property-media-icon {
+  width: 53rem;
+  height: 50rem;
 }
 
 .property-media-info {
@@ -9894,6 +9945,11 @@ svg {
     margin: 27rem -11rem -10rem 0;
   }
 
+  .content-banner-image {
+    width: auto;
+    height: auto;
+  }
+
   .content .users {
     display: none;
   }
@@ -9926,28 +9982,28 @@ svg {
     margin-bottom: -12rem;
   }
 
-  .about__desc {
+  .about-desc {
     margin: 25rem auto 0;
   }
 
-  .about__desc h1,
-  .about__desc h2,
-  .about__desc h3,
-  .about__desc h4,
-  .about__desc h5,
-  .about__desc .progress-pagination,
-  .about__desc .footer-nav a,
-  .footer-nav .about__desc a,
-  .about__desc h6 {
+  .about-desc h1,
+  .about-desc h2,
+  .about-desc h3,
+  .about-desc h4,
+  .about-desc h5,
+  .about-desc .progress-pagination,
+  .about-desc .footer-nav a,
+  .footer-nav .about-desc a,
+  .about-desc h6 {
     width: 95%;
     margin-bottom: 15rem;
   }
 
-  .about__desc b {
+  .about-desc b {
     margin-bottom: 25rem;
   }
 
-  .about__desc p {
+  .about-desc p {
     margin-bottom: 8rem;
   }
 
@@ -10422,9 +10478,14 @@ svg {
     padding: 53rem 0 40rem;
   }
 
+  .overview.overview-one .overview-sticky {
+    margin-top: 0rem;
+  }
+
   .overview.overview-one .overview-banners .section-banner:nth-child(1) {
-    max-height: 355rem;
-    max-width: 355rem;
+    max-height: 255rem;
+    max-width: 275rem;
+    margin: 0 auto;
   }
 
   .problem {
@@ -10558,27 +10619,38 @@ svg {
     max-width: 150rem;
   }
 
+  .market.market-home {
+    padding: 24rem 0 0;
+  }
+
+  .market.market-home .market-sticky {
+    padding-top: 0;
+  }
+
   .market.market-home .market-data {
     padding-top: 40rem;
-    height: 1209rem;
+    height: 1177rem;
   }
 
   .market.market-home .market-data-item:nth-child(1) {
     width: 320rem;
     height: 320rem;
     top: 18rem;
+    margin: 0 auto 24rem;
   }
 
   .market.market-home .market-data-item:nth-child(2) {
     width: 300rem;
     height: 300rem;
     top: 40rem;
+    margin: 0 auto 24rem;
   }
 
   .market.market-home .market-data-item:nth-child(3) {
     width: 240rem;
     height: 240rem;
     top: 100rem;
+    margin: 0 auto 24rem;
   }
 
   .market.market-home .market-data-item:nth-child(3) .market-data-text {
@@ -10588,12 +10660,13 @@ svg {
   .market.market-home .market-data-item:nth-child(4) {
     width: 180rem;
     height: 180rem;
-    margin: 0 auto;
+    margin: 0 auto 24rem;
     top: 78rem;
   }
 
-  .market.market-home .market-data-item:nth-child(4) .market-data-img {
-    max-width: 50rem;
+  .market.market-home .market-data-item:nth-child(4) .what-metformin-image {
+    width: 55rem;
+    height: 68rem;
   }
 
   .market.market-content {
@@ -10677,6 +10750,7 @@ svg {
 
   .what-metformin {
     padding: 28rem 0;
+    margin: 0 0 40rem;
   }
 
   .what-metformin .section-description {

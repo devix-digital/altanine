@@ -108,14 +108,17 @@
 				}
 		}
 	&.overview-one{
-		padding: 105rem 0 145rem;
+		padding: 72rem 0 145rem;
 		@include maxWidth($sm){
 			padding: 53rem 0 40rem;
 		}
 		.overview{
 			&-sticky{
 				justify-content: flex-start;
-				margin-top: 75rem;
+				margin-top: 104rem;
+				@include maxWidth($sm){
+					margin-top: 0rem;
+				}
 				.section-title{
 					margin-bottom: 16rem;
 				}
@@ -129,16 +132,17 @@
 				.section-banner{
 					border-radius: 0;
 					&:nth-child(1){
-						height: 602rem;
-						width: 655rem;
+						height: 632.24rem;
+						width: 695rem;
+						margin: 0 auto 0 57rem;
 						@include maxWidth($sm){
-							max-height: 355rem;
-							max-width: 355rem;
+							max-height: 255rem;
+							max-width: 275rem;
+							margin:0 auto;
 						}
 					}
 				}
 			}
 		}
 	}
-
 }

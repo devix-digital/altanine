@@ -26,6 +26,14 @@
 					height: auto;
 					margin: 27rem -11rem -10rem 0;
 				}
+			&-image{
+				width: 623rem;
+				height: 450rem;
+				@include maxWidth($sm){
+					width: auto;
+					height: auto;
+				}
+			}
 		}
 	
 		.section{
@@ -36,10 +44,10 @@
 	
 		.users{
 			position: absolute;
-			top: -22rem;
+			top: 22rem;
 			left: 43%;
 			transform: translateY(100rem);
-			width: 166rem;
+			width: 164rem;
 			
 				@include maxWidth($sm){
           display: none;

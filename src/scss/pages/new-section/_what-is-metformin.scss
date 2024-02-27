@@ -2,12 +2,12 @@
 	margin: 92rem 0 40rem;
 	padding: 0 0 8rem;
 	border-radius: 14px;
-
 	background-size: cover;
 	overflow: hidden;
 	background-position: center;
 	@include maxWidth($sm){
 		padding: 28rem 0;
+		margin: 0 0 40rem;
 	}
 	&-top{
 		position: relative;
@@ -32,7 +32,7 @@
 		width: 223rem;
 		height: 292rem;
 		display: block;
-		margin: 41rem 72rem 0 auto;
+		margin: 25rem 72rem 0 auto;
 		@include maxWidth($sm){
 			margin: 38rem  auto;
 		}
@@ -42,6 +42,7 @@
 		justify-content: space-between;
 		z-index: 2;
 		position: relative;
+		margin: 8rem 0 0 0;
 		&:before{
 			position: absolute;
 			content: '';

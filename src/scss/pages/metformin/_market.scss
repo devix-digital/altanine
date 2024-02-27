@@ -277,32 +277,46 @@
 		}
 	&.market-home{
 		margin-top: 24rem;
-		padding: 98rem 0 0;
+		padding: 88rem 0 0;
+		@include maxWidth($sm){
+			padding: 24rem 0 0;
+		}
 		.market{
 			&-sticky{
 				justify-content: flex-start;
+				padding-top: 70rem;
+				@include maxWidth($sm){
+					padding-top: 0;
+				}
 			}
 			&-data{
 				height: 2292rem;
 				@include maxWidth($sm){
 					padding-top: 40rem;
-					height: 1209rem;
+					height: 1177rem;
 				}
 				&-item {
 					&:nth-child(1) {
+						margin: 0 0 88rem 112rem;
 						.market-data-text, .color-blue{
 							max-width: 365rem;
+						}
+						.market-data-image{
+							width: 58rem;
+							height: 53rem;
 						}
 						@include maxWidth($sm){
 							width: 320rem;
 							height: 320rem;
 							top: 18rem;
+							margin: 0 auto 24rem;
 						}
 					}
 					&:nth-child(2) {
 						top: 158rem;
 						width: 522rem;
 						height: 522rem;
+						margin: 0 86rem 88rem 182rem;
 						.market-data-text, .color-blue{
 							max-width: 319rem;
 						}
@@ -310,6 +324,7 @@
 							width: 300rem;
 							height: 300rem;
 							top: 40rem;
+							margin: 0 auto 24rem;
 						}
 					}
 					&:nth-child(3) {
@@ -318,13 +333,18 @@
 						top: 238rem;
 						width: 442rem;
 						height: 442rem;
+						margin: 0 48rem 90rem auto;
 						.market-data-text, .color-blue{
-							max-width: 305rem;
+							max-width: 255rem;
+						}
+						.text-gradient-btn{
+							margin: 22rem auto 24rem;
 						}
 						@include maxWidth($sm){
 							width: 240rem;
 							height: 240rem;
 							top: 100rem;
+							margin: 0 auto 24rem;
 							.market-data-text{
 								max-width: 195rem;
 							}
@@ -334,7 +354,7 @@
 						top: 306rem;
 						width: 374rem;
 						height: 374rem;
-						margin: 0 0 88rem auto;
+						margin: 0 48px 88rem auto;
 						padding-bottom: 14rem;
 						background: var(--color-primary-gradient);
 						border-color: rgba(255,255,255,0.72);
@@ -342,13 +362,19 @@
 							color: var(--color-white);
 							max-width: 185rem;
 						}
+						.what-metformin-image{
+							width: 145rem;
+							height: 178rem;
+						}
 						@include maxWidth($sm){
 							width: 180rem;
 							height: 180rem;
-							margin: 0 auto;
+							margin: 0 auto 24rem;
 							top: 78rem;
-							.market-data-img{
-								max-width: 50rem;
+
+							.what-metformin-image{
+								width: 55rem;
+								height: 68rem;
 							}
 						}
 					}
@@ -398,7 +424,14 @@
 					color: var(--color-black);
 				}
 				&-icon{
-					margin-bottom: 32rem;
+					margin: 32rem 0 32rem 0;
+				}
+				&-img{
+					margin: 31rem 0 12rem;
+				}
+				&-image{
+					width: 145rem;
+					height: 178rem;
 				}
 			}
 		}
