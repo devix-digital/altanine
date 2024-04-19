@@ -2911,6 +2911,10 @@ svg {
   color: var(--color-white);
 }
 
+.footer-nav .footer-label {
+  margin: 16rem 0 19rem;
+}
+
 .footer-nav ul {
   margin: 20rem 0;
   display: flex;
@@ -2924,10 +2928,10 @@ svg {
   transition: color var(--transition-duration) var(--transition-easing);
 }
 
+.footer-medicines,
 .footer-contacts,
-.footer-social,
-.footer-logo {
-  padding-top: 48rem;
+.footer-social {
+  padding-top: 64rem;
 }
 
 .footer-contacts-list {
@@ -2954,8 +2958,16 @@ svg {
   transition: color var(--transition-duration) var(--transition-easing);
 }
 
-.footer-logo {
-  text-align: right;
+.footer-medicines-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15rem;
+}
+
+.footer-medicines-item {
+  color: var(--color-gray-400);
+  transition: color var(--transition-duration) var(--transition-easing);
 }
 
 .footer-logo .logo {
@@ -3270,6 +3282,23 @@ svg {
   margin-top: 24rem;
 }
 
+.benefits.benefits-about {
+  padding: 55rem 0 76rem;
+}
+
+.benefits.benefits-about .section-subtitle {
+  letter-spacing: -0.02em;
+}
+
+.benefits.benefits-about .benefits-card {
+  height: 363rem;
+}
+
+.benefits.benefits-about .benefits-card-title {
+  color: var(--color-blue);
+  margin: 12rem 0 9rem;
+}
+
 .process {
   border-radius: 14px;
   overflow: hidden;
@@ -3555,7 +3584,7 @@ svg {
 .content-banner {
   position: absolute;
   bottom: 0;
-  right: 73rem;
+  right: 136rem;
   width: 623rem;
   height: 450rem;
   transform: translateY(70rem);
@@ -3589,7 +3618,7 @@ svg {
 }
 
 .content.content-second {
-  padding: 54rem 0 0;
+  padding: 34rem 0 36rem;
   margin-top: 28rem;
 }
 
@@ -3725,7 +3754,7 @@ svg {
 }
 
 .about.about-page {
-  padding: 144rem 0 60rem;
+  padding: 144rem 0 104rem;
   margin-bottom: 0;
   background: transparent;
 }
@@ -3736,6 +3765,7 @@ svg {
 
 .about.about-page .about-desc h4 {
   margin-bottom: 22rem;
+  letter-spacing: -0.01em;
 }
 
 .about.about-page .about-desc b {
@@ -3787,7 +3817,7 @@ svg {
 
 .about-media-big {
   width: 472rem;
-  height: 504rem;
+  height: 556rem;
 }
 
 .about-media-small {
@@ -3796,7 +3826,7 @@ svg {
 }
 
 .team {
-  padding: 130rem 0 114rem;
+  padding: 128rem 0 114rem;
 }
 
 .team .section-title {
@@ -3839,10 +3869,70 @@ svg {
   margin: 12rem 0;
 }
 
+.team-wrap {
+  display: flex;
+  -moz-column-gap: 32rem;
+       column-gap: 32rem;
+  justify-content: center;
+  margin: 24rem 0 0;
+}
+
+.team-item {
+  width: 100%;
+  max-width: 416rem;
+}
+
+.team-item-top {
+  display: flex;
+  align-items: center;
+  border-radius: 8rem;
+  border: 1rem rgba(0, 172, 234, 0.1) solid;
+  margin-bottom: 18rem;
+  height: 174rem;
+}
+
+.team-item-media {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 208rem;
+  border-radius: 8rem;
+  overflow: hidden;
+}
+
+.team-item-media img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.team-item-desc {
+  padding: 0 24rem;
+}
+
+.team-item-title {
+  font: var(--font-body-l);
+  color: var(--color-gray-700);
+  margin-bottom: 8rem;
+}
+
+.team-item-text {
+  font: var(--font-body-m);
+  color: var(--color-gray-600);
+}
+
+.team-item-info {
+  font: var(--font-body-s);
+  color: var(--color-gray-600);
+}
+
 .our-mission-core {
   background-color: var(--color-gray-200);
-  padding: 64rem 0 84rem;
-  margin-top: 80rem;
+  padding: 64rem 0 38rem;
+  margin-top: 31rem;
+  margin-bottom: 144rem;
   border-radius: 14px;
   background-image: url(../img/abstract-bg-grey.jpg);
   background-size: cover;
@@ -3850,7 +3940,7 @@ svg {
 }
 
 .our-mission-core .section-title {
-  margin-bottom: 95rem;
+  margin-bottom: 55rem;
 }
 
 .mission__core-item {
@@ -3908,7 +3998,7 @@ svg {
 
 .mission__core-media .section-banner {
   position: absolute;
-  top: 0;
+  top: 40rem;
   left: 0;
   width: 100%;
   height: 100%;
@@ -3916,19 +4006,57 @@ svg {
 }
 
 .mission__core-media .section-banner:nth-child(2) {
-  top: -67rem;
+  top: -27rem;
   left: -55rem;
   z-index: 1;
 }
 
+.mission__core-media .section-banner:nth-child(4) {
+  top: 14rem;
+  left: -103rem;
+}
+
 .mission__core-media .section-banner:nth-child(1) {
-  top: 70rem;
+  top: 110rem;
   left: -146rem;
   z-index: 2;
 }
 
 .mission__core-media .section-banner.is-active {
   z-index: 3;
+}
+
+.enhancements.enhancements-about {
+  padding: 144rem 0 96rem;
+  margin: 44rem 0 0;
+}
+
+.enhancements.enhancements-about .section-title {
+  margin: 16rem 0;
+}
+
+.enhancements.enhancements-about .enhancements-metformin-cards {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.enhancements.enhancements-about .enhancements-metformin-card:nth-child(1) {
+  margin-right: 0;
+  max-width: 527rem;
+  width: 100%;
+}
+
+.enhancements.enhancements-about .enhancements-metformin-title {
+  font: var(--font-body-l);
+  color: var(--color-gray-700);
+  letter-spacing: 0;
+}
+
+.enhancements.enhancements-about .enhancements-metformin-description {
+  font: var(--font-body-l);
+  color: var(--color-gray-600);
+  margin: 8rem 0 40rem;
+  line-height: 138%;
 }
 
 .hero-blog {
@@ -4603,9 +4731,16 @@ svg {
 
 .enhancements-metformin-banner {
   position: absolute;
-  width: 902rem;
+  width: 824rem;
   top: 0;
-  right: 55rem;
+  right: 0;
+}
+
+.enhancements-metformin-banner img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .enhancements-metformin-cards {
@@ -7815,6 +7950,10 @@ svg {
     color: var(--color-blue);
   }
 
+  .footer-medicines-item:hover {
+    color: var(--color-blue);
+  }
+
   .footer-developer:hover img:nth-child(1) {
     opacity: 0;
   }
@@ -9699,9 +9838,9 @@ svg {
     width: 100%;
   }
 
+  .footer-medicines,
   .footer-contacts,
-  .footer-social,
-  .footer-logo {
+  .footer-social {
     padding-top: 20rem;
   }
 
@@ -9856,6 +9995,35 @@ svg {
     font: var(--font-body-l-mobile);
   }
 
+  .benefits.benefits-about {
+    padding: 51rem 0 35rem;
+  }
+
+  .benefits.benefits-about .benefits-card {
+    height: auto;
+    justify-content: flex-end;
+    padding-bottom: 24rem;
+    min-height: auto;
+    margin-bottom: 0;
+  }
+
+  .benefits.benefits-about .benefits-card-title {
+    margin: 12rem 0 12rem;
+  }
+
+  .benefits.benefits-about .benefits-card-icon,
+  .benefits.benefits-about .delivery-card-icon {
+    margin: 0 0 58rem auto;
+    position: relative;
+    right: 0;
+    top: 1px;
+  }
+
+  .benefits.benefits-about .row:nth-of-type(2) .col-md-4:nth-of-type(3) .benefits-card-icon,
+  .benefits.benefits-about .row:nth-of-type(2) .col-md-4:nth-of-type(3) .delivery-card-icon {
+    margin: 0 0 36rem auto;
+  }
+
   .process {
     margin: 53rem 0 24rem;
     padding: 40rem 0;
@@ -9954,6 +10122,11 @@ svg {
     display: none;
   }
 
+  .content.content-second {
+    padding: 67rem 0 36rem;
+    margin-top: 10rem;
+  }
+
   .content.content-third {
     padding: 70rem 0 0;
   }
@@ -10008,7 +10181,30 @@ svg {
   }
 
   .about.about-page {
-    padding: 42rem 0 60rem;
+    padding: 80rem 0 0;
+  }
+
+  .about.about-page .section-banner {
+    width: 312rem;
+    height: 333.15rem;
+  }
+
+  .about.about-page .about-desc {
+    margin-top: 28rem;
+  }
+
+  .about.about-page .about-desc h4 {
+    width: 100%;
+    margin-bottom: 26rem;
+    letter-spacing: -0.02em;
+  }
+
+  .about.about-page .about-desc b {
+    margin-bottom: 24rem;
+  }
+
+  .about.about-page .about-desc p:last-of-type {
+    margin-bottom: 7rem;
   }
 
   .about-list-item {
@@ -10041,9 +10237,49 @@ svg {
     padding-top: 14rem;
   }
 
+  .team .team-wrap {
+    margin: 14rem 0 0;
+    flex-direction: column;
+  }
+
+  .team .team-item {
+    max-width: 312rem;
+    margin: 0 auto 24rem;
+  }
+
+  .team .team-item-top {
+    margin-bottom: 16rem;
+    height: 156rem;
+  }
+
+  .team .team-item-media {
+    max-width: 144rem;
+  }
+
+  .team .team-item-desc {
+    padding: 0 24rem;
+  }
+
+  .team .team-item-title {
+    font: var(--font-body-l-mobile);
+  }
+
+  .team .team-item-text {
+    font: var(--font-body-m-mobile);
+  }
+
+  .team .team-item-info {
+    font: var(--font-body-s-mobile);
+  }
+
   .our-mission-core {
-    margin-top: 48rem;
-    padding: 80rem 0;
+    margin-top: 38rem;
+    padding: 80rem 0 78rem;
+    margin-bottom: 0;
+  }
+
+  .mission__core-item:nth-child(1) {
+    margin-top: 40rem;
   }
 
   .mission__core-item {
@@ -10062,13 +10298,45 @@ svg {
   }
 
   .mission__core-media .section-banner:nth-child(2) {
-    top: -33rem;
+    top: 7rem;
     left: -27rem;
   }
 
+  .mission__core-media .section-banner:nth-child(4) {
+    top: 56rem;
+    left: 22rem;
+  }
+
   .mission__core-media .section-banner:nth-child(1) {
-    top: 33rem;
+    top: 73rem;
     left: -71rem;
+  }
+
+  .enhancements.enhancements-about {
+    padding: 201rem 0 60rem;
+  }
+
+  .enhancements.enhancements-about .section-title {
+    margin: 12rem 0 32rem;
+  }
+
+  .enhancements.enhancements-about .enhancements-metformin-card:nth-child(1) {
+    max-width: 100%;
+  }
+
+  .enhancements.enhancements-about .enhancements-metformin-title {
+    font: var(--font-body-l-mobile);
+  }
+
+  .enhancements.enhancements-about .enhancements-metformin-link .btn {
+    width: 100%;
+    max-width: 225rem;
+  }
+
+  .enhancements.enhancements-about .enhancements-metformin-description {
+    font: var(--font-body-l-mobile);
+    margin: 10rem 0 30rem;
+    line-height: 140%;
   }
 
   .hero-blog {

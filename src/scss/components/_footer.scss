@@ -30,6 +30,9 @@
 		}
 	
 		&-nav{
+			.footer-label{
+				margin: 16rem 0  19rem
+			}
 			color: var(--color-white);
 			
 				ul{
@@ -63,10 +66,10 @@
 				}
 		}
 	
+		&-medicines,
 		&-contacts,
-		&-social,
-		&-logo{
-			padding-top: 48rem;
+		&-social{
+			padding-top: 64rem;
 			
 				@include maxWidth($sm){
 					padding-top: 20rem;
@@ -111,10 +114,27 @@
 						}
 				}
 		}
-	
+		&-medicines{
+				&-list{
+					display: flex;
+					flex-direction: column;
+					align-items: flex-start;
+					gap: 15rem;
+				}
+				&-item{
+					color: var(--color-gray-400);
+					transition: color var(--transition-duration) var(--transition-easing);
+
+						@include hover($md){
+							&:hover{
+								color: var(--color-blue)
+							}
+						}
+				}
+		}
+
 		&-logo{
-			text-align: right;
-			
+
 				@include maxWidth($sm){
           text-align: left;
 					padding-top: 34rem;

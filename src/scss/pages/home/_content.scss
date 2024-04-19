@@ -14,7 +14,7 @@
 		&-banner{
 			position: absolute;
 			bottom: 0;
-			right: 73rem;
+			right: 136rem;
 			width: 623rem;
 			height: 450rem;
 			transform: translateY(70rem);
@@ -63,8 +63,12 @@
 			color: var(--color-gray-600);
 		}
 	&.content-second{
-		padding: 54rem 0 0;
+		padding: 34rem 0 36rem;
 		margin-top: 28rem;
+		@include maxWidth($sm){
+			padding: 67rem 0 36rem;
+			margin-top: 10rem;
+		}
 		.join-box-form{
 			padding: 0;
 			max-width: 424rem;
@@ -76,5 +80,6 @@
 	&.content-third{
 		padding: 130rem 0;
 		@include maxWidth($sm){ padding: 70rem 0 0;}
+
 	}
 }

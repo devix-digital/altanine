@@ -6,9 +6,14 @@
 		}
 		&-banner{
 			position: absolute;
-			width: 902rem;
+			width: 824rem;
 			top: 0;
-			right: 55rem;
+			right: 0;
+			img{
+				width: 100%;
+				height: 100%;
+				object-fit: contain;
+			}
 				@include maxWidth($sm){
 					width: 100%;
 					right: 0;

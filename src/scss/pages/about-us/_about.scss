@@ -130,17 +130,16 @@
     }
   }
   &.about-page{
-    padding: 144rem 0 60rem;
+    padding: 144rem 0 104rem;
     margin-bottom: 0;
     background: transparent;
-    @include maxWidth($sm){
-      padding: 42rem 0 60rem;
-    }
+
     .about{
       &-desc{
         margin-top: 43rem;
         h4{
           margin-bottom: 22rem;
+          letter-spacing: -.01em;
         }
         b{
           margin-bottom: 24rem;
@@ -148,6 +147,31 @@
         p{
           &:last-of-type{
             margin-bottom: 7rem;
+          }
+        }
+      }
+    }
+    @include maxWidth($sm){
+      padding: 80rem 0 0;
+      .section-banner{
+        width: 312rem;
+        height: 333.15rem;
+      }
+      .about{
+        &-desc{
+          margin-top: 28rem;
+          h4{
+            width: 100%;
+            margin-bottom: 26rem;
+            letter-spacing: -0.02em;
+          }
+          b{
+            margin-bottom: 24rem;
+          }
+          p{
+            &:last-of-type{
+              margin-bottom: 7rem;
+            }
           }
         }
       }
@@ -195,7 +219,7 @@
   &-media{
     &-big{
       width: 472rem;
-      height: 504rem;
+      height: 556rem;
     }
     &-small{
       width: 176rem;

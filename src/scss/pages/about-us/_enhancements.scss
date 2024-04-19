@@ -1,0 +1,64 @@
+.enhancements{
+  &.enhancements-about{
+    padding: 144rem 0 96rem;
+    margin: 44rem 0 0;
+    .section-title{
+      margin: 16rem 0 ;
+    }
+    .enhancements{
+      &-metformin{
+        &-cards{
+          margin-top: 0;
+          padding-top: 0;
+        }
+        &-card{
+          &:nth-child(1){
+            margin-right: 0;
+            max-width: 527rem;
+            width: 100%;
+          }
+        }
+        &-title{
+          font: var(--font-body-l);
+          color: var(--color-gray-700);
+          letter-spacing: 0;
+        }
+        &-description{
+          font: var(--font-body-l);
+          color: var(--color-gray-600);
+          margin: 8rem 0 40rem;
+          line-height: 138%;
+        }
+      }
+    }
+    @include maxWidth($sm){
+      padding: 201rem 0 60rem;
+      .section-title{
+        margin: 12rem 0 32rem;
+      }
+      .enhancements{
+        &-metformin{
+          &-card{
+            &:nth-child(1){
+              max-width: 100%;
+            }
+          }
+          &-title{
+            font: var(--font-body-l-mobile);
+          }
+          &-link{
+            .btn{
+              width: 100%;
+              max-width: 225rem;
+            }
+          }
+          &-description{
+            font: var(--font-body-l-mobile);
+            margin: 10rem 0 30rem;
+            line-height: 140%;
+          }
+        }
+      }
+    }
+  }
+}
