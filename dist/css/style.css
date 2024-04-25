@@ -4043,6 +4043,7 @@ svg {
 .enhancements.enhancements-about {
   padding: 144rem 0 96rem;
   margin: 44rem 0 0;
+  overflow: hidden;
 }
 
 .enhancements.enhancements-about .section-title {
@@ -4745,9 +4746,10 @@ svg {
 
 .enhancements-metformin-banner {
   position: absolute;
-  width: 824rem;
+  width: 952rem;
+  height: 525rem;
   top: 0;
-  right: 0;
+  right: -125px;
 }
 
 .enhancements-metformin-banner img {
@@ -10701,6 +10703,10 @@ svg {
 
   .enhancements-metformin {
     padding: 198rem 0 50rem;
+  }
+
+  .enhancements-metformin-banner {
+    height: 175rem;
   }
 
   .enhancements-metformin-banner {
