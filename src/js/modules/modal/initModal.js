@@ -17,7 +17,8 @@ export const initModal = () => {
 	/* open */
 	if (openElements.length) {
 		for (let openElement of openElements) {
-			openElement.addEventListener('click', () => {
+			openElement.addEventListener('click', (e) => {
+				e.preventDefault()
 				const modalId = openElement.dataset.modalOpen;
 				switchModal(modalId, true);
 			})
