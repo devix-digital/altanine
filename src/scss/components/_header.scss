@@ -81,7 +81,7 @@
 					
 						ul{
 							display: flex;
-							gap: 64rem;
+							gap: 44rem;
 							transition: opacity var(--transition-duration) var(--transition-easing);
 							
 								@include maxWidth($sm){
@@ -93,6 +93,8 @@
 					
 						li{
 							position: relative;
+							display: flex;
+							gap: 6rem;
 							
 								@include maxWidth($sm){
 									padding: 16rem 0;
@@ -127,7 +129,7 @@
 									text-transform: capitalize;
 									white-space: nowrap;
 									transition: color var(--transition-duration) var(--transition-easing);
-									
+
 										@include maxWidth($sm){
 											font: var(--font-body-m-mobile);
 											font-size: 20rem;
@@ -138,6 +140,13 @@
 												color: var(--color-blue);
 											}
 										}
+								}
+
+								.nav-arrow {
+									display: block;
+									width: 10rem;
+									height: 11rem;
+
 								}
 						}
 					

@@ -1997,12 +1997,14 @@ svg {
 
 .header-panel-nav ul {
   display: flex;
-  gap: 64rem;
+  gap: 44rem;
   transition: opacity var(--transition-duration) var(--transition-easing);
 }
 
 .header-panel-nav li {
   position: relative;
+  display: flex;
+  gap: 6rem;
 }
 
 .header-panel-nav li:not(:last-child):before {
@@ -2022,6 +2024,12 @@ svg {
   text-transform: capitalize;
   white-space: nowrap;
   transition: color var(--transition-duration) var(--transition-easing);
+}
+
+.header-panel-nav li .nav-arrow {
+  display: block;
+  width: 10rem;
+  height: 11rem;
 }
 
 .header-panel-nav .header-contacts {
@@ -2877,7 +2885,7 @@ svg {
 .footer {
   border-radius: 14px;
   background-color: var(--color-black);
-  padding: 58rem 0 34rem;
+  padding: 64rem 0 25rem;
   margin-top: 8rem;
   position: relative;
   overflow: hidden;
@@ -2912,11 +2920,11 @@ svg {
 }
 
 .footer-nav .footer-label {
-  margin: 16rem 0 19rem;
+  margin: 24rem 0;
 }
 
 .footer-nav ul {
-  margin: 20rem 0;
+  margin: 24rem 0;
   display: flex;
   flex-direction: column;
   gap: 8rem;
@@ -2944,6 +2952,12 @@ svg {
   color: var(--color-gray-400);
   display: inline-block;
   transition: color var(--transition-duration) var(--transition-easing);
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .footer-social-list {
@@ -9827,15 +9841,17 @@ svg {
   }
 
   .footer {
-    padding: 45rem 0 41rem;
+    padding: 40rem 0;
+  }
+
+  .footer-nav .footer-label {
+    margin-top: 0;
   }
 
   .footer-nav ul {
     gap: 12rem;
-  }
-
-  .footer-nav li {
-    width: 100%;
+    flex-wrap: wrap;
+    height: 161rem;
   }
 
   .footer-medicines,
@@ -9844,9 +9860,13 @@ svg {
     padding-top: 20rem;
   }
 
+  .footer-social {
+    align-items: flex-start;
+  }
+
   .footer-logo {
     text-align: left;
-    padding-top: 34rem;
+    padding-top: 40rem;
   }
 
   .footer-logo .logo {
@@ -9864,10 +9884,8 @@ svg {
     margin-top: 40rem;
   }
 
-  .footer .hr,
-  .footer .blog-details-info hr,
-  .blog-details-info .footer hr {
-    margin: 21rem 0 0;
+  .footer-additional ul {
+    justify-content: space-between;
   }
 
   .hero-home .users {

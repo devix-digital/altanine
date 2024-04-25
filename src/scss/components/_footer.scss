@@ -1,13 +1,13 @@
 .footer{
 	border-radius: 14px;
 	background-color: var(--color-black);
-	padding: 58rem 0 34rem;
+	padding: 64rem 0 25rem;
 	margin-top: 8rem;
 	position: relative;
 	overflow: hidden;
 	
 		@include maxWidth($sm){
-			padding: 45rem 0 41rem;
+			padding: 40rem 0;
     }
 	
 		&-abstract{
@@ -31,25 +31,25 @@
 	
 		&-nav{
 			.footer-label{
-				margin: 16rem 0  19rem
+				margin: 24rem 0;
+
+				@include maxWidth($sm){
+					margin-top: 0;
+				}
 			}
 			color: var(--color-white);
 			
 				ul{
-					margin: 20rem 0;
+					margin: 24rem 0;
 					display: flex;
 					flex-direction: column;
 					gap: 8rem;
 					
 						@include maxWidth($sm){
-              gap: 12rem;
-            }
-				}
-			
-				li{
-						@include maxWidth($sm){
-							width: 100%;
-						}
+              				gap: 12rem;
+							flex-wrap: wrap;
+							height: 161rem;
+            			}
 				}
 				
 				a{
@@ -97,6 +97,14 @@
 		}
 	
 		&-social{
+			display: flex;
+			flex-direction: column;
+			align-items: flex-end;
+
+				@include maxWidth($sm){
+					align-items: flex-start;
+				}
+
 				&-list{
 					display: flex;
 					flex-direction: column;
@@ -136,18 +144,18 @@
 		&-logo{
 
 				@include maxWidth($sm){
-          text-align: left;
-					padding-top: 34rem;
+          			text-align: left;
+					padding-top: 40rem;
         }
-			
-				.logo{
-					margin: 5rem 0;
-						
-						@include maxWidth($sm){
-							width: 152rem;
-							height: 42rem;
-            }
-				}
+
+			.logo{
+				margin: 5rem 0;
+
+				@include maxWidth($sm){
+					width: 152rem;
+					height: 42rem;
+            	}
+			}
 		}
 	
 		&-developer,
@@ -222,6 +230,10 @@
 					justify-content: flex-end;
 					align-items: center;
 					gap: 12rem;
+
+					@include maxWidth($sm){
+						justify-content: space-between;
+					}
 				}
 			
 				a{
@@ -239,8 +251,6 @@
 			background-color: var(--color-gray-500);
 			margin: 5rem 0 -5rem;
 			
-				@include maxWidth($sm){
-          margin: 21rem 0 0;
-        }
+
 		}
 }
