@@ -2026,12 +2026,6 @@ svg {
   transition: color var(--transition-duration) var(--transition-easing);
 }
 
-.header-panel-nav li .nav-arrow {
-  display: block;
-  width: 10rem;
-  height: 11rem;
-}
-
 .header-panel-nav .header-contacts {
   display: none;
   transition: opacity var(--transition-duration) var(--transition-easing);
@@ -10258,7 +10252,7 @@ svg {
   }
 
   .team .team-wrap {
-    margin: 14rem 0 0;
+    margin: 0;
     flex-direction: column;
   }
 
