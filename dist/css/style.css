@@ -2002,10 +2002,6 @@ svg {
   transition: opacity var(--transition-duration) var(--transition-easing);
 }
 
-.header-panel-nav ul ul {
-  display: none;
-}
-
 .header-panel-nav li {
   position: relative;
   display: flex;
@@ -2024,11 +2020,41 @@ svg {
 }
 
 .header-panel-nav li a {
+  position: relative;
   font: var(--font-body-m);
   color: var(--color-black);
   text-transform: capitalize;
   white-space: nowrap;
   transition: color var(--transition-duration) var(--transition-easing);
+  z-index: 1;
+}
+
+.header-panel-nav li > ul {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 16rem;
+  top: -25rem;
+  left: -23rem;
+  width: calc(100% + 44rem);
+  padding: 90rem 24rem 16rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  opacity: 0;
+  pointer-events: none;
+  z-index: -1;
+  transition: opacity var(--transition-duration) var(--transition-easing);
+}
+
+.header-panel-nav li > ul li:not(:last-child):before {
+  content: "";
+  position: absolute;
+  width: 98rem;
+  height: 1rem;
+  top: 174%;
+  margin-top: -10rem;
+  right: -2rem;
+  background-color: var(--color-gray-300);
 }
 
 .header-panel-nav .has-submenu {
@@ -2046,37 +2072,17 @@ svg {
   background-repeat: no-repeat;
   background-size: contain;
   margin-left: 12rem;
+  transition: transform var(--transition-duration) var(--transition-easing);
+}
+
+.header-panel-nav .has-submenu > a {
+  pointer-events: none;
 }
 
 .header-panel-nav .opened::after {
   top: 8rem;
   transform: rotate(180deg);
   background-image: url("../img/arrow-sub-color.svg");
-}
-
-.header-panel-nav .submenu {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  gap: 16rem;
-  top: -25rem;
-  left: -23rem;
-  width: calc(100% + 44rem);
-  padding: 90rem 24rem 16rem;
-  background-color: rgb(255, 255, 255);
-  border-radius: 8px;
-  z-index: -1;
-}
-
-.header-panel-nav .submenu li:not(:last-child):before {
-  content: "";
-  position: absolute;
-  width: 98rem;
-  height: 1rem;
-  top: 174%;
-  margin-top: -10rem;
-  right: -2rem;
-  background-color: var(--color-gray-300);
 }
 
 .header-panel-nav .header-contacts {
@@ -2093,7 +2099,7 @@ svg {
   transition-delay: 0.2s;
 }
 
-.header-panel-nav.is-active ul,
+.header-panel-nav.is-active ul:not(li > ul),
 .header-panel-nav.is-active .header-contacts,
 .header-panel-nav.is-active .btn {
   opacity: 1;
@@ -7973,6 +7979,22 @@ svg {
     color: var(--color-blue);
   }
 
+  .header-panel-nav .has-submenu:hover > a {
+    color: var(--color-blue);
+  }
+
+  .header-panel-nav .has-submenu:hover > ul {
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 0;
+  }
+
+  .header-panel-nav .has-submenu:hover::after {
+    top: 8rem;
+    transform: rotate(180deg);
+    background-image: url("../img/arrow-sub-color.svg");
+  }
+
   .btn-gradient:hover {
     cursor: pointer;
   }
@@ -9776,6 +9798,34 @@ svg {
     font-size: 20rem;
   }
 
+  .header-panel-nav li > ul {
+    position: relative;
+    gap: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    background-color: transparent;
+    pointer-events: auto;
+    opacity: 1;
+    z-index: 0;
+    display: none;
+  }
+
+  .header-panel-nav li > ul a {
+    font-size: 12rem;
+    line-height: 18rem;
+    font-weight: 400;
+  }
+
+  .header-panel-nav li > ul li {
+    padding: 0 0 16rem;
+  }
+
+  .header-panel-nav li > ul li:not(:last-child):before {
+    content: none;
+  }
+
   .header-panel-nav .has-submenu {
     display: flex;
     flex-direction: column;
@@ -9790,28 +9840,8 @@ svg {
     top: 24rem;
   }
 
-  .header-panel-nav .submenu {
-    position: relative;
-    gap: 0;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 0;
-    background-color: transparent;
-  }
-
-  .header-panel-nav .submenu a {
-    font-size: 12rem;
-    ine-height: 18rem;
-    font-weight: 400;
-  }
-
-  .header-panel-nav .submenu li {
-    padding: 0 0 16rem;
-  }
-
-  .header-panel-nav .submenu li:not(:last-child):before {
-    content: none;
+  .header-panel-nav .opened ul {
+    display: flex;
   }
 
   .header-panel-nav .header-contacts {
@@ -11303,6 +11333,12 @@ svg {
   .investor-modal .modal-close-btn {
     top: 22rem;
     right: 22rem;
+  }
+}
+
+@media only screen and (min-width: 991px) and (max-width: 767px), only screen and (any-hover: hover) and (max-width: 767px) {
+  .header-panel-nav .has-submenu:hover::after {
+    top: 24rem;
   }
 }
 
