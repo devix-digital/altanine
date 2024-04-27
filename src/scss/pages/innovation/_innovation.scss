@@ -1,0 +1,205 @@
+.innovation {
+  padding: 8rem 0;
+  position: relative;
+  .section {
+    &-subtitle {
+      margin-top: 24rem;
+    }
+    &-title {
+      margin-right: 40rem;
+      @include maxWidth($xl) {
+        margin-right: 0;
+      }
+    }
+  }
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    padding: 23rem 0;
+    @include maxWidth($sm) {
+      display: block;
+      margin: 0 -15rem;
+    }
+  }
+  &-header {
+    flex: 0 0 26%;
+    display: flex;
+    align-items: center;
+    padding: 40rem;
+    position: relative;
+    z-index: 1;
+    @include maxWidth($sm) {
+      padding: 56rem 15rem;
+    }
+    &::before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      background-image: url("../../../img/innovation/shape.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      @include maxWidth($sm) {
+        background-image: url("../../../img/innovation/shape_mob.svg");
+      }
+    }
+    &__card {
+      max-width: 256rem;
+      @include maxWidth($sm) {
+        max-width: 100%;
+      }
+    }
+    &__icon {
+      width: 40rem;
+      margin-bottom: 18rem;
+    }
+  }
+  &-content {
+    position: relative;
+    padding: 40rem 30rem 40rem 40rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 16rem -15rem;
+    @include maxWidth($sm) {
+      display: block;
+      padding: 75rem 0 20rem 0;
+      margin: -36rem 0 0 0;
+    }
+    &::before {
+      content: "";
+      background-image: url("../../../img/innovation/shape-2.svg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center right;
+      width: 106%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      @include maxWidth($sm) {
+        width: 100%;
+        background-image: url("../../../img/innovation/shape-2_mob.svg");
+        background-position: center bottom;
+      }
+    }
+    &__col {
+      flex: 0 0 50%;
+      padding: 0 15rem;
+      @include maxWidth($sm) {
+        margin-bottom: 40rem;
+      }
+      .text-gradient {
+        margin-bottom: 38rem;
+        @include maxWidth($sm) {
+          margin-bottom: 26rem;
+        }
+      }
+    }
+  }
+  &-card {
+    &:not(:last-of-type) {
+      margin-bottom: 33rem;
+      @include maxWidth($sm) {
+        margin-bottom: 17rem;
+      }
+    }
+    &__icon {
+      width: 40rem;
+      margin-bottom: 16rem;
+      @include maxWidth($sm) {
+        margin-bottom: 21rem;
+      }
+    }
+    &__content {
+      h6,
+      .h6 {
+        margin-bottom: 8rem;
+      }
+      p {
+        font: var(--font-body-s);
+      }
+    }
+  }
+  &-footer {
+    flex: 0 0 27%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    min-height: 100%;
+    @include maxWidth($sm) {
+      margin-top: -21rem;
+    }
+    &__card {
+      margin-top: 55rem;
+      margin-right: 17rem;
+      width: 228rem;
+      @include maxWidth($sm) {
+        margin: 0;
+        width: 100%;
+      }
+      & > img {
+        width: 100%;
+        display: block;
+        @include maxWidth($sm) {
+          width: 66%;
+          margin: 0 auto;
+        }
+      }
+    }
+    &__icon {
+      width: 40rem;
+      margin-bottom: 19rem;
+      @include maxWidth($sm) {
+        margin: 0 auto 19rem auto;
+      }
+      img {
+        width: 100%;
+      }
+    }
+    h6,
+    .h6 {
+      margin-bottom: 52rem;
+      @include maxWidth($sm) {
+        text-align: center;
+        margin-bottom: 36px;
+      }
+    }
+  }
+}
+
+.text-gradient-btn {
+  display: inline-block;
+  font: var(--font-body-s-mobile);
+  color: var(--color-black);
+  padding: 8rem 12rem;
+  border-radius: 8px;
+  z-index: 2;
+  position: relative;
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    border-radius: inherit;
+  }
+  &::before {
+    width: calc(100% - 2px);
+    height: calc(100% - 2px);
+    background: var(--color-primary-4);
+    left: 1px;
+    top: 1px;
+    z-index: -1;
+    border-radius: 7px;
+  }
+  &::after {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--color-primary-gradient);
+    z-index: -2;
+  }
+}
