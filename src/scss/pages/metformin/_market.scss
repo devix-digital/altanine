@@ -9,6 +9,42 @@
         padding: 80rem 0 50rem;
     }
 
+    &.market-content.metformin {
+        padding: 96rem 0;
+        margin: 0;
+
+        .market-content-wrapper {
+            width: 464rem;
+            @include maxWidth($sm) {
+                width: 100%;
+            }
+        }
+    }
+
+    &.market-content.metformin {
+        .market-sticky .section-title {
+            margin-bottom: 64rem;
+            @include maxWidth($sm) {
+                margin-bottom: 32rem;
+            }
+        }
+        h5 {
+            margin: 32rem 0 8rem;
+            @include maxWidth($sm) {
+                margin: 24rem 0 12rem;
+            }
+        }
+        .market-content-desc {
+            @include maxWidth($sm) {
+                font: var(--font-body-r-mobile);
+            }
+        }
+        .market-content-desc.bold {
+            font: var(--font-body-l);
+            color: var(--color-gray-700);
+        }
+    }
+
     &-sticky {
         position: sticky;
         top: 0;

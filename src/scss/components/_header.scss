@@ -122,6 +122,9 @@
                             left: 0;
                         }
                     }
+                    li:before {
+                        content: none;
+                    }
                 }
                 @include maxWidth($sm) {
                     &:last-child {

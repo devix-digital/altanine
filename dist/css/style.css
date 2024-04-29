@@ -2019,6 +2019,10 @@ svg {
   background-color: var(--color-gray-300);
 }
 
+.header-panel-nav li:not(:last-child) li:before {
+  content: none;
+}
+
 .header-panel-nav li a {
   position: relative;
   font: var(--font-body-m);
@@ -5001,6 +5005,12 @@ svg {
   padding: 72rem 0;
 }
 
+.problem hr {
+  height: 1rem;
+  background: var(--color-gray-200);
+  margin-top: 72rem;
+}
+
 .problem-sticky {
   padding: 25rem 0;
 }
@@ -5094,6 +5104,31 @@ svg {
   margin-top: 72rem;
   border-radius: 14px;
   background-image: none;
+}
+
+.market.market-content.metformin {
+  padding: 96rem 0;
+  margin: 0;
+}
+
+.market.market-content.metformin .market-content-wrapper {
+  width: 464rem;
+}
+
+.market.market-content.metformin .market-sticky .section-title {
+  margin-bottom: 64rem;
+}
+
+.market.market-content.metformin h5,
+.market.market-content.metformin .progress-pagination,
+.market.market-content.metformin .footer-nav a,
+.footer-nav .market.market-content.metformin a {
+  margin: 32rem 0 8rem;
+}
+
+.market.market-content.metformin .market-content-desc.bold {
+  font: var(--font-body-l);
+  color: var(--color-gray-700);
 }
 
 .market-sticky {
@@ -5444,10 +5479,10 @@ svg {
   position: absolute;
   content: "";
   border-radius: 50%;
-  width: 702rem;
-  height: 702rem;
-  right: -60rem;
-  bottom: -180rem;
+  width: 754rem;
+  height: 752rem;
+  right: -75rem;
+  bottom: -120rem;
   z-index: -1;
   border: 2rem solid rgba(255, 255, 255, 0.72);
   background-color: var(--color-gray-200);
@@ -5464,15 +5499,15 @@ svg {
 }
 
 .market.market-content .market-data-item:nth-child(1) {
-  width: 260rem;
-  height: 506rem;
+  width: 342rem;
+  height: 648rem;
+  margin: -95rem 0;
+  margin-left: -70rem;
   border-color: transparent;
-  padding: 18rem 0 0 134rem;
   background: transparent;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  margin: 18rem 0 0 134rem;
 }
 
 .market.market-content .market-data-icon {
@@ -5493,8 +5528,8 @@ svg {
 
 .market.market-content .market-data-info {
   position: absolute;
-  left: -314rem;
-  top: 40rem;
+  left: -250rem;
+  bottom: 160rem;
   text-align: center;
   width: 100%;
   max-width: 187rem;
@@ -5507,12 +5542,12 @@ svg {
 .market.market-content .market-data-info .info-media:after {
   position: absolute;
   content: "";
-  right: -235rem;
-  top: 8rem;
-  background-image: url("data:image/svg+xml,%3Csvg width='259' height='90' viewBox='0 0 259 90' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='258.842' y1='89.4743' x2='3.84189' y2='4.47434' stroke='url(%23paint0_linear_16702_4598)'/%3E%3Ccircle cx='4.5' cy='4.5' r='4.5' fill='url(%23paint1_linear_16702_4598)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_16702_4598' x1='4.31621' y1='3.05131' x2='3.38799' y2='5.90672' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%2300EFD1'/%3E%3Cstop offset='1' stop-color='%2300ACEA'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint1_linear_16702_4598' x1='9' y1='9' x2='-1.80092' y2='3.6065' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%2300EFD1'/%3E%3Cstop offset='1' stop-color='%2300ACEA'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
+  right: -225rem;
+  top: -75rem;
+  background-image: url("../img/metformin/line.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  width: 259rem;
+  width: 250rem;
   height: 90rem;
 }
 
@@ -11003,6 +11038,25 @@ svg {
     padding: 80rem 0 50rem;
   }
 
+  .market.market-content.metformin .market-content-wrapper {
+    width: 100%;
+  }
+
+  .market.market-content.metformin .market-sticky .section-title {
+    margin-bottom: 32rem;
+  }
+
+  .market.market-content.metformin h5,
+  .market.market-content.metformin .progress-pagination,
+  .market.market-content.metformin .footer-nav a,
+  .footer-nav .market.market-content.metformin a {
+    margin: 24rem 0 12rem;
+  }
+
+  .market.market-content.metformin .market-content-desc {
+    font: var(--font-body-r-mobile);
+  }
+
   .market-sticky {
     height: auto;
     padding-top: 0;
@@ -11134,20 +11188,21 @@ svg {
   }
 
   .market.market-content .market-data:after {
-    width: 354rem;
-    height: 354rem;
-    right: -60rem;
-    bottom: -20px;
+    width: 571rem;
+    height: 571rem;
+    right: -120rem;
+    bottom: -170px;
   }
 
   .market.market-content .market-data {
     padding-top: 40rem;
-    min-height: 360rem;
+    min-height: 430rem;
   }
 
   .market.market-content .market-data-item:nth-child(1) {
-    width: 130rem;
-    height: 246rem;
+    width: 250rem;
+    height: 478rem;
+    margin-left: 60rem;
   }
 
   .market.market-content .market-data-desc {
@@ -11159,14 +11214,22 @@ svg {
   }
 
   .market.market-content .market-data-info {
-    left: -170rem;
-    top: -46rem;
+    width: auto;
+    left: -60rem;
+    top: -5rem;
   }
 
   .market.market-content .market-data-info .info-media:after {
-    right: -97rem;
-    top: 12rem;
-    width: 110rem;
+    background-image: url("../img/metformin/line-mob.svg");
+    right: -65rem;
+    top: 25rem;
+    width: 135rem;
+    height: 170rem;
+  }
+
+  .market.market-content .market-data-element {
+    padding: 12rem 16rem;
+    margin-bottom: 18rem;
   }
 
   .market.market-investor {
@@ -11386,6 +11449,12 @@ svg {
   .investor-modal .modal-close-btn {
     top: 22rem;
     right: 22rem;
+  }
+}
+
+@media only screen and (max-width: 767px) and (max-width: 767px) {
+  .market.market-content .market-data-element h3 {
+    font: var(--font-h4-mobile);
   }
 }
 
