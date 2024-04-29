@@ -275,7 +275,7 @@
 
             .opened {
                 &::after {
-                    top: 8rem;
+                    top: 6rem;
                     transform: rotate(180deg);
                     background-image: url("../img/arrow-sub-color.svg");
                     @include maxWidth($sm) {

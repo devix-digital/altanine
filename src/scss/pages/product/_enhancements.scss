@@ -1,11 +1,13 @@
-.enhancements{
-	&.enhancements-dark{
-		background-image: url("../../../img/product/bg.svg");
-		.section-title, .products-card-title{
-			color: var(--color-white);
-		}
-		.section-description, .products-card-description{
-			color: var(--color-gray-400);
-		}
-	}
+.enhancements {
+    &.enhancements-dark {
+        background-image: url("../img/product/bg.svg");
+        .section-title,
+        .products-card-title {
+            color: var(--color-white);
+        }
+        .section-description,
+        .products-card-description {
+            color: var(--color-gray-400);
+        }
+    }
 }
