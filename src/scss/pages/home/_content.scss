@@ -80,6 +80,9 @@
 
     &.content-second-one {
         padding: 75px 0;
+        @include maxWidth($sm) {
+            padding: 80rem 0 0;
+        }
         .section-title {
             margin: 0;
         }
@@ -88,6 +91,17 @@
             font: var(--font-body-m);
             margin: 24rem 0;
             width: 416rem;
+            @include maxWidth($sm) {
+                width: auto;
+                font: var(--font-body-r-mobile);
+                color: var(--color-gray-700);
+            }
+        }
+
+        .btn {
+            @include maxWidth($sm) {
+                width: 100%;
+            }
         }
     }
 

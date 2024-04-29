@@ -1,7 +1,8 @@
 .overview {
     padding: 74rem 0 120rem;
     @include maxWidth($sm) {
-        padding: 53rem 0 40rem;
+        padding: 40rem 0 0;
+        margin-bottom: 80rem;
     }
 
     &-sticky {
@@ -115,6 +116,9 @@
     }
     &.overview-two {
         padding: 145rem 0 110rem;
+        @include maxWidth($sm) {
+            padding: 0;
+        }
     }
 
     &.overview-one,

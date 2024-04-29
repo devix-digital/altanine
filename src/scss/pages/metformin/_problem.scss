@@ -2,13 +2,17 @@
     padding: 72rem 0;
 
     @include maxWidth($sm) {
-        padding: 28rem 0;
+        padding: 0;
+        margin-bottom: 80rem;
     }
 
     hr {
         height: 1rem;
         background: var(--color-gray-200);
         margin-top: 72rem;
+        @include maxWidth($sm) {
+            display: none;
+        }
     }
 
     &-sticky {

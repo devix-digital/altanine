@@ -10348,6 +10348,20 @@ svg {
     margin-top: 10rem;
   }
 
+  .content.content-second-one {
+    padding: 80rem 0 0;
+  }
+
+  .content.content-second-one .content-info {
+    width: auto;
+    font: var(--font-body-r-mobile);
+    color: var(--color-gray-700);
+  }
+
+  .content.content-second-one .btn {
+    width: 100%;
+  }
+
   .content.content-third {
     padding: 70rem 0 0;
   }
@@ -10868,7 +10882,12 @@ svg {
   }
 
   .hero-metformin + .faq {
-    padding: 80rem 0 23rem;
+    margin-bottom: 40rem;
+    padding: 0;
+  }
+
+  .hero-metformin {
+    margin-bottom: 80rem;
   }
 
   .delivery {
@@ -10904,6 +10923,8 @@ svg {
 
   .enhancements-metformin {
     padding: 198rem 0 50rem;
+    margin: 0;
+    margin-bottom: 80rem;
   }
 
   .enhancements-metformin-banner {
@@ -10936,7 +10957,8 @@ svg {
   }
 
   .overview {
-    padding: 53rem 0 40rem;
+    padding: 40rem 0 0;
+    margin-bottom: 80rem;
   }
 
   .overview-banners {
@@ -10971,6 +10993,10 @@ svg {
     padding: 53rem 0 40rem;
   }
 
+  .overview.overview-two {
+    padding: 0;
+  }
+
   .overview.overview-one .overview-sticky,
   .overview.overview-two .overview-sticky {
     margin-top: 0rem;
@@ -10984,7 +11010,12 @@ svg {
   }
 
   .problem {
-    padding: 28rem 0;
+    padding: 0;
+    margin-bottom: 80rem;
+  }
+
+  .problem hr {
+    display: none;
   }
 
   .problem-sticky {
@@ -11036,6 +11067,11 @@ svg {
   .market {
     margin-top: 54rem;
     padding: 80rem 0 50rem;
+  }
+
+  .market.market-content.metformin {
+    padding-top: 80rem;
+    margin-bottom: 80rem;
   }
 
   .market.market-content.metformin .market-content-wrapper {
@@ -11191,7 +11227,7 @@ svg {
     width: 571rem;
     height: 571rem;
     right: -120rem;
-    bottom: -170px;
+    bottom: -170rem;
   }
 
   .market.market-content .market-data {
@@ -11240,7 +11276,7 @@ svg {
     width: 354rem;
     height: 354rem;
     right: -60rem;
-    bottom: -20px;
+    bottom: -20rem;
   }
 
   .market.market-investor .market-data {
