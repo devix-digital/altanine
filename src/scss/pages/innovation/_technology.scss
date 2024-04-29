@@ -1,4 +1,8 @@
 .technology {
+  padding: 130rem 0 25rem 0;
+  @include maxWidth($sm) {
+    padding: 50rem 0 15rem 0;
+  }
   .section-subtitle {
     margin-top: 24rem;
   }

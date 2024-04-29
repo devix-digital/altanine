@@ -1,8 +1,17 @@
 .enhancements {
   &.markets-page {
     background: none;
+    padding: 24rem 0 101rem;
+    @include maxWidth($sm) {
+      padding: 24rem 0 20rem;
+    }
     .products-card-description {
       font: var(--font-body-b);
+    }
+    .enhancements-row {
+      @include maxWidth($sm) {
+        padding: 0;
+      }
     }
   }
 }

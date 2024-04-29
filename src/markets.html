@@ -22,10 +22,11 @@
 <body>
 	<main class="wrapper" id="wrapper">
 		<div class="preloader" id="preloader"></div> @@include('html/components/header.html', {}) <div data-router-wrapper>
-			<div data-router-view="default"> @@include('html/markets/hero.html', {}) @@include('html/markets/delivery.html',
-				{}) <div class="container">
+			<div data-router-view="default"> @@include('html/markets/hero.html', {})
+				@@include('html/markets/delivery.html',{}) <div class="container">
 					<hr class="hr" />
-				</div> @@include('html/markets/enhancements.html', {}) @@include('html/components/content-2.html', {}) </div>
+				</div> @@include('html/markets/enhancements.html', {}) @@include('html/markets/tabs.html', {})
+				@@include('html/markets/references.html', {}) @@include('html/components/content-2.html', {}) </div>
 		</div> @@include('html/components/footer.html', {}) @@include('html/components/modal-investor.html', {})
 		@@include('html/components/modal-thanks.html', {})
 	</main>

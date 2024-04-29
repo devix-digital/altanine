@@ -6230,6 +6230,10 @@ svg {
   z-index: -2;
 }
 
+.technology {
+  padding: 130rem 0 25rem 0;
+}
+
 .technology .section-subtitle {
   margin-top: 24rem;
 }
@@ -6313,15 +6317,150 @@ svg {
 
 .enhancements.markets-page {
   background: none;
+  padding: 24rem 0 101rem;
 }
 
 .enhancements.markets-page .products-card-description {
   font: var(--font-body-b);
 }
 
+.delivery.markets-page {
+  padding: 146rem 0 28rem;
+}
+
 .delivery.markets-page .delivery-card-icon img {
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.section-tab {
+  padding: 0 0 101rem 0;
+}
+
+.section-tab__row {
+  display: flex;
+}
+
+.section-tab__tabs {
+  position: relative;
+  border-bottom: 1px solid #f2f6f8;
+}
+
+.section-tab__tabs::before {
+  content: "";
+  width: 22rem;
+  height: 54rem;
+  position: absolute;
+  right: -22rem;
+  top: 0;
+  background: linear-gradient(270deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 100%);
+  z-index: 1;
+}
+
+.section-tab__col:first-child {
+  flex: 0 0 60%;
+  max-width: 60%;
+  margin-right: 12rem;
+}
+
+.section-tab__btns {
+  display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 16rem;
+       column-gap: 16rem;
+  padding-bottom: 24rem;
+  position: relative;
+}
+
+.section-tab__btns .btn {
+  flex: 0 1 25%;
+}
+
+.section-tab__content {
+  margin-top: 53rem;
+  max-width: 416rem;
+}
+
+.section-tab__content span {
+  color: var(--color-gray-600);
+  display: block;
+  margin: 10rem 0 40rem;
+}
+
+.section-tab .section-banner {
+  max-width: 448rem;
+  height: 100%;
+}
+
+.section-tab__text {
+  margin-bottom: 22rem;
+  position: relative;
+}
+
+.section-tab__text h5,
+.section-tab__text .progress-pagination,
+.section-tab__text .footer-nav a,
+.footer-nav .section-tab__text a {
+  color: var(--color-blue);
+  margin-bottom: 16rem;
+}
+
+.section-tab__blocks {
+  margin-top: 95rem;
+  margin-left: 58rem;
+}
+
+.section-tab__decor {
+  margin-bottom: 24rem;
+}
+
+.js-tab-content {
+  display: none;
+  margin: 32rem -16rem;
+}
+
+.js-tab-content .col-md-4 {
+  height: 100%;
+}
+
+.js-tab-content.is-active {
+  display: flex;
+}
+
+.references {
+  padding: 10rem 0 50rem 0;
+}
+
+.references__content p {
+  font: var(--font-body-m);
+  margin-bottom: 12rem;
+}
+
+.references__content a {
+  font-size: 12rem;
+  display: block;
+  margin-bottom: 8rem;
+  line-break: anywhere;
+  color: var(--color-gray-400);
+}
+
+.references__content a.btn-arrow:not([class*=color-]) .btn-labels-item {
+  background: none;
+  -webkit-text-fill-color: var(--color-gray-400);
+  color: transparent;
+}
+
+.references__content a.btn-arrow:not([class*=color-]) .btn-icon {
+  color: var(--color-gray-400);
+}
+
+.references__content a:hover.btn-arrow:not([class*=color-]) .btn-icon {
+  color: var(--color-blue);
+}
+
+.references__content a:hover.btn-arrow:not([class*=color-]) .btn-labels-item {
+  color: var(--color-blue);
+  -webkit-text-fill-color: var(--color-primary-gradient);
 }
 
 .modal {
@@ -11558,6 +11697,97 @@ svg {
   .innovation-footer .h6 {
     text-align: center;
     margin-bottom: 36px;
+  }
+
+  .technology {
+    padding: 50rem 0 15rem 0;
+  }
+
+  .enhancements.markets-page {
+    padding: 24rem 0 20rem;
+  }
+
+  .enhancements.markets-page .enhancements-row {
+    padding: 0;
+  }
+
+  .delivery.markets-page {
+    padding: 72rem 0 28rem;
+  }
+
+  .section-tab {
+    padding: 0 0 20rem 0;
+  }
+
+  .section-tab__row {
+    display: block;
+  }
+
+  .section-tab__col:first-child {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-right: 0;
+  }
+
+  .section-tab__btns {
+    overflow: auto;
+    margin: 0 -22rem;
+    padding-bottom: 0;
+  }
+
+  .section-tab__btns::-webkit-scrollbar {
+    width: 0;
+  }
+
+  .section-tab__btns::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .section-tab__btns::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 3px;
+  }
+
+  .section-tab__btns::-webkit-scrollbar-thumb:hover {
+    background: transparent;
+  }
+
+  .section-tab__btns .btn {
+    flex: 0 0 auto;
+  }
+
+  .section-tab__btns .btn:first-child {
+    margin-left: 22rem;
+  }
+
+  .section-tab__btns .btn:last-child {
+    margin-right: 22rem;
+  }
+
+  .section-tab__content {
+    margin-top: 0;
+    margin-bottom: 30rem;
+  }
+
+  .section-tab__content .market-details {
+    flex-direction: row;
+  }
+
+  .section-tab__content .market-details::before {
+    content: "";
+    height: 60rem;
+    width: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 50%;
+  }
+
+  .section-tab .section-banner {
+    margin-bottom: 30rem;
+  }
+
+  .section-tab__blocks {
+    margin: 0;
   }
 
   .modal-close-btn {
