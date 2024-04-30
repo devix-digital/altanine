@@ -11,12 +11,12 @@
         position: absolute;
         width: 880rem;
         height: 880rem;
-        top: -215rem;
+        top: -245rem;
         right: 45rem;
 
         @include maxWidth($sm) {
             height: 175rem;
-            top: 0;
+            top: -10rem;
         }
 
         img {
