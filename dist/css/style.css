@@ -6363,6 +6363,11 @@ svg {
   margin-right: 12rem;
 }
 
+.section-tab__col:last-child {
+  flex: 0 0 40%;
+  max-width: 40%;
+}
+
 .section-tab__btns {
   display: flex;
   justify-content: space-between;
@@ -6388,7 +6393,6 @@ svg {
 }
 
 .section-tab .section-banner {
-  max-width: 448rem;
   height: 100%;
 }
 
@@ -11724,6 +11728,12 @@ svg {
   }
 
   .section-tab__col:first-child {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-right: 0;
+  }
+
+  .section-tab__col:last-child {
     flex: 0 0 100%;
     max-width: 100%;
     margin-right: 0;

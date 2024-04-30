@@ -36,6 +36,15 @@
         margin-right: 0;
       }
     }
+    &:last-child {
+      flex: 0 0 40%;
+      max-width: 40%;
+      @include maxWidth($sm) {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-right: 0;
+      }
+    }
   }
   &__btns {
     display: flex;
@@ -103,7 +112,7 @@
     }
   }
   .section-banner {
-    max-width: 448rem;
+    // max-width: 448rem;
     height: 100%;
     @include maxWidth($sm) {
       margin-bottom: 30rem;
