@@ -1,0 +1,39 @@
+.insights {
+    padding: 128rem 0 72rem;
+
+    @include maxWidth($sm) {
+        padding: 80rem 0 38rem;
+    }
+
+    .section {
+        &-subtitle {
+            @include minWidth($sm + 1) {
+                margin-top: 38rem;
+            }
+        }
+        &-description {
+            font: var(--font-body-l);
+            color: var(--color-gray-600);
+            max-width: 408rem;
+
+            @include maxWidth($sm) {
+                font: var(--font-body-l-mobile);
+                max-width: 90%;
+            }
+        }
+    }
+
+    .btn {
+        margin-top: 32rem;
+        padding: 0 40rem;
+
+        @include maxWidth($sm) {
+            margin-top: 23rem;
+        }
+
+        .btn-icon {
+            width: 17rem;
+            height: 17rem;
+        }
+    }
+}

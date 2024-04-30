@@ -8,10 +8,11 @@
     }
     &-banner {
         position: absolute;
-        width: 840rem;
-        height: 840rem;
-        top: -140px;
-        right: 80px;
+        position: absolute;
+        width: 880rem;
+        height: 880rem;
+        top: -215px;
+        right: 45px;
 
         @include maxWidth($sm) {
             height: 175rem;

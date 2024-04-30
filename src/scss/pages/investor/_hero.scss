@@ -1,9 +1,17 @@
-.hero-investor{
-		.bread-crumbs{
-			li{
-				&:last-child{
-					color: var(--color-gray-300);
-				}
-			}
-		}
+.hero-investor {
+    margin-bottom: 144rem;
+    .bread-crumbs {
+        li {
+            &:last-child {
+                color: var(--color-gray-300);
+            }
+        }
+    }
+    .hero-content {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding-bottom: 41rem;
+    }
 }

@@ -1,58 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta name="viewport"
-	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<title>Altanine</title>
-	
-	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-	
-	<meta name="msapplication-TileColor" content="#ffffff" />
-	<meta name="theme-color" content="#ffffff">
-	<meta name="msapplication-navbutton-color" content="#ffffff" />
-	<meta name="apple-mobile-web-app-status-bar-style" content="#ffffff" />
-	
-	<link rel="preload" href="fonts/Inter-Regular.woff" as="font" type="font/woff" crossorigin="anonymous" />
-	<link rel="preload" href="fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
-	<link rel="preload" href="fonts/Inter-Medium.woff" as="font" type="font/woff" crossorigin="anonymous" />
-	<link rel="preload" href="fonts/Inter-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
-	<link rel="preload" href="fonts/Inter-Bold.woff" as="font" type="font/woff" crossorigin="anonymous" />
-	<link rel="preload" href="fonts/Inter-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
-	
-	<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-<main class="wrapper" id="wrapper">
-	<div class="preloader" id="preloader"></div>
-	@@include('html/components/header.html', {})
-	<div data-router-wrapper>
-		<div data-router-view="default">
-			@@include('html/investor/hero.html', {})
-<!--			@@include('html/investor/insights.html', {})-->
-			@@include('html/investor/benefits.html', {})
-			@@include('html/investor/enhancements.html', {})
-			@@include('html/investor/overview-one.html', {})
-			@@include('html/investor/market.html', {})
-			<div class="container">
-				<hr class="hr"/>
-			</div>
+    <head>
+        <meta
+            name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        />
+        <title>Altanine</title>
 
-			@@include('html/investor/market-content.html', {})
-			@@include('html/investor/competition.html', {})
-			<div class="container">
-				<hr class="hr"/>
-			</div>
-			@@include('html/investor/about.html', {})
-			@@include('html/investor/benefits-2.html', {})
-			@@include('html/investor/faq.html', {})
-			@@include('html/components/content-3.html', {})
-		</div>
-	</div>
-	@@include('html/components/footer.html', {})
-	@@include('html/components/modal-investor.html', {})
-	@@include('html/components/modal-thanks.html', {})
-</main>
-<script src="js/app.min.js"></script>
-<script src="files/modals.js"></script>
-</body>
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png" />
+
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="theme-color" content="#ffffff" />
+        <meta name="msapplication-navbutton-color" content="#ffffff" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff" />
+
+        <link
+            rel="preload"
+            href="fonts/Inter-Regular.woff"
+            as="font"
+            type="font/woff"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="fonts/Inter-Regular.woff2"
+            as="font"
+            type="font/woff2"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="fonts/Inter-Medium.woff"
+            as="font"
+            type="font/woff"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="fonts/Inter-Medium.woff2"
+            as="font"
+            type="font/woff2"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="fonts/Inter-Bold.woff"
+            as="font"
+            type="font/woff"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="fonts/Inter-Bold.woff2"
+            as="font"
+            type="font/woff2"
+            crossorigin="anonymous"
+        />
+
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <main class="wrapper" id="wrapper">
+            <div class="preloader" id="preloader"></div>
+            @@include('html/components/header.html', {})
+            <div data-router-wrapper>
+                <div data-router-view="default">
+                    @@include('html/investor/hero.html', {})
+                    @@include('html/investor/about.html',{})
+                    <!-- @@include('html/investor/benefits.html', {}) -->
+                    @@include('html/investor/benefits-2.html', {})
+                    <!--			@@include('html/investor/insights.html', {})-->
+                    <!-- @@include('html/investor/enhancements.html', {}) -->
+                    @@include('html/investor/overview-one.html', {})
+                    <!-- @@include('html/investor/market.html', {}) -->
+                    <div class="container">
+                        <hr class="hr" />
+                    </div>
+
+                    <!-- @@include('html/investor/market-content.html', {}) -->
+                    @@include('html/investor/competition.html', {})
+                    <div class="container">
+                        <hr class="hr" />
+                    </div>
+                    @@include('html/investor/faq.html', {})
+                    @@include('html/components/content-2.html', {})
+                </div>
+            </div>
+            @@include('html/components/footer.html', {})
+            @@include('html/components/modal-investor.html', {})
+            @@include('html/components/modal-thanks.html', {})
+        </main>
+        <script src="js/app.min.js"></script>
+        <script src="files/modals.js"></script>
+    </body>
 </html>

@@ -1,0 +1,22 @@
+.about.investor {
+    margin-bottom: 144rem;
+    padding: 0;
+    background: none;
+
+    .banner.section-banner {
+        height: 556rem;
+    }
+
+    .about-desc {
+        margin-top: 40rem;
+        h4 {
+            width: 480rem;
+            font: var(--font-h3);
+            line-height: 60rem;
+            margin-bottom: 16rem;
+        }
+        p {
+            font: var(--font-body-b);
+        }
+    }
+}

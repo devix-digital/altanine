@@ -4115,6 +4115,14 @@ svg {
   overflow: hidden;
 }
 
+.enhancements.enhancements-about .enhancements-about-banner {
+  position: absolute;
+  width: 952rem;
+  height: 952rem;
+  top: 0;
+  right: -140px;
+}
+
 .enhancements.enhancements-about .section-title {
   margin: 16rem 0;
 }
@@ -4694,8 +4702,63 @@ svg {
   -webkit-text-fill-color: transparent;
 }
 
+.blog-details-info .btn-icon {
+  top: 10rem;
+}
+
+.hero-investor {
+  margin-bottom: 144rem;
+}
+
 .hero-investor .bread-crumbs li:last-child {
   color: var(--color-gray-300);
+}
+
+.hero-investor .hero-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 41rem;
+}
+
+.about.investor {
+  margin-bottom: 144rem;
+  padding: 0;
+  background: none;
+}
+
+.about.investor .banner.section-banner {
+  height: 556rem;
+}
+
+.about.investor .about-desc {
+  margin-top: 40rem;
+}
+
+.about.investor .about-desc h4 {
+  width: 480rem;
+  font: var(--font-h3);
+  line-height: 60rem;
+  margin-bottom: 16rem;
+}
+
+.about.investor .about-desc p {
+  font: var(--font-body-b);
+}
+
+.benefits.investor {
+  margin-bottom: 144rem;
+  padding: 0;
+}
+
+.benefits.investor .col-md-7 {
+  max-width: 752rem;
+  padding: 0;
+}
+
+.benefits.investor .col-md-7 h4 {
+  letter-spacing: -0.1rem;
 }
 
 .insights {
@@ -4830,10 +4893,11 @@ svg {
 
 .enhancements-metformin-banner {
   position: absolute;
-  width: 840rem;
-  height: 840rem;
-  top: -140px;
-  right: 80px;
+  position: absolute;
+  width: 880rem;
+  height: 880rem;
+  top: -215px;
+  right: 45px;
 }
 
 .enhancements-metformin-banner img {
@@ -6188,7 +6252,7 @@ svg {
 }
 
 .innovation {
-  padding: 8rem 0;
+  padding: 8rem 0 130rem;
   position: relative;
 }
 
@@ -10193,6 +10257,10 @@ svg {
 }
 
 @media only screen and (max-width: 1400px) {
+  .innovation {
+    padding: 8rem 0 30rem;
+  }
+
   .innovation .section-title {
     margin-right: 0;
   }
@@ -10983,6 +11051,12 @@ svg {
   .mission__core-media .section-banner:nth-child(1) {
     top: 73rem;
     left: -71rem;
+  }
+
+  .enhancements.enhancements-about .enhancements-about-banner {
+    width: 340rem;
+    height: 170rem;
+    right: 10rem;
   }
 
   .enhancements.enhancements-about {
