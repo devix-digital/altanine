@@ -4693,7 +4693,7 @@ svg {
 
 .blog-details-info .btn-labels {
   white-space: wrap;
-  margin-bottom: 12px;
+  margin-bottom: 12rem;
 }
 
 .blog-details-info .btn-arrow:not([class*=color-]) .btn-labels-item {
@@ -4896,8 +4896,8 @@ svg {
   position: absolute;
   width: 880rem;
   height: 880rem;
-  top: -215px;
-  right: 45px;
+  top: -215rem;
+  right: 45rem;
 }
 
 .enhancements-metformin-banner img {

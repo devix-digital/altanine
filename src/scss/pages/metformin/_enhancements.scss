@@ -11,8 +11,8 @@
         position: absolute;
         width: 880rem;
         height: 880rem;
-        top: -215px;
-        right: 45px;
+        top: -215rem;
+        right: 45rem;
 
         @include maxWidth($sm) {
             height: 175rem;
