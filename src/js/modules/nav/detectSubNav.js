@@ -8,9 +8,10 @@ export const detectSubNav = () => {
             item.classList.add("has-submenu")
 
             item.addEventListener("touchstart", (e) => {
-                e.preventDefault()
-                subMenu.classList.toggle("submenu")
-                item.classList.toggle("opened")
+                if (e.target === e.currentTarget) {
+                    subMenu.classList.toggle("submenu")
+                    item.classList.toggle("opened")
+                }
             })
         }
     })
