@@ -3622,7 +3622,7 @@ svg {
   pointer-events: none;
 }
 
-.blog-carousel:hover .carousel-cursor {
+.blog-carousel:hover + .carousel-cursor {
   opacity: 1;
 }
 
