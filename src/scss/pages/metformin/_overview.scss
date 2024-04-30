@@ -99,13 +99,16 @@
             max-width: 520rem;
 
             @include maxWidth($sm) {
-                max-width: 95%;
+                max-width: 100%;
             }
         }
 
         &-description {
             color: var(--color-gray-600);
             max-width: 416rem;
+            @include maxWidth($sm) {
+                font: var(--font-body-r-mobile);
+            }
         }
     }
     &.overview-one {

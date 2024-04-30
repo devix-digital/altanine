@@ -4830,10 +4830,10 @@ svg {
 
 .enhancements-metformin-banner {
   position: absolute;
-  width: 952rem;
-  height: 525rem;
-  top: 0;
-  right: -125px;
+  width: 840rem;
+  height: 840rem;
+  top: -140px;
+  right: 80px;
 }
 
 .enhancements-metformin-banner img {
@@ -10929,6 +10929,7 @@ svg {
 
   .enhancements-metformin-banner {
     height: 175rem;
+    top: 0;
   }
 
   .enhancements-metformin-banner {
@@ -10986,7 +10987,11 @@ svg {
   }
 
   .overview .section-title {
-    max-width: 95%;
+    max-width: 100%;
+  }
+
+  .overview .section-description {
+    font: var(--font-body-r-mobile);
   }
 
   .overview.overview-one {
