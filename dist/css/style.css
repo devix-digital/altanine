@@ -1989,6 +1989,7 @@ svg {
 }
 
 .header-panel-nav {
+  position: relative;
   flex: 1;
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.72);
@@ -2014,22 +2015,71 @@ svg {
   height: 20rem;
   top: 50%;
   margin-top: -10rem;
-  right: -32rem;
+  right: -22rem;
   background-color: var(--color-gray-300);
 }
 
+.header-panel-nav li:not(:last-child) li:before {
+  content: none;
+}
+
 .header-panel-nav li a {
+  position: relative;
   font: var(--font-body-m);
   color: var(--color-black);
   text-transform: capitalize;
   white-space: nowrap;
   transition: color var(--transition-duration) var(--transition-easing);
+  z-index: 1;
 }
 
-.header-panel-nav li .nav-arrow {
-  display: block;
+.header-panel-nav li > ul {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 16rem;
+  top: -25rem;
+  left: -23rem;
+  width: calc(100% + 44rem);
+  padding: 90rem 24rem 16rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  opacity: 0;
+  pointer-events: none;
+  z-index: -1;
+  transition: opacity var(--transition-duration) var(--transition-easing);
+}
+
+.header-panel-nav li > ul a {
+  font: var(--font-body-s);
+}
+
+.header-panel-nav .has-submenu {
+  padding-right: 22rem;
+}
+
+.header-panel-nav .has-submenu::after {
+  content: "";
+  position: absolute;
+  top: 8rem;
+  right: 0;
   width: 10rem;
   height: 11rem;
+  background-image: url("../img/arrow-sub.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: 12rem;
+  transition: transform var(--transition-duration) var(--transition-easing);
+}
+
+.header-panel-nav .has-submenu > a {
+  pointer-events: none;
+}
+
+.header-panel-nav .opened::after {
+  top: 6rem;
+  transform: rotate(180deg);
+  background-image: url("../img/arrow-sub-color.svg");
 }
 
 .header-panel-nav .header-contacts {
@@ -2040,13 +2090,13 @@ svg {
 
 .header-panel-nav .btn {
   width: 100%;
-  margin-top: 31rem;
+  margin-top: 24rem;
   opacity: 0;
   transition: opacity var(--transition-duration) var(--transition-easing);
   transition-delay: 0.2s;
 }
 
-.header-panel-nav.is-active ul,
+.header-panel-nav.is-active ul:not(li > ul),
 .header-panel-nav.is-active .header-contacts,
 .header-panel-nav.is-active .btn {
   opacity: 1;
@@ -2294,6 +2344,11 @@ svg {
   /* sizes */
   /* types */
   /* states */
+}
+
+.btn.mini {
+  height: 54rem;
+  min-height: 54rem;
 }
 
 .btn-labels {
@@ -3270,7 +3325,7 @@ svg {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-image: url(../../../img/home/benefits-icon-shadow.png);
+  background-image: url(../img/home/benefits-icon-shadow.png);
   background-size: contain;
   background-position: center;
   pointer-events: none;
@@ -3567,7 +3622,7 @@ svg {
   pointer-events: none;
 }
 
-.blog-carousel:hover .carousel-cursor {
+.blog-carousel:hover + .carousel-cursor {
   opacity: 1;
 }
 
@@ -3643,6 +3698,20 @@ svg {
 
 .content.content-second .content-info {
   margin: 24rem 0 12rem;
+}
+
+.content.content-second-one {
+  padding: 75px 0;
+}
+
+.content.content-second-one .section-title {
+  margin: 0;
+}
+
+.content.content-second-one .content-info {
+  font: var(--font-body-m);
+  margin: 24rem 0;
+  width: 416rem;
 }
 
 .content.content-third {
@@ -4126,7 +4195,7 @@ svg {
   background-color: var(--color-gray-200);
   padding: 65rem 0 40rem;
   border-radius: 14px;
-  background-image: url("../../../img/home/join-bg.svg");
+  background-image: url("../img/home/join-bg.svg");
   background-size: cover;
   background-position: center;
   overflow: hidden;
@@ -4604,10 +4673,25 @@ svg {
   padding: 144rem 0 110rem;
   margin: 44rem 0 92rem;
   border-radius: 14px;
-  background-image: url("../../../img/home/enhancements-abstract.svg");
+  background-image: url("../img/home/enhancements-abstract.svg");
   background-size: cover;
   background-position: center;
   overflow: hidden;
+}
+
+.blog-details-info .btn-arrow:not([class*=color-]) .btn-icon {
+  color: var(--color-link);
+}
+
+.blog-details-info .btn-labels {
+  white-space: wrap;
+  margin-bottom: 12px;
+}
+
+.blog-details-info .btn-arrow:not([class*=color-]) .btn-labels-item {
+  background: var(--color-link);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .hero-investor .bread-crumbs li:last-child {
@@ -4746,10 +4830,10 @@ svg {
 
 .enhancements-metformin-banner {
   position: absolute;
-  width: 952rem;
-  height: 525rem;
-  top: 0;
-  right: -125px;
+  width: 840rem;
+  height: 840rem;
+  top: -140px;
+  right: 80px;
 }
 
 .enhancements-metformin-banner img {
@@ -4878,30 +4962,40 @@ svg {
   padding: 72rem 0 145rem;
 }
 
-.overview.overview-one .overview-sticky {
+.overview.overview-two {
+  padding: 145rem 0 110rem;
+}
+
+.overview.overview-one .overview-sticky,
+.overview.overview-two .overview-sticky {
   justify-content: flex-start;
   margin-top: 104rem;
 }
 
-.overview.overview-one .overview-sticky .section-title {
+.overview.overview-one .overview-sticky .section-title,
+.overview.overview-two .overview-sticky .section-title {
   margin-bottom: 16rem;
 }
 
-.overview.overview-one .overview-detail {
+.overview.overview-one .overview-detail,
+.overview.overview-two .overview-detail {
   margin-top: 8rem;
 }
 
-.overview.overview-one .overview-banners {
+.overview.overview-one .overview-banners,
+.overview.overview-two .overview-banners {
   display: flex;
   -moz-column-gap: 12rem;
        column-gap: 12rem;
 }
 
-.overview.overview-one .overview-banners .section-banner {
+.overview.overview-one .overview-banners .section-banner,
+.overview.overview-two .overview-banners .section-banner {
   border-radius: 0;
 }
 
-.overview.overview-one .overview-banners .section-banner:nth-child(1) {
+.overview.overview-one .overview-banners .section-banner:nth-child(1),
+.overview.overview-two .overview-banners .section-banner:nth-child(1) {
   height: 632.24rem;
   width: 695rem;
   margin: 0 auto 0 57rem;
@@ -4909,6 +5003,12 @@ svg {
 
 .problem {
   padding: 72rem 0;
+}
+
+.problem hr {
+  height: 1rem;
+  background: var(--color-gray-200);
+  margin-top: 72rem;
 }
 
 .problem-sticky {
@@ -5006,6 +5106,31 @@ svg {
   background-image: none;
 }
 
+.market.market-content.metformin {
+  padding: 96rem 0;
+  margin: 0;
+}
+
+.market.market-content.metformin .market-content-wrapper {
+  width: 464rem;
+}
+
+.market.market-content.metformin .market-sticky .section-title {
+  margin-bottom: 64rem;
+}
+
+.market.market-content.metformin h5,
+.market.market-content.metformin .progress-pagination,
+.market.market-content.metformin .footer-nav a,
+.footer-nav .market.market-content.metformin a {
+  margin: 32rem 0 8rem;
+}
+
+.market.market-content.metformin .market-content-desc.bold {
+  font: var(--font-body-l);
+  color: var(--color-gray-700);
+}
+
 .market-sticky {
   position: sticky;
   top: 0;
@@ -5092,7 +5217,7 @@ svg {
   -moz-column-gap: 48rem;
        column-gap: 48rem;
   align-items: center;
-  background: linear-gradient(0deg, #F2F6F8, #F2F6F8), linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+  background: linear-gradient(0deg, #f2f6f8, #f2f6f8), linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
   padding: 32rem 24rem;
   border-radius: 8px;
   position: relative;
@@ -5143,7 +5268,7 @@ svg {
 .market-data-item:nth-child(1) {
   width: 592rem;
   height: 592rem;
-  background: linear-gradient(0deg, #F2F6F8, #F2F6F8), linear-gradient(0deg, rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.72));
+  background: linear-gradient(0deg, #f2f6f8, #f2f6f8), linear-gradient(0deg, rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.72));
   border-color: var(--color-white);
   padding-bottom: 15rem;
   margin-bottom: 88rem;
@@ -5151,7 +5276,7 @@ svg {
 }
 
 .market-data-item:nth-child(2) {
-  background: linear-gradient(0deg, #BFD4E4, #BFD4E4), linear-gradient(0deg, rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.72));
+  background: linear-gradient(0deg, #bfd4e4, #bfd4e4), linear-gradient(0deg, rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.72));
   border-color: rgba(255, 255, 255, 0.72);
   width: 442rem;
   height: 442rem;
@@ -5165,7 +5290,7 @@ svg {
 }
 
 .market-data-item:nth-child(3) {
-  background: linear-gradient(296.54deg, #00EFD1 0%, #00ACEA 100%), linear-gradient(0deg, rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.72));
+  background: linear-gradient(296.54deg, #00efd1 0%, #00acea 100%), linear-gradient(0deg, rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.72));
   border-color: rgba(255, 255, 255, 0.72);
   width: 296rem;
   height: 296rem;
@@ -5233,7 +5358,7 @@ svg {
 }
 
 .market.market-home .market-data-item:nth-child(3) {
-  background: linear-gradient(0deg, #BFD4E4, #BFD4E4), linear-gradient(0deg, rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.72));
+  background: linear-gradient(0deg, #bfd4e4, #bfd4e4), linear-gradient(0deg, rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.72));
   border-color: rgba(255, 255, 255, 0.72);
   top: 238rem;
   width: 442rem;
@@ -5354,10 +5479,10 @@ svg {
   position: absolute;
   content: "";
   border-radius: 50%;
-  width: 702rem;
-  height: 702rem;
-  right: -60rem;
-  bottom: -180rem;
+  width: 754rem;
+  height: 752rem;
+  right: -75rem;
+  bottom: -120rem;
   z-index: -1;
   border: 2rem solid rgba(255, 255, 255, 0.72);
   background-color: var(--color-gray-200);
@@ -5374,15 +5499,15 @@ svg {
 }
 
 .market.market-content .market-data-item:nth-child(1) {
-  width: 260rem;
-  height: 506rem;
+  width: 342rem;
+  height: 648rem;
+  margin: -95rem 0;
+  margin-left: -70rem;
   border-color: transparent;
-  padding: 18rem 0 0 134rem;
   background: transparent;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  margin: 18rem 0 0 134rem;
 }
 
 .market.market-content .market-data-icon {
@@ -5403,8 +5528,8 @@ svg {
 
 .market.market-content .market-data-info {
   position: absolute;
-  left: -314rem;
-  top: 40rem;
+  left: -250rem;
+  bottom: 160rem;
   text-align: center;
   width: 100%;
   max-width: 187rem;
@@ -5417,12 +5542,12 @@ svg {
 .market.market-content .market-data-info .info-media:after {
   position: absolute;
   content: "";
-  right: -235rem;
-  top: 8rem;
-  background-image: url("data:image/svg+xml,%3Csvg width='259' height='90' viewBox='0 0 259 90' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='258.842' y1='89.4743' x2='3.84189' y2='4.47434' stroke='url(%23paint0_linear_16702_4598)'/%3E%3Ccircle cx='4.5' cy='4.5' r='4.5' fill='url(%23paint1_linear_16702_4598)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_16702_4598' x1='4.31621' y1='3.05131' x2='3.38799' y2='5.90672' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%2300EFD1'/%3E%3Cstop offset='1' stop-color='%2300ACEA'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint1_linear_16702_4598' x1='9' y1='9' x2='-1.80092' y2='3.6065' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%2300EFD1'/%3E%3Cstop offset='1' stop-color='%2300ACEA'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
+  right: -225rem;
+  top: -75rem;
+  background-image: url("../img/metformin/line.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  width: 259rem;
+  width: 250rem;
   height: 90rem;
 }
 
@@ -8358,6 +8483,22 @@ svg {
     color: var(--color-blue);
   }
 
+  .header-panel-nav .has-submenu:hover > a {
+    color: var(--color-blue);
+  }
+
+  .header-panel-nav .has-submenu:hover > ul {
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 0;
+  }
+
+  .header-panel-nav .has-submenu:hover::after {
+    top: 8rem;
+    transform: rotate(180deg);
+    background-image: url("../img/arrow-sub-color.svg");
+  }
+
   .btn-gradient:hover {
     cursor: pointer;
   }
@@ -10137,7 +10278,7 @@ svg {
     left: -6rem;
     right: -6rem;
     background-color: var(--color-gray-200);
-    padding: 98rem 18rem 18rem;
+    padding: 98rem 18rem 24rem;
     max-height: 100svh;
     overflow-y: auto;
   }
@@ -10149,7 +10290,7 @@ svg {
   }
 
   .header-panel-nav li {
-    padding: 16rem 0;
+    padding: 18rem 0;
   }
 
   .header-panel-nav li:not(:last-child):before {
@@ -10159,18 +10300,78 @@ svg {
     bottom: 0;
     margin-top: 0;
     right: 0;
-    left: 0px;
+    left: 0;
+  }
+
+  .header-panel-nav li:last-child:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1rem;
+    top: auto;
+    bottom: 0;
+    margin-top: 0;
+    right: 0;
+    left: 0;
+    background-color: var(--color-gray-300);
   }
 
   .header-panel-nav li a {
-    font: var(--font-body-m-mobile);
-    font-size: 20rem;
+    font: var(--font-h5-mobile);
+  }
+
+  .header-panel-nav li > ul {
+    position: relative;
+    gap: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    background-color: transparent;
+    pointer-events: auto;
+    opacity: 1;
+    z-index: 0;
+    display: none;
+  }
+
+  .header-panel-nav li > ul a {
+    font: var(--font-body-s-mobile);
+  }
+
+  .header-panel-nav li > ul li {
+    padding: 0 0 16rem;
+  }
+
+  .header-panel-nav li > ul li:not(:last-child):before {
+    content: none;
+  }
+
+  .header-panel-nav li > ul li:last-child:before {
+    content: none;
+  }
+
+  .header-panel-nav .has-submenu {
+    display: flex;
+    flex-direction: column;
+    gap: 12rem;
+  }
+
+  .header-panel-nav .has-submenu::after {
+    top: 26rem;
+  }
+
+  .header-panel-nav .opened::after {
+    top: 24rem;
+  }
+
+  .header-panel-nav .opened ul {
+    display: flex;
   }
 
   .header-panel-nav .header-contacts {
     display: flex;
-    gap: 7rem;
-    margin-top: 28rem;
+    gap: 8rem;
+    margin-top: 40rem;
     opacity: 0;
   }
 
@@ -10585,6 +10786,20 @@ svg {
     margin-top: 10rem;
   }
 
+  .content.content-second-one {
+    padding: 80rem 0 0;
+  }
+
+  .content.content-second-one .content-info {
+    width: auto;
+    font: var(--font-body-r-mobile);
+    color: var(--color-gray-700);
+  }
+
+  .content.content-second-one .btn {
+    width: 100%;
+  }
+
   .content.content-third {
     padding: 70rem 0 0;
   }
@@ -10696,7 +10911,7 @@ svg {
   }
 
   .team .team-wrap {
-    margin: 14rem 0 0;
+    margin: 0;
     flex-direction: column;
   }
 
@@ -11105,7 +11320,12 @@ svg {
   }
 
   .hero-metformin + .faq {
-    padding: 80rem 0 23rem;
+    margin-bottom: 40rem;
+    padding: 0;
+  }
+
+  .hero-metformin {
+    margin-bottom: 80rem;
   }
 
   .delivery {
@@ -11141,10 +11361,13 @@ svg {
 
   .enhancements-metformin {
     padding: 198rem 0 50rem;
+    margin: 0;
+    margin-bottom: 80rem;
   }
 
   .enhancements-metformin-banner {
     height: 175rem;
+    top: 0;
   }
 
   .enhancements-metformin-banner {
@@ -11173,7 +11396,8 @@ svg {
   }
 
   .overview {
-    padding: 53rem 0 40rem;
+    padding: 40rem 0 0;
+    margin-bottom: 80rem;
   }
 
   .overview-banners {
@@ -11201,25 +11425,40 @@ svg {
   }
 
   .overview .section-title {
-    max-width: 95%;
+    max-width: 100%;
+  }
+
+  .overview .section-description {
+    font: var(--font-body-r-mobile);
   }
 
   .overview.overview-one {
     padding: 53rem 0 40rem;
   }
 
-  .overview.overview-one .overview-sticky {
+  .overview.overview-two {
+    padding: 0;
+  }
+
+  .overview.overview-one .overview-sticky,
+  .overview.overview-two .overview-sticky {
     margin-top: 0rem;
   }
 
-  .overview.overview-one .overview-banners .section-banner:nth-child(1) {
+  .overview.overview-one .overview-banners .section-banner:nth-child(1),
+  .overview.overview-two .overview-banners .section-banner:nth-child(1) {
     max-height: 255rem;
     max-width: 275rem;
     margin: 0 auto;
   }
 
   .problem {
-    padding: 28rem 0;
+    padding: 0;
+    margin-bottom: 80rem;
+  }
+
+  .problem hr {
+    display: none;
   }
 
   .problem-sticky {
@@ -11271,6 +11510,30 @@ svg {
   .market {
     margin-top: 54rem;
     padding: 80rem 0 50rem;
+  }
+
+  .market.market-content.metformin {
+    padding-top: 80rem;
+    margin-bottom: 80rem;
+  }
+
+  .market.market-content.metformin .market-content-wrapper {
+    width: 100%;
+  }
+
+  .market.market-content.metformin .market-sticky .section-title {
+    margin-bottom: 32rem;
+  }
+
+  .market.market-content.metformin h5,
+  .market.market-content.metformin .progress-pagination,
+  .market.market-content.metformin .footer-nav a,
+  .footer-nav .market.market-content.metformin a {
+    margin: 24rem 0 12rem;
+  }
+
+  .market.market-content.metformin .market-content-desc {
+    font: var(--font-body-r-mobile);
   }
 
   .market-sticky {
@@ -11404,20 +11667,21 @@ svg {
   }
 
   .market.market-content .market-data:after {
-    width: 354rem;
-    height: 354rem;
-    right: -60rem;
-    bottom: -20px;
+    width: 571rem;
+    height: 571rem;
+    right: -120rem;
+    bottom: -170rem;
   }
 
   .market.market-content .market-data {
     padding-top: 40rem;
-    min-height: 360rem;
+    min-height: 430rem;
   }
 
   .market.market-content .market-data-item:nth-child(1) {
-    width: 130rem;
-    height: 246rem;
+    width: 250rem;
+    height: 478rem;
+    margin-left: 60rem;
   }
 
   .market.market-content .market-data-desc {
@@ -11429,14 +11693,22 @@ svg {
   }
 
   .market.market-content .market-data-info {
-    left: -170rem;
-    top: -46rem;
+    width: auto;
+    left: -60rem;
+    top: -5rem;
   }
 
   .market.market-content .market-data-info .info-media:after {
-    right: -97rem;
-    top: 12rem;
-    width: 110rem;
+    background-image: url("../img/metformin/line-mob.svg");
+    right: -65rem;
+    top: 25rem;
+    width: 135rem;
+    height: 170rem;
+  }
+
+  .market.market-content .market-data-element {
+    padding: 12rem 16rem;
+    margin-bottom: 18rem;
   }
 
   .market.market-investor {
@@ -11447,7 +11719,7 @@ svg {
     width: 354rem;
     height: 354rem;
     right: -60rem;
-    bottom: -20px;
+    bottom: -20rem;
   }
 
   .market.market-investor .market-data {
@@ -11849,6 +12121,18 @@ svg {
   .investor-modal .modal-close-btn {
     top: 22rem;
     right: 22rem;
+  }
+}
+
+@media only screen and (max-width: 767px) and (max-width: 767px) {
+  .market.market-content .market-data-element h3 {
+    font: var(--font-h4-mobile);
+  }
+}
+
+@media only screen and (min-width: 991px) and (max-width: 767px), only screen and (any-hover: hover) and (max-width: 767px) {
+  .header-panel-nav .has-submenu:hover::after {
+    top: 24rem;
   }
 }
 

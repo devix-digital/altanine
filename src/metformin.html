@@ -1,52 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta name="viewport"
-	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<title>Altanine</title>
-	
-	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-	
-	<meta name="msapplication-TileColor" content="#ffffff" />
-	<meta name="theme-color" content="#ffffff">
-	<meta name="msapplication-navbutton-color" content="#ffffff" />
-	<meta name="apple-mobile-web-app-status-bar-style" content="#ffffff" />
-	
-	<link rel="preload" href="fonts/Inter-Regular.woff" as="font" type="font/woff" crossorigin="anonymous" />
-	<link rel="preload" href="fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
-	<link rel="preload" href="fonts/Inter-Medium.woff" as="font" type="font/woff" crossorigin="anonymous" />
-	<link rel="preload" href="fonts/Inter-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
-	<link rel="preload" href="fonts/Inter-Bold.woff" as="font" type="font/woff" crossorigin="anonymous" />
-	<link rel="preload" href="fonts/Inter-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
-	
-	<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-<main class="wrapper" id="wrapper">
-	<div class="preloader" id="preloader"></div>
-	@@include('html/components/header.html', {})
-	<div data-router-wrapper>
-		<div data-router-view="default">
-			@@include('html/metformin/hero.html', {})
-			@@include('html/metformin/faq.html', {})
-			<div class="container">
-				<hr class="hr" />
-			</div>
-			@@include('html/metformin/overview.html', {})
-			@@include('html/metformin/enhancements.html', {})
-			@@include('html/metformin/problem.html', {})
-			@@include('html/metformin/overview-one.html', {})
-			@@include('html/metformin/delivery.html', {})
-			@@include('html/metformin/market-content.html', {})
-<!--			@@include('html/metformin/market.html', {})-->
-<!--			@@include('html/metformin/still.html', {})-->
-			@@include('html/components/content-2.html', {})
-		</div>
-	</div>
-	@@include('html/components/footer.html', {})
-	@@include('html/components/modal-investor.html', {})
-	@@include('html/components/modal-thanks.html', {})
-</main>
-<script src="js/app.min.js"></script>
-</body>
+    <head>
+        <meta
+            name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        />
+        <title>Altanine</title>
+
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png" />
+
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="theme-color" content="#ffffff" />
+        <meta name="msapplication-navbutton-color" content="#ffffff" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff" />
+
+        <link
+            rel="preload"
+            href="fonts/Inter-Regular.woff"
+            as="font"
+            type="font/woff"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="fonts/Inter-Regular.woff2"
+            as="font"
+            type="font/woff2"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="fonts/Inter-Medium.woff"
+            as="font"
+            type="font/woff"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="fonts/Inter-Medium.woff2"
+            as="font"
+            type="font/woff2"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="fonts/Inter-Bold.woff"
+            as="font"
+            type="font/woff"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="fonts/Inter-Bold.woff2"
+            as="font"
+            type="font/woff2"
+            crossorigin="anonymous"
+        />
+
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <main class="wrapper" id="wrapper">
+            <div class="preloader" id="preloader"></div>
+            @@include('html/components/header.html', {})
+            <div data-router-wrapper>
+                <div data-router-view="default">
+                    @@include('html/metformin/hero.html', {}) @@include('html/metformin/faq.html',
+                    {})
+                    <div class="container">
+                        <hr class="hr" />
+                    </div>
+                    @@include('html/metformin/overview.html', {})
+                    @@include('html/metformin/enhancements-metformin.html', {})
+                    @@include('html/metformin/problem.html', {})
+                    @@include('html/metformin/market-content.html', {})
+                    @@include('html/metformin/overview-two.html', {})
+                    <!--			@@include('html/metformin/market.html', {})-->
+                    <!--			@@include('html/metformin/still.html', {})-->
+                    @@include('html/components/content-2.1.html', {})
+                </div>
+            </div>
+            @@include('html/components/footer.html', {})
+            @@include('html/components/modal-investor.html', {})
+            @@include('html/components/modal-thanks.html', {})
+        </main>
+        <script src="js/app.min.js"></script>
+    </body>
 </html>
