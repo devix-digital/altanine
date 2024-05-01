@@ -1,12 +1,38 @@
 .benefits.investor {
     margin-bottom: 144rem;
     padding: 0;
+    @include maxWidth($sm) {
+        margin-bottom: 80rem;
+    }
+
+    .section-subtitle {
+        margin: 0 0 16rem;
+    }
 
     .col-md-7 {
         max-width: 752rem;
-        padding: 0;
-        h4 {
-            letter-spacing: -0.1rem;
+        .h4 {
+            margin: 0;
+            margin-bottom: 41rem;
+        }
+    }
+
+    .benefits-card {
+        max-width: 360rem;
+        padding: 180rem 0 0 8rem;
+        @include maxWidth($sm) {
+            text-align: center;
+            margin: 0;
+        }
+    }
+
+    .benefits-card-icon {
+        width: 224rem;
+        height: 224rem;
+        top: -5rem;
+        left: -70rem;
+        @include maxWidth($sm) {
+            top: 5rem;
         }
     }
 }

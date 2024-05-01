@@ -1,11 +1,17 @@
 .hero-investor {
     margin-bottom: 144rem;
+    @include maxWidth($sm) {
+        margin-bottom: 80rem;
+    }
     .bread-crumbs {
         li {
             &:last-child {
                 color: var(--color-gray-300);
             }
         }
+    }
+    .hero-banner-item img {
+        object-position: 60%;
     }
     .hero-content {
         height: 100%;

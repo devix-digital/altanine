@@ -2,21 +2,30 @@
     margin-bottom: 144rem;
     padding: 0;
     background: none;
+    @include maxWidth($sm) {
+        margin-bottom: 80rem;
+    }
 
     .banner.section-banner {
         height: 556rem;
+        @include maxWidth($sm) {
+            height: 367rem;
+        }
     }
 
     .about-desc {
-        margin-top: 40rem;
-        h4 {
+        margin: 40rem 0 0;
+        max-width: 100%;
+        .h3 {
             width: 480rem;
-            font: var(--font-h3);
-            line-height: 60rem;
             margin-bottom: 16rem;
+            @include maxWidth($sm) {
+                width: 100%;
+            }
         }
         p {
             font: var(--font-body-b);
+            margin-bottom: 24rem;
         }
     }
 }

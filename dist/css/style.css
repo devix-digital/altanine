@@ -4714,6 +4714,11 @@ svg {
   color: var(--color-gray-300);
 }
 
+.hero-investor .hero-banner-item img {
+  -o-object-position: 60%;
+     object-position: 60%;
+}
+
 .hero-investor .hero-content {
   height: 100%;
   display: flex;
@@ -4733,18 +4738,18 @@ svg {
 }
 
 .about.investor .about-desc {
-  margin-top: 40rem;
+  margin: 40rem 0 0;
+  max-width: 100%;
 }
 
-.about.investor .about-desc h4 {
+.about.investor .about-desc .h3 {
   width: 480rem;
-  font: var(--font-h3);
-  line-height: 60rem;
   margin-bottom: 16rem;
 }
 
 .about.investor .about-desc p {
   font: var(--font-body-b);
+  margin-bottom: 24rem;
 }
 
 .benefits.investor {
@@ -4752,13 +4757,88 @@ svg {
   padding: 0;
 }
 
+.benefits.investor .section-subtitle {
+  margin: 0 0 16rem;
+}
+
 .benefits.investor .col-md-7 {
   max-width: 752rem;
+}
+
+.benefits.investor .col-md-7 .h4,
+.benefits.investor .col-md-7 .enhancements-line.enhancements .enhancements-metformin-card:nth-child(3) .enhancements-metformin-title,
+.enhancements-line.enhancements .enhancements-metformin-card:nth-child(3) .benefits.investor .col-md-7 .enhancements-metformin-title,
+.benefits.investor .col-md-7 .enhancements-metformin-card:nth-child(1) .enhancements-metformin-title,
+.enhancements-metformin-card:nth-child(1) .benefits.investor .col-md-7 .enhancements-metformin-title {
+  margin: 0;
+  margin-bottom: 41rem;
+}
+
+.benefits.investor .benefits-card {
+  max-width: 360rem;
+  padding: 180rem 0 0 8rem;
+}
+
+.benefits.investor .benefits-card-icon,
+.benefits.investor .delivery-card-icon {
+  width: 224rem;
+  height: 224rem;
+  top: -5rem;
+  left: -70rem;
+}
+
+.enhancements-investor-banner {
+  position: absolute;
+  width: 581rem;
+  height: 481rem;
+  top: 145rem;
+  right: 145rem;
+}
+
+.enhancements-investor-banner img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.enhancements-investor .section-title {
+  margin: 16rem 0 0;
+}
+
+.enhancements-investor-cards {
+  display: flex;
+  -moz-column-gap: 32rem;
+       column-gap: 32rem;
+  margin-top: 164rem;
   padding: 0;
 }
 
-.benefits.investor .col-md-7 h4 {
-  letter-spacing: -0.1rem;
+.enhancements-investor-description {
+  color: var(--color-gray-600);
+  font: var(--font-body-m);
+  margin: 8rem 0;
+}
+
+.enhancements-investor-card {
+  width: 416rem;
+  padding: 0;
+}
+
+.enhancements-investor-card .h5,
+.enhancements-investor-card .accordion-md .accordion-item-title,
+.accordion-md .enhancements-investor-card .accordion-item-title,
+.enhancements-investor-card .post-hero .post-title,
+.post-hero .enhancements-investor-card .post-title,
+.enhancements-investor-card .blog-details-info blockquote,
+.blog-details-info .enhancements-investor-card blockquote {
+  margin-bottom: 12rem;
+}
+
+.enhancements-investor-icon {
+  width: 46rem;
+  height: 18rem;
+  margin-bottom: 24rem;
 }
 
 .insights {
@@ -6283,7 +6363,7 @@ svg {
   content: "";
   width: 100%;
   height: 100%;
-  background-image: url("../../../img/innovation/shape.svg");
+  background-image: url("../img/innovation/shape.svg");
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
@@ -6311,7 +6391,7 @@ svg {
 
 .innovation-content::before {
   content: "";
-  background-image: url("../../../img/innovation/shape-2.svg");
+  background-image: url("../img/innovation/shape-2.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center right;
@@ -6494,7 +6574,7 @@ svg {
 
 .innovation-page.products {
   position: relative;
-  background-image: url(../../../img/innovation/bg.jpg);
+  background-image: url(../img/innovation/bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -11341,6 +11421,61 @@ svg {
     padding-top: 25rem;
   }
 
+  .hero-investor {
+    margin-bottom: 80rem;
+  }
+
+  .about.investor {
+    margin-bottom: 80rem;
+  }
+
+  .about.investor .banner.section-banner {
+    height: 367rem;
+  }
+
+  .about.investor .about-desc .h3 {
+    width: 100%;
+  }
+
+  .benefits.investor {
+    margin-bottom: 80rem;
+  }
+
+  .benefits.investor .benefits-card {
+    text-align: center;
+    margin: 0;
+  }
+
+  .benefits.investor .benefits-card-icon,
+  .benefits.investor .delivery-card-icon {
+    top: 5rem;
+  }
+
+  .enhancements-investor-banner {
+    width: 100%;
+    right: 0;
+  }
+
+  .enhancements-investor-cards {
+    flex-direction: column;
+    margin-top: 0;
+    -moz-column-gap: 0;
+         column-gap: 0;
+    padding: 10rem 0;
+  }
+
+  .enhancements-investor-description {
+    margin-bottom: 0;
+  }
+
+  .enhancements-investor-card {
+    padding-bottom: 10rem;
+  }
+
+  .enhancements-investor-icon {
+    margin: 12rem 0;
+  }
+
   .insights {
     padding: 80rem 0 38rem;
   }
@@ -11990,7 +12125,7 @@ svg {
   }
 
   .innovation-header::before {
-    background-image: url("../../../img/innovation/shape_mob.svg");
+    background-image: url("../img/innovation/shape_mob.svg");
   }
 
   .innovation-header__card {
@@ -12005,7 +12140,7 @@ svg {
 
   .innovation-content::before {
     width: 100%;
-    background-image: url("../../../img/innovation/shape-2_mob.svg");
+    background-image: url("../img/innovation/shape-2_mob.svg");
     background-position: center bottom;
   }
 
