@@ -3622,10 +3622,6 @@ svg {
   pointer-events: none;
 }
 
-.blog-carousel:hover + .carousel-cursor {
-  opacity: 1;
-}
-
 .blog-wrap {
   display: flex;
   flex-wrap: wrap;
@@ -4787,12 +4783,17 @@ svg {
   left: -70rem;
 }
 
+.enhancements-investor {
+  margin-bottom: 144rem;
+  padding: 64rem 0 40rem;
+}
+
 .enhancements-investor-banner {
   position: absolute;
   width: 581rem;
   height: 481rem;
-  top: 145rem;
-  right: 145rem;
+  top: -65rem;
+  right: 190rem;
 }
 
 .enhancements-investor-banner img {
@@ -4816,12 +4817,12 @@ svg {
 
 .enhancements-investor-description {
   color: var(--color-gray-600);
-  font: var(--font-body-m);
-  margin: 8rem 0;
+  font: var(--font-body-r);
+  margin-bottom: 8rem;
 }
 
 .enhancements-investor-card {
-  width: 416rem;
+  max-width: 416rem;
   padding: 0;
 }
 
@@ -8554,6 +8555,10 @@ svg {
     overflow: hidden;
   }
 
+  .blog-carousel:hover + .carousel-cursor {
+    opacity: 1;
+  }
+
   .contact-form-action .btn {
     max-width: 224rem;
   }
@@ -10404,6 +10409,10 @@ svg {
     margin: 13rem 0 15rem;
   }
 
+  .container {
+    padding: 0 18rem;
+  }
+
   .header {
     top: 12rem;
     left: 12rem;
@@ -11451,9 +11460,19 @@ svg {
     top: 5rem;
   }
 
+  .enhancements-investor {
+    margin-bottom: 80rem;
+    padding: 272rem 0 80rem;
+  }
+
   .enhancements-investor-banner {
     width: 100%;
+    top: -135rem;
     right: 0;
+  }
+
+  .enhancements-investor .section-title {
+    margin-bottom: 40rem;
   }
 
   .enhancements-investor-cards {
@@ -11461,19 +11480,10 @@ svg {
     margin-top: 0;
     -moz-column-gap: 0;
          column-gap: 0;
-    padding: 10rem 0;
   }
 
-  .enhancements-investor-description {
-    margin-bottom: 0;
-  }
-
-  .enhancements-investor-card {
-    padding-bottom: 10rem;
-  }
-
-  .enhancements-investor-icon {
-    margin: 12rem 0;
+  .enhancements-investor-description:last-child {
+    margin-bottom: 24rem;
   }
 
   .insights {

@@ -96,6 +96,9 @@ svg {
     max-width: 1344rem;
     padding: 0 16rem;
     position: relative;
+    @include maxWidth($sm) {
+        padding: 0 18rem;
+    }
 
     @media (min-width: 1200px) {
         max-width: 1344rem;

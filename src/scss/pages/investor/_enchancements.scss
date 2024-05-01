@@ -1,24 +1,34 @@
 .enhancements-investor {
+    margin-bottom: 144rem;
+    padding: 64rem 0 40rem;
+    @include maxWidth($sm) {
+        margin-bottom: 80rem;
+        padding: 272rem 0 80rem;
+    }
     &-banner {
         position: absolute;
         width: 581rem;
         height: 481rem;
-        top: 145rem;
-        right: 145rem;
+        top: -65rem;
+        right: 190rem;
+        @include maxWidth($sm) {
+            width: 100%;
+            top: -135rem;
+            right: 0;
+        }
 
         img {
             width: 100%;
             height: 100%;
             object-fit: contain;
         }
-        @include maxWidth($sm) {
-            width: 100%;
-            right: 0;
-        }
     }
 
     .section-title {
         margin: 16rem 0 0;
+        @include maxWidth($sm) {
+            margin-bottom: 40rem;
+        }
     }
 
     &-cards {
@@ -31,25 +41,22 @@
             flex-direction: column;
             margin-top: 0;
             column-gap: 0;
-            padding: 10rem 0;
         }
     }
     &-description {
         color: var(--color-gray-600);
-        font: var(--font-body-m);
-        margin: 8rem 0;
-
+        font: var(--font-body-r);
+        margin-bottom: 8rem;
+    }
+    &-description:last-child {
         @include maxWidth($sm) {
-            margin-bottom: 0;
+            margin-bottom: 24rem;
         }
     }
 
     &-card {
-        width: 416rem;
+        max-width: 416rem;
         padding: 0;
-        @include maxWidth($sm) {
-            padding-bottom: 10rem;
-        }
 
         .h5 {
             margin-bottom: 12rem;
@@ -60,9 +67,5 @@
         width: 46rem;
         height: 18rem;
         margin-bottom: 24rem;
-
-        @include maxWidth($sm) {
-            margin: 12rem 0;
-        }
     }
 }

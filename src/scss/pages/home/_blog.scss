@@ -48,8 +48,10 @@
         }
 
         &:hover {
-            & + .carousel-cursor {
-                opacity: 1;
+            @include minWidth($sm + 1) {
+                & + .carousel-cursor {
+                    opacity: 1;
+                }
             }
         }
     }
