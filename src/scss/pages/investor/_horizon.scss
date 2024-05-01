@@ -1,0 +1,115 @@
+// START; Lenis Scroll.
+html {
+    &.lenis {
+        height: auto;
+    }
+}
+
+.lenis {
+    &.lenis-smooth {
+        scroll-behavior: auto;
+
+        [data-lenis-prevent] {
+            overscroll-behavior: contain;
+        }
+    }
+
+    &.lenis-scrolling {
+        iframe {
+            pointer-events: none;
+        }
+    }
+
+    &.lenis-stopped {
+        overflow: hidden;
+    }
+}
+// END; Lenis Scroll.
+
+.horizon {
+    .btn {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(0, -50%);
+        pointer-events: none;
+    }
+
+    .section-subtitle {
+        font: var(--font-body-u);
+        margin-bottom: 16rem;
+    }
+
+    .section {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        overflow: hidden;
+
+        &.section_to-pin {
+            position: relative;
+            left: 0;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            overflow: hidden;
+
+            .section_pin {
+                min-height: 100vh;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+
+                .block_wrapper {
+                    position: relative;
+                    min-width: 483rem;
+                    height: 526rem;
+                    padding-top: 50rem;
+                    &:nth-child(odd) {
+                        padding-top: 328rem;
+                    }
+
+                    img {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                    .h5 {
+                        font: var(--font-h5);
+                        margin-bottom: 12rem;
+                    }
+
+                    p {
+                        font: var(--font-body-r);
+                        color: var(--color-gray-600);
+                        span {
+                            font: var(--font-body-b);
+                        }
+                        width: 304rem;
+                    }
+                    &:last-child {
+                        margin-right: 115rem;
+                        @include maxWidth($sm) {
+                            margin-right: 50rem;
+                        }
+                    }
+                }
+
+                .hr {
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    transform: translate(0, -50%);
+                    background-color: rgba(191, 212, 228, 1);
+                }
+            }
+        }
+
+        .grid-container {
+            width: 100%;
+        }
+    }
+}

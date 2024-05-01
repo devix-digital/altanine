@@ -1,0 +1,46 @@
+.growing-portfolio {
+    margin-bottom: 96rem;
+    padding: 0;
+    @include maxWidth($sm) {
+        margin-bottom: 40rem;
+    }
+
+    .section-subtitle {
+        @include maxWidth($sm) {
+            margin-bottom: 16rem;
+        }
+    }
+
+    .col-md-7 {
+        max-width: 752rem;
+        .h4 {
+            margin: 0;
+            margin-bottom: 24rem;
+        }
+    }
+
+    &-wrapper {
+        margin-top: 48rem;
+        @include maxWidth($sm) {
+            margin-top: 40rem;
+        }
+    }
+
+    &-card {
+        text-align: center;
+        @include maxWidth($sm) {
+            margin-top: 24rem;
+        }
+    }
+
+    &-icon {
+        width: 416rem;
+        height: 320rem;
+        margin-bottom: 16rem;
+        @include maxWidth($sm) {
+            width: 312rem;
+            height: 240rem;
+            margin-bottom: 14rem;
+        }
+    }
+}

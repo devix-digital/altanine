@@ -1,0 +1,57 @@
+.navigating-complexities {
+    margin-bottom: 144rem;
+    padding: 193rem 0 235rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    @include maxWidth($sm) {
+        margin-bottom: 80rem;
+        padding: 80rem 0;
+    }
+
+    .section-title {
+        margin: 16rem 0 24rem;
+        @include maxWidth($sm) {
+            margin-top: 12rem;
+        }
+    }
+
+    @include maxWidth($sm) {
+        .first-card {
+            margin-bottom: 32rem;
+        }
+    }
+
+    &-img {
+        width: 222rem;
+        height: 296rem;
+        @include maxWidth($sm) {
+            width: 140rem;
+            height: 185rem;
+        }
+    }
+    &-secondImg {
+        width: 88rem;
+        height: 148rem;
+    }
+
+    &-description {
+        color: var(--color-gray-700);
+        font: var(--font-body-r);
+    }
+
+    &-backgroundImg {
+        position: absolute;
+        top: -330rem;
+        right: 30rem;
+        width: 1102rem;
+        height: 1102rem;
+        z-index: -1;
+        @include maxWidth($sm) {
+            width: 834rem;
+            height: 834rem;
+            top: 180rem;
+            right: -245rem;
+        }
+    }
+}

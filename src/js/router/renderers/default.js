@@ -11,6 +11,7 @@ import { initHeroCarousel } from "../../modules/carousels/heroCarousel.js"
 import { initProcessCarousel } from "../../modules/carousels/processCarousel.js"
 import { initModal } from "../../modules/modal/initModal.js"
 import { initClock } from "../../common/initClock.js"
+import { initHorizontalScroll } from "../../modules/scroll/horizontalScroll.js"
 
 class DefaultRenderer extends Highway.Renderer {
     onEnter() {
@@ -21,6 +22,7 @@ class DefaultRenderer extends Highway.Renderer {
         initHeroCarousel()
         initBlogCarousel()
         initProcessCarousel()
+        initHorizontalScroll()
     }
     onEnterCompleted() {
         scrollTo()

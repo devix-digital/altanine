@@ -4842,6 +4842,188 @@ svg {
   margin-bottom: 24rem;
 }
 
+.navigating-complexities {
+  margin-bottom: 144rem;
+  padding: 193rem 0 235rem;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.navigating-complexities .section-title {
+  margin: 16rem 0 24rem;
+}
+
+.navigating-complexities-img {
+  width: 222rem;
+  height: 296rem;
+}
+
+.navigating-complexities-secondImg {
+  width: 88rem;
+  height: 148rem;
+}
+
+.navigating-complexities-description {
+  color: var(--color-gray-700);
+  font: var(--font-body-r);
+}
+
+.navigating-complexities-backgroundImg {
+  position: absolute;
+  top: -330rem;
+  right: 30rem;
+  width: 1102rem;
+  height: 1102rem;
+  z-index: -1;
+}
+
+.growing-portfolio {
+  margin-bottom: 96rem;
+  padding: 0;
+}
+
+.growing-portfolio .col-md-7 {
+  max-width: 752rem;
+}
+
+.growing-portfolio .col-md-7 .h4,
+.growing-portfolio .col-md-7 .enhancements-line.enhancements .enhancements-metformin-card:nth-child(3) .enhancements-metformin-title,
+.enhancements-line.enhancements .enhancements-metformin-card:nth-child(3) .growing-portfolio .col-md-7 .enhancements-metformin-title,
+.growing-portfolio .col-md-7 .enhancements-metformin-card:nth-child(1) .enhancements-metformin-title,
+.enhancements-metformin-card:nth-child(1) .growing-portfolio .col-md-7 .enhancements-metformin-title {
+  margin: 0;
+  margin-bottom: 24rem;
+}
+
+.growing-portfolio-wrapper {
+  margin-top: 48rem;
+}
+
+.growing-portfolio-card {
+  text-align: center;
+}
+
+.growing-portfolio-icon {
+  width: 416rem;
+  height: 320rem;
+  margin-bottom: 16rem;
+}
+
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.horizon .btn {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  pointer-events: none;
+}
+
+.horizon .section-subtitle {
+  font: var(--font-body-u);
+  margin-bottom: 16rem;
+}
+
+.horizon .section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+}
+
+.horizon .section.section_to-pin {
+  position: relative;
+  left: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+}
+
+.horizon .section.section_to-pin .section_pin {
+  min-height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.horizon .section.section_to-pin .section_pin .block_wrapper {
+  position: relative;
+  min-width: 483rem;
+  height: 526rem;
+  padding-top: 50rem;
+}
+
+.horizon .section.section_to-pin .section_pin .block_wrapper:nth-child(odd) {
+  padding-top: 328rem;
+}
+
+.horizon .section.section_to-pin .section_pin .block_wrapper img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.horizon .section.section_to-pin .section_pin .block_wrapper .h5,
+.horizon .section.section_to-pin .section_pin .block_wrapper .accordion-md .accordion-item-title,
+.accordion-md .horizon .section.section_to-pin .section_pin .block_wrapper .accordion-item-title,
+.horizon .section.section_to-pin .section_pin .block_wrapper .post-hero .post-title,
+.post-hero .horizon .section.section_to-pin .section_pin .block_wrapper .post-title,
+.horizon .section.section_to-pin .section_pin .block_wrapper .blog-details-info blockquote,
+.blog-details-info .horizon .section.section_to-pin .section_pin .block_wrapper blockquote {
+  font: var(--font-h5);
+  margin-bottom: 12rem;
+}
+
+.horizon .section.section_to-pin .section_pin .block_wrapper p {
+  font: var(--font-body-r);
+  color: var(--color-gray-600);
+  width: 304rem;
+}
+
+.horizon .section.section_to-pin .section_pin .block_wrapper p span {
+  font: var(--font-body-b);
+}
+
+.horizon .section.section_to-pin .section_pin .block_wrapper:last-child {
+  margin-right: 115rem;
+}
+
+.horizon .section.section_to-pin .section_pin .hr,
+.horizon .section.section_to-pin .section_pin .blog-details-info hr,
+.blog-details-info .horizon .section.section_to-pin .section_pin hr {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  background-color: rgb(191, 212, 228);
+}
+
+.horizon .section .grid-container {
+  width: 100%;
+}
+
 .insights {
   padding: 128rem 0 72rem;
 }
@@ -6592,6 +6774,7 @@ svg {
 
 .enhancements.markets-page .products-card-description {
   font: var(--font-body-b);
+  color: var(--color-black);
 }
 
 .delivery.markets-page {
@@ -11484,6 +11667,57 @@ svg {
 
   .enhancements-investor-description:last-child {
     margin-bottom: 24rem;
+  }
+
+  .navigating-complexities {
+    margin-bottom: 80rem;
+    padding: 80rem 0;
+  }
+
+  .navigating-complexities .section-title {
+    margin-top: 12rem;
+  }
+
+  .navigating-complexities .first-card {
+    margin-bottom: 32rem;
+  }
+
+  .navigating-complexities-img {
+    width: 140rem;
+    height: 185rem;
+  }
+
+  .navigating-complexities-backgroundImg {
+    width: 834rem;
+    height: 834rem;
+    top: 180rem;
+    right: -245rem;
+  }
+
+  .growing-portfolio {
+    margin-bottom: 40rem;
+  }
+
+  .growing-portfolio .section-subtitle {
+    margin-bottom: 16rem;
+  }
+
+  .growing-portfolio-wrapper {
+    margin-top: 40rem;
+  }
+
+  .growing-portfolio-card {
+    margin-top: 24rem;
+  }
+
+  .growing-portfolio-icon {
+    width: 312rem;
+    height: 240rem;
+    margin-bottom: 14rem;
+  }
+
+  .horizon .section.section_to-pin .section_pin .block_wrapper:last-child {
+    margin-right: 50rem;
   }
 
   .insights {
