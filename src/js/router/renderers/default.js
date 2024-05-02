@@ -22,7 +22,9 @@ class DefaultRenderer extends Highway.Renderer {
         initHeroCarousel()
         initBlogCarousel()
         initProcessCarousel()
-        initHorizontalScroll()
+        if (window.innerWidth > 767) {
+            initHorizontalScroll()
+        }
     }
     onEnterCompleted() {
         scrollTo()
