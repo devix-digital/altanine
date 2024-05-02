@@ -4996,18 +4996,18 @@ html.lenis {
   margin-bottom: 12rem;
 }
 
-.horizon .section.section_to-pin .section_pin .block_wrapper p {
+.horizon .section.section_to-pin .section_pin .block_wrapper .p {
+  width: 304rem;
   font: var(--font-body-r);
   color: var(--color-gray-600);
-  width: 304rem;
 }
 
-.horizon .section.section_to-pin .section_pin .block_wrapper p span {
+.horizon .section.section_to-pin .section_pin .block_wrapper .p span {
   font: var(--font-body-b);
 }
 
 .horizon .section.section_to-pin .section_pin .block_wrapper:last-child {
-  margin-right: 115rem;
+  margin-right: 15rem;
 }
 
 .horizon .section.section_to-pin .section_pin .hr,
@@ -11716,8 +11716,27 @@ html.lenis {
     margin-bottom: 14rem;
   }
 
-  .horizon .section.section_to-pin .section_pin .block_wrapper:last-child {
-    margin-right: 50rem;
+  .horizon .section-title {
+    margin: 0 0 40rem;
+  }
+
+  .horizon .btn {
+    position: relative;
+    transform: none;
+    margin-bottom: 16rem;
+  }
+
+  .horizon .section-subtitle {
+    margin-bottom: 12rem;
+  }
+
+  .horizon .section.section_to-pin {
+    flex-direction: column;
+    padding-left: 24rem;
+  }
+
+  .horizon .section.section_to-pin .section_pin .block_wrapper .p {
+    margin-bottom: 56rem;
   }
 
   .insights {

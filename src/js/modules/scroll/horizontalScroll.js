@@ -10,18 +10,22 @@ export const initHorizontalScroll = () => {
 
     function initialiseGSAPScrollTriggerPinningHorizontal() {
         let sectionPin = document.querySelector("#section_pin")
-
-        let containerAnimation = Tween.to(sectionPin, {
-            scrollTrigger: {
-                trigger: "#section_to-pin",
-                start: "top top",
-                end: () => "+=" + sectionPin.offsetWidth,
-                pin: true,
-                scrub: true,
-            },
-            x: () => -(sectionPin.scrollWidth - document.documentElement.clientWidth) + "px",
-            ease: "none",
-        })
+        let containerAnimation
+        if (sectionPin) {
+            containerAnimation = Tween.to(sectionPin, {
+                scrollTrigger: {
+                    trigger: "#section_to-pin",
+                    start: "top top",
+                    end: () => "+=" + sectionPin.offsetWidth,
+                    pin: true,
+                    scrub: true,
+                },
+                x: () => -(sectionPin.scrollWidth - document.documentElement.clientWidth) + "px",
+                ease: "none",
+            })
+        } else {
+            return
+        }
 
         var bloskWrappers = sectionPin.querySelectorAll(".block_wrapper")
 

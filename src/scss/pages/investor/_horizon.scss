@@ -27,17 +27,31 @@ html {
 // END; Lenis Scroll.
 
 .horizon {
+    .section-title {
+        @include maxWidth($sm) {
+            margin: 0 0 40rem;
+        }
+    }
+
     .btn {
         position: absolute;
         top: 50%;
         left: 0;
         transform: translate(0, -50%);
         pointer-events: none;
+        @include maxWidth($sm) {
+            position: relative;
+            transform: none;
+            margin-bottom: 16rem;
+        }
     }
 
     .section-subtitle {
         font: var(--font-body-u);
         margin-bottom: 16rem;
+        @include maxWidth($sm) {
+            margin-bottom: 12rem;
+        }
     }
 
     .section {
@@ -53,6 +67,10 @@ html {
             justify-content: flex-start;
             align-items: center;
             overflow: hidden;
+            @include maxWidth($sm) {
+                flex-direction: column;
+                padding-left: 24rem;
+            }
 
             .section_pin {
                 min-height: 100vh;
@@ -82,19 +100,19 @@ html {
                         margin-bottom: 12rem;
                     }
 
-                    p {
+                    .p {
+                        width: 304rem;
                         font: var(--font-body-r);
                         color: var(--color-gray-600);
                         span {
                             font: var(--font-body-b);
                         }
-                        width: 304rem;
+                        @include maxWidth($sm) {
+                            margin-bottom: 56rem;
+                        }
                     }
                     &:last-child {
-                        margin-right: 115rem;
-                        @include maxWidth($sm) {
-                            margin-right: 50rem;
-                        }
+                        margin-right: 15rem;
                     }
                 }
 
