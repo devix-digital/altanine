@@ -3114,6 +3114,10 @@ svg {
   margin: 5rem 0 -5rem;
 }
 
+.hero-home {
+  margin-bottom: 144rem;
+}
+
 .hero-home .bread-crumbs li span {
   color: var(--color-gray-300);
 }
@@ -3150,6 +3154,33 @@ svg {
      object-position: center;
 }
 
+.about.home {
+  padding: 0;
+  background-color: transparent;
+  margin-bottom: 144rem;
+}
+
+.about.home .about-desc-title {
+  max-width: 480rem;
+  width: 100%;
+  margin-bottom: 16rem;
+}
+
+.about.home .about-desc .bold {
+  font: var(--font-body-b);
+  color: var(--color-gray-600);
+  margin-bottom: 24rem;
+}
+
+.about.home .about-desc p {
+  font: var(--font-body-r);
+  max-width: 416rem;
+}
+
+.about.home .about-desc p:last-of-type {
+  margin-bottom: 24rem;
+}
+
 .faq {
   padding: 60rem 0 50rem;
 }
@@ -3168,6 +3199,11 @@ svg {
   width: 240rem;
   height: 280rem;
   margin: 142rem 0 0 64rem;
+}
+
+.overview.overview-one.home {
+  padding: 0;
+  margin-bottom: 144rem;
 }
 
 .products {
@@ -3244,21 +3280,24 @@ svg {
 }
 
 .enhancements {
-  background-color: var(--color-gray-200);
-  padding: 144rem 0 122rem;
-  margin: 44rem 0;
-  border-radius: 14px;
-  background-image: url(../img/abstract-bg-grey.jpg);
-  background-size: cover;
-  background-position: center;
+  margin-bottom: 144rem;
 }
 
 .enhancements-sticky {
   padding: 32rem 0;
 }
 
+.enhancements-sticky .section-title {
+  margin: 16rem 0 24rem;
+}
+
 .enhancements-sticky .section-description {
-  margin: 14rem 0 32rem;
+  margin-bottom: 24rem;
+  max-width: 416rem;
+}
+
+.enhancements-sticky .btn {
+  margin-bottom: 40rem;
 }
 
 .enhancements .section-banner {
@@ -3269,6 +3308,11 @@ svg {
 
 .enhancements .products-card {
   margin-left: -11rem;
+}
+
+.enhancements .products-card-description {
+  font: var(--font-body-b);
+  color: var(--color-gray-700);
 }
 
 .benefits {
@@ -3587,6 +3631,24 @@ svg {
 .certificates-link .btn {
   position: relative;
   z-index: 1;
+}
+
+.blog.home {
+  margin-bottom: 144rem;
+  padding: 0;
+}
+
+.blog.home .row {
+  margin-bottom: 48rem;
+}
+
+.blog.home .section-title {
+  margin: 0;
+}
+
+.blog.home .btn-md {
+  padding: 16rem 24rem;
+  margin-right: 16rem;
 }
 
 .blog {
@@ -8714,10 +8776,6 @@ html.lenis {
     display: none;
   }
 
-  .hero-home {
-    margin-bottom: 72rem;
-  }
-
   .products-row:nth-child(even) [class*=col-]:nth-child(1) {
     order: 2;
   }
@@ -10870,12 +10928,32 @@ html.lenis {
     justify-content: space-between;
   }
 
+  .hero-home {
+    margin-bottom: 80rem;
+  }
+
   .hero-home .users {
     display: none;
   }
 
   .hero-home .video {
     min-height: 480rem;
+  }
+
+  .about.home {
+    margin-bottom: 80rem;
+  }
+
+  .about.home .about-desc .bold {
+    font: var(--font-body-b-mobile);
+  }
+
+  .about.home .about-desc p {
+    font: var(--font-body-r-mobile);
+  }
+
+  .about.home .about-desc .btn {
+    width: 100%;
   }
 
   .faq {
@@ -10895,6 +10973,18 @@ html.lenis {
     margin: 24rem 0;
     width: 100%;
     height: 176rem;
+  }
+
+  .overview.overview-one.home {
+    margin-bottom: 80rem;
+  }
+
+  .overview.overview-one.home .btn {
+    width: 100%;
+  }
+
+  .mission .btn {
+    width: 100%;
   }
 
   .products {
@@ -10947,16 +11037,19 @@ html.lenis {
   }
 
   .enhancements {
-    margin: 27rem 0;
-    padding: 80rem 0 24rem;
+    margin-bottom: 80rem;
   }
 
   .enhancements-sticky {
     padding: 0;
   }
 
+  .enhancements-sticky .btn {
+    width: 100%;
+  }
+
   .enhancements-row {
-    padding: 40rem 0;
+    padding: 0;
   }
 
   .enhancements .section-banner {
@@ -11080,6 +11173,14 @@ html.lenis {
 
   .certificates-link {
     padding: 15rem;
+  }
+
+  .blog.home {
+    margin-bottom: 80rem;
+  }
+
+  .blog.home .btn-md {
+    width: 100%;
   }
 
   .blog {

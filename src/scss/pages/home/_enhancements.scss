@@ -1,63 +1,72 @@
-.enhancements{
-	background-color: var(--color-gray-200);
-	padding: 144rem 0 122rem;
-	margin: 44rem 0;
-	border-radius: 14px;
-	background-image: url(../img/abstract-bg-grey.jpg);
-	background-size: cover;
-	background-position: center;
-	
-		@include maxWidth($sm){
-			margin: 27rem 0;
-			padding: 80rem 0 24rem;
-		}
-	
-		&-sticky{
-			padding: 32rem 0;
-			.section-description{
-				margin: 14rem 0 32rem;
-			}
-				@include maxWidth($sm){
-					padding: 0;
-				}
-		}
-	
-		&-row{
-				
-				@include maxWidth($sm){
-          padding: 40rem 0;
+.enhancements {
+    margin-bottom: 144rem;
+
+    @include maxWidth($sm) {
+        margin-bottom: 80rem;
+    }
+
+    &-sticky {
+        padding: 32rem 0;
+        @include maxWidth($sm) {
+            padding: 0;
         }
-		}
-	
-		.section {
-				&-banner {
-					width: 448rem;
-					height: 474rem;
-					border-radius: 8px;
-						
-						@include maxWidth($sm){
-							width: 100%;
-							height: 330rem;
-						}
-				}
-		}
-	
-		.products-card{
-			//margin-top: 68rem;
-			margin-left: -11rem;
-			
-				@include maxWidth($sm){
-          margin-left: 0;
-					margin-top: 12rem;
+
+        .section-title {
+            margin: 16rem 0 24rem;
         }
-		}
-	
-		[class*="-4"]{
-			
-				@include minWidth($sm + 1){
-					display: flex;
-					flex-direction: column;
-					justify-content: center;
-				}
-		}
+
+        .section-description {
+            margin-bottom: 24rem;
+            max-width: 416rem;
+        }
+
+        .btn {
+            margin-bottom: 40rem;
+            @include maxWidth($sm) {
+                width: 100%;
+            }
+        }
+    }
+
+    &-row {
+        @include maxWidth($sm) {
+            padding: 0;
+        }
+    }
+
+    .section {
+        &-banner {
+            width: 448rem;
+            height: 474rem;
+            border-radius: 8px;
+
+            @include maxWidth($sm) {
+                width: 100%;
+                height: 330rem;
+            }
+        }
+    }
+
+    .products-card {
+        //margin-top: 68rem;
+        margin-left: -11rem;
+
+        @include maxWidth($sm) {
+            margin-left: 0;
+            margin-top: 12rem;
+        }
+    }
+
+    [class*="-4"] {
+        @include minWidth($sm + 1) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+
+    .products-card-description {
+        font: var(--font-body-b);
+        color: var(--color-gray-700);
+    }
 }

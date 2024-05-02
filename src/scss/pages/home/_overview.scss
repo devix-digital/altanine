@@ -1,0 +1,13 @@
+.overview.overview-one.home {
+    padding: 0;
+    margin-bottom: 144rem;
+    @include maxWidth($sm) {
+        margin-bottom: 80rem;
+    }
+
+    .btn {
+        @include maxWidth($sm) {
+            width: 100%;
+        }
+    }
+}

@@ -1,3 +1,25 @@
+.blog.home {
+    margin-bottom: 144rem;
+    padding: 0;
+    @include maxWidth($sm) {
+        margin-bottom: 80rem;
+    }
+    .row {
+        margin-bottom: 48rem;
+    }
+    .section-title {
+        margin: 0;
+    }
+
+    .btn-md {
+        padding: 16rem 24rem;
+        margin-right: 16rem;
+        @include maxWidth($sm) {
+            width: 100%;
+        }
+    }
+}
+
 .blog {
     padding: 74rem 0 80rem;
 

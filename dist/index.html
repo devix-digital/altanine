@@ -1,30 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta name="viewport"
-	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <title>Altanine</title>
-	
-	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-	
-	<meta name="msapplication-TileColor" content="#ffffff" />
-	<meta name="theme-color" content="#ffffff">
-	<meta name="msapplication-navbutton-color" content="#ffffff" />
-	<meta name="apple-mobile-web-app-status-bar-style" content="#ffffff" />
-	
-	<link rel="preload" href="fonts/Inter-Regular.woff" as="font" type="font/woff" crossorigin="anonymous" />
-	<link rel="preload" href="fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
-	<link rel="preload" href="fonts/Inter-Medium.woff" as="font" type="font/woff" crossorigin="anonymous" />
-	<link rel="preload" href="fonts/Inter-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
-	<link rel="preload" href="fonts/Inter-Bold.woff" as="font" type="font/woff" crossorigin="anonymous" />
-	<link rel="preload" href="fonts/Inter-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
-	
-	<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-<main class="wrapper" id="wrapper">
-	<div class="preloader" id="preloader"></div>
-	<header class="header" id="header">
+    <head>
+        <meta
+            name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        />
+        <title>Altanine</title>
+
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png" />
+
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="theme-color" content="#ffffff" />
+        <meta name="msapplication-navbutton-color" content="#ffffff" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff" />
+
+        <link
+            rel="preload"
+            href="fonts/Inter-Regular.woff"
+            as="font"
+            type="font/woff"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="fonts/Inter-Regular.woff2"
+            as="font"
+            type="font/woff2"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="fonts/Inter-Medium.woff"
+            as="font"
+            type="font/woff"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="fonts/Inter-Medium.woff2"
+            as="font"
+            type="font/woff2"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="fonts/Inter-Bold.woff"
+            as="font"
+            type="font/woff"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="fonts/Inter-Bold.woff2"
+            as="font"
+            type="font/woff2"
+            crossorigin="anonymous"
+        />
+
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+
+    <body>
+        <main class="wrapper" id="wrapper">
+            <div class="preloader" id="preloader"></div>
+            <header class="header" id="header">
     <div class="header-panel">
         <div class="header-panel-logo">
             <a href="/" class="logo">
@@ -90,492 +129,500 @@
     </div>
 </header>
 
-	<div data-router-wrapper>
-		<div data-router-view="default">
-			<section class="section hero hero-home">
-	<div class="hero-banner" id="hero-banner">
-		<div class="full-carousel splide" id="hero-carousel">
-			<div class="splide__track">
-				<div class="splide__list">
-					<div class="splide__slide full-carousel-slide">
-						<video class="video" autoplay loop muted playsinline poster="../../img/home/hero-poster-1.jpg">
-							<source src="../../files/video1.mp4" type="video/mp4" />
-						</video>
-					</div>
-					<div class="splide__slide full-carousel-slide">
-						<video class="video" autoplay loop muted playsinline poster="../../img/home/hero-poster-1.jpg">
-							<source src="../../files/video2.mp4" type="video/mp4" />
-						</video>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="container">
-		<div class="users" data-load-order="2">
-			<div class="users-list">
-				<div class="users-list-item">
-					<img src="https://media.istockphoto.com/id/92347250/uk/%D1%84%D0%BE%D1%82%D0%BE/portrait-of-a-doctor.jpg?s=612x612&w=0&k=20&c=LzTAA0O_bSuxh55KiH_SkHd9HM7T3vuBHvaG3-xH1sU=" alt="Alt" />
-				</div>
-				<div class="users-list-item">
-					<img src="https://media.istockphoto.com/id/1285872850/uk/%D1%84%D0%BE%D1%82%D0%BE/%D0%BA%D1%80%D1%83%D0%BF%D0%BD%D0%B8%D0%BC-%D0%BF%D0%BB%D0%B0%D0%BD%D0%BE%D0%BC-%D0%BF%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82-%D0%BC%D0%BE%D0%BB%D0%BE%D0%B4%D0%BE%D1%97-%D0%B6%D1%96%D0%BD%D0%BA%D0%B8-%D0%BB%D1%96%D0%BA%D0%B0%D1%80%D1%8F-%D0%BD%D0%BE%D1%81%D0%B8%D1%82%D1%8C-%D0%BF%D0%BE%D1%81%D0%BC%D1%96%D1%85%D0%B0%D1%94%D1%82%D1%8C%D1%81%D1%8F-%D1%96-%D0%B4%D0%B8%D0%B2%D0%B8%D1%82%D1%8C%D1%81%D1%8F-%D0%BD%D0%B0-%D0%BA%D0%B0%D0%BC%D0%B5%D1%80%D1%83.jpg?s=612x612&w=0&k=20&c=UrsvqHuo1DZk4n7UTdbyCLiom8o2-evYOq4zpApb-Lg=" alt="Alt" />
-				</div>
-				<div class="users-list-item">
-					<img src="https://media.istockphoto.com/id/906716642/uk/%D1%84%D0%BE%D1%82%D0%BE/%D0%BF%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82-%D1%83%D1%81%D0%BF%D1%96%D1%88%D0%BD%D0%BE%D0%B3%D0%BE-%D1%87%D0%BE%D0%BB%D0%BE%D0%B2%D1%96%D1%87%D0%BE%D0%B3%D0%BE-%D1%85%D1%96%D1%80%D1%83%D1%80%D0%B3%D0%B0-%D0%B2-%D1%81%D0%BA%D1%80%D0%B0%D0%B1%D0%B0%D1%85.jpg?s=612x612&w=0&k=20&c=61hlHs_whGKaG9q8Pcl6u7C5AfGKcMRXbwU10w-LtjA=" alt="Alt" />
-				</div>
-				<div class="users-list-item">
-					<img src="" alt="Alt" />
-				</div>
-			</div>
-			<p class="users-description">
-				<span class="users-description-item">Endorsed by</span>
-				<span class="users-description-item">1 000+ doctors</span>
-			</p>
-		</div>
-	</div>
-	<div class="hero-content">
-		<div class="container">
-			<div class="progress" id="progress">
-				<div class="progress-bar" id="hero-progress-bar">
-					<div class="progress-bar-follower"></div>
-				</div>
-				<div class="scroll-action" data-target="#faq">
-					<p class="scroll-action-label">Scroll down</p>
-					<div class="scroll-action-icon">
-						<svg><use xlink:href="img/icons/icons.svg#arrow-down"></use></svg>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-8">
-					<p class="hero-subtitle font-uppercase color-white" data-load-order="1">Engineering Excellence</p>
-					<h1 class="hero-title h1" data-split-text>Creating Innovative Metformin Products</h1>
-				</div>
-			</div>
-		</div>
-	</div>
+            <div data-router-wrapper>
+                <div data-router-view="default">
+                    <section class="section hero hero-home">
+    <div class="hero-banner" id="hero-banner">
+        <div class="full-carousel splide" id="hero-carousel">
+            <div class="splide__track">
+                <div class="splide__list">
+                    <div class="splide__slide full-carousel-slide">
+                        <video
+                            class="video"
+                            autoplay
+                            loop
+                            muted
+                            playsinline
+                            poster="../../img/home/hero-poster-1.jpg"
+                        >
+                            <source src="../../files/video1.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                    <div class="splide__slide full-carousel-slide">
+                        <video
+                            class="video"
+                            autoplay
+                            loop
+                            muted
+                            playsinline
+                            poster="../../img/home/hero-poster-1.jpg"
+                        >
+                            <source src="../../files/video2.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="users" data-load-order="2">
+            <div class="users-list">
+                <div class="users-list-item">
+                    <img
+                        src="https://media.istockphoto.com/id/92347250/uk/%D1%84%D0%BE%D1%82%D0%BE/portrait-of-a-doctor.jpg?s=612x612&w=0&k=20&c=LzTAA0O_bSuxh55KiH_SkHd9HM7T3vuBHvaG3-xH1sU="
+                        alt="Alt"
+                    />
+                </div>
+                <div class="users-list-item">
+                    <img
+                        src="https://media.istockphoto.com/id/1285872850/uk/%D1%84%D0%BE%D1%82%D0%BE/%D0%BA%D1%80%D1%83%D0%BF%D0%BD%D0%B8%D0%BC-%D0%BF%D0%BB%D0%B0%D0%BD%D0%BE%D0%BC-%D0%BF%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82-%D0%BC%D0%BE%D0%BB%D0%BE%D0%B4%D0%BE%D1%97-%D0%B6%D1%96%D0%BD%D0%BA%D0%B8-%D0%BB%D1%96%D0%BA%D0%B0%D1%80%D1%8F-%D0%BD%D0%BE%D1%81%D0%B8%D1%82%D1%8C-%D0%BF%D0%BE%D1%81%D0%BC%D1%96%D1%85%D0%B0%D1%94%D1%82%D1%8C%D1%81%D1%8F-%D1%96-%D0%B4%D0%B8%D0%B2%D0%B8%D1%82%D1%8C%D1%81%D1%8F-%D0%BD%D0%B0-%D0%BA%D0%B0%D0%BC%D0%B5%D1%80%D1%83.jpg?s=612x612&w=0&k=20&c=UrsvqHuo1DZk4n7UTdbyCLiom8o2-evYOq4zpApb-Lg="
+                        alt="Alt"
+                    />
+                </div>
+                <div class="users-list-item">
+                    <img
+                        src="https://media.istockphoto.com/id/906716642/uk/%D1%84%D0%BE%D1%82%D0%BE/%D0%BF%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82-%D1%83%D1%81%D0%BF%D1%96%D1%88%D0%BD%D0%BE%D0%B3%D0%BE-%D1%87%D0%BE%D0%BB%D0%BE%D0%B2%D1%96%D1%87%D0%BE%D0%B3%D0%BE-%D1%85%D1%96%D1%80%D1%83%D1%80%D0%B3%D0%B0-%D0%B2-%D1%81%D0%BA%D1%80%D0%B0%D0%B1%D0%B0%D1%85.jpg?s=612x612&w=0&k=20&c=61hlHs_whGKaG9q8Pcl6u7C5AfGKcMRXbwU10w-LtjA="
+                        alt="Alt"
+                    />
+                </div>
+                <div class="users-list-item">
+                    <img src="" alt="Alt" />
+                </div>
+            </div>
+            <p class="users-description">
+                <span class="users-description-item">Endorsed by</span>
+                <span class="users-description-item">1 000+ doctors</span>
+            </p>
+        </div>
+    </div>
+    <div class="hero-content">
+        <div class="container">
+            <div class="progress" id="progress">
+                <div class="progress-bar" id="hero-progress-bar">
+                    <div class="progress-bar-follower"></div>
+                </div>
+                <div class="scroll-action" data-target="#about">
+                    <p class="scroll-action-label">Scroll down</p>
+                    <div class="scroll-action-icon">
+                        <svg><use xlink:href="img/icons/icons.svg#arrow-down"></use></svg>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <p class="hero-subtitle font-uppercase color-white" data-load-order="1">
+                        Engineering Excellence
+                    </p>
+                    <h1 class="hero-title h1" data-split-text>
+                        Creating Innovative Metformin Products
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
-			<section class="section what-metformin" id="metformin">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-6">
-				<div class="what-metformin-top">
-					<p class="font-uppercase color-gradient section-subtitle">Metformin</p>
-					<h2 class="h2 section-title">What is <i>Metformin?</i></h2>
-					<p class="section-description">Metformin is not a new drug; it has been used worldwide for <b>over 50 years</b></p>
-
-				</div>
-			</div>
-			<div class="col-md-6">
-                <div class="what-metformin-media">
-                    <div class="banner">
-                        <picture>
-                            <source srcset="../../img/new-section/what-is-metformin.png" type="image/png">
-                            <source srcset="../../img/new-section/what-is-metformin.webp" type="image/webp">
-                            <img class="what-metformin-img" src="../../img/new-section/what-is-metformin.png">
-                        </picture>
-                    </div>
+ <section id="about" class="section about home">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <p class="font-uppercase color-gradient section-subtitle">Our Mission</p>
+                <h3 class="h3 section-title">
+                    OAltanine is a pharmaceutical company advancing medicines to bring meaningful
+                    <i
+                        >improvement to patients' lives through innovative science and delivery
+                        technologies</i
+                    >
+                </h3>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="banner section-banner" data-parallax>
+                    <picture>
+                        <source srcset="../../img/home/enhancements-2.webp" type="image/webp" />
+                        <source srcset="../../img/home/enhancements-2.jpg" type="image/jpeg" />
+                        <img src="../../img/home/enhancements-2.jpg" class="about-media-big" />
+                    </picture>
                 </div>
-			</div>
-            <div class="col-md-12">
-                <div class="what-metformin-wrap">
-                    <div class="what-metformin-item">
-                        <div class="what-metformin-icon">
-                            <img src="../../img/metformin/enhancements-1.svg" alt="Insulin" />
-                        </div>
-                        <div class="what-metformin-desc">
-                            There has been very little innovation with respect to such an important drug therapy. <b>Low levels  of bioavailability</b> result in larger dosages and severe GI-side effects
-                        </div>
-                    </div>
-                    <div class="what-metformin-item">
-                        <div class="what-metformin-icon">
-                            <img src="../../img/metformin/enhancements-2.svg" alt="Insulin" />
-                        </div>
-                        <div class="what-metformin-desc">
-                            The journal Clinical Diabetes reports that up to 75% of people who take Metformin report having <b>chronic diarrhea and other GI-side effects</b>
-                        </div>
-                    </div>
-                    <div class="what-metformin-item">
-                        <div class="what-metformin-icon">
-                            <img src="../../img/metformin/enhancements-3.svg" alt="Insulin" />
-                        </div>
-                        <div class="what-metformin-desc">
-                            These side effects cause patients to unilaterally skip dosages, <b>risking diabetic complications and costly emergency treatment</b>
-                        </div>
-                    </div>
-                </div>
-                <div class="what-metformin-link">
-                    <a href="metformin.html" class="btn btn-arrow">
-                        <span class="btn-icon">
-                            <span class="btn-icon-item"></span>
-                            <span class="btn-icon-item"></span>
-                            <span class="btn-icon-item"></span>
-                            <span class="btn-icon-item"></span>
-                        </span>
+            </div>
+            <div class="col-md-5 offset-md-1">
+                <div class="about-desc">
+                    <h4 class="about-desc-title">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore
+                    </h4>
+                    <p class="bold">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <a href="product.html" class="btn btn-gradient btn-md">
+                        <span class="btn-bg"></span>
+                        <span class="btn-icon"
+                            ><svg><use xlink:href="img/icons/icons.svg#arrow-right"></use></svg
+                        ></span>
                         <span class="btn-labels">
-                            <span class="btn-labels-item">Learn more</span>
+                            <span class="btn-labels-item">Learn More</span>
+                            <span class="btn-labels-item">Learn More</span>
+                            <span class="btn-labels-item">Learn More</span>
                         </span>
                     </a>
                 </div>
             </div>
-		</div>
-	</div>
+            <div class="col-md-2 d-none d-md-block">
+                <div class="section-banner section-banner-small" data-parallax>
+                    <picture>
+                        <source srcset="../../img/about-us/about-media-s.webp" type="image/webp" />
+                        <source srcset="../../img/about-us/about-media-s.jpg" type="image/jpeg" />
+                        <img src="../../img/about-us/about-media-s.jpg" class="about-media-small" />
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
-			<div class="container">
-				<hr class="hr"/>
-			</div>
-			<section class="section overview overview-one">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-5">
-				<div class="overview-sticky">
-					<p class="font-uppercase color-gradient section-subtitle">About altanine</p>
-					<h3 class="h3 section-title">Altanine – a patient-<i>centric treatment</i></h3>
-					<p class="section-description">Altanine increases efficiency and improves patient experience in Metformin treatment</p>
-					<div class="overview-detail">
-						<ul>
-							<li>Patient-friendly treatment</li>
-							<li>Special patented enteric coating for targeted release</li>
-							<li>Enhanced bioavailability of the medication</li>
-							<li>Improved body absorption</li>
-							<li>Reduced gastrointestinal side effects</li>
-							<li>Lowers the necessary dosage of Metformin</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-7">
-				<div class="overview-banners">
-					<div class="section-banner">
-						<picture>
-							<source srcset="../../img/home/overview-banner-3.png" type="image/png">
-							<source srcset="../../img/home/overview-banner-3.webp" type="image/webp">
-							<img src="../../img/home/overview-banner-3.png" class="overview-banners-image">
-						</picture>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-			<section class="section about">
-	<div class="container">
-		<div class="row">
-			<div class="col-12">
-				<p class="font-uppercase color-gradient section-subtitle">Products</p>
-				<h3 class="h3 section-title">Our products use a proprietary, patent-protected technology – <i>that applies a special coating to Metformin.</i></h3>
-			</div>
-		</div>
-	</div>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-4">
-				<div class="banner section-banner" data-parallax>
-					<picture>
-						<source srcset="../../img/home/enhancements-2.webp" type="image/webp">
-						<source srcset="../../img/home/enhancements-2.jpg" type="image/jpeg">
-						<img src="../../img/home/enhancements-2.jpg" class="about-media-big">
-					</picture>
-				</div>
-			</div>
-			<div class="col-md-5 offset-md-1">
-				<div class="about-desc">
-					<h4>The coating prevents the Metformin from being released in the stomach and instead causes it to be released in the small intestine.</h4>
-					<p>Releasing Metformin in the small intestine not only avoids the typical side-effects associated with Metformin but also improves the bioavailability of the drug.</p>
-					<p>As a result, bioavailability using the proprietary coating is around 85%.  This means that we need to use less Metformin to get the patient the same net amount.</p>
-					<a href="product.html" class="btn btn-gradient btn-md">
-						<span class="btn-bg"></span>
-						<span class="btn-icon"><svg><use xlink:href="img/icons/icons.svg#arrow-right"></use></svg></span>
-						<span class="btn-labels">
-						<span class="btn-labels-item">Learn More</span>
-						<span class="btn-labels-item">Learn More</span>
-						<span class="btn-labels-item">Learn More</span>
-					</span>
-					</a>
-				</div>
-			</div>
-			<div class="col-md-2 d-none d-md-block">
-				<div class="section-banner section-banner-small" data-parallax>
-					<picture>
-						<source srcset="../../img/about-us/about-media-s.webp" type="image/webp">
-						<source srcset="../../img/about-us/about-media-s.jpg" type="image/jpeg">
-						<img src="../../img/about-us/about-media-s.jpg" class="about-media-small">
-					</picture>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-			<section class="section delivery">
-	<div class="container">
-		<div class="row">
-			<div class="col-12">
-				<p class="font-uppercase color-gradient section-subtitle">Innovating metformin delivery</p>
-				<h3 class="h3 section-title">Our patented <i>enteric coating technology</i> is transforming Metformin administration </h3>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-4">
-				<div class="banner section-banner" data-parallax>
-					<picture>
-						<source srcset="../../img/about-us/about-media-s.webp" type="image/webp">
-						<source srcset="../../img/blog-details/article-banner-2.jpg" type="image/jpeg">
-						<img src="../../img/blog-details/article-banner-2.jpg">
-					</picture>
-				</div>
-			</div>
-			<div class="col-md-7 offset-md-1">
-				<div class="delivery-cards">
-					<div class="delivery-card">
-						<div class="delivery-card-icon">
-							<img src="../../img/metformin/delivery-1.svg" alt="Enteric Coating Innovation" />
-						</div>
-						<p class="delivery-card-title">Enteric Coating Innovation</p>
-						<p class="delivery-card-description">Our patented enteric coating is engineered to bypass the stomach, releasing medication directly in the intestines for maximum bioavailability.</p>
-					</div>
-					<div class="delivery-card">
-						<div class="delivery-card-icon">
-							<img src="../../img/metformin/delivery-2.svg" alt="Superior Absorption" />
-						</div>
-						<p class="delivery-card-title">Superior Absorption</p>
-						<p class="delivery-card-description">Our technology ensures that medications are protected from stomach degradation, optimizing their therapeutic impact.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-			<section class="section market market-home">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-4">
-				<div class="market-sticky">
-					<p class="font-uppercase color-gradient section-subtitle">Our technology</p>
-					<h3 class="h3 section-title">Our advanced technology</h3>
-				</div>
-			</div>
-			<div class="col-md-7 offset-md-1">
-				<div class="market-data">
-					<div class="market-data-item">
-						<span class="market-data-icon"><img src="../../img/home/market-data-icon.svg" alt="market-data-icon" class="market-data-image"></span>
-						<h5 class="color-blue">Raw material is extracted, concentrated and processed to powder</h5>
-					</div>
-					<div class="market-data-item">
-						<p class="text-gradient-btn">key component 1</p>
-						<h5 class="color-blue">Microencapsulaion</h5>
-						<p class="market-data-text">Ensures targeted delivery and enhanced drug stability</p>
-					</div>
-					<div class="market-data-item">
-						<p class="text-gradient-btn">key component 1</p>
-						<h5 class="color-blue">Enteric Coating</h5>
-						<p class="market-data-text">Significantly reduces gastrointestinal side effects and enhances bioavailability</p>
-					</div>
-					<div class="market-data-item">
-						<span class="market-data-img">
-							 <picture>
-                            	<source srcset="../../img/home/market-data-img.png" type="image/png">
-                            	<source srcset="../../img/home/market-data-img.webp" type="image/webp">
-								<img class="what-metformin-image" src="../../img/home/market-data-img.png">
-    	                    </picture>
-						</span>
-						<p class="market-data-text">Ready-to-use Medication</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-			<section class="section property">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-4">
-				<div class="property-media">
-					<div class="property-media-id">
-						<span class="property-media-bg"><img src="../../img/home/property-icon.svg" alt="property-icon" class="property-media-icon"></span>
-						IP protections filed under <br> PCT/US2023/081775
-					</div>
-					<div class="property-media-info">
-						*Altanine is considering new regulatory filings to broaden its sales, including orphan drug designation for Metformin in treating specific non-diabetic conditions, generic drug designation for Metformin gummies, and medical device designation for future Metformin-related applications.
-					</div>
-					<div class="property-media-img">
-						<picture>
-							<source srcset="../../img/home/property-img.png" type="image/png">
-							<source srcset="../../img/home/property-img.webp" type="image/webp">
-							<img src="../../img/home/property-img.png" class="property-media-image">
-						</picture>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-7 offset-md-1">
-				<div class="property-desc">
-					<p class="font-uppercase color-gradient section-subtitle">Metformin License</p>
-					<h3 class="h3 section-title">Our Intellectual property</h3>
-					<p>Altanine has an <b>exclusive, worldwide license </b> for the enteric coating for Metformin (including Metformin and Liraglutide combinations)</p>
-					<ul>
-						<li>
-							Metformin & Liraglutide are generic drugs previously approved by the US Food & Drug Administration (FDA)
-						</li>
-						<li>
-							Altanine can sell its products throughout the US using 503A and 503B compounding pharmacies to fill prescriptions
-						</li>
-						<li>
-							Regulatory & IP have been vetted by GreenbergTraurig
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-			<div class="container">
-				<hr class="hr"/>
-			</div>
 
-
-
-
-
-
-<!--			<div class="container">-->
-<!--				<hr class="hr"/>-->
-<!--			</div>-->
-			<section class="section blog">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-6">
-				<p class="font-uppercase color-gradient section-subtitle">Stay Informed / blog</p>
-				<h3 class="h3 section-title">Explore Our Latest Insights on <i>Diabetes Management</i></h3>
-			</div>
-			<div class="col-md-6">
-				<div class="blog-action">
-					<a href="blog.html" class="btn btn-gradient btn-md">
-						<span class="btn-bg"></span>
-						<span class="btn-icon">
-						<svg><use xlink:href="img/icons/icons.svg#arrow-right"></use></svg>
-					</span>
-						<span class="btn-labels">
-						<span class="btn-labels-item">All news</span>
-						<span class="btn-labels-item">All news</span>
-						<span class="btn-labels-item">All news</span>
-					</span>
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="blog-carousel splide" id="blog-carousel">
-		<div class="splide__track">
-			<div class="splide__list">
-				<div class="splide__slide blog-carousel-slide">
-					<div class="post">
-						<div class="post-thumbnail">
-							<img src="../../img/home/blog-1.jpg" alt="Our Head of Care Douglas Twenefour clarifies the main points to be aware of with Wegovy." />
-						</div>
-						<div class="post-time">
-							<p>5 min read</p>
-						</div>
-						<p class="post-title">Our Head of Care Douglas Twenefour clarifies the main points to be aware of with Wegovy.</p>
-						<p class="post-description">New research is underway to evaluate how weight loss drugs like Ozempic impact not only the reduction of body weight but also their potential effects on overall health, metabolic processes, and long-term sustainability as part of comprehensive weight management strategies.</p>
-						<div class="post-action">
-							<a href="blog-details.html" class="btn btn-arrow">
-								<span class="btn-icon">
-									<span class="btn-icon-item"></span>
-									<span class="btn-icon-item"></span>
-									<span class="btn-icon-item"></span>
-									<span class="btn-icon-item"></span>
-								</span>
-								<span class="btn-labels">
-									<span class="btn-labels-item">Learn more</span>
-								</span>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="splide__slide blog-carousel-slide">
-					<div class="post">
-						<div class="post-thumbnail">
-							<img src="../../img/home/blog-2.jpg" alt="Wegovy made available in the UK for weight loss in people with prediab" />
-						</div>
-						<div class="post-time">
-							<p>5 min read</p>
-						</div>
-						<p class="post-title">Wegovy made available in the UK for weight loss in people with prediab
-						</p>
-						<p class="post-description">Our Head of Care Douglas Twenefour clarifies the main points to be aware of with Wegovy, including who it potential effects on overall health, metabolic processes, and long-term sustainability as part of comprehensive weight management strategies.
-						</p>
-						<div class="post-action">
-							<a href="blog-details.html" class="btn btn-arrow">
-								<span class="btn-icon">
-									<span class="btn-icon-item"></span>
-									<span class="btn-icon-item"></span>
-									<span class="btn-icon-item"></span>
-									<span class="btn-icon-item"></span>
-								</span>
-								<span class="btn-labels">
-									<span class="btn-labels-item">Learn more</span>
-								</span>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="splide__slide blog-carousel-slide">
-					<div class="post">
-						<div class="post-thumbnail">
-							<img src="../../img/home/blog-3.jpg" alt="Our response to serious supply issues of drugs for people with type 2" />
-						</div>
-						<div class="post-time">
-							<p>5 min read</p>
-						</div>
-						<p class="post-title">Our response to serious supply issues of drugs for people with type 2</p>
-						<p class="post-description">New research is underway to evaluate how weight loss drugs like Ozempic impact not only</p>
-						<div class="post-action">
-							<a href="blog-details.html" class="btn btn-arrow">
-								<span class="btn-icon">
-									<span class="btn-icon-item"></span>
-									<span class="btn-icon-item"></span>
-									<span class="btn-icon-item"></span>
-									<span class="btn-icon-item"></span>
-								</span>
-								<span class="btn-labels">
-									<span class="btn-labels-item">Learn more</span>
-								</span>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="splide__slide blog-carousel-slide">
-					<div class="post">
-						<div class="post-thumbnail">
-							<img src="../../img/home/blog-1.jpg" alt="Our Head of Care Douglas Twenefour clarifies the main points to be aware of with Wegovy." />
-						</div>
-						<div class="post-time">
-							<p>5 min read</p>
-						</div>
-						<p class="post-title">Our Head of Care Douglas Twenefour clarifies the main points to be aware of with Wegovy.</p>
-						<p class="post-description">New research is underway to evaluate how weight loss drugs like Ozempic impact not only the reduction of body weight but also their potential effects on overall health, metabolic processes, and long-term sustainability as part of comprehensive weight management strategies.</p>
-						<div class="post-action">
-							<a href="blog-details.html" class="btn btn-arrow">
-								<span class="btn-icon">
-									<span class="btn-icon-item"></span>
-									<span class="btn-icon-item"></span>
-									<span class="btn-icon-item"></span>
-									<span class="btn-icon-item"></span>
-								</span>
-								<span class="btn-labels">
-									<span class="btn-labels-item">Learn more</span>
-								</span>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="carousel-cursor">
-		<p class="carousel-cursor-label">Drag</p>
-	</div>
+                    <section class="section overview overview-one home">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="overview-sticky">
+                    <p class="font-uppercase color-gradient section-subtitle">Situation overview</p>
+                    <h3 class="h3 section-title">Altanine – a patient-<i>centric treatment</i></h3>
+                    <p class="section-description">
+                        Altanine increases efficiency and improves patient experience in Metformin
+                        treatment
+                    </p>
+                    <div class="overview-detail">
+                        <ul>
+                            <li>Patient-friendly treatment</li>
+                            <li>Special patented enteric coating for targeted release</li>
+                            <li>Enhanced bioavailability of the medication</li>
+                            <li>Improved body absorption</li>
+                            <li>Reduced gastrointestinal side effects</li>
+                            <li>Lowers the necessary dosage of Metformin</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="btn btn-gradient btn-md">
+                        <span class="btn-bg"></span>
+                        <span class="btn-icon"
+                            ><svg><use xlink:href="img/icons/icons.svg#arrow-right"></use></svg
+                        ></span>
+                        <span class="btn-labels">
+                            <span class="btn-labels-item">Learn More</span>
+                            <span class="btn-labels-item">Learn More</span>
+                            <span class="btn-labels-item">Learn More</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="overview-banners">
+                    <div class="section-banner">
+                        <picture>
+                            <source
+                                srcset="../../img/home/overview-banner-3.png"
+                                type="image/png"
+                            />
+                            <source
+                                srcset="../../img/home/overview-banner-3.webp"
+                                type="image/webp"
+                            />
+                            <img
+                                src="../../img/home/overview-banner-3.png"
+                                class="overview-banners-image"
+                            />
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
-			<section class="section content content-second">
+
+                    <section class="section enhancements">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="enhancements-sticky">
+                    <p class="font-uppercase color-gradient section-subtitle">
+                        Phase One, Target Markets
+                    </p>
+                    <h4 class="h4 section-title">
+                        We are strategically positioned within the pharmaceutical industry by
+                        targeting well-established and rapidly expanding markets
+                    </h4>
+                    <p class="section-description">
+                        Set to rapidly gain market share by surpassing current options in
+                        effectiveness and ease of use, our initial focus is diabetes, weight
+                        control, sexual health, and neurocare markets.
+                    </p>
+                    <a href="product.html" class="btn btn-gradient btn-md">
+                        <span class="btn-bg"></span>
+                        <span class="btn-icon"
+                            ><svg><use xlink:href="img/icons/icons.svg#arrow-right"></use></svg
+                        ></span>
+                        <span class="btn-labels">
+                            <span class="btn-labels-item">Learn More</span>
+                            <span class="btn-labels-item">Learn More</span>
+                            <span class="btn-labels-item">Learn More</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="enhancements-row">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="banner section-banner" data-parallax>
+                                <picture>
+                                    <source
+                                        srcset="../../img/markets/enhancements-1.webp"
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="../../img/markets/enhancements-1.jpg"
+                                        type="image/jpeg"
+                                    />
+                                    <img src="../../img/markets/enhancements-1.jpg" />
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="products-card">
+                                <div class="products-card-thumbnail" data-parallax>
+                                    <picture>
+                                        <source
+                                            srcset="../../img/markets/enhancements-2.webp"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="../../img/markets/enhancements-2.jpg"
+                                            type="image/jpeg"
+                                        />
+                                        <img src="../../img/markets/enhancements-2.jpg" />
+                                    </picture>
+                                </div>
+                                <div class="products-card-body">
+                                    <p class="products-card-description">
+                                        With a suite of groundbreaking products already navigating
+                                        the regulatory approval pipeline, Altanine is poised to set
+                                        new standards in healthcare delivery and patient outcomes.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+                    <section class="section about investor mission">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="banner section-banner" data-parallax>
+                    <picture>
+                        <source
+                            srcset="../../img/investor/silhouette-businessman-with-glasses.webp"
+                            type="image/webp"
+                        />
+                        <source
+                            srcset="../../img//investor/silhouette-businessman-with-glasses.jpg"
+                            type="image/jpeg"
+                        />
+                        <img src="../../img/investor/silhouette-businessman-with-glasses.jpg" />
+                    </picture>
+                </div>
+            </div>
+            <div class="col-md-5 offset-md-1">
+                <div class="about-desc">
+                    <h3 class="h3">
+                        We're excited to share an overview of Altanine's strategies and financial
+                        outlook.
+                    </h3>
+                    <p>For detailed information, financial models, or our pitch deck, please</p>
+                </div>
+                <button class="btn btn-gradient btn-md" data-modal-open="#investor-modal">
+                    <span class="btn-bg"></span>
+                    <span class="btn-icon"
+                        ><svg><use xlink:href="img/icons/icons.svg#arrow-right"></use></svg
+                    ></span>
+                    <span class="btn-labels">
+                        <span class="btn-labels-item">Request Information</span>
+                        <span class="btn-labels-item">Request Information</span>
+                        <span class="btn-labels-item">Request Information</span>
+                    </span>
+                </button>
+            </div>
+            <div class="col-md-2 d-none d-md-block">
+                <div class="section-banner section-banner-small" data-parallax>
+                    <picture>
+                        <source srcset="../../img/investor/glasses.webp" type="image/webp" />
+                        <source srcset="../../img/investor/glasses.jpg" type="image/jpeg" />
+                        <img src="../../img/investor/glasses.jpg" />
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+                    
+                    
+                    
+                    
+                    
+                    
+                    <!--			<div class="container">-->
+                    <!--				<hr class="hr"/>-->
+                    <!--			</div>-->
+                    <section class="section blog home">
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-md-5">
+                <h3 class="h3 section-title">All News and views</h3>
+            </div>
+            <div>
+                <a href="product.html" class="btn btn-gradient btn-md d-none d-md-block">
+                    <span class="btn-bg"></span>
+                    <span class="btn-labels">
+                        <span class="btn-labels-item">Learn More</span>
+                        <span class="btn-labels-item">Learn More</span>
+                        <span class="btn-labels-item">Learn More</span>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="blog-wrap">
+            <div class="blog__item">
+                <div class="post">
+                    <div class="post-thumbnail">
+                        <img
+                            src="../../img/home/blog-1.jpg"
+                            alt="Our Head of Care Douglas Twenefour clarifies the main points to be aware of with Wegovy."
+                        />
+                    </div>
+                    <div class="post-time">
+                        <p>5 min read</p>
+                    </div>
+                    <p class="post-title">
+                        Our Head of Care Douglas Twenefour clarifies the main points to be aware of
+                        with Wegovy.
+                    </p>
+                    <p class="post-description">
+                        New research is underway to evaluate how weight loss drugs like Ozempic
+                        impact not only the reduction of body weight but also their potential
+                        effects on overall health, metabolic processes, and long-term sustainability
+                        as part of comprehensive weight management strategies.
+                    </p>
+                    <div class="post-action">
+                        <a href="blog-details.html" class="btn btn-arrow">
+                            <span class="btn-icon">
+                                <span class="btn-icon-item"></span>
+                                <span class="btn-icon-item"></span>
+                                <span class="btn-icon-item"></span>
+                                <span class="btn-icon-item"></span>
+                            </span>
+                            <span class="btn-labels">
+                                <span class="btn-labels-item">Learn more</span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="blog__item">
+                <div class="post">
+                    <div class="post-thumbnail">
+                        <img
+                            src="../../img/home/blog-2.jpg"
+                            alt="Our Head of Care Douglas Twenefour clarifies the main points to be aware of with Wegovy."
+                        />
+                    </div>
+                    <div class="post-time">
+                        <p>5 min read</p>
+                    </div>
+                    <p class="post-title">
+                        Wegovy made available in the UK for weight loss in people with prediab
+                    </p>
+                    <p class="post-description">
+                        Our Head of Care Douglas Twenefour clarifies the main points to be aware of
+                        with Wegovy, including who it po
+                    </p>
+                    <div class="post-action">
+                        <a href="blog-details.html" class="btn btn-arrow">
+                            <span class="btn-icon">
+                                <span class="btn-icon-item"></span>
+                                <span class="btn-icon-item"></span>
+                                <span class="btn-icon-item"></span>
+                                <span class="btn-icon-item"></span>
+                            </span>
+                            <span class="btn-labels">
+                                <span class="btn-labels-item">Learn more</span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="blog__item">
+                <div class="post">
+                    <div class="post-thumbnail">
+                        <img
+                            src="../../img/home/blog-3.jpg"
+                            alt="Our Head of Care Douglas Twenefour clarifies the main points to be aware of with Wegovy."
+                        />
+                    </div>
+                    <div class="post-time">
+                        <p>5 min read</p>
+                    </div>
+                    <p class="post-title">
+                        Wegovy made available in the UK for weight loss in people with prediab
+                    </p>
+                    <p class="post-description">
+                        Our Head of Care Douglas Twenefour clarifies the main points to be aware of
+                        with Wegovy, including who it po
+                    </p>
+                    <div class="post-action">
+                        <a href="blog-details.html" class="btn btn-arrow">
+                            <span class="btn-icon">
+                                <span class="btn-icon-item"></span>
+                                <span class="btn-icon-item"></span>
+                                <span class="btn-icon-item"></span>
+                                <span class="btn-icon-item"></span>
+                            </span>
+                            <span class="btn-labels">
+                                <span class="btn-labels-item">Learn more</span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn btn-gradient btn-md d-md-none">
+            <span class="btn-bg"></span>
+            <span class="btn-labels">
+                <span class="btn-labels-item">View More</span>
+                <span class="btn-labels-item">View More</span>
+                <span class="btn-labels-item">View More</span>
+            </span>
+        </a>
+    </div>
+</section>
+
+                    <section class="section content content-second">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6">
@@ -612,9 +659,9 @@
 		</picture>
 	</div>
 </section>
-		</div>
-	</div>
-	<footer class="footer">
+                </div>
+            </div>
+            <footer class="footer">
     <div class="footer-abstract">
         <img src="../../img/footer-abstract.svg" alt="Alt" />
     </div>
@@ -761,7 +808,7 @@
     </div>
 </footer>
 
-	<div class="modal" id="investor-modal">
+            <div class="modal" id="investor-modal">
 	<div class="modal-bg"></div>
 	<div class="modal-close" data-modal-close="#investor-modal"></div>
 	<div class="modal-box" data-lenis-prevent>
@@ -814,7 +861,7 @@
 		</div>
 	</div>
 </div>
-	<div class="modal" id="thanks">
+            <div class="modal" id="thanks">
 	<div class="modal-bg"></div>
 	<div class="modal-close" data-modal-close="#thanks"></div>
 	<div class="modal-box" data-lenis-prevent>
@@ -835,7 +882,7 @@
 		</div>
 	</div>
 </div>
-</main>
-<script src="js/app.min.js"></script>
-</body>
+        </main>
+        <script src="js/app.min.js"></script>
+    </body>
 </html>

@@ -1,0 +1,40 @@
+.about.home {
+    padding: 0;
+    background-color: transparent;
+    margin-bottom: 144rem;
+    @include maxWidth($sm) {
+        margin-bottom: 80rem;
+    }
+
+    .about-desc {
+        &-title {
+            max-width: 480rem;
+            width: 100%;
+            margin-bottom: 16rem;
+        }
+        .bold {
+            font: var(--font-body-b);
+            color: var(--color-gray-600);
+            margin-bottom: 24rem;
+            @include maxWidth($sm) {
+                font: var(--font-body-b-mobile);
+            }
+        }
+        p {
+            font: var(--font-body-r);
+            max-width: 416rem;
+            @include maxWidth($sm) {
+                font: var(--font-body-r-mobile);
+            }
+            &:last-of-type {
+                margin-bottom: 24rem;
+            }
+        }
+
+        .btn {
+            @include maxWidth($sm) {
+                width: 100%;
+            }
+        }
+    }
+}

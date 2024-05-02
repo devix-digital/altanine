@@ -1,0 +1,7 @@
+.mission {
+    .btn {
+        @include maxWidth($sm) {
+            width: 100%;
+        }
+    }
+}
