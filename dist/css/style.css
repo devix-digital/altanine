@@ -6711,7 +6711,7 @@ html.lenis {
   width: 228rem;
 }
 
-.innovation-footer__card > img {
+.innovation-footer__card img {
   width: 100%;
   display: block;
 }
@@ -12596,7 +12596,7 @@ html.lenis {
     width: 100%;
   }
 
-  .innovation-footer__card > img {
+  .innovation-footer__card img {
     width: 66%;
     margin: 0 auto;
   }

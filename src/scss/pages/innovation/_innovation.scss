@@ -144,7 +144,7 @@
                 margin: 0;
                 width: 100%;
             }
-            & > img {
+            img {
                 width: 100%;
                 display: block;
                 @include maxWidth($sm) {
