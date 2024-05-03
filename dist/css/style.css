@@ -5056,7 +5056,7 @@ html.lenis {
 
 .horizon .section.section_to-pin .block_wrapper {
   position: relative;
-  max-width: 483rem;
+  width: 483rem;
   height: 526rem;
   padding-top: 50rem;
 }
@@ -11873,7 +11873,7 @@ html.lenis {
   }
 
   .horizon .section.section_to-pin .block_wrapper {
-    width: auto;
+    width: 100%;
     height: auto;
     padding: 0;
   }
