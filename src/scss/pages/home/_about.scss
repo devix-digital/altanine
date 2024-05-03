@@ -5,8 +5,13 @@
     @include maxWidth($sm) {
         margin-bottom: 80rem;
     }
+    .section-banner {
+        margin-bottom: 24rem;
+    }
 
     .about-desc {
+        margin: 0;
+
         &-title {
             max-width: 480rem;
             width: 100%;

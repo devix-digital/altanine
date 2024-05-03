@@ -68,5 +68,8 @@
     .products-card-description {
         font: var(--font-body-b);
         color: var(--color-gray-700);
+        @include maxWidth($sm) {
+            font: var(--font-body-b-mobile);
+        }
     }
 }

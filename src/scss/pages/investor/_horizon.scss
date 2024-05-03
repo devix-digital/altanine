@@ -27,6 +27,12 @@ html {
 // END; Lenis Scroll.
 
 .horizon {
+    @include maxWidth($sm) {
+        background-image: url("../img/investor/horizon-bg-mobile.png");
+        background-position: right 70%;
+        background-repeat: no-repeat;
+    }
+
     .section-title {
         @include maxWidth($sm) {
             margin: 0 0 40rem;
@@ -75,9 +81,6 @@ html {
                 flex-direction: column;
                 padding-left: 24rem;
                 align-items: start;
-                background-image: url("../img/investor/horizon-bg-mobile.png");
-                background-position: right;
-                background-repeat: no-repeat;
             }
 
             .section_pin {

@@ -4,6 +4,7 @@
     position: relative;
     overflow: hidden;
     z-index: 0;
+
     @include maxWidth($sm) {
         margin-bottom: 80rem;
         padding: 80rem 0;
