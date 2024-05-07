@@ -1,6 +1,7 @@
 .enhancements-metformin {
     padding: 64rem 0 28rem;
     margin: 23rem 0 73rem;
+    overflow: hidden;
 
     @include maxWidth($sm) {
         padding: 198rem 0 50rem;

@@ -11,6 +11,7 @@ import { initHeroCarousel } from "../../modules/carousels/heroCarousel.js"
 import { initProcessCarousel } from "../../modules/carousels/processCarousel.js"
 import { initModal } from "../../modules/modal/initModal.js"
 import { initHorizontalScroll } from "../../modules/scroll/horizontalScroll.js"
+import { toggleTab } from "../../common/tabs.js"
 
 class DefaultRenderer extends Highway.Renderer {
     onEnter() {
@@ -24,6 +25,7 @@ class DefaultRenderer extends Highway.Renderer {
         if (window.innerWidth > 767) {
             initHorizontalScroll()
         }
+        toggleTab()
     }
     onEnterCompleted() {
         scrollTo()

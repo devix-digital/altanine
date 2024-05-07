@@ -4928,6 +4928,10 @@ svg {
   z-index: 0;
 }
 
+.navigating-complexities .gap {
+  gap: 32rem;
+}
+
 .navigating-complexities .section-title {
   margin: 16rem 0 24rem;
 }
@@ -4938,11 +4942,13 @@ svg {
 }
 
 .navigating-complexities-secondImg {
-  width: 88rem;
-  height: 148rem;
+  width: 140rem;
+  height: 224rem;
+  margin: 45rem 0 25rem;
 }
 
 .navigating-complexities-description {
+  max-width: 304rem;
   color: var(--color-gray-700);
   font: var(--font-body-r);
 }
@@ -4956,7 +4962,7 @@ svg {
   z-index: -1;
 }
 
-.navigating-complexities-backgroundImg img {
+.navigating-complexities img {
   width: 100%;
   height: 100%;
 }
@@ -5236,6 +5242,7 @@ html.lenis {
 .enhancements-metformin {
   padding: 64rem 0 28rem;
   margin: 23rem 0 73rem;
+  overflow: hidden;
 }
 
 .enhancements-metformin-banner {
@@ -11812,6 +11819,12 @@ html.lenis {
   .navigating-complexities-img {
     width: 140rem;
     height: 185rem;
+  }
+
+  .navigating-complexities-secondImg {
+    margin: 32rem 0 16rem;
+    width: 88rem;
+    height: 148rem;
   }
 
   .navigating-complexities-backgroundImg {
