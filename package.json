@@ -43,6 +43,7 @@
     "webpack-stream": "^7.0.0"
   },
   "dependencies": {
-    "gulp-postcss": "^9.0.1"
+    "gulp-postcss": "^9.0.1",
+    "lodash": "^4.17.21"
   }
 }

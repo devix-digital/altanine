@@ -1,8 +1,9 @@
 .header {
-    position: absolute;
+    position: fixed;
     top: 16rem;
     left: 16rem;
     right: 16rem;
+    transition: top 0.3s;
     z-index: 2;
 
     @include maxWidth($sm) {
@@ -45,7 +46,7 @@
             align-items: center;
             justify-content: space-between;
             border-radius: 8px;
-            background: rgba(255, 255, 255, 0.72);
+            background: rgba(238, 238, 238, 0.9);
             max-width: 532rem;
             flex: 1;
             position: relative;
@@ -60,7 +61,7 @@
             position: relative;
             flex: 1;
             border-radius: 8px;
-            background: rgba(255, 255, 255, 0.72);
+            background: rgba(238, 238, 238, 0.9);
             padding: 26rem 40rem;
 
             @include minWidth($sm + 1) {
