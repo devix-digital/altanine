@@ -80,6 +80,12 @@
             padding: 15rem 0;
         }
 
+        &.sildenafil {
+            flex-direction: column;
+            align-items: start;
+            gap: 16rem;
+        }
+
         &-item {
             height: 244rem;
 

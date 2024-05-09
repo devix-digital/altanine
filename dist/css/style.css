@@ -5478,6 +5478,12 @@ html.lenis {
   padding: 10rem 0;
 }
 
+.problem-details.sildenafil {
+  flex-direction: column;
+  align-items: start;
+  gap: 16rem;
+}
+
 .problem-details-item {
   height: 244rem;
 }
