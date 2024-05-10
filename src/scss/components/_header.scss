@@ -4,7 +4,7 @@
     left: 16rem;
     right: 16rem;
     transition: top 0.3s;
-    z-index: 2;
+    z-index: 100;
 
     @include maxWidth($sm) {
         top: 12rem;

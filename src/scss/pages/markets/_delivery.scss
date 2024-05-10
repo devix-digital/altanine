@@ -1,11 +1,11 @@
 .delivery {
-  &.markets-page {
-    padding: 146rem 0 28rem;
-    @include maxWidth($sm) {
-      padding: 72rem 0 28rem;
+    &.markets-page {
+        padding: 144rem 0 32rem;
+        @include maxWidth($sm) {
+            padding: 72rem 0 28rem;
+        }
+        .delivery-card-icon img {
+            object-fit: contain;
+        }
     }
-    .delivery-card-icon img {
-      object-fit: contain;
-    }
-  }
 }

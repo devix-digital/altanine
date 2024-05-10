@@ -1955,7 +1955,7 @@ svg {
   left: 16rem;
   right: 16rem;
   transition: top 0.3s;
-  z-index: 2;
+  z-index: 100;
 }
 
 .header-contacts {
@@ -4220,7 +4220,7 @@ svg {
 
 .hero-blog {
   background-color: var(--color-gray-200);
-  padding: 184rem 0 58rem;
+  padding: 120rem 0 58rem;
   border-radius: 14px;
   background-image: url(../img/abstract-bg-grey.jpg);
   background-size: cover;
@@ -5431,7 +5431,11 @@ html.lenis {
 }
 
 .problem-sticky {
-  padding: 25rem 0;
+  padding-top: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 
 .problem-list {
@@ -5443,8 +5447,8 @@ html.lenis {
 }
 
 .problem-list-item {
-  width: 33.33%;
   display: flex;
+  flex: 0 1 50%;
   align-items: center;
   -moz-column-gap: 12rem;
        column-gap: 12rem;
@@ -5467,7 +5471,7 @@ html.lenis {
 .problem-list-label {
   color: var(--color-gray-700);
   font: var(--font-body-s);
-  max-width: 96rem;
+  max-width: 75%;
 }
 
 .problem-details {
@@ -6867,7 +6871,7 @@ html.lenis {
 
 .enhancements.markets-page {
   background: none;
-  padding: 24rem 0 101rem;
+  padding-top: 72rem;
 }
 
 .enhancements.markets-page .products-card-description {
@@ -6876,7 +6880,7 @@ html.lenis {
 }
 
 .delivery.markets-page {
-  padding: 146rem 0 28rem;
+  padding: 144rem 0 32rem;
 }
 
 .delivery.markets-page .delivery-card-icon img {
@@ -6933,7 +6937,7 @@ html.lenis {
 }
 
 .section-tab__content {
-  margin-top: 53rem;
+  margin-top: 20rem;
   max-width: 416rem;
 }
 
@@ -6961,7 +6965,7 @@ html.lenis {
 }
 
 .section-tab__blocks {
-  margin-top: 95rem;
+  margin-top: 40rem;
   margin-left: 58rem;
 }
 
@@ -12125,13 +12129,8 @@ html.lenis {
     padding: 25rem 0;
   }
 
-  .problem-list-item {
-    width: 50%;
-  }
-
   .problem-list-label {
     font: var(--font-body-s-mobile);
-    max-width: 80rem;
   }
 
   .problem-details {
@@ -12636,7 +12635,7 @@ html.lenis {
   }
 
   .enhancements.markets-page {
-    padding: 24rem 0 20rem;
+    padding-top: 24rem;
   }
 
   .enhancements.markets-page .enhancements-row {
