@@ -6,14 +6,16 @@ import { transition } from "../config/transitions.js"
 gsap.registerPlugin(ScrollTrigger)
 
 export const parallax = () => {
-    const els = document.querySelectorAll("[data-parallax]")
-    if (els.length) {
-        els.forEach((el) => {
-            new Ukiyo(el, {
-                scale: 1.2,
-                willChange: true,
+    if (window.matchMedia("(max-width: 768px)").matches) {
+        const els = document.querySelectorAll("[data-parallax]")
+        if (els.length) {
+            els.forEach((el) => {
+                new Ukiyo(el, {
+                    scale: 1.2,
+                    willChange: true,
+                })
             })
-        })
+        }
     }
 
     /* benefits */
