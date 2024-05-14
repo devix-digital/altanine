@@ -4969,7 +4969,7 @@ svg {
 }
 
 .growing-portfolio {
-  margin-bottom: 96rem;
+  margin: 96rem 0;
   padding: 0;
 }
 
@@ -6617,7 +6617,7 @@ html.lenis {
 }
 
 .innovation {
-  padding: 8rem 0 130rem;
+  padding: 96rem 0;
   position: relative;
 }
 
