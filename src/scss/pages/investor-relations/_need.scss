@@ -65,10 +65,4 @@
             margin-top: 32rem;
         }
     }
-
-    & + .faq {
-        @include minWidth($sm) {
-            margin-bottom: 72rem;
-        }
-    }
 }

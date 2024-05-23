@@ -1,11 +1,4 @@
-.about.investor {
-    margin-bottom: 144rem;
-    padding: 0;
-    background: none;
-    @include maxWidth($sm) {
-        margin-bottom: 80rem;
-    }
-
+.investor.our-strategy {
     .banner.section-banner {
         height: 556rem;
         @include maxWidth($sm) {

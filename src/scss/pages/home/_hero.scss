@@ -1,9 +1,4 @@
 .hero-home {
-    margin-bottom: 144rem;
-    @include maxWidth($sm) {
-        margin-bottom: 80rem;
-    }
-
     .bread-crumbs {
         li {
             span {

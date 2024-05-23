@@ -261,6 +261,10 @@ b {
   color: var(--color-gray-400);
 }
 
+.section {
+  margin-bottom: 144rem;
+}
+
 /*!
  * Bootstrap Grid v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -1927,6 +1931,7 @@ svg {
   border: none;
   height: 1rem;
   background-color: var(--color-gray-200);
+  margin: 72rem 0;
 }
 
 .preloader {
@@ -3115,10 +3120,6 @@ svg {
   margin: 5rem 0 -5rem;
 }
 
-.hero-home {
-  margin-bottom: 144rem;
-}
-
 .hero-home .bread-crumbs li span {
   color: var(--color-gray-300);
 }
@@ -3158,7 +3159,6 @@ svg {
 .about.home {
   padding: 0;
   background-color: transparent;
-  margin-bottom: 144rem;
 }
 
 .about.home .section-banner {
@@ -3191,7 +3191,7 @@ svg {
 }
 
 .faq {
-  padding: 60rem 0 50rem;
+  margin-bottom: 72rem;
 }
 
 .faq-sticky {
@@ -3210,13 +3210,12 @@ svg {
   margin: 142rem 0 0 64rem;
 }
 
-.overview.overview-one.home {
-  padding: 0;
+.faq.faq-investor {
   margin-bottom: 144rem;
 }
 
-.products {
-  padding: 146rem 0 100rem;
+.overview.overview-one.home {
+  padding: 0;
 }
 
 .products-sticky {
@@ -3288,10 +3287,6 @@ svg {
   max-width: 310rem;
 }
 
-.enhancements {
-  margin-bottom: 144rem;
-}
-
 .enhancements-sticky {
   padding: 32rem 0;
 }
@@ -3322,10 +3317,6 @@ svg {
 .enhancements .products-card-description {
   font: var(--font-body-b);
   color: var(--color-gray-700);
-}
-
-.benefits {
-  padding: 85rem 0 48rem;
 }
 
 .benefits-card {
@@ -3404,10 +3395,6 @@ svg {
   margin-top: 24rem;
 }
 
-.benefits.benefits-about {
-  padding: 55rem 0 76rem;
-}
-
 .benefits.benefits-about .section-subtitle {
   letter-spacing: -0.02em;
 }
@@ -3419,6 +3406,10 @@ svg {
 .benefits.benefits-about .benefits-card-title {
   color: var(--color-blue);
   margin: 12rem 0 9rem;
+}
+
+.benefits.product-benefits {
+  margin-bottom: 72rem;
 }
 
 .process {
@@ -3643,7 +3634,6 @@ svg {
 }
 
 .blog.home {
-  margin-bottom: 144rem;
   padding: 0;
 }
 
@@ -3658,10 +3648,6 @@ svg {
 .blog.home .btn-md {
   padding: 16rem 24rem;
   margin-right: 16rem;
-}
-
-.blog {
-  padding: 74rem 0 80rem;
 }
 
 .blog-action {
@@ -3714,7 +3700,7 @@ svg {
   padding: 97rem 0;
   background: linear-gradient(243deg, rgba(182, 198, 215, 0.2) 0%, rgba(0, 172, 234, 0.2) 100%);
   position: relative;
-  margin-top: 30rem;
+  margin: 30rem 0 0;
 }
 
 .content-banner {
@@ -3790,10 +3776,8 @@ svg {
 }
 
 .about {
-  padding: 144rem 0 144rem;
   background-color: var(--color-gray-200);
   border-radius: 14px;
-  margin-bottom: 68rem;
 }
 
 .about .section-title {
@@ -3904,8 +3888,6 @@ svg {
 }
 
 .about.about-page {
-  padding: 144rem 0 104rem;
-  margin-bottom: 0;
   background: transparent;
 }
 
@@ -3973,10 +3955,6 @@ svg {
 .about-media-small {
   width: 176rem;
   height: 174rem;
-}
-
-.team {
-  padding: 128rem 0 114rem;
 }
 
 .team .section-title {
@@ -4082,7 +4060,6 @@ svg {
   background-color: var(--color-gray-200);
   padding: 64rem 0 38rem;
   margin-top: 31rem;
-  margin-bottom: 144rem;
   border-radius: 14px;
   background-image: url(../img/abstract-bg-grey.jpg);
   background-size: cover;
@@ -4178,7 +4155,6 @@ svg {
 
 .enhancements-about {
   padding: 144rem 0 96rem;
-  margin: 44rem 0 0;
   overflow: hidden;
 }
 
@@ -4299,7 +4275,7 @@ svg {
 }
 
 .page-blog {
-  padding: 126rem 0 53rem;
+  margin-bottom: 72rem;
 }
 
 .page-blog .blog-wrap {
@@ -4311,7 +4287,7 @@ svg {
 }
 
 .blog-second {
-  padding: 74rem 0 20rem;
+  margin-bottom: 72rem;
 }
 
 .blog-second .h4,
@@ -4320,10 +4296,6 @@ svg {
 .blog-second .enhancements-metformin-card:nth-child(1) .enhancements-metformin-title,
 .enhancements-metformin-card:nth-child(1) .blog-second .enhancements-metformin-title {
   letter-spacing: -0.32rem;
-}
-
-.blog-third {
-  padding: 74rem 0 59rem;
 }
 
 .blog-third .h4,
@@ -4506,8 +4478,6 @@ svg {
 .enhancements-transparent {
   background-image: none;
   background-color: transparent;
-  margin: 0;
-  padding: 100rem 0 75rem;
 }
 
 .enhancements-transparent .products-card {
@@ -4528,7 +4498,6 @@ svg {
   background-color: var(--color-black);
   background-image: url(../img/abstract-bg.jpg);
   color: var(--color-gray-400);
-  margin: 44rem 0 44rem;
   padding: 144rem 0 110rem;
 }
 
@@ -4594,7 +4563,8 @@ svg {
 }
 
 .blog-details {
-  padding: 50rem 0 100rem;
+  padding: 50rem 0 0;
+  margin-top: -144rem;
 }
 
 .blog-details-info {
@@ -4754,7 +4724,7 @@ svg {
 .blog-last {
   background-color: var(--color-gray-200);
   padding: 144rem 0 110rem;
-  margin: 44rem 0 92rem;
+  margin: 44rem 0 -20rem;
   border-radius: 14px;
   background-image: url("../img/home/enhancements-abstract.svg");
   background-size: cover;
@@ -4781,10 +4751,6 @@ svg {
   top: 10rem;
 }
 
-.hero-investor {
-  margin-bottom: 144rem;
-}
-
 .hero-investor .bread-crumbs li:last-child {
   color: var(--color-gray-300);
 }
@@ -4802,33 +4768,31 @@ svg {
   padding-bottom: 41rem;
 }
 
-.about.investor {
-  margin-bottom: 144rem;
+.investor.our-mission {
   padding: 0;
   background: none;
 }
 
-.about.investor .banner.section-banner {
+.investor.our-strategy .banner.section-banner {
   height: 556rem;
 }
 
-.about.investor .about-desc {
+.investor.our-strategy .about-desc {
   margin: 40rem 0 0;
   max-width: 100%;
 }
 
-.about.investor .about-desc .h3 {
+.investor.our-strategy .about-desc .h3 {
   width: 480rem;
   margin-bottom: 16rem;
 }
 
-.about.investor .about-desc p {
+.investor.our-strategy .about-desc p {
   font: var(--font-body-b);
   margin-bottom: 24rem;
 }
 
 .benefits.investor {
-  margin-bottom: 144rem;
   padding: 0;
 }
 
@@ -4863,7 +4827,6 @@ svg {
 }
 
 .enhancements-investor {
-  margin-bottom: 144rem;
   padding: 64rem 0 40rem;
 }
 
@@ -4922,7 +4885,6 @@ svg {
 }
 
 .navigating-complexities {
-  margin-bottom: 144rem;
   padding: 193rem 0 235rem;
   position: relative;
   overflow: hidden;
@@ -5188,14 +5150,6 @@ html.lenis {
   color: var(--color-gray-300);
 }
 
-.hero-metformin + .faq {
-  padding-top: 132rem;
-}
-
-.delivery {
-  padding: 75rem 0 78rem;
-}
-
 .delivery-cards {
   display: flex;
   align-items: flex-start;
@@ -5242,7 +5196,6 @@ html.lenis {
 
 .enhancements-metformin {
   padding: 64rem 0 28rem;
-  margin: 23rem 0 73rem;
   overflow: hidden;
 }
 
@@ -5289,10 +5242,6 @@ html.lenis {
 
 .enhancements-metformin-card:nth-child(3) .enhancements-metformin-description {
   font: var(--font-body-s);
-}
-
-.overview {
-  padding: 74rem 0 120rem;
 }
 
 .overview-sticky {
@@ -5377,14 +5326,6 @@ html.lenis {
   max-width: 416rem;
 }
 
-.overview.overview-one {
-  padding: 72rem 0 145rem;
-}
-
-.overview.overview-two {
-  padding: 145rem 0 110rem;
-}
-
 .overview.overview-one .overview-sticky,
 .overview.overview-two .overview-sticky {
   justify-content: flex-start;
@@ -5421,7 +5362,7 @@ html.lenis {
 }
 
 .problem {
-  padding: 72rem 0;
+  margin-bottom: 72rem;
 }
 
 .problem hr {
@@ -5537,7 +5478,6 @@ html.lenis {
 
 .market.market-content.metformin {
   padding: 96rem 0;
-  margin: 0;
 }
 
 .market.market-content.metformin .market-content-wrapper {
@@ -5895,11 +5835,10 @@ html.lenis {
 
 .market.market-content .market-data {
   margin-top: 0;
-  min-height: 530rem;
   height: 100%;
+  width: 100%;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
   z-index: 2;
   position: relative;
 }
@@ -6405,10 +6344,6 @@ html.lenis {
      object-fit: cover;
 }
 
-.property {
-  padding: 54rem 0 62rem;
-}
-
 .property-media-id {
   display: flex;
   align-items: center;
@@ -6594,8 +6529,6 @@ html.lenis {
 }
 
 .about.innovation-page {
-  padding: 144rem 0 10rem;
-  margin-bottom: 0;
   background: transparent;
 }
 
@@ -6784,10 +6717,6 @@ html.lenis {
   z-index: -2;
 }
 
-.technology {
-  padding: 130rem 0 25rem 0;
-}
-
 .technology .section-subtitle {
   margin-top: 24rem;
 }
@@ -6871,7 +6800,6 @@ html.lenis {
 
 .enhancements.markets-page {
   background: none;
-  padding-top: 72rem;
 }
 
 .enhancements.markets-page .products-card-description {
@@ -6879,17 +6807,9 @@ html.lenis {
   color: var(--color-black);
 }
 
-.delivery.markets-page {
-  padding: 144rem 0 32rem;
-}
-
 .delivery.markets-page .delivery-card-icon img {
   -o-object-fit: contain;
      object-fit: contain;
-}
-
-.section-tab {
-  padding: 0 0 101rem 0;
 }
 
 .section-tab__row {
@@ -6987,7 +6907,7 @@ html.lenis {
 }
 
 .references {
-  padding: 10rem 0 50rem 0;
+  margin-bottom: 105rem;
 }
 
 .references__content p {
@@ -7982,10 +7902,6 @@ html.lenis {
 
   .enhancements-transparent .section-title {
     margin-top: -18rem;
-  }
-
-  .need + .faq {
-    margin-bottom: 72rem;
   }
 
   .investor-modal-content {
@@ -10674,6 +10590,10 @@ html.lenis {
     font: var(--font-body-u-mobile);
   }
 
+  .section {
+    margin-bottom: 80rem;
+  }
+
   html {
     font-size: 0.2777777778vw;
   }
@@ -10692,6 +10612,11 @@ html.lenis {
 
   .container {
     padding: 0 18rem;
+  }
+
+  .hr,
+  .blog-details-info hr {
+    margin: 40rem 0;
   }
 
   .header {
@@ -10967,20 +10892,12 @@ html.lenis {
     justify-content: space-between;
   }
 
-  .hero-home {
-    margin-bottom: 80rem;
-  }
-
   .hero-home .users {
     display: none;
   }
 
   .hero-home .video {
     min-height: 480rem;
-  }
-
-  .about.home {
-    margin-bottom: 80rem;
   }
 
   .about.home .about-desc .bold {
@@ -10996,7 +10913,7 @@ html.lenis {
   }
 
   .faq {
-    padding: 80rem 0 30rem;
+    margin-bottom: 40rem;
   }
 
   .faq-sticky {
@@ -11014,7 +10931,7 @@ html.lenis {
     height: 176rem;
   }
 
-  .overview.overview-one.home {
+  .faq.faq-investor {
     margin-bottom: 80rem;
   }
 
@@ -11024,10 +10941,6 @@ html.lenis {
 
   .mission .btn {
     width: 100%;
-  }
-
-  .products {
-    padding: 34rem 0;
   }
 
   .products-sticky {
@@ -11075,10 +10988,6 @@ html.lenis {
     margin-top: 0;
   }
 
-  .enhancements {
-    margin-bottom: 80rem;
-  }
-
   .enhancements-sticky {
     padding: 0;
   }
@@ -11105,10 +11014,6 @@ html.lenis {
     font: var(--font-body-b-mobile);
   }
 
-  .benefits {
-    padding: 28rem 0;
-  }
-
   .benefits-card {
     padding: 26rem;
     margin: 24rem 0 0;
@@ -11129,10 +11034,6 @@ html.lenis {
 
   .benefits-card-title {
     font: var(--font-body-l-mobile);
-  }
-
-  .benefits.benefits-about {
-    padding: 51rem 0 35rem;
   }
 
   .benefits.benefits-about .benefits-card {
@@ -11158,6 +11059,10 @@ html.lenis {
   .benefits.benefits-about .row:nth-of-type(2) .col-md-4:nth-of-type(3) .benefits-card-icon,
   .benefits.benefits-about .row:nth-of-type(2) .col-md-4:nth-of-type(3) .delivery-card-icon {
     margin: 0 0 36rem auto;
+  }
+
+  .benefits.product-benefits {
+    margin-bottom: 40rem;
   }
 
   .process {
@@ -11218,16 +11123,8 @@ html.lenis {
     padding: 15rem;
   }
 
-  .blog.home {
-    margin-bottom: 80rem;
-  }
-
   .blog.home .btn-md {
     width: 100%;
-  }
-
-  .blog {
-    padding: 8rem 0;
   }
 
   .blog-action {
@@ -11244,7 +11141,7 @@ html.lenis {
   }
 
   .content {
-    margin-top: 40rem;
+    margin: 30rem 0 0;
     padding: 40rem 0 0;
     overflow: hidden;
   }
@@ -11287,10 +11184,6 @@ html.lenis {
 
   .content.content-third {
     padding: 70rem 0 0;
-  }
-
-  .about {
-    padding: 80rem 0 31rem;
   }
 
   .about .section-title {
@@ -11338,10 +11231,6 @@ html.lenis {
     margin-bottom: 8rem;
   }
 
-  .about.about-page {
-    padding: 80rem 0 0;
-  }
-
   .about.about-page .section-banner {
     width: 312rem;
     height: 333.15rem;
@@ -11368,10 +11257,6 @@ html.lenis {
   .about-list-item {
     max-width: 100%;
     margin-bottom: 12rem;
-  }
-
-  .team {
-    padding: 40rem 0 18rem;
   }
 
   .team__item {
@@ -11431,9 +11316,8 @@ html.lenis {
   }
 
   .our-mission-core {
-    margin-top: 38rem;
     padding: 80rem 0 78rem;
-    margin-bottom: 0;
+    margin-bottom: 0rem;
   }
 
   .mission__core-item:nth-child(1) {
@@ -11556,11 +11440,15 @@ html.lenis {
   }
 
   .page-blog {
-    padding: 67rem 0;
+    margin-bottom: 40rem;
   }
 
   .page-blog .blog__item {
     margin-bottom: 22rem;
+  }
+
+  .blog-second {
+    margin-bottom: 40rem;
   }
 
   .blog-filter {
@@ -11639,10 +11527,6 @@ html.lenis {
     margin: 16rem 0 14rem;
   }
 
-  .enhancements-transparent {
-    padding: 54rem 0 28rem;
-  }
-
   .enhancements-transparent .products-card {
     margin-top: 24rem;
   }
@@ -11683,7 +11567,8 @@ html.lenis {
   }
 
   .blog-details {
-    padding: 27rem 0 35rem;
+    margin-top: -80rem;
+    padding: 27rem 0 0;
   }
 
   .blog-details-info h1,
@@ -11758,24 +11643,12 @@ html.lenis {
     padding-top: 25rem;
   }
 
-  .hero-investor {
-    margin-bottom: 80rem;
-  }
-
-  .about.investor {
-    margin-bottom: 80rem;
-  }
-
-  .about.investor .banner.section-banner {
+  .investor.our-strategy .banner.section-banner {
     height: 367rem;
   }
 
-  .about.investor .about-desc .h3 {
+  .investor.our-strategy .about-desc .h3 {
     width: 100%;
-  }
-
-  .benefits.investor {
-    margin-bottom: 80rem;
   }
 
   .benefits.investor .benefits-card {
@@ -11789,7 +11662,6 @@ html.lenis {
   }
 
   .enhancements-investor {
-    margin-bottom: 80rem;
     padding: 272rem 0 80rem;
   }
 
@@ -11815,7 +11687,6 @@ html.lenis {
   }
 
   .navigating-complexities {
-    margin-bottom: 80rem;
     padding: 80rem 0;
   }
 
@@ -11979,15 +11850,6 @@ html.lenis {
     margin-top: 32rem;
   }
 
-  .hero-metformin + .faq {
-    margin-bottom: 40rem;
-    padding: 0;
-  }
-
-  .hero-metformin {
-    margin-bottom: 80rem;
-  }
-
   .delivery {
     padding: 40rem 0;
   }
@@ -12021,8 +11883,6 @@ html.lenis {
 
   .enhancements-metformin {
     padding: 198rem 0 50rem;
-    margin: 0;
-    margin-bottom: 80rem;
   }
 
   .enhancements-metformin-banner {
@@ -12053,11 +11913,6 @@ html.lenis {
 
   .enhancements-metformin-card {
     padding-bottom: 10rem;
-  }
-
-  .overview {
-    padding: 40rem 0 0;
-    margin-bottom: 80rem;
   }
 
   .overview-banners {
@@ -12092,14 +11947,6 @@ html.lenis {
     font: var(--font-body-r-mobile);
   }
 
-  .overview.overview-one {
-    padding: 53rem 0 40rem;
-  }
-
-  .overview.overview-two {
-    padding: 0;
-  }
-
   .overview.overview-one .overview-sticky,
   .overview.overview-two .overview-sticky {
     margin-top: 0rem;
@@ -12113,8 +11960,7 @@ html.lenis {
   }
 
   .problem {
-    padding: 0;
-    margin-bottom: 80rem;
+    margin-bottom: 40rem;
   }
 
   .problem hr {
@@ -12492,10 +12338,6 @@ html.lenis {
     width: 200rem;
   }
 
-  .property {
-    padding: 46rem 0;
-  }
-
   .property .row {
     flex-direction: column-reverse;
   }
@@ -12630,24 +12472,8 @@ html.lenis {
     margin-bottom: 36px;
   }
 
-  .technology {
-    padding: 50rem 0 15rem 0;
-  }
-
-  .enhancements.markets-page {
-    padding-top: 24rem;
-  }
-
   .enhancements.markets-page .enhancements-row {
     padding: 0;
-  }
-
-  .delivery.markets-page {
-    padding: 72rem 0 28rem;
-  }
-
-  .section-tab {
-    padding: 0 0 20rem 0;
   }
 
   .section-tab__row {

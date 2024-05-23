@@ -152,6 +152,10 @@ svg {
     border: none;
     height: 1rem;
     background-color: var(--color-gray-200);
+    margin: 72rem 0;
+    @include maxWidth($sm) {
+        margin: 40rem 0;
+    }
 }
 
 .preloader {

@@ -1,27 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta
+            name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        />
+        <title>Altanine</title>
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="theme-color" content="#ffffff" />
+        <meta name="msapplication-navbutton-color" content="#ffffff" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff" />
+        <link
+            rel="preload"
+            href="fonts/Inter-Regular.woff"
+            as="font"
+            type="font/woff"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="fonts/Inter-Regular.woff2"
+            as="font"
+            type="font/woff2"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="fonts/Inter-Medium.woff"
+            as="font"
+            type="font/woff"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="fonts/Inter-Medium.woff2"
+            as="font"
+            type="font/woff2"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="fonts/Inter-Bold.woff"
+            as="font"
+            type="font/woff"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="fonts/Inter-Bold.woff2"
+            as="font"
+            type="font/woff2"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
 
-<head>
-	<meta name="viewport"
-		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<title>Altanine</title>
-	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-	<meta name="msapplication-TileColor" content="#ffffff" />
-	<meta name="theme-color" content="#ffffff">
-	<meta name="msapplication-navbutton-color" content="#ffffff" />
-	<meta name="apple-mobile-web-app-status-bar-style" content="#ffffff" />
-	<link rel="preload" href="fonts/Inter-Regular.woff" as="font" type="font/woff" crossorigin="anonymous" />
-	<link rel="preload" href="fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
-	<link rel="preload" href="fonts/Inter-Medium.woff" as="font" type="font/woff" crossorigin="anonymous" />
-	<link rel="preload" href="fonts/Inter-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
-	<link rel="preload" href="fonts/Inter-Bold.woff" as="font" type="font/woff" crossorigin="anonymous" />
-	<link rel="preload" href="fonts/Inter-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
-	<link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-	<main class="wrapper" id="wrapper">
-		<div class="preloader" id="preloader"></div> <header class="header" id="header">
+    <body>
+        <main class="wrapper" id="wrapper">
+            <div class="preloader" id="preloader"></div>
+            <header class="header" id="header">
     <div class="header-panel">
         <div class="header-panel-logo">
             <a href="/" class="logo">
@@ -86,8 +124,10 @@
         </div>
     </div>
 </header>
- <div data-router-wrapper>
-			<div data-router-view="default"> <section class="section hero hero-innovation">
+
+            <div data-router-wrapper>
+                <div data-router-view="default">
+                    <section class="section hero hero-innovation">
 	<div class="bread-crumbs">
 		<div class="container">
 			<ul>
@@ -116,18 +156,22 @@
 		</div>
 	</div>
 </section>
-				<section class="section about innovation-page">
-	<div class="container">
-		<div class="row">
-			<div class="col-12">
-				<p class="font-uppercase color-gradient section-subtitle">Our Focus</p>
-				<h3 class="h3 section-title">We are committed to introducing that innovations that revolutionize widely prescribed pharmaceuticals with <i>advanced delivery mechanisms to increase efficacy and accessibility.</i> </h3>
-			</div>
-		</div>
-	</div>
-</section> <div class="container">
-					<hr class="hr" />
-				</div> <section class="section benefits benefits-about">
+                    <section class="section about innovation-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <p class="font-uppercase color-gradient section-subtitle">Our Focus</p>
+                <h3 class="h3">
+                    We are committed to introducing that innovations that revolutionize widely
+                    prescribed pharmaceuticals with
+                    <i>advanced delivery mechanisms to increase efficacy and accessibility.</i>
+                </h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+                    <section class="section benefits benefits-about">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-5">
@@ -173,7 +217,8 @@
 			</div>
 		</div>
 	</div>
-</section> <section class="section innovation">
+</section>
+                    <section class="section innovation">
     <div class="container">
         <div class="row">
             <div class="col-md-5">
@@ -291,7 +336,7 @@
     </div>
 </section>
 
-				<section class="section products innovation-page">
+                    <section class="section products innovation-page">
   <div class="container">
     <div class="row">
       <div class="col-md-5">
@@ -397,7 +442,8 @@
       </div>
     </div>
   </div>
-</section> <section class="section technology">
+</section>
+                    <section class="section technology">
   <div class="container">
     <div class="row">
       <div class="col-md-5">
@@ -443,39 +489,55 @@
     </div>
   </div>
 </section>
-				<section class="section overview overview-one">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-5">
-				<div class="overview-sticky">
-					<p class="font-uppercase color-gradient section-subtitle">Advancing Patient Care</p>
-					<h3 class="h3 section-title">Altanine’s proprietary process increases <i>drug’s efficacy and improve patient experience</i></h3>
-					<div class="overview-detail">
-						<ul>
-							<li>Patient-friendly treatment</li>
-							<li>Special patented enteric coating for targeted release</li>
-							<li>Enhanced bioavailability of the medication</li>
-							<li>Improved body absorption</li>
-							<li>Reduced gastrointestinal side effects</li>
-							<li>Lowers the necessary dosage of Metformin</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-7">
-				<div class="overview-banners">
-					<div class="section-banner">
-						<picture>
-							<source srcset="../../img/home/overview-banner-3.png" type="image/png">
-							<source srcset="../../img/home/overview-banner-3.webp" type="image/webp">
-							<img src="../../img/home/overview-banner-3.png" class="overview-banners-image">
-						</picture>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section> <section class="section content content-second">
+                    <section class="section overview overview-one">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="overview-sticky">
+                    <p class="font-uppercase color-gradient section-subtitle">
+                        Advancing Patient Care
+                    </p>
+                    <h3 class="h3 section-title">
+                        Altanine’s proprietary process increases
+                        <i>drug’s efficacy and improve patient experience</i>
+                    </h3>
+                    <div class="overview-detail">
+                        <ul>
+                            <li>Patient-friendly treatment</li>
+                            <li>Special patented enteric coating for targeted release</li>
+                            <li>Enhanced bioavailability of the medication</li>
+                            <li>Improved body absorption</li>
+                            <li>Reduced gastrointestinal side effects</li>
+                            <li>Lowers the necessary dosage of Metformin</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="overview-banners">
+                    <div class="section-banner">
+                        <picture>
+                            <source
+                                srcset="../../img/home/overview-banner-3.png"
+                                type="image/png"
+                            />
+                            <source
+                                srcset="../../img/home/overview-banner-3.webp"
+                                type="image/webp"
+                            />
+                            <img
+                                src="../../img/home/overview-banner-3.png"
+                                class="overview-banners-image"
+                            />
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+                    <section class="section content content-second">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6">
@@ -511,8 +573,10 @@
 			<img src="../../img/home/content-1.png" class="content-banner-image">
 		</picture>
 	</div>
-</section> </div>
-		</div> <footer class="footer">
+</section>
+                </div>
+            </div>
+            <footer class="footer">
     <div class="footer-abstract">
         <img src="../../img/footer-abstract.svg" alt="Alt" />
     </div>
@@ -658,7 +722,8 @@
         </div>
     </div>
 </footer>
- <div class="modal" id="investor-modal">
+
+            <div class="modal" id="investor-modal">
 	<div class="modal-bg"></div>
 	<div class="modal-close" data-modal-close="#investor-modal"></div>
 	<div class="modal-box" data-lenis-prevent>
@@ -711,7 +776,7 @@
 		</div>
 	</div>
 </div>
-		<div class="modal" id="thanks">
+            <div class="modal" id="thanks">
 	<div class="modal-bg"></div>
 	<div class="modal-close" data-modal-close="#thanks"></div>
 	<div class="modal-box" data-lenis-prevent>
@@ -732,8 +797,7 @@
 		</div>
 	</div>
 </div>
-	</main>
-	<script src="js/app.min.js"></script>
-</body>
-
+        </main>
+        <script src="js/app.min.js"></script>
+    </body>
 </html>

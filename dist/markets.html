@@ -1,27 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta
+            name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        />
+        <title>Altanine</title>
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="theme-color" content="#ffffff" />
+        <meta name="msapplication-navbutton-color" content="#ffffff" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff" />
+        <link
+            rel="preload"
+            href="fonts/Inter-Regular.woff"
+            as="font"
+            type="font/woff"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="fonts/Inter-Regular.woff2"
+            as="font"
+            type="font/woff2"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="fonts/Inter-Medium.woff"
+            as="font"
+            type="font/woff"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="fonts/Inter-Medium.woff2"
+            as="font"
+            type="font/woff2"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="fonts/Inter-Bold.woff"
+            as="font"
+            type="font/woff"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="fonts/Inter-Bold.woff2"
+            as="font"
+            type="font/woff2"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
 
-<head>
-	<meta name="viewport"
-		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<title>Altanine</title>
-	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-	<meta name="msapplication-TileColor" content="#ffffff" />
-	<meta name="theme-color" content="#ffffff">
-	<meta name="msapplication-navbutton-color" content="#ffffff" />
-	<meta name="apple-mobile-web-app-status-bar-style" content="#ffffff" />
-	<link rel="preload" href="fonts/Inter-Regular.woff" as="font" type="font/woff" crossorigin="anonymous" />
-	<link rel="preload" href="fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
-	<link rel="preload" href="fonts/Inter-Medium.woff" as="font" type="font/woff" crossorigin="anonymous" />
-	<link rel="preload" href="fonts/Inter-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
-	<link rel="preload" href="fonts/Inter-Bold.woff" as="font" type="font/woff" crossorigin="anonymous" />
-	<link rel="preload" href="fonts/Inter-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
-	<link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-	<main class="wrapper" id="wrapper">
-		<div class="preloader" id="preloader"></div> <header class="header" id="header">
+    <body>
+        <main class="wrapper" id="wrapper">
+            <div class="preloader" id="preloader"></div>
+            <header class="header" id="header">
     <div class="header-panel">
         <div class="header-panel-logo">
             <a href="/" class="logo">
@@ -86,8 +124,10 @@
         </div>
     </div>
 </header>
- <div data-router-wrapper>
-			<div data-router-view="default"> <section class="section hero hero-markets">
+
+            <div data-router-wrapper>
+                <div data-router-view="default">
+                    <section class="section hero hero-markets">
 	<div class="bread-crumbs">
 		<div class="container">
 			<ul>
@@ -116,7 +156,7 @@
 		</div>
 	</div>
 </section>
-				<section class="section delivery markets-page">
+                    <section class="section delivery markets-page">
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
@@ -158,9 +198,8 @@
 			</div>
 		</div>
 	</div>
-</section> <div class="container">
-					<hr class="hr" />
-				</div> <section class="section enhancements markets-page">
+</section>
+                    <section class="section enhancements markets-page">
     <div class="container">
         <div class="row">
             <div class="col-md-5">
@@ -227,7 +266,8 @@
         </div>
     </div>
 </section>
- <section class="section section-tab">
+
+                    <section class="section section-tab">
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -476,7 +516,7 @@
     </div>
   </div>
 </section>
-				<section class="section references">
+                    <section class="section references">
   <div class="container ">
     <div class="row">
       <div class="col-12">
@@ -538,7 +578,8 @@
       </div>
     </div>
   </div>
-</section> <section class="section content content-second">
+</section>
+                    <section class="section content content-second">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6">
@@ -574,8 +615,10 @@
 			<img src="../../img/home/content-1.png" class="content-banner-image">
 		</picture>
 	</div>
-</section> </div>
-		</div> <footer class="footer">
+</section>
+                </div>
+            </div>
+            <footer class="footer">
     <div class="footer-abstract">
         <img src="../../img/footer-abstract.svg" alt="Alt" />
     </div>
@@ -721,7 +764,8 @@
         </div>
     </div>
 </footer>
- <div class="modal" id="investor-modal">
+
+            <div class="modal" id="investor-modal">
 	<div class="modal-bg"></div>
 	<div class="modal-close" data-modal-close="#investor-modal"></div>
 	<div class="modal-box" data-lenis-prevent>
@@ -774,7 +818,7 @@
 		</div>
 	</div>
 </div>
-		<div class="modal" id="thanks">
+            <div class="modal" id="thanks">
 	<div class="modal-bg"></div>
 	<div class="modal-close" data-modal-close="#thanks"></div>
 	<div class="modal-box" data-lenis-prevent>
@@ -795,8 +839,7 @@
 		</div>
 	</div>
 </div>
-	</main>
-	<script src="js/app.min.js"></script>
-</body>
-
+        </main>
+        <script src="js/app.min.js"></script>
+    </body>
 </html>

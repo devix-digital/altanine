@@ -1,10 +1,6 @@
 .enhancements {
     &.markets-page {
         background: none;
-        padding-top: 72rem;
-        @include maxWidth($sm) {
-            padding-top: 24rem;
-        }
         .products-card-description {
             font: var(--font-body-b);
             color: var(--color-black);

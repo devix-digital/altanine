@@ -1,9 +1,4 @@
 .section-tab {
-    padding: 0 0 101rem 0;
-    @include maxWidth($sm) {
-        padding: 0 0 20rem 0;
-    }
-
     &__row {
         display: flex;
         @include maxWidth($sm) {

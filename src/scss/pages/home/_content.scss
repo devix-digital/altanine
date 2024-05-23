@@ -3,10 +3,10 @@
     padding: 97rem 0;
     background: linear-gradient(243deg, rgba(182, 198, 215, 0.2) 0%, rgba(0, 172, 234, 0.2) 100%);
     position: relative;
-    margin-top: 30rem;
+    margin: 30rem 0 0;
 
     @include maxWidth($sm) {
-        margin-top: 40rem;
+        margin: 30rem 0 0;
         padding: 40rem 0 0;
         overflow: hidden;
     }

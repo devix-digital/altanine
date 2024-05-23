@@ -1,10 +1,4 @@
 .benefits {
-    padding: 85rem 0 48rem;
-
-    @include maxWidth($sm) {
-        padding: 28rem 0;
-    }
-
     &-card {
         background-color: var(--color-white);
         padding: 142rem 32rem 32rem;
@@ -99,7 +93,6 @@
         }
     }
     &.benefits-about {
-        padding: 55rem 0 76rem;
         .section-subtitle {
             letter-spacing: -0.02em;
         }
@@ -113,7 +106,6 @@
             }
         }
         @include maxWidth($sm) {
-            padding: 51rem 0 35rem;
             .benefits {
                 &-card {
                     height: auto;
@@ -143,6 +135,12 @@
                     }
                 }
             }
+        }
+    }
+    &.product-benefits {
+        margin-bottom: 72rem;
+        @include maxWidth($sm) {
+            margin-bottom: 40rem;
         }
     }
 }

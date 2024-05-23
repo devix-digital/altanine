@@ -1,49 +1,48 @@
-.enhancements-dark{
-	background-color: var(--color-black);
-	background-image: url(../img/abstract-bg.jpg);
-	color: var(--color-gray-400);
-	margin: 44rem 0 44rem;
-	padding: 144rem 0 110rem;
-	
-		.section-title{
-			color: var(--color-white);
-		}
-	
-		.products-card{
-				&-title{
-					color: var(--color-white);
-					
-						@include maxWidth($sm){
-							max-width: 80%;
-						}
-				}
-				&-description{
-					color: var(--color-gray-400);
-				}
-		}
-	
-		.enhancements-sticky{
-			padding: 80rem 0;
-			
-				@include maxWidth($sm){
-					padding: 0;
-				}
-		}
-	
-		.section{
-				&-title{
-					margin: 16rem 0 32rem;
-				}
-				&-description{
-					max-width: 416rem;
-					
-						&:not(:last-child){
-							margin-bottom: 16rem;
-							
-								@include maxWidth($sm){
-									margin-bottom: 8rem;
-								}
-						}
-				}
-		}
+.enhancements-dark {
+    background-color: var(--color-black);
+    background-image: url(../img/abstract-bg.jpg);
+    color: var(--color-gray-400);
+    padding: 144rem 0 110rem;
+
+    .section-title {
+        color: var(--color-white);
+    }
+
+    .products-card {
+        &-title {
+            color: var(--color-white);
+
+            @include maxWidth($sm) {
+                max-width: 80%;
+            }
+        }
+        &-description {
+            color: var(--color-gray-400);
+        }
+    }
+
+    .enhancements-sticky {
+        padding: 80rem 0;
+
+        @include maxWidth($sm) {
+            padding: 0;
+        }
+    }
+
+    .section {
+        &-title {
+            margin: 16rem 0 32rem;
+        }
+        &-description {
+            max-width: 416rem;
+
+            &:not(:last-child) {
+                margin-bottom: 16rem;
+
+                @include maxWidth($sm) {
+                    margin-bottom: 8rem;
+                }
+            }
+        }
+    }
 }

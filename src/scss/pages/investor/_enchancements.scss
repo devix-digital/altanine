@@ -1,9 +1,7 @@
 .enhancements-investor {
-    margin-bottom: 144rem;
     padding: 64rem 0 40rem;
 
     @include maxWidth($sm) {
-        margin-bottom: 80rem;
         padding: 272rem 0 80rem;
     }
     &-banner {

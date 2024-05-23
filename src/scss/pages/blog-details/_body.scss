@@ -1,8 +1,10 @@
 .blog-details {
-    padding: 50rem 0 100rem;
+    padding: 50rem 0 0;
+    margin-top: -144rem;
 
     @include maxWidth($sm) {
-        padding: 27rem 0 35rem;
+        margin-top: -80rem;
+        padding: 27rem 0 0;
     }
 
     &-info {
@@ -213,7 +215,7 @@
 .blog-last {
     background-color: var(--color-gray-200);
     padding: 144rem 0 110rem;
-    margin: 44rem 0 92rem;
+    margin: 44rem 0 -20rem;
     border-radius: 14px;
     background-image: url("../img/home/enhancements-abstract.svg");
     background-size: cover;

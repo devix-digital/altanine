@@ -1,9 +1,5 @@
 .benefits.investor {
-    margin-bottom: 144rem;
     padding: 0;
-    @include maxWidth($sm) {
-        margin-bottom: 80rem;
-    }
 
     .section-subtitle {
         margin: 0 0 16rem;

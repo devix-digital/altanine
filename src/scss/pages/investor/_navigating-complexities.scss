@@ -1,5 +1,4 @@
 .navigating-complexities {
-    margin-bottom: 144rem;
     padding: 193rem 0 235rem;
     position: relative;
     overflow: hidden;
@@ -10,7 +9,6 @@
     }
 
     @include maxWidth($sm) {
-        margin-bottom: 80rem;
         padding: 80rem 0;
     }
 

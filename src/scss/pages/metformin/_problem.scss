@@ -1,11 +1,8 @@
 .problem {
-    padding: 72rem 0;
-
+    margin-bottom: 72rem;
     @include maxWidth($sm) {
-        padding: 0;
-        margin-bottom: 80rem;
+        margin-bottom: 40rem;
     }
-
     hr {
         height: 1rem;
         background: var(--color-gray-200);

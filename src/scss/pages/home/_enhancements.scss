@@ -1,10 +1,4 @@
 .enhancements {
-    margin-bottom: 144rem;
-
-    @include maxWidth($sm) {
-        margin-bottom: 80rem;
-    }
-
     &-sticky {
         padding: 32rem 0;
         @include maxWidth($sm) {

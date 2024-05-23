@@ -1,10 +1,4 @@
 .team {
-    padding: 128rem 0 114rem;
-
-    @include maxWidth($sm) {
-        padding: 40rem 0 18rem;
-    }
-
     .section {
         &-title {
             margin: 16rem 0 23rem;

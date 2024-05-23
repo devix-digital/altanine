@@ -1,10 +1,4 @@
 .overview {
-    padding: 74rem 0 120rem;
-    @include maxWidth($sm) {
-        padding: 40rem 0 0;
-        margin-bottom: 80rem;
-    }
-
     &-sticky {
         height: 100%;
         display: flex;
@@ -109,18 +103,6 @@
             @include maxWidth($sm) {
                 font: var(--font-body-r-mobile);
             }
-        }
-    }
-    &.overview-one {
-        padding: 72rem 0 145rem;
-        @include maxWidth($sm) {
-            padding: 53rem 0 40rem;
-        }
-    }
-    &.overview-two {
-        padding: 145rem 0 110rem;
-        @include maxWidth($sm) {
-            padding: 0;
         }
     }
 

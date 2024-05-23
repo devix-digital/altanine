@@ -11,7 +11,6 @@
 
     &.market-content.metformin {
         padding: 96rem 0;
-        margin: 0;
         @include maxWidth($sm) {
             padding-top: 80rem;
             margin-bottom: 80rem;

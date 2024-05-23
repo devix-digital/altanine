@@ -6,17 +6,4 @@
             }
         }
     }
-
-    & + .faq {
-        padding-top: 132rem;
-
-        @include maxWidth($sm) {
-            margin-bottom: 40rem;
-            padding: 0;
-        }
-    }
-
-    @include maxWidth($sm) {
-        margin-bottom: 80rem;
-    }
 }
