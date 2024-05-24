@@ -60,7 +60,7 @@
 
     .section {
         &-banner {
-            margin: 48rem 0 46rem -56rem;
+            margin: 48rem 0 46rem -48rem;
             height: 373rem;
 
             @include maxWidth($sm) {

@@ -3207,7 +3207,7 @@ svg {
 .faq .section-banner {
   width: 240rem;
   height: 280rem;
-  margin: 142rem 0 0 64rem;
+  margin: 64rem 0 0 89rem;
 }
 
 .faq.faq-investor {
@@ -3788,7 +3788,7 @@ svg {
   width: 472rem;
   height: 504rem;
   border-radius: 8px;
-  margin-left: -56rem;
+  margin-left: -48rem;
 }
 
 .about .section-banner-small {
@@ -5190,7 +5190,7 @@ html.lenis {
 }
 
 .delivery .section-banner {
-  margin: 48rem 0 46rem -56rem;
+  margin: 48rem 0 46rem -48rem;
   height: 373rem;
 }
 
@@ -6787,6 +6787,7 @@ html.lenis {
 }
 
 .innovation-page.products {
+  padding: 144rem 0;
   position: relative;
   background-image: url(../img/innovation/bg.jpg);
   background-size: cover;
@@ -8792,8 +8793,10 @@ html.lenis {
   }
 
   .problem .section-banner:not(.section-banner-small) {
-    height: 631rem;
-    margin-left: -56rem;
+    height: 500rem;
+    margin-left: -48rem;
+    position: sticky;
+    top: 0;
   }
 
   .enhancements-line.enhancements .enhancements-metformin-cards:after {
@@ -10939,7 +10942,7 @@ html.lenis {
     width: 100%;
   }
 
-  .mission .btn {
+  .home.mission .btn {
     width: 100%;
   }
 
