@@ -6550,7 +6550,6 @@ html.lenis {
 }
 
 .innovation {
-  padding: 96rem 0;
   position: relative;
 }
 
@@ -10542,10 +10541,6 @@ html.lenis {
 }
 
 @media only screen and (max-width: 1400px) {
-  .innovation {
-    padding: 8rem 0 30rem;
-  }
-
   .innovation .section-title {
     margin-right: 0;
   }
@@ -12377,10 +12372,6 @@ html.lenis {
 
   .pnf-box .section-description {
     margin: 24rem 0;
-  }
-
-  .about.innovation-page {
-    padding: 80rem 0 0;
   }
 
   .about.innovation-page .section-banner {

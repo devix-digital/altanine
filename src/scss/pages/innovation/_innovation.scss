@@ -1,9 +1,5 @@
 .innovation {
-    padding: 96rem 0;
     position: relative;
-    @include maxWidth($xl) {
-        padding: 8rem 0 30rem;
-    }
     .section {
         &-subtitle {
             margin-top: 24rem;
