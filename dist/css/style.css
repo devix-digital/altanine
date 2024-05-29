@@ -6716,6 +6716,10 @@ html.lenis {
   z-index: -2;
 }
 
+.technology .section-title {
+  margin-bottom: 64rem;
+}
+
 .technology .section-subtitle {
   margin-top: 24rem;
 }
@@ -6774,15 +6778,27 @@ html.lenis {
   padding-left: 24rem;
 }
 
-.technology-card ul li:before {
+.technology-card.disadventages ul li:before {
   position: absolute;
   content: "";
   left: 0;
   top: 8rem;
-  width: 8rem;
-  height: 8rem;
-  border-radius: 50%;
-  background: var(--color-primary-gradient);
+  width: 10rem;
+  height: 2rem;
+  background-color: var(--color-error);
+}
+
+.technology-card.adventages ul li:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 8rem;
+  width: 10rem;
+  height: 10rem;
+  background-image: url("../img/innovation/plus.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .innovation-page.products {
