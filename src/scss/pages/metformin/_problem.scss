@@ -1,7 +1,7 @@
 .problem {
-    margin-bottom: 72rem;
+    margin-bottom: 144rem;
     @include maxWidth($sm) {
-        margin-bottom: 40rem;
+        margin-bottom: 80rem;
     }
     hr {
         height: 1rem;

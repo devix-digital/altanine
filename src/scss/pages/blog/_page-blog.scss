@@ -1,7 +1,7 @@
 .page-blog {
-    margin-bottom: 72rem;
+    margin-bottom: 144rem;
     @include maxWidth($sm) {
-        margin-bottom: 40rem;
+        margin-bottom: 80rem;
     }
 
     .blog {
@@ -20,9 +20,9 @@
 }
 .blog {
     &-second {
-        margin-bottom: 72rem;
+        margin-bottom: 144rem;
         @include maxWidth($sm) {
-            margin-bottom: 40rem;
+            margin-bottom: 80rem;
         }
 
         .h4 {
