@@ -103,20 +103,24 @@
         }
 
         &-banner {
-            border-radius: 8px;
+            img {
+                border-radius: 8px;
+            }
 
             &:not(.section-banner-small) {
                 @include minWidth($sm + 1) {
                     height: 500rem;
                     margin-left: -48rem;
-                    position: sticky;
+                    padding-top: 40rem;
                     top: 0;
+
+                    position: sticky;
                 }
             }
 
             &-small {
                 position: absolute;
-                top: 0;
+                top: 40rem;
                 right: 16rem;
                 width: 176rem;
                 height: 174rem;

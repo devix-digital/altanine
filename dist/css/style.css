@@ -5446,13 +5446,13 @@ html.lenis {
   max-width: 416rem;
 }
 
-.problem .section-banner {
+.problem .section-banner img {
   border-radius: 8px;
 }
 
 .problem .section-banner-small {
   position: absolute;
-  top: 0;
+  top: 40rem;
   right: 16rem;
   width: 176rem;
   height: 174rem;
@@ -8810,8 +8810,9 @@ html.lenis {
   .problem .section-banner:not(.section-banner-small) {
     height: 500rem;
     margin-left: -48rem;
-    position: sticky;
+    padding-top: 40rem;
     top: 0;
+    position: sticky;
   }
 
   .enhancements-line.enhancements .enhancements-metformin-cards:after {
