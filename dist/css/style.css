@@ -11475,6 +11475,10 @@ html.lenis {
     padding-top: 14rem;
   }
 
+  .team .carousel-cursor {
+    display: none;
+  }
+
   .team .team-wrap {
     margin: 0;
     flex-direction: column;

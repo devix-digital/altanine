@@ -156,9 +156,12 @@
             padding: 0 24rem;
         }
     }
-    .blog-carousel {
-        @include maxWidth($sm) {
+    @include maxWidth($sm) {
+        .blog-carousel {
             padding-top: 14rem;
+        }
+        .carousel-cursor {
+            display: none;
         }
     }
     @include maxWidth($sm) {
