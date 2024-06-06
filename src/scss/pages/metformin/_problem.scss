@@ -119,11 +119,12 @@
             }
 
             &-small {
-                position: absolute;
-                top: 40rem;
+                position: sticky;
+                top: 96rem;
                 right: 16rem;
                 width: 176rem;
                 height: 174rem;
+                padding-top: 40rem;
 
                 @include maxWidth($sm) {
                     width: 100%;

@@ -13,6 +13,7 @@ import { initModal } from "../../modules/modal/initModal.js"
 import { initHorizontalScroll } from "../../modules/scroll/horizontalScroll.js"
 import { toggleTab } from "../../common/tabs.js"
 import { stickyHeader } from "../../common/stickyHeader.js"
+import { initTeamCarousel } from "../../modules/carousels/teamCarousel.js"
 
 class DefaultRenderer extends Highway.Renderer {
     onEnter() {
@@ -22,6 +23,7 @@ class DefaultRenderer extends Highway.Renderer {
         initAccordionCore()
         initHeroCarousel()
         initBlogCarousel()
+        initTeamCarousel()
         initProcessCarousel()
         if (window.innerWidth > 767) {
             initHorizontalScroll()
