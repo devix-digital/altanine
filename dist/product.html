@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Altanine</title>
+	
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+	
+	<meta name="msapplication-TileColor" content="#ffffff" />
+	<meta name="theme-color" content="#ffffff">
+	<meta name="msapplication-navbutton-color" content="#ffffff" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="#ffffff" />
+	
+	<link rel="preload" href="fonts/Inter-Regular.woff" as="font" type="font/woff" crossorigin="anonymous" />
+	<link rel="preload" href="fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+	<link rel="preload" href="fonts/Inter-Medium.woff" as="font" type="font/woff" crossorigin="anonymous" />
+	<link rel="preload" href="fonts/Inter-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+	<link rel="preload" href="fonts/Inter-Bold.woff" as="font" type="font/woff" crossorigin="anonymous" />
+	<link rel="preload" href="fonts/Inter-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+	
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<main class="wrapper" id="wrapper">
+	<div class="preloader" id="preloader"></div>
+	<header class="header" id="header">
+    <div class="header-panel">
+        <div class="header-panel-logo">
+            <a href="/" class="logo">
+                <img src="../img/logo.svg" alt="Altanine" />
+            </a>
+            <div class="header-contacts">
+                <a href="tel:+66 666 66 66 666" class="header-contacts-item">+66 666 66 66 666</a>
+                <a href="mailto:info@altanine.com" class="header-contacts-item"
+                    >info@altanine.com</a
+                >
+            </div>
+        </div>
+        <div class="header-panel-nav">
+            <nav>
+                <ul>
+                    <li><a href="about-us.html">About us</a></li>
+                    <li><a href="innovation.html">Innovation</a></li>
+                    <li><a href="markets.html">Markets</a></li>
+                    <li>
+                        <a href="metformin.html">Medicines</a>
+                        <ul>
+                            <li><a href="metformin.html">Metformin</a></li>
+                            <li><a href="sildenafil.html">Sildenafil</a></li>
+                            <li><a href="sumatriptan.html">Sumatriptan</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="investor.html">Investor relations</a></li>
+                    <li><a href="blog.html">News</a></li>
+                </ul>
+            </nav>
+            <div class="header-contacts">
+                <a href="tel:+66 666 66 66 666" class="header-contacts-item">+66 666 66 66 666</a>
+                <a href="mailto:info@altanine.com" class="header-contacts-item"
+                    >info@altanine.com</a
+                >
+            </div>
+            <a href="contact-us.html" class="btn btn-gradient">
+                <span class="btn-bg"></span>
+                <span class="btn-labels">
+                    <span class="btn-labels-item">Contact us</span>
+                    <span class="btn-labels-item">Contact us</span>
+                    <span class="btn-labels-item">Contact us</span>
+                </span>
+            </a>
+        </div>
+        <div class="header-panel-action">
+            <a href="contact-us.html" class="btn btn-gradient">
+                <span class="btn-bg"></span>
+                <span class="btn-labels">
+                    <span class="btn-labels-item">Contact us</span>
+                    <span class="btn-labels-item">Contact us</span>
+                    <span class="btn-labels-item">Contact us</span>
+                </span>
+            </a>
+            <button class="burger">
+                <span class="burger-box">
+                    <span class="burger-box-arrow"></span>
+                    <span class="burger-box-arrow"></span>
+                    <span class="burger-box-arrow"></span>
+                </span>
+            </button>
+        </div>
+    </div>
+</header>
+
+	<div data-router-wrapper>
+		<div data-router-view="default">
+			<section class="section hero hero-product">
+    <div class="bread-crumbs">
+        <div class="container">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><span>Product</span></li>
+            </ul>
+        </div>
+    </div>
+    <div class="hero-banner" id="hero-banner">
+        <div class="hero-banner-item">
+            <picture><source srcset="img/product/hero.webp" type="image/webp"><img src="img/product/hero.jpg" /></picture>
+            <picture>
+                <source srcset="img/product/hero.webp" type="image/webp" />
+                <source srcset="img/product/hero.jpg" type="image/jpeg" />
+                <img src="img/product/hero.jpg" />
+            </picture>
+        </div>
+    </div>
+    <div class="hero-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="hero-subtitle font-uppercase color-white" data-load-order>
+                        Products & Technology
+                    </p>
+                    <h1 class="hero-title h1" data-split-text>Meeting unmet patient needs</h1>
+                    <p class="hero-description" data-load-order>
+                        Altanine addresses global medical needs with innovative science, enhancing
+                        Metformin delivery for affordable access to advanced therapies for millions
+                        worldwide.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+			<section class="section products">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="products-sticky">
+                    <p class="font-uppercase color-gradient section-subtitle">Products</p>
+                    <h3 class="h3 section-title">
+                        Our products include different configurations and
+                        <i>formulations of Metformin.</i>
+                    </h3>
+                    <!--					<p class="section-description">We offer Metformin in both effervescent liquid and lozenge form.</p>-->
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="products-row">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="banner section-banner">
+                                <picture>
+                                    <source srcset="img/product/product-1.png" type="image/png" />
+                                    <source srcset="img/product/product-1.webp" type="image/webp" />
+                                    <img src="img/product/product-1.png" />
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="products-card">
+                                <div class="products-card-thumbnail" data-parallax>
+                                    <picture>
+                                        <source
+                                            srcset="img/product/product-2.png"
+                                            type="image/png"
+                                        />
+                                        <source
+                                            srcset="img/product/product-2.webp"
+                                            type="image/webp"
+                                        />
+                                        <img src="img/product/product-2.png" />
+                                    </picture>
+                                </div>
+                                <div class="products-card-body">
+                                    <p class="products-card-title">Crystalized Metformin</p>
+                                    <p class="products-card-description">
+                                        Our effervescent version of Metformin provides a sachet of
+                                        Metformin crystals that, when mixed with water, provides a
+                                        drinkable solution for taking Metformin. The Metformin
+                                        crystals come in different flavor options.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="products-row">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="banner section-banner">
+                                <picture>
+                                    <source srcset="img/product/product-4.png" type="image/png" />
+                                    <source srcset="img/product/product-4.webp" type="image/webp" />
+                                    <img src="img/product/product-4.png" />
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="products-card">
+                                <div class="products-card-thumbnail" data-parallax>
+                                    <picture>
+                                        <source
+                                            srcset="img/product/product-3.png"
+                                            type="image/png"
+                                        />
+                                        <source
+                                            srcset="img/product/product-3.webp"
+                                            type="image/webp"
+                                        />
+                                        <img src="img/product/product-3.png" />
+                                    </picture>
+                                </div>
+                                <div class="products-card-body">
+                                    <p class="products-card-title">Metformin Gummies</p>
+                                    <p class="products-card-description">
+                                        Our gummy version of Metformin is as simple as if one were
+                                        eating a gummy candy. The gummies are infused with Metformin
+                                        and provide an easier option for patients who struggle with
+                                        swallowing pills or related side effects.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+			<section class="section enhancements">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="enhancements-sticky">
+                    <p class="font-uppercase color-gradient section-subtitle">Enhancements</p>
+                    <p class="section-description">
+                        In addition to our base versions of Crystalized Metformin and Metformin
+                        Gummies.
+                    </p>
+                    <h3 class="h3 section-title">
+                        We offer enhancements for patients with specific needs and requirements.
+                    </h3>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="enhancements-row">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="banner section-banner" data-parallax>
+                                <picture>
+                                    <source
+                                        srcset="img/home/enhancements-2.webp"
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="img/home/enhancements-2.jpg"
+                                        type="image/jpeg"
+                                    />
+                                    <img src="img/home/enhancements-2.jpg" />
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="products-card">
+                                <div class="products-card-thumbnail" data-parallax>
+                                    <picture>
+                                        <source
+                                            srcset="img/home/enhancements-1.webp"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="img/home/enhancements-1.jpg"
+                                            type="image/jpeg"
+                                        />
+                                        <img src="img/home/enhancements-1.jpg" />
+                                    </picture>
+                                </div>
+                                <div class="products-card-body">
+                                    <p class="products-card-title">
+                                        We offer a Metformin + Vitamin B12 product
+                                    </p>
+                                    <p class="products-card-description">
+                                        Because patients who take Metformin over extended periods of
+                                        time show Vitamin B12 deficiencies, we offer a Metformin +
+                                        Vitamin B12 product
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+			<section class="section enhancements enhancements-transparent">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <p class="font-uppercase color-gradient section-subtitle">Enhancements</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 order-md-2">
+                <h3 class="h3 section-title">
+                    Additionally, and perhaps of much greater interest, is that most diabetics are
+                    overweight.
+                    <i
+                        >Studies have shown that when Metformin is combined with liraglutide,
+                        diabetic patients lose weight and show other improvements</i
+                    >
+                </h3>
+            </div>
+            <div class="col-md-4 order-md-1">
+                <div class="products-card">
+                    <div class="products-card-thumbnail" data-parallax>
+                        <picture>
+                            <source srcset="img/home/enhancements-1.webp" type="image/webp" />
+                            <source srcset="img/home/enhancements-1.jpg" type="image/jpeg" />
+                            <img src="img/home/enhancements-1.jpg" />
+                        </picture>
+                    </div>
+                    <div class="products-card-body">
+                        <p class="products-card-title">As a result:</p>
+                        <p class="products-card-description">
+                            We offer a Metformin Gummy with Liraglutide designed to address
+                            weight-loss and glucose levels simultaneously.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+			<section class="section enhancements enhancements-dark">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="enhancements-sticky">
+                    <p class="font-uppercase color-gradient section-subtitle">Beyond Diabetes</p>
+                    <h4 class="h4 section-title">
+                        We also need to recognize that Metformin has applications beyond the
+                        diabetes world.
+                    </h4>
+                    <p class="section-description">
+                        Due to its anti-inflammatory properties, Metformin has become widely
+                        regarded as an “anti aging” treatment
+                    </p>
+                    <p class="section-description">
+                        As a result, our products can be used for anti-aging applications as well as
+                        other diseases where Metformin is a commonly prescribed treatment.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="enhancements-row">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="banner section-banner" data-parallax>
+                                <picture>
+                                    <source
+                                        srcset="img/home/enhancements-2.webp"
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="img/home/enhancements-2.jpg"
+                                        type="image/jpeg"
+                                    />
+                                    <img src="img/product/enhancements-banner-1.jpg" />
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="products-card">
+                                <div class="products-card-thumbnail" data-parallax>
+                                    <picture>
+                                        <source
+                                            srcset="img/home/enhancements-2.webp"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="img/home/enhancements-2.jpg"
+                                            type="image/jpeg"
+                                        />
+                                        <img src="img/product/enhancements-banner-2.jpg" />
+                                    </picture>
+                                </div>
+                                <div class="products-card-body">
+                                    <p class="products-card-title">
+                                        All of our products are manufactured by a licensed
+                                        compounding pharmacy.
+                                    </p>
+                                    <p class="products-card-description">
+                                        Patients must send a doctor-issued prescription to the
+                                        compounding pharmacy in order to receive our products.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+			<section class="section benefits product-benefits">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <p class="font-uppercase color-gradient section-subtitle">beyond Diabetes</p>
+            </div>
+            <div class="col-md-7">
+                <h3 class="h3 section-title">Altanine therapies beyond Diabetes</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="benefits-card">
+                    <p class="benefits-card-number">01</p>
+                    <div class="benefits-card-border"></div>
+                    <div class="benefits-card-icon">
+                        <img src="img/home/benefits-1.svg" alt="Anti-aging tretment" />
+                    </div>
+                    <p class="benefits-card-title">Anti-aging tretment</p>
+                    <p class="benefits-card-description">
+                        Due to its anti-inflammatory properties, Metformin may also mitigate
+                        age-related diseases, extend lifespan and increase health span.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="benefits-card">
+                    <p class="benefits-card-number">02</p>
+                    <div class="benefits-card-border"></div>
+                    <div class="benefits-card-icon">
+                        <img src="img/home/benefits-4.svg" alt="Polycystic Ovary Syndrome (PCOS)" />
+                    </div>
+                    <p class="benefits-card-title">Polycystic Ovary Syndrome (PCOS)</p>
+                    <p class="benefits-card-description">
+                        Metformin is a beneficial ovulation induction agent for non-obese PCOS
+                        women, with advantages over other initial treatments. It is an effective
+                        step for women resistant to clomiphene in treating anovulatory infertility.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="benefits-card">
+                    <p class="benefits-card-number">03</p>
+                    <div class="benefits-card-border"></div>
+                    <div class="benefits-card-icon">
+                        <img src="img/home/benefits-5.svg" alt="Weight loss therapy" />
+                    </div>
+                    <p class="benefits-card-title">Weight loss therapy</p>
+                    <p class="benefits-card-description">
+                        Altanine’s technology can be applied to liraglutide, a powerful weight loss
+                        drug. Altanine can provide liraglutide in a gummy or crystal form avoiding
+                        injections and GI side effects.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+			<div class="container">
+				<hr class="hr"/>
+			</div>
+			<section class="section property">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="property-media">
+                    <div class="property-media-id">
+                        <span class="property-media-bg"
+                            ><img
+                                src="img/home/property-icon.svg"
+                                alt="property-icon"
+                                class="property-media-icon"
+                        /></span>
+                        IP protections filed under <br />
+                        PCT/US2023/081775
+                    </div>
+                    <div class="property-media-info">
+                        *Altanine is considering new regulatory filings to broaden its sales,
+                        including orphan drug designation for Metformin in treating specific
+                        non-diabetic conditions, generic drug designation for Metformin gummies, and
+                        medical device designation for future Metformin-related applications.
+                    </div>
+                    <div class="property-media-img">
+                        <picture>
+                            <source srcset="img/home/property-img.png" type="image/png" />
+                            <source srcset="img/home/property-img.webp" type="image/webp" />
+                            <img src="img/home/property-img.png" class="property-media-image" />
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-7 offset-md-1">
+                <div class="property-desc">
+                    <p class="font-uppercase color-gradient section-subtitle">Metformin License</p>
+                    <h3 class="h3 section-title">Our Intellectual property</h3>
+                    <p>
+                        Altanine has an <b>exclusive, worldwide license </b> for the enteric coating
+                        for Metformin (including Metformin and Liraglutide combinations)
+                    </p>
+                    <ul>
+                        <li>
+                            Metformin & Liraglutide are generic drugs previously approved by the US
+                            Food & Drug Administration (FDA)
+                        </li>
+                        <li>
+                            Altanine can sell its products throughout the US using 503A and 503B
+                            compounding pharmacies to fill prescriptions
+                        </li>
+                        <li>Regulatory & IP have been vetted by GreenbergTraurig</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+			<section class="section content content-second">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h3 class="h3 section-title">Interested in finding <br /><i>out more?</i></h3>
+                <div class="join-box-form">
+                    <form>
+                        <label class="field">
+                            <span class="field-label">E-mail*</span>
+                            <input
+                                type="email"
+                                placeholder="Your Email"
+                                class="field-item"
+                                required
+                            />
+                            <span class="field-message __success">Success message</span>
+                            <span class="field-message __error">Error message</span>
+                        </label>
+                        <button class="btn btn-gradient btn-md btn-full-width">
+                            <span class="btn-bg"></span>
+                            <span class="btn-icon"
+                                ><svg><use xlink:href="img/icons/icons.svg#arrow-right"></use></svg
+                            ></span>
+                            <span class="btn-labels">
+                                <span class="btn-labels-item">Subscribe</span>
+                                <span class="btn-labels-item">Subscribe</span>
+                                <span class="btn-labels-item">Subscribe</span>
+                            </span>
+                        </button>
+                    </form>
+                </div>
+                <p class="content-info">
+                    <i class="color-gradient">* </i> For information about our patents, intellectual
+                    property or products.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="content-banner show-on-scroll">
+        <picture>
+            <source srcset="img/home/content-1.webp" type="image/webp" />
+            <source srcset="img/home/content-1.png" type="image/jpeg" />
+            <img src="img/home/content-1.png" class="content-banner-image" />
+        </picture>
+    </div>
+</section>
+
+		</div>
+	</div>
+	<footer class="footer">
+    <div class="footer-abstract">
+        <img src="img/footer-abstract.svg" alt="Alt" />
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7 offset-md-5 d-none d-md-block">
+                <hr class="hr" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-5 order-md-1">
+                <div class="footer-logo d-none d-md-block">
+                    <a href="/" class="logo">
+                        <img src="img/logo-white.svg" alt="Altanine" />
+                    </a>
+                </div>
+                <div class="footer-nav">
+                    <p class="footer-label">Site map</p>
+                    <ul>
+                        <li><a href="about-us.html">About us</a></li>
+                        <li><a href="innovation.html">Innovation</a></li>
+                        <li><a href="markets.html">Markets</a></li>
+                        <li><a href="investor.html">Investor Relations</a></li>
+                        <li><a href="blog.html">News</a></li>
+                        <li><a href="contact-us.html">Contact us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 d-md-none">
+                <hr class="hr" />
+            </div>
+            <div class="col-md-7 order-md-2">
+                <div class="row justify-content-between">
+                    <div class="col-md-3 order-md-3 col-6">
+                        <div class="footer-medicines">
+                            <p class="footer-label">Medicines</p>
+                            <div class="footer-medicines-list">
+                                <a href="metformin.html" class="footer-medicines-item">Metformin</a>
+                                <a href="sildenafil.html" class="footer-medicines-item"
+                                    >Sildenafil</a
+                                >
+                                <a href="sumatriptan.html" class="footer-medicines-item"
+                                    >Sumatriptan</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 order-md-3 col-6 order-1">
+                        <div class="footer-contacts">
+                            <p class="footer-label">Contacts us</p>
+                            <div class="footer-contacts-list">
+                                <a href="tel:+66 666 66 66 666" class="footer-contacts-item"
+                                    >+66 666 66 66 666</a
+                                >
+                                <a href="mailto:info@altanine.com" class="footer-contacts-item"
+                                    >info@altanine.com</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 order-md-3 col-6">
+                        <div class="footer-social">
+                            <p class="footer-label">Social networks</p>
+                            <div class="footer-social-list">
+                                <a
+                                    href="#"
+                                    target="_blank"
+                                    class="btn btn-arrow color-gray-400 footer-social-item"
+                                >
+                                    <span class="btn-icon">
+                                        <span class="btn-icon-item"></span>
+                                        <span class="btn-icon-item"></span>
+                                        <span class="btn-icon-item"></span>
+                                        <span class="btn-icon-item"></span>
+                                    </span>
+                                    <span class="btn-labels">
+                                        <span class="btn-labels-item">Instagram</span>
+                                    </span>
+                                </a>
+                                <a
+                                    href="#"
+                                    target="_blank"
+                                    class="btn btn-arrow color-gray-400 footer-social-item"
+                                >
+                                    <span class="btn-icon">
+                                        <span class="btn-icon-item"></span>
+                                        <span class="btn-icon-item"></span>
+                                        <span class="btn-icon-item"></span>
+                                        <span class="btn-icon-item"></span>
+                                    </span>
+                                    <span class="btn-labels">
+                                        <span class="btn-labels-item">Linkedin</span>
+                                    </span>
+                                </a>
+                                <a
+                                    href="#"
+                                    target="_blank"
+                                    class="btn btn-arrow color-gray-400 footer-social-item"
+                                >
+                                    <span class="btn-icon">
+                                        <span class="btn-icon-item"></span>
+                                        <span class="btn-icon-item"></span>
+                                        <span class="btn-icon-item"></span>
+                                        <span class="btn-icon-item"></span>
+                                    </span>
+                                    <span class="btn-labels">
+                                        <span class="btn-labels-item">Facebook</span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-logo d-md-none">
+                    <a href="/" class="logo">
+                        <img src="img/logo-white.svg" alt="Altanine" />
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 order-md-2">
+                <p class="footer-copyright">&copy; 2024 — Altanine, All Rights Reserved</p>
+            </div>
+            <div class="col-md-3 order-md-3">
+                <div class="footer-additional">
+                    <ul>
+                        <li><a href="text-template.html">Lorem Ipsum</a></li>
+                        <li><a href="text-template.html">Lorem Ipsum</a></li>
+                        <li><a href="text-template.html">Privacy policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <a href="https://www.studiopresto.com/" target="_blank" class="footer-developer">
+                    Made by
+                    <span class="footer-developer-logo">
+                        <img src="img/developer-logo.svg" alt="Studiopresto" />
+                        <img src="img/developer-logo-blue.svg" alt="Studiopresto" />
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+	<div class="modal" id="investor-modal">
+    <div class="modal-bg"></div>
+    <div class="modal-close" data-modal-close="#investor-modal"></div>
+    <div class="modal-box" data-lenis-prevent>
+        <div class="modal-box-item">
+            <div class="investor-modal">
+                <div class="modal-close-btn" data-modal-close="#investor-modal">
+                    <svg><use xlink:href="img/icons/icons.svg#close"></use></svg>
+                </div>
+                <div class="investor-modal-content">
+                    <h5 class="h5">We’d love to hear from you.</h5>
+                    <form>
+                        <label class="field">
+                            <span class="field-label">You Full name* </span>
+                            <input
+                                type="email"
+                                placeholder="Full name"
+                                class="field-item"
+                                required
+                            />
+                            <span class="field-message __success">Success message</span>
+                            <span class="field-message __error">Error message</span>
+                        </label>
+                        <label class="field">
+                            <span class="field-label">And email*</span>
+                            <input
+                                type="email"
+                                placeholder="You email"
+                                class="field-item"
+                                required
+                            />
+                            <span class="field-message __success">Success message</span>
+                            <span class="field-message __error">Error message</span>
+                        </label>
+                        <label class="field">
+                            <span class="field-label">Now write down your message *</span>
+                            <span class="field-resize"></span>
+                            <textarea
+                                placeholder="You message"
+                                class="field-item"
+                                required
+                            ></textarea>
+                            <span class="field-message __success">Success message</span>
+                            <span class="field-message __error">Error message</span>
+                        </label>
+                        <button class="btn btn-gradient btn-md btn-full-width">
+                            <span class="btn-bg"></span>
+                            <span class="btn-icon"
+                                ><svg><use xlink:href="img/icons/icons.svg#arrow-right"></use></svg
+                            ></span>
+                            <span class="btn-labels">
+                                <span class="btn-labels-item">Become an investor</span>
+                                <span class="btn-labels-item">Become an investor</span>
+                                <span class="btn-labels-item">Become an investor</span>
+                            </span>
+                        </button>
+                    </form>
+                </div>
+                <div class="investor-modal-thumbnail">
+                    <picture>
+                        <source srcset="img/investor/modal-banner.webp" type="image/webp" />
+                        <source srcset="img/investor/modal-banner.jpg" type="image/jpeg" />
+                        <img src="img/investor/modal-banner.jpg" />
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+	<div class="modal" id="thanks">
+	<div class="modal-bg"></div>
+	<div class="modal-close" data-modal-close="#thanks"></div>
+	<div class="modal-box" data-lenis-prevent>
+		<div class="modal-box-item">
+			<div class="thanks">
+				<div class="modal-close-btn" data-modal-close="#thanks">
+					<svg><use xlink:href="img/icons/icons.svg#close"></use></svg>
+				</div>
+				<div class="thanks-content">
+					<h4 class="h4 thanks-content-title">Thank You<i>!</i></h4>
+					<p class="thanks-content-subtitle">Your submission has been received!</p>
+					<p class="thanks-content-description">We will reach out to you shortly.</p>
+				</div>
+				<div class="thanks-thumbnail">
+					<img src="../img/logo-mini.svg" alt="Altanine" />
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</main>
+<script src="js/app.min.js"></script>
+</body>
+</html>
