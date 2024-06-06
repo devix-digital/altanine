@@ -24,15 +24,32 @@
         }
     }
 
+    &-item {
+        display: flex;
+        align-items: center;
+        max-width: 340rem;
+        gap: 24rem;
+        margin-bottom: 24rem;
+
+        &-icon {
+            width: 80rem;
+            height: 80rem;
+            flex-shrink: 0;
+        }
+    }
+
     &-list {
         display: flex;
         flex-wrap: wrap;
         row-gap: 16rem;
         padding: 30rem 0;
         max-width: 464rem;
-
         @include maxWidth($sm) {
             padding: 25rem 0;
+        }
+
+        &.opportunity {
+            padding: 0;
         }
 
         &-item {
@@ -76,6 +93,12 @@
             padding: 15rem 0;
         }
 
+        &.opportunity {
+            flex-direction: column;
+            align-items: start;
+            padding: 0;
+        }
+
         &.sildenafil {
             flex-direction: column;
             align-items: start;
@@ -100,6 +123,10 @@
 
         &-description {
             max-width: 416rem;
+            margin-bottom: 12rem;
+            &:nth-of-type(2) {
+                margin-bottom: 24rem;
+            }
         }
 
         &-banner {
@@ -119,8 +146,9 @@
             }
 
             &-small {
-                position: absolute;
-                top: 40rem;
+                position: sticky;
+                padding-top: 40rem;
+                top: 94rem;
                 right: 16rem;
                 width: 176rem;
                 height: 174rem;

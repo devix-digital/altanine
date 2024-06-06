@@ -4130,6 +4130,7 @@ svg {
   width: 100%;
   height: 100%;
   border-radius: 8px;
+  filter: grayscale(0.8);
 }
 
 .mission__core-media .section-banner:nth-child(2) {
@@ -4151,6 +4152,7 @@ svg {
 
 .mission__core-media .section-banner.is-active {
   z-index: 3;
+  filter: grayscale(0);
 }
 
 .enhancements-about {
@@ -5379,12 +5381,30 @@ html.lenis {
   height: 100%;
 }
 
+.problem-item {
+  display: flex;
+  align-items: center;
+  max-width: 340rem;
+  gap: 24rem;
+  margin-bottom: 24rem;
+}
+
+.problem-item-icon {
+  width: 80rem;
+  height: 80rem;
+  flex-shrink: 0;
+}
+
 .problem-list {
   display: flex;
   flex-wrap: wrap;
   row-gap: 16rem;
   padding: 30rem 0;
   max-width: 464rem;
+}
+
+.problem-list.opportunity {
+  padding: 0;
 }
 
 .problem-list-item {
@@ -5423,6 +5443,12 @@ html.lenis {
   padding: 10rem 0;
 }
 
+.problem-details.opportunity {
+  flex-direction: column;
+  align-items: start;
+  padding: 0;
+}
+
 .problem-details.sildenafil {
   flex-direction: column;
   align-items: start;
@@ -5444,6 +5470,11 @@ html.lenis {
 
 .problem .section-description {
   max-width: 416rem;
+  margin-bottom: 12rem;
+}
+
+.problem .section-description:nth-of-type(2) {
+  margin-bottom: 24rem;
 }
 
 .problem .section-banner img {
@@ -5451,8 +5482,9 @@ html.lenis {
 }
 
 .problem .section-banner-small {
-  position: absolute;
-  top: 40rem;
+  position: sticky;
+  padding-top: 40rem;
+  top: 94rem;
   right: 16rem;
   width: 176rem;
   height: 174rem;
