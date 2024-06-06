@@ -1,18 +1,10 @@
-.problem {
+.opportunity {
     margin-bottom: 144rem;
     @include maxWidth($sm) {
         margin-bottom: 80rem;
     }
-    hr {
-        height: 1rem;
-        background: var(--color-gray-200);
-        margin-top: 72rem;
-        @include maxWidth($sm) {
-            display: none;
-        }
-    }
 
-    &-sticky {
+    &-info {
         padding-top: 25rem;
         display: flex;
         flex-direction: column;
@@ -24,13 +16,25 @@
         }
     }
 
+    &-item {
+        display: flex;
+        align-items: center;
+        max-width: 340rem;
+        gap: 24rem;
+        margin-bottom: 24rem;
+
+        &-icon {
+            width: 80rem;
+            height: 80rem;
+            flex-shrink: 0;
+        }
+    }
+
     &-list {
         display: flex;
         flex-wrap: wrap;
         row-gap: 16rem;
-        padding: 30rem 0;
-        max-width: 464rem;
-
+        max-width: 528rem;
         @include maxWidth($sm) {
             padding: 25rem 0;
         }
@@ -64,9 +68,9 @@
 
     &-details {
         display: flex;
-        align-items: center;
+        flex-direction: column;
+        align-items: start;
         column-gap: 12rem;
-        padding: 10rem 0;
 
         @include maxWidth($sm) {
             flex-direction: column;
@@ -74,12 +78,6 @@
             column-gap: 0;
             row-gap: 32rem;
             padding: 15rem 0;
-        }
-
-        &.sildenafil {
-            flex-direction: column;
-            align-items: start;
-            gap: 16rem;
         }
 
         &-item {
@@ -99,7 +97,10 @@
         }
 
         &-description {
-            max-width: 416rem;
+            margin-bottom: 12rem;
+            &:nth-of-type(2) {
+                margin-bottom: 24rem;
+            }
         }
 
         &-banner {
@@ -119,8 +120,9 @@
             }
 
             &-small {
-                position: absolute;
-                top: 40rem;
+                position: sticky;
+                padding: 40rem 0 0 18rem;
+                top: 94rem;
                 right: 16rem;
                 width: 176rem;
                 height: 174rem;
@@ -134,8 +136,5 @@
                 }
             }
         }
-    }
-    & + .overview-one {
-        padding: 100rem 0 72rem;
     }
 }
