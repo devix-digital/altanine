@@ -4057,7 +4057,12 @@ svg {
 }
 
 .team-item-desc {
-  padding: 0 24rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 24rem;
+  height: 100%;
 }
 
 .team-item-title {
@@ -4069,7 +4074,6 @@ svg {
 .team-item-text {
   font: var(--font-body-m);
   color: var(--color-gray-600);
-  margin-bottom: 52rem;
 }
 
 .team-item .social-item .btn-labels {
@@ -11460,10 +11464,6 @@ html.lenis {
   .team-wrap .blog-carousel-slide {
     max-width: 100%;
     padding-bottom: 24rem;
-  }
-
-  .team-item-text {
-    margin-bottom: 24rem;
   }
 
   .team-item .img-missing {
