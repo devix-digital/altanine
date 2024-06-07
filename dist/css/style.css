@@ -4154,9 +4154,9 @@ svg {
 
 .mission__core-media {
   position: relative;
-  width: 382rem;
-  height: 252rem;
-  margin: 51rem 0 0 auto;
+  width: 464rem;
+  height: 306rem;
+  margin-left: 50rem;
 }
 
 .mission__core-media .section-banner {
