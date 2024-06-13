@@ -155,6 +155,10 @@
             font: var(--font-body-s);
             color: var(--color-gray-600);
             padding: 0 24rem;
+
+            p {
+                padding-bottom: 8rem;
+            }
         }
     }
     @include maxWidth($sm) {
