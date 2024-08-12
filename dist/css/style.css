@@ -5520,7 +5520,7 @@ html.lenis {
 .opportunity-item {
   display: flex;
   align-items: center;
-  max-width: 340rem;
+  max-width: 420rem;
   gap: 24rem;
   margin-bottom: 24rem;
 }
@@ -5529,6 +5529,10 @@ html.lenis {
   width: 80rem;
   height: 80rem;
   flex-shrink: 0;
+}
+
+.opportunity-item-label {
+  font-size: 15rem;
 }
 
 .opportunity-list {
@@ -5627,7 +5631,7 @@ html.lenis {
 }
 
 .market.market-content.metformin .market-content-wrapper {
-  width: 464rem;
+  width: 632rem;
 }
 
 .market.market-content.metformin .market-sticky .section-title {
@@ -12209,6 +12213,10 @@ html.lenis {
 
   .opportunity-info {
     padding: 0;
+  }
+
+  .opportunity-item-label {
+    font-size: 14rem;
   }
 
   .opportunity-list {

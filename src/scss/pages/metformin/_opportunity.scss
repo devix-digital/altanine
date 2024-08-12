@@ -19,7 +19,7 @@
     &-item {
         display: flex;
         align-items: center;
-        max-width: 340rem;
+        max-width: 420rem;
         gap: 24rem;
         margin-bottom: 24rem;
 
@@ -27,6 +27,13 @@
             width: 80rem;
             height: 80rem;
             flex-shrink: 0;
+        }
+
+        &-label {
+            font-size: 15rem;
+            @include maxWidth($sm) {
+                font-size: 14rem;
+            }
         }
     }
 
