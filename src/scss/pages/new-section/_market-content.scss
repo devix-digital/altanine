@@ -11,6 +11,15 @@
                 position: absolute;
                 top: -96rem;
                 right: -40rem;
+                width: 645rem;
+                height: 701rem;
+                @include maxWidth($sm) {
+                    position: relative;
+                    top: 0;
+                    right: 0;
+                    width: 100%;
+                    height: 100%;
+                }
             }
             &-data {
                 margin-top: 0;
@@ -34,8 +43,8 @@
                     @include maxWidth($sm) {
                         width: 571rem;
                         height: 571rem;
-                        right: -120rem;
-                        bottom: -170rem;
+                        right: -160rem;
+                        bottom: -100rem;
                     }
                 }
                 @include maxWidth($sm) {

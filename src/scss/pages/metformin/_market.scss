@@ -13,6 +13,7 @@
         padding: 96rem 0;
         @include maxWidth($sm) {
             padding-top: 80rem;
+            padding-bottom: 0;
             margin-bottom: 80rem;
         }
 
