@@ -5983,12 +5983,18 @@ html.lenis {
   overflow: hidden;
 }
 
+.market.market-content .market-data-wrapper {
+  position: absolute;
+  top: -96rem;
+  right: -40rem;
+}
+
 .market.market-content .market-data {
   margin-top: 0;
   height: 100%;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: right;
   z-index: 2;
   position: relative;
 }
@@ -5997,10 +6003,10 @@ html.lenis {
   position: absolute;
   content: "";
   border-radius: 50%;
-  width: 754rem;
-  height: 752rem;
-  right: -75rem;
-  bottom: -120rem;
+  width: 710rem;
+  height: 760rem;
+  right: -120rem;
+  bottom: -40rem;
   z-index: -1;
   border: 2rem solid rgba(255, 255, 255, 0.72);
   background-color: var(--color-gray-200);
