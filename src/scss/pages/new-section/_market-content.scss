@@ -11,8 +11,8 @@
                 position: absolute;
                 top: -96rem;
                 right: -40rem;
-                width: 645rem;
-                height: 701rem;
+                width: 110%;
+                height: calc(100% + 192rem);
                 @include maxWidth($sm) {
                     position: relative;
                     top: 0;
@@ -34,9 +34,9 @@
                     content: "";
                     border-radius: 50%;
                     width: 710rem;
-                    height: 760rem;
+                    height: calc(100% + 192rem);
                     right: -120rem;
-                    bottom: -40rem;
+                    bottom: -96rem;
                     z-index: -1;
                     border: 2rem solid rgba(255, 255, 255, 0.72);
                     background-color: var(--color-gray-200);

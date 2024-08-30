@@ -4072,7 +4072,7 @@ svg {
 }
 
 .team-item-text {
-  font: var(--font-body-m);
+  font-size: 14rem;
   color: var(--color-gray-600);
 }
 
@@ -4094,6 +4094,20 @@ svg {
 
 .team-item-info p {
   padding-bottom: 12rem;
+}
+
+.team .splide__pagination__page {
+  background: transparent;
+  width: 32rem;
+}
+
+.team .splide__pagination__page.is-active {
+  color: #01b7e6;
+}
+
+.team .splide__pagination {
+  bottom: 0;
+  justify-content: right;
 }
 
 .our-mission-core {
@@ -5987,8 +6001,8 @@ html.lenis {
   position: absolute;
   top: -96rem;
   right: -40rem;
-  width: 645rem;
-  height: 701rem;
+  width: 110%;
+  height: calc(100% + 192rem);
 }
 
 .market.market-content .market-data {
@@ -6006,9 +6020,9 @@ html.lenis {
   content: "";
   border-radius: 50%;
   width: 710rem;
-  height: 760rem;
+  height: calc(100% + 192rem);
   right: -120rem;
-  bottom: -40rem;
+  bottom: -96rem;
   z-index: -1;
   border: 2rem solid rgba(255, 255, 255, 0.72);
   background-color: var(--color-gray-200);

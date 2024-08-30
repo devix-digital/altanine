@@ -134,7 +134,7 @@
             margin-bottom: 4rem;
         }
         &-text {
-            font: var(--font-body-m);
+            font-size: 14rem;
             color: var(--color-gray-600);
         }
         .social-item {
@@ -161,6 +161,20 @@
             }
         }
     }
+
+    .splide__pagination__page {
+        background: transparent;
+        width: 32rem;
+
+        &.is-active {
+            color: #01b7e6;
+        }
+    }
+    .splide__pagination {
+        bottom: 0;
+        justify-content: right;
+    }
+
     @include maxWidth($sm) {
         .blog-carousel {
             padding-top: 14rem;

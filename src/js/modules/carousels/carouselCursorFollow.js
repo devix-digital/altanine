@@ -5,6 +5,7 @@ export const carouselCursorFollow = (carousel) => {
     if (carousel) {
         const cursors = document.querySelectorAll(".carousel-cursor")
         const buttons = carousel.querySelectorAll(".btn")
+        const paginations = carousel.querySelectorAll(".splide__pagination__page")
 
         if (cursors.length) {
             cursors.forEach((cursor) => {
@@ -33,6 +34,16 @@ export const carouselCursorFollow = (carousel) => {
                             switchCursor(cursor, 0)
                         })
                         button.addEventListener("mouseleave", () => {
+                            switchCursor(cursor, 1)
+                        })
+                    }
+                }
+                if (paginations.length) {
+                    for (let pagination of paginations) {
+                        pagination.addEventListener("mouseenter", () => {
+                            switchCursor(cursor, 0)
+                        })
+                        pagination.addEventListener("mouseleave", () => {
                             switchCursor(cursor, 1)
                         })
                     }

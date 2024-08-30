@@ -13,11 +13,11 @@ export const initTeamCarousel = () => {
                     type: "slide",
                     rewind: true,
                     drag: "free",
-                    perPage: 1,
-                    pagination: false,
+                    perPage: 3,
+                    pagination: true,
                     arrows: false,
                     autoWidth: true,
-                    speed: 5000,
+                    speed: 1000,
                     easing: "linear",
                     gap: "32rem",
                     padding: { left: "8rem", right: "8rem" },
@@ -25,6 +25,15 @@ export const initTeamCarousel = () => {
 
                 splide.on("mounted", () => {
                     carouselCursorFollow(teamCarousel)
+                })
+
+                splide.on("mounted", () => {
+                    const paginationButtons = document.querySelectorAll(".splide__pagination__page")
+
+                    paginationButtons.forEach((button, index) => {
+                        const pageNumber = (index + 1).toString().padStart(2, "0") // Форматуємо номер сторінки
+                        button.textContent = pageNumber
+                    })
                 })
 
                 splide.mount()
