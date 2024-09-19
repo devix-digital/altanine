@@ -5,6 +5,13 @@
             font: var(--font-body-m);
             margin-bottom: 12rem;
         }
+        a:not([href]),
+        a[href=""] {
+            pointer-events: none;
+            color: grey;
+            cursor: default;
+        }
+
         a {
             font-size: 12rem;
             display: block;
