@@ -109,7 +109,8 @@
 
             &:not(.section-banner-small) {
                 @include minWidth($sm + 1) {
-                    height: 500rem;
+                    width: 480rem;
+                    height: 480rem;
                     margin-left: -48rem;
                     padding-top: 40rem;
                     top: 94rem;

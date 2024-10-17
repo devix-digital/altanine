@@ -4099,10 +4099,12 @@ svg {
 .team .splide__pagination__page {
   background: transparent;
   width: 32rem;
+  font-size: 20rem;
 }
 
 .team .splide__pagination__page.is-active {
   color: #01b7e6;
+  transform: scale(1);
 }
 
 .team .splide__pagination {
@@ -8988,7 +8990,8 @@ html.lenis {
   }
 
   .problem .section-banner:not(.section-banner-small) {
-    height: 500rem;
+    width: 480rem;
+    height: 480rem;
     margin-left: -48rem;
     padding-top: 40rem;
     top: 94rem;

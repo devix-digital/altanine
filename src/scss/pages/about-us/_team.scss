@@ -165,9 +165,11 @@
     .splide__pagination__page {
         background: transparent;
         width: 32rem;
+        font-size: 20rem;
 
         &.is-active {
             color: #01b7e6;
+            transform: scale(1);
         }
     }
     .splide__pagination {

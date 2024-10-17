@@ -24,16 +24,26 @@ export const initTeamCarousel = () => {
                 })
 
                 splide.on("mounted", () => {
+                    const slideCount = splide.length
+                    if (slideCount <= 3) {
+                        // Приховуємо пагінацію, якщо елементів 3 або менше
+                        splide.options.pagination = false
+                        const paginationElement = teamCarousel.querySelector(".splide__pagination")
+                        if (paginationElement) {
+                            paginationElement.style.display = "none"
+                        }
+                    } else {
+                        // Налаштовуємо форматування номерів сторінок
+                        const paginationButtons = document.querySelectorAll(
+                            ".splide__pagination__page"
+                        )
+                        paginationButtons.forEach((button, index) => {
+                            const pageNumber = (index + 1).toString().padStart(2, "0")
+                            button.textContent = pageNumber
+                        })
+                    }
+
                     carouselCursorFollow(teamCarousel)
-                })
-
-                splide.on("mounted", () => {
-                    const paginationButtons = document.querySelectorAll(".splide__pagination__page")
-
-                    paginationButtons.forEach((button, index) => {
-                        const pageNumber = (index + 1).toString().padStart(2, "0") // Форматуємо номер сторінки
-                        button.textContent = pageNumber
-                    })
                 })
 
                 splide.mount()
