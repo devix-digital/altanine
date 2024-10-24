@@ -25,16 +25,17 @@ export const initTeamCarousel = () => {
 
                 splide.on("mounted", () => {
                     const slideCount = splide.length
+                    const paginationElement = teamCarousel.querySelector(".splide__pagination")
+
                     if (slideCount <= 3) {
                         // Приховуємо пагінацію, якщо елементів 3 або менше
                         splide.options.pagination = false
-                        const paginationElement = teamCarousel.querySelector(".splide__pagination")
                         if (paginationElement) {
                             paginationElement.style.display = "none"
                         }
-                    } else {
-                        // Налаштовуємо форматування номерів сторінок
-                        const paginationButtons = document.querySelectorAll(
+                    } else if (paginationElement) {
+                        // Налаштовуємо форматування номерів сторінок тільки для цієї каруселі
+                        const paginationButtons = paginationElement.querySelectorAll(
                             ".splide__pagination__page"
                         )
                         paginationButtons.forEach((button, index) => {
