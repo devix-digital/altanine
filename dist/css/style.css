@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /* Breakpoints */
 
 :root {
@@ -7297,6 +7299,20 @@ html.lenis {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+}
+
+::-moz-selection {
+  background-color: #ffc107;
+  /* Колір фону виділеного тексту */
+  color: #000;
+  /* Колір тексту */
+}
+
+::selection {
+  background-color: #ffc107;
+  /* Колір фону виділеного тексту */
+  color: #000;
+  /* Колір тексту */
 }
 
 @media (min-width: 576px) {
