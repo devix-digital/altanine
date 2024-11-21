@@ -3775,6 +3775,13 @@ svg {
   color: var(--color-gray-300);
 }
 
+.section-title e {
+  background: var(--color-primary-gradient);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .about {
   background-color: var(--color-gray-200);
   border-radius: 14px;
@@ -3782,13 +3789,6 @@ svg {
 
 .about .section-title {
   margin-bottom: 98rem;
-}
-
-.about .section-title e {
-  background: var(--color-primary-gradient);
-  -webkit-background-clip: text;
-          background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .about .section-banner {

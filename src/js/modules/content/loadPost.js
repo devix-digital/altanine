@@ -80,12 +80,3 @@ export const initLoadPosts = () => {
         })
     }
 }
-
-initLoadPosts()
-loadPosts()
-document.querySelectorAll(".header-panel ul li a").forEach((input) => {
-    input.addEventListener("click", function () {
-        console.log("cliked")
-        initLoadPosts()
-    })
-})
