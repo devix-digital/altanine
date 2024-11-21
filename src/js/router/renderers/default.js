@@ -14,6 +14,7 @@ import { initHorizontalScroll } from "../../modules/scroll/horizontalScroll.js"
 import { toggleTab } from "../../common/tabs.js"
 import { stickyHeader } from "../../common/stickyHeader.js"
 import { initTeamCarousel } from "../../modules/carousels/teamCarousel.js"
+import { initLoadPosts, loadPosts } from "../../modules/content/loadPost.js"
 
 class DefaultRenderer extends Highway.Renderer {
     onEnter() {
@@ -30,6 +31,8 @@ class DefaultRenderer extends Highway.Renderer {
         }
         toggleTab()
         stickyHeader()
+        initLoadPosts()
+        loadPosts()
     }
     onEnterCompleted() {
         scrollTo()

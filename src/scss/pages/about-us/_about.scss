@@ -6,6 +6,12 @@
         &-title {
             margin-bottom: 98rem;
 
+            e {
+                background: var(--color-primary-gradient);
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
             @include maxWidth($sm) {
                 margin-bottom: 40rem;
             }
