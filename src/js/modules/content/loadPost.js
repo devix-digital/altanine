@@ -25,15 +25,20 @@ export const loadPosts = (page = 1, category = "") => {
             .then((response) => response.text())
             .then((data) => {
                 if (data) {
-                    loadMoreButton.closest(".buttonContainer").style.display = "block"
-                    postContainer.insertAdjacentHTML("beforeend", data)
-                    let allPages = document.querySelector(".loadMore [data-pages]").dataset.pages
-                    if (allPages > page) {
-                        page++
+                    setTimeout(function () {
                         loadMoreButton.closest(".buttonContainer").style.display = "block"
-                    } else {
-                        loadMoreButton.closest(".buttonContainer").style.display = "none"
-                    }
+                        postContainer.insertAdjacentHTML("beforeend", data)
+                        postContainer.style.height = "auto"
+                        document.querySelector(".loader").remove()
+                        let allPages =
+                            document.querySelector(".loadMore [data-pages]").dataset.pages
+                        if (allPages > page) {
+                            page++
+                            loadMoreButton.closest(".buttonContainer").style.display = "block"
+                        } else {
+                            loadMoreButton.closest(".buttonContainer").style.display = "none"
+                        }
+                    }, 1000)
                 }
                 loading = false
             })
@@ -68,6 +73,10 @@ export const initLoadPosts = () => {
             console.log(category)
             page = 1
             postContainer.innerHTML = "" // Clear existing posts
+            postContainer.style.height = "100vh"
+            var loader = document.createElement("div")
+            loader.className = "loader"
+            postContainer.appendChild(loader)
 
             loadPosts(page, category)
         })
@@ -76,6 +85,7 @@ export const initLoadPosts = () => {
         loadMoreButton.addEventListener("click", function (e) {
             e.preventDefault()
             let allPages = document.querySelector(".loadMore [data-pages]").dataset.pages
+            postContainer.appendChild('<div class="loader"></div>')
             loadPosts(parseInt(allPages), category)
         })
     }
