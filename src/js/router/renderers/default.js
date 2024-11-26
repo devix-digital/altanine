@@ -31,8 +31,10 @@ class DefaultRenderer extends Highway.Renderer {
         }
         toggleTab()
         stickyHeader()
-        initLoadPosts()
-        loadPosts()
+        if (!!document.querySelector(".loadMore")) {
+            loadPosts(1, "")
+            initLoadPosts()
+        }
     }
     onEnterCompleted() {
         scrollTo()
