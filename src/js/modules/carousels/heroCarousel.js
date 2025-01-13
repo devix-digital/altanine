@@ -30,10 +30,8 @@ export const initHeroCarousel = () => {
             const allVideos = heroCarousel.querySelectorAll("video")
             allVideos.forEach((video, index) => {
                 if (index === newIndex) {
-                    video.play()
-                } else {
-                    video.pause()
                     video.currentTime = 0
+                    video.play()
                 }
             })
         })
