@@ -43,7 +43,9 @@ class DefaultRenderer extends Highway.Renderer {
         parallax()
         cardsMouseFollow()
         initModal()
-        initCaptcha()
+        setTimeout(() => {
+            initCaptcha()
+        }, 100)
     }
 }
 
