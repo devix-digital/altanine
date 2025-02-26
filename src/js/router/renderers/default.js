@@ -15,6 +15,7 @@ import { toggleTab } from "../../common/tabs.js"
 import { stickyHeader } from "../../common/stickyHeader.js"
 import { initTeamCarousel } from "../../modules/carousels/teamCarousel.js"
 import { initLoadPosts, loadPosts } from "../../modules/content/loadPost.js"
+import { initCaptcha } from "../../common/captcha.js"
 
 class DefaultRenderer extends Highway.Renderer {
     onEnter() {
@@ -42,6 +43,7 @@ class DefaultRenderer extends Highway.Renderer {
         parallax()
         cardsMouseFollow()
         initModal()
+        initCaptcha()
     }
 }
 
