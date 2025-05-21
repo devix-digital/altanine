@@ -1,30 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta name="viewport"
-	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <title>Altanine</title>
-	
-	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-	
-	<meta name="msapplication-TileColor" content="#ffffff" />
-	<meta name="theme-color" content="#ffffff">
-	<meta name="msapplication-navbutton-color" content="#ffffff" />
-	<meta name="apple-mobile-web-app-status-bar-style" content="#ffffff" />
-	
-	<link rel="preload" href="fonts/Inter-Regular.woff" as="font" type="font/woff" crossorigin="anonymous" />
-	<link rel="preload" href="fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
-	<link rel="preload" href="fonts/Inter-Medium.woff" as="font" type="font/woff" crossorigin="anonymous" />
-	<link rel="preload" href="fonts/Inter-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
-	<link rel="preload" href="fonts/Inter-Bold.woff" as="font" type="font/woff" crossorigin="anonymous" />
-	<link rel="preload" href="fonts/Inter-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
-	
-	<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-<main class="wrapper" id="wrapper">
-	<div class="preloader" id="preloader"></div>
-	<header class="header" id="header">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Altanine</title>
+
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png" />
+
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="theme-color" content="#ffffff" />
+        <meta name="msapplication-navbutton-color" content="#ffffff" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff" />
+
+        <link
+            rel="preload"
+            href="fonts/Inter-Regular.woff"
+            as="font"
+            type="font/woff"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="fonts/Inter-Regular.woff2"
+            as="font"
+            type="font/woff2"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="fonts/Inter-Medium.woff"
+            as="font"
+            type="font/woff"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="fonts/Inter-Medium.woff2"
+            as="font"
+            type="font/woff2"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="fonts/Inter-Bold.woff"
+            as="font"
+            type="font/woff"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="fonts/Inter-Bold.woff2"
+            as="font"
+            type="font/woff2"
+            crossorigin="anonymous"
+        />
+
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <main class="wrapper" id="wrapper">
+            <div class="preloader" id="preloader"></div>
+            <header class="header" id="header">
     <div class="header-panel">
         <div class="header-panel-logo">
             <a href="/" class="logo">
@@ -37,7 +72,7 @@
                 >
             </div>
         </div>
-        <div class="header-panel-nav">
+        <div class="header-panel-nav" id="mobile-menu">
             <nav>
                 <ul>
                     <li><a href="about-us.html">About us</a></li>
@@ -79,7 +114,7 @@
                     <span class="btn-labels-item">Contact us</span>
                 </span>
             </a>
-            <button class="burger">
+            <button class="burger" aria-label="Open menu" aria-controls="mobile-menu">
                 <span class="burger-box">
                     <span class="burger-box-arrow"></span>
                     <span class="burger-box-arrow"></span>
@@ -90,9 +125,9 @@
     </div>
 </header>
 
-	<div data-router-wrapper>
-		<div data-router-view="default">
-			<section class="section hero hero-product">
+            <div data-router-wrapper>
+                <div data-router-view="default">
+                    <section class="section hero hero-product">
     <div class="bread-crumbs">
         <div class="container">
             <ul>
@@ -130,17 +165,17 @@
     </div>
 </section>
 
-
-			<section class="section products">
+                    
+                    <section class="section products">
     <div class="container">
         <div class="row">
             <div class="col-md-5">
                 <div class="products-sticky">
                     <p class="font-uppercase color-gradient section-subtitle">Products</p>
-                    <h3 class="h3 section-title">
+                    <h2 class="h3 section-title">
                         Our products include different configurations and
                         <i>formulations of Metformin.</i>
-                    </h3>
+                    </h2>
                     <!--					<p class="section-description">We offer Metformin in both effervescent liquid and lozenge form.</p>-->
                 </div>
             </div>
@@ -228,7 +263,7 @@
     </div>
 </section>
 
-			<section class="section enhancements">
+                    <section class="section enhancements">
     <div class="container">
         <div class="row">
             <div class="col-md-5">
@@ -238,9 +273,9 @@
                         In addition to our base versions of Crystalized Metformin and Metformin
                         Gummies.
                     </p>
-                    <h3 class="h3 section-title">
+                    <h2 class="h3 section-title">
                         We offer enhancements for patients with specific needs and requirements.
-                    </h3>
+                    </h2>
                 </div>
             </div>
             <div class="col-md-7">
@@ -295,7 +330,7 @@
     </div>
 </section>
 
-			<section class="section enhancements enhancements-transparent">
+                    <section class="section enhancements enhancements-transparent">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -335,16 +370,16 @@
     </div>
 </section>
 
-			<section class="section enhancements enhancements-dark">
+                    <section class="section enhancements enhancements-dark">
     <div class="container">
         <div class="row">
             <div class="col-md-5">
                 <div class="enhancements-sticky">
                     <p class="font-uppercase color-gradient section-subtitle">Beyond Diabetes</p>
-                    <h4 class="h4 section-title">
+                    <h3 class="h4 section-title">
                         We also need to recognize that Metformin has applications beyond the
                         diabetes world.
-                    </h4>
+                    </h3>
                     <p class="section-description">
                         Due to its anti-inflammatory properties, Metformin has become widely
                         regarded as an “anti aging” treatment
@@ -407,14 +442,14 @@
     </div>
 </section>
 
-			<section class="section benefits product-benefits">
+                    <section class="section benefits product-benefits">
     <div class="container">
         <div class="row">
             <div class="col-md-5">
                 <p class="font-uppercase color-gradient section-subtitle">beyond Diabetes</p>
             </div>
             <div class="col-md-7">
-                <h3 class="h3 section-title">Altanine therapies beyond Diabetes</h3>
+                <h2 class="h3 section-title">Altanine therapies beyond Diabetes</h2>
             </div>
         </div>
         <div class="row">
@@ -466,10 +501,10 @@
     </div>
 </section>
 
-			<div class="container">
-				<hr class="hr"/>
-			</div>
-			<section class="section property">
+                    <div class="container">
+                        <hr class="hr" />
+                    </div>
+                    <section class="section property">
     <div class="container">
         <div class="row">
             <div class="col-md-4">
@@ -502,7 +537,7 @@
             <div class="col-md-7 offset-md-1">
                 <div class="property-desc">
                     <p class="font-uppercase color-gradient section-subtitle">Metformin License</p>
-                    <h3 class="h3 section-title">Our Intellectual property</h3>
+                    <h2 class="h3 section-title">Our Intellectual property</h2>
                     <p>
                         Altanine has an <b>exclusive, worldwide license </b> for the enteric coating
                         for Metformin (including Metformin and Liraglutide combinations)
@@ -524,11 +559,11 @@
     </div>
 </section>
 
-			<section class="section content content-second">
+                    <section class="section content content-second">
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <h3 class="h3 section-title">Interested in finding <br /><i>out more?</i></h3>
+                <h2 class="h3 section-title">Interested in finding <br /><i>out more?</i></h2>
                 <div class="join-box-form">
                     <form>
                         <label class="field">
@@ -571,9 +606,9 @@
     </div>
 </section>
 
-		</div>
-	</div>
-	<footer class="footer">
+                </div>
+            </div>
+            <footer class="footer">
     <div class="footer-abstract">
         <img src="img/footer-abstract.svg" alt="Alt" />
     </div>
@@ -720,7 +755,7 @@
     </div>
 </footer>
 
-	<div class="modal" id="investor-modal">
+            <div class="modal" id="investor-modal">
     <div class="modal-bg"></div>
     <div class="modal-close" data-modal-close="#investor-modal"></div>
     <div class="modal-box" data-lenis-prevent>
@@ -730,7 +765,7 @@
                     <svg><use xlink:href="img/icons/icons.svg#close"></use></svg>
                 </div>
                 <div class="investor-modal-content">
-                    <h5 class="h5">We’d love to hear from you.</h5>
+                    <h4 class="h5">We’d love to hear from you.</h4>
                     <form>
                         <label class="field">
                             <span class="field-label">You Full name* </span>
@@ -790,28 +825,29 @@
     </div>
 </div>
 
-	<div class="modal" id="thanks">
-	<div class="modal-bg"></div>
-	<div class="modal-close" data-modal-close="#thanks"></div>
-	<div class="modal-box" data-lenis-prevent>
-		<div class="modal-box-item">
-			<div class="thanks">
-				<div class="modal-close-btn" data-modal-close="#thanks">
-					<svg><use xlink:href="img/icons/icons.svg#close"></use></svg>
-				</div>
-				<div class="thanks-content">
-					<h4 class="h4 thanks-content-title">Thank You<i>!</i></h4>
-					<p class="thanks-content-subtitle">Your submission has been received!</p>
-					<p class="thanks-content-description">We will reach out to you shortly.</p>
-				</div>
-				<div class="thanks-thumbnail">
-					<img src="../img/logo-mini.svg" alt="Altanine" />
-				</div>
-			</div>
-		</div>
-	</div>
+            <div class="modal" id="thanks">
+    <div class="modal-bg"></div>
+    <div class="modal-close" data-modal-close="#thanks"></div>
+    <div class="modal-box" data-lenis-prevent>
+        <div class="modal-box-item">
+            <div class="thanks">
+                <div class="modal-close-btn" data-modal-close="#thanks">
+                    <svg><use xlink:href="img/icons/icons.svg#close"></use></svg>
+                </div>
+                <div class="thanks-content">
+                    <h3 class="h4 thanks-content-title">Thank You<i>!</i></h3>
+                    <p class="thanks-content-subtitle">Your submission has been received!</p>
+                    <p class="thanks-content-description">We will reach out to you shortly.</p>
+                </div>
+                <div class="thanks-thumbnail">
+                    <img src="../img/logo-mini.svg" alt="Altanine" />
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-</main>
-<script src="js/app.min.js"></script>
-</body>
+
+        </main>
+        <script src="js/app.min.js"></script>
+    </body>
 </html>

@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta
-            name="viewport"
-            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-        />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Altanine</title>
         <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png" />
         <meta name="msapplication-TileColor" content="#ffffff" />
@@ -72,7 +69,7 @@
                 >
             </div>
         </div>
-        <div class="header-panel-nav">
+        <div class="header-panel-nav" id="mobile-menu">
             <nav>
                 <ul>
                     <li><a href="about-us.html">About us</a></li>
@@ -114,7 +111,7 @@
                     <span class="btn-labels-item">Contact us</span>
                 </span>
             </a>
-            <button class="burger">
+            <button class="burger" aria-label="Open menu" aria-controls="mobile-menu">
                 <span class="burger-box">
                     <span class="burger-box-arrow"></span>
                     <span class="burger-box-arrow"></span>
@@ -164,11 +161,11 @@
         <div class="row">
             <div class="col-12">
                 <p class="font-uppercase color-gradient section-subtitle">Our Focus</p>
-                <h3 class="h3">
+                <h2 class="h3">
                     We are committed to introducing that innovations that revolutionize widely
                     prescribed pharmaceuticals with
                     <i>advanced delivery mechanisms to increase efficacy and accessibility.</i>
-                </h3>
+                </h2>
             </div>
         </div>
     </div>
@@ -244,10 +241,10 @@
                 <p class="font-uppercase color-gradient section-subtitle">Our Innovation</p>
             </div>
             <div class="col-md-7">
-                <h4 class="h4 section-title">
+                <h3 class="h4 section-title">
                     Our enteric coating technology is transforming the administration and delivery
                     of existing drug families.
-                </h4>
+                </h3>
             </div>
         </div>
         <div class="row">
@@ -343,7 +340,7 @@
             <div class="col-md-5">
                 <div class="products-sticky">
                     <p class="font-uppercase color-gradient section-subtitle">Products</p>
-                    <h3 class="h3 section-title">
+                    <h2 class="h3 section-title">
                         Altanine’s proprietary coating can be used to create
                         <i>various methods of delivery for widely prescribed drugs</i>
                     </h3>
@@ -502,10 +499,10 @@
                 </p>
             </div>
             <div class="col-md-7">
-                <h3 class="h3 section-title">
+                <h2 class="h3 section-title">
                     Altanine’s technology can dramatically change the 260bn global dollar
                     weight-loss market.
-                </h3>
+                </h2>
             </div>
         </div>
         <div class="row">
@@ -563,10 +560,10 @@
                     <p class="font-uppercase color-gradient section-subtitle">
                         Advancing Patient Care
                     </p>
-                    <h3 class="h3 section-title">
+                    <h2 class="h3 section-title">
                         Altanine’s proprietary process increases
                         <i>drug’s efficacy and improve patient experience</i>
-                    </h3>
+                    </h2>
                     <div class="overview-detail">
                         <ul>
                             <li>Patient-friendly treatment</li>
@@ -601,7 +598,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <h3 class="h3 section-title">Interested in finding <br /><i>out more?</i></h3>
+                <h2 class="h3 section-title">Interested in finding <br /><i>out more?</i></h2>
                 <div class="join-box-form">
                     <form>
                         <label class="field">
@@ -803,7 +800,7 @@
                     <svg><use xlink:href="img/icons/icons.svg#close"></use></svg>
                 </div>
                 <div class="investor-modal-content">
-                    <h5 class="h5">We’d love to hear from you.</h5>
+                    <h4 class="h5">We’d love to hear from you.</h4>
                     <form>
                         <label class="field">
                             <span class="field-label">You Full name* </span>
@@ -864,26 +861,27 @@
 </div>
 
             <div class="modal" id="thanks">
-	<div class="modal-bg"></div>
-	<div class="modal-close" data-modal-close="#thanks"></div>
-	<div class="modal-box" data-lenis-prevent>
-		<div class="modal-box-item">
-			<div class="thanks">
-				<div class="modal-close-btn" data-modal-close="#thanks">
-					<svg><use xlink:href="img/icons/icons.svg#close"></use></svg>
-				</div>
-				<div class="thanks-content">
-					<h4 class="h4 thanks-content-title">Thank You<i>!</i></h4>
-					<p class="thanks-content-subtitle">Your submission has been received!</p>
-					<p class="thanks-content-description">We will reach out to you shortly.</p>
-				</div>
-				<div class="thanks-thumbnail">
-					<img src="../img/logo-mini.svg" alt="Altanine" />
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="modal-bg"></div>
+    <div class="modal-close" data-modal-close="#thanks"></div>
+    <div class="modal-box" data-lenis-prevent>
+        <div class="modal-box-item">
+            <div class="thanks">
+                <div class="modal-close-btn" data-modal-close="#thanks">
+                    <svg><use xlink:href="img/icons/icons.svg#close"></use></svg>
+                </div>
+                <div class="thanks-content">
+                    <h3 class="h4 thanks-content-title">Thank You<i>!</i></h3>
+                    <p class="thanks-content-subtitle">Your submission has been received!</p>
+                    <p class="thanks-content-description">We will reach out to you shortly.</p>
+                </div>
+                <div class="thanks-thumbnail">
+                    <img src="../img/logo-mini.svg" alt="Altanine" />
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
         </main>
         <script src="js/app.min.js"></script>
     </body>

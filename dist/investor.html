@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta
-            name="viewport"
-            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-        />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Altanine</title>
 
         <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png" />
@@ -75,7 +72,7 @@
                 >
             </div>
         </div>
-        <div class="header-panel-nav">
+        <div class="header-panel-nav" id="mobile-menu">
             <nav>
                 <ul>
                     <li><a href="about-us.html">About us</a></li>
@@ -117,7 +114,7 @@
                     <span class="btn-labels-item">Contact us</span>
                 </span>
             </a>
-            <button class="burger">
+            <button class="burger" aria-label="Open menu" aria-controls="mobile-menu">
                 <span class="burger-box">
                     <span class="burger-box-arrow"></span>
                     <span class="burger-box-arrow"></span>
@@ -170,7 +167,7 @@
         <div class="row">
             <div class="col-12">
                 <p class="font-uppercase color-gradient section-subtitle">Our Mission</p>
-                <h3 class="h3 section-title">
+                <h2 class="h3 section-title">
                     We prioritize trust, integrity, and respect in our investor relationships,
 
                     <i
@@ -203,10 +200,10 @@
             </div>
             <div class="col-md-5 offset-md-1">
                 <div class="about-desc">
-                    <h3 class="h3">
+                    <h2 class="h3">
                         We're excited to share an overview of Altanine's strategies and financial
                         outlook.
-                    </h3>
+                    </h2>
                     <p>For detailed information, financial models, or our pitch deck, please</p>
                 </div>
                 <button class="btn btn-gradient btn-md" data-modal-open="#investor-modal">
@@ -241,10 +238,10 @@
                 <p class="font-uppercase color-gradient section-subtitle">Go-to-market strategy</p>
             </div>
             <div class="col-md-7">
-                <h4 class="h4 section-title">
+                <h3 class="h4 section-title">
                     Altanine's GTM strategy aligns with customer needs and market trends,
                     <i> optimizing launches, positioning, and marketing for revenue growth.</i>
-                </h4>
+                </h3>
             </div>
         </div>
         <div class="row">
@@ -307,10 +304,10 @@
                 <p class="font-uppercase color-gradient section-subtitle">
                     Revenue generation model
                 </p>
-                <h4 class="h4 section-title">
+                <h3 class="h4 section-title">
                     Altanine's revenue models encompass pharmacy royalties, swift FDA generic
                     approvals for broad distribution, and IP licensing for global expansion.
-                </h4>
+                </h3>
             </div>
         </div>
         <div class="enhancements-investor-cards">
@@ -361,10 +358,10 @@
         <div class="row">
             <div class="col-md-10">
                 <p class="font-uppercase color-gradient section-subtitle">On the horizon</p>
-                <h3 class="h3 section-title">
+                <h2 class="h3 section-title">
                     Measurable and accountable, a clear path towards
                     <i> product development distribution and increased market share.</i>
-                </h3>
+                </h2>
             </div>
         </div>
     </div>
@@ -423,9 +420,9 @@
                 <p class="font-uppercase color-gradient section-subtitle">
                     Navigating complexities
                 </p>
-                <h3 class="h3 section-title">
+                <h2 class="h3 section-title">
                     Effectively navigating the FDA's regulatory landscape involves strict compliance
-                </h3>
+                </h2>
                 <p class="navigating-complexities-description">
                     Metformin, Liraglutide, Tirzepatide, Sildenafil and Sumatriptan are proven safe
                     and effective and have been approved by FDA.
@@ -698,7 +695,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <h3 class="h3 section-title">Interested in finding <br /><i>out more?</i></h3>
+                <h2 class="h3 section-title">Interested in finding <br /><i>out more?</i></h2>
                 <div class="join-box-form">
                     <form>
                         <label class="field">
@@ -900,7 +897,7 @@
                     <svg><use xlink:href="img/icons/icons.svg#close"></use></svg>
                 </div>
                 <div class="investor-modal-content">
-                    <h5 class="h5">We’d love to hear from you.</h5>
+                    <h4 class="h5">We’d love to hear from you.</h4>
                     <form>
                         <label class="field">
                             <span class="field-label">You Full name* </span>
@@ -961,26 +958,27 @@
 </div>
 
             <div class="modal" id="thanks">
-	<div class="modal-bg"></div>
-	<div class="modal-close" data-modal-close="#thanks"></div>
-	<div class="modal-box" data-lenis-prevent>
-		<div class="modal-box-item">
-			<div class="thanks">
-				<div class="modal-close-btn" data-modal-close="#thanks">
-					<svg><use xlink:href="img/icons/icons.svg#close"></use></svg>
-				</div>
-				<div class="thanks-content">
-					<h4 class="h4 thanks-content-title">Thank You<i>!</i></h4>
-					<p class="thanks-content-subtitle">Your submission has been received!</p>
-					<p class="thanks-content-description">We will reach out to you shortly.</p>
-				</div>
-				<div class="thanks-thumbnail">
-					<img src="../img/logo-mini.svg" alt="Altanine" />
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="modal-bg"></div>
+    <div class="modal-close" data-modal-close="#thanks"></div>
+    <div class="modal-box" data-lenis-prevent>
+        <div class="modal-box-item">
+            <div class="thanks">
+                <div class="modal-close-btn" data-modal-close="#thanks">
+                    <svg><use xlink:href="img/icons/icons.svg#close"></use></svg>
+                </div>
+                <div class="thanks-content">
+                    <h3 class="h4 thanks-content-title">Thank You<i>!</i></h3>
+                    <p class="thanks-content-subtitle">Your submission has been received!</p>
+                    <p class="thanks-content-description">We will reach out to you shortly.</p>
+                </div>
+                <div class="thanks-thumbnail">
+                    <img src="../img/logo-mini.svg" alt="Altanine" />
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
         </main>
         <script src="js/app.min.js"></script>
         <script src="files/modals.js"></script>

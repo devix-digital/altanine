@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta
-            name="viewport"
-            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-        />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
         <title>Altanine</title>
 
         <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png" />
@@ -75,7 +73,7 @@
                 >
             </div>
         </div>
-        <div class="header-panel-nav">
+        <div class="header-panel-nav" id="mobile-menu">
             <nav>
                 <ul>
                     <li><a href="about-us.html">About us</a></li>
@@ -117,7 +115,7 @@
                     <span class="btn-labels-item">Contact us</span>
                 </span>
             </a>
-            <button class="burger">
+            <button class="burger" aria-label="Open menu" aria-controls="mobile-menu">
                 <span class="burger-box">
                     <span class="burger-box-arrow"></span>
                     <span class="burger-box-arrow"></span>
@@ -396,9 +394,9 @@
             <div class="col-md-5">
                 <div class="overview-sticky">
                     <p class="font-uppercase color-gradient section-subtitle">Situation overview</p>
-                    <h3 class="h3 section-title">
+                    <h2 class="h3 section-title">
                         Diabetes is accelerating <i>at an alarming rate globally</i>
-                    </h3>
+                    </h2>
                     <p class="section-description">
                         Incl. type 2 diabetes, a complex disease where the body doesn't use energy
                         from food properly.
@@ -455,7 +453,7 @@
         <div class="row">
             <div class="col-md-4">
                 <p class="font-uppercase color-gradient section-subtitle">Enhancements</p>
-                <h3 class="h3 section-title">How <i>diabetes is treated</i> today</h3>
+                <h2 class="h3 section-title">How <i>diabetes is treated</i> today</h2>
             </div>
         </div>
         <div class="enhancements-metformin-cards">
@@ -597,10 +595,10 @@
                     <p class="font-uppercase color-gradient section-subtitle">
                         Innovating metformin delivery
                     </p>
-                    <h3 class="h3 section-title">
+                    <h2 class="h3 section-title">
                         Our patented <i>enteric coating technology</i> is transforming Metformin
                         administration
-                    </h3>
+                    </h2>
 
                     <div class="market-content-wrapper">
                         <p class="market-content-desc bold">Impressive results</p>
@@ -634,7 +632,7 @@
                     <p class="font-uppercase color-gradient section-subtitle">
                         About altanine treatment
                     </p>
-                    <h3 class="h3 section-title">Altanine – a patient-<i>centric treatment</i></h3>
+                    <h2 class="h3 section-title">Altanine – a patient-<i>centric treatment</i></h2>
                     <p class="section-description">
                         Altanine increases efficiency and improves patient experience in Metformin
                         treatment
@@ -675,7 +673,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <h3 class="h3 section-title"><i>Our Portfolio</i><br />is Expanding</h3>
+                <h2 class="h3 section-title"><i>Our Portfolio</i><br />is Expanding</h2>
                 <p class="content-info">
                     Contact us for information about new medicines and innovations.
                 </p>
@@ -862,7 +860,7 @@
                     <svg><use xlink:href="img/icons/icons.svg#close"></use></svg>
                 </div>
                 <div class="investor-modal-content">
-                    <h5 class="h5">We’d love to hear from you.</h5>
+                    <h4 class="h5">We’d love to hear from you.</h4>
                     <form>
                         <label class="field">
                             <span class="field-label">You Full name* </span>
@@ -923,26 +921,27 @@
 </div>
 
             <div class="modal" id="thanks">
-	<div class="modal-bg"></div>
-	<div class="modal-close" data-modal-close="#thanks"></div>
-	<div class="modal-box" data-lenis-prevent>
-		<div class="modal-box-item">
-			<div class="thanks">
-				<div class="modal-close-btn" data-modal-close="#thanks">
-					<svg><use xlink:href="img/icons/icons.svg#close"></use></svg>
-				</div>
-				<div class="thanks-content">
-					<h4 class="h4 thanks-content-title">Thank You<i>!</i></h4>
-					<p class="thanks-content-subtitle">Your submission has been received!</p>
-					<p class="thanks-content-description">We will reach out to you shortly.</p>
-				</div>
-				<div class="thanks-thumbnail">
-					<img src="../img/logo-mini.svg" alt="Altanine" />
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="modal-bg"></div>
+    <div class="modal-close" data-modal-close="#thanks"></div>
+    <div class="modal-box" data-lenis-prevent>
+        <div class="modal-box-item">
+            <div class="thanks">
+                <div class="modal-close-btn" data-modal-close="#thanks">
+                    <svg><use xlink:href="img/icons/icons.svg#close"></use></svg>
+                </div>
+                <div class="thanks-content">
+                    <h3 class="h4 thanks-content-title">Thank You<i>!</i></h3>
+                    <p class="thanks-content-subtitle">Your submission has been received!</p>
+                    <p class="thanks-content-description">We will reach out to you shortly.</p>
+                </div>
+                <div class="thanks-thumbnail">
+                    <img src="../img/logo-mini.svg" alt="Altanine" />
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
         </main>
         <script src="js/app.min.js"></script>
     </body>

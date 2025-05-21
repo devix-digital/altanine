@@ -1,30 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta name="viewport"
-	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <title>Altanine</title>
-	
-	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-	
-	<meta name="msapplication-TileColor" content="#ffffff" />
-	<meta name="theme-color" content="#ffffff">
-	<meta name="msapplication-navbutton-color" content="#ffffff" />
-	<meta name="apple-mobile-web-app-status-bar-style" content="#ffffff" />
-	
-	<link rel="preload" href="fonts/Inter-Regular.woff" as="font" type="font/woff" crossorigin="anonymous" />
-	<link rel="preload" href="fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
-	<link rel="preload" href="fonts/Inter-Medium.woff" as="font" type="font/woff" crossorigin="anonymous" />
-	<link rel="preload" href="fonts/Inter-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
-	<link rel="preload" href="fonts/Inter-Bold.woff" as="font" type="font/woff" crossorigin="anonymous" />
-	<link rel="preload" href="fonts/Inter-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
-	
-	<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-<main class="wrapper" id="wrapper">
-	<div class="preloader" id="preloader"></div>
-	<header class="header" id="header">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Altanine</title>
+
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png" />
+
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="theme-color" content="#ffffff" />
+        <meta name="msapplication-navbutton-color" content="#ffffff" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff" />
+
+        <link
+            rel="preload"
+            href="fonts/Inter-Regular.woff"
+            as="font"
+            type="font/woff"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="fonts/Inter-Regular.woff2"
+            as="font"
+            type="font/woff2"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="fonts/Inter-Medium.woff"
+            as="font"
+            type="font/woff"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="fonts/Inter-Medium.woff2"
+            as="font"
+            type="font/woff2"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="fonts/Inter-Bold.woff"
+            as="font"
+            type="font/woff"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="fonts/Inter-Bold.woff2"
+            as="font"
+            type="font/woff2"
+            crossorigin="anonymous"
+        />
+
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <main class="wrapper" id="wrapper">
+            <div class="preloader" id="preloader"></div>
+            <header class="header" id="header">
     <div class="header-panel">
         <div class="header-panel-logo">
             <a href="/" class="logo">
@@ -37,7 +72,7 @@
                 >
             </div>
         </div>
-        <div class="header-panel-nav">
+        <div class="header-panel-nav" id="mobile-menu">
             <nav>
                 <ul>
                     <li><a href="about-us.html">About us</a></li>
@@ -79,7 +114,7 @@
                     <span class="btn-labels-item">Contact us</span>
                 </span>
             </a>
-            <button class="burger">
+            <button class="burger" aria-label="Open menu" aria-controls="mobile-menu">
                 <span class="burger-box">
                     <span class="burger-box-arrow"></span>
                     <span class="burger-box-arrow"></span>
@@ -90,9 +125,9 @@
     </div>
 </header>
 
-	<div data-router-wrapper>
-		<div data-router-view="default">
-			<section class="section hero hero-metformin">
+            <div data-router-wrapper>
+                <div data-router-view="default">
+                    <section class="section hero hero-metformin">
     <div class="bread-crumbs">
         <div class="container">
             <ul>
@@ -122,7 +157,7 @@
     </div>
 </section>
 
-			<section class="section enhancements enhancements-line">
+                    <section class="section enhancements enhancements-line">
 	<div class="enhancements-metformin-banner" data-parallax>
 		<picture><source srcset="../img/metformin/enhancements-abstract.webp" type="image/webp"><img src="../img/metformin/enhancements-abstract.png" /></picture>
 	</div>
@@ -130,7 +165,7 @@
 		<div class="row">
 			<div class="col-md-6">
 				<p class="font-uppercase color-gradient section-subtitle">ALTANINE FOR WEIGHT LOSS TREATMENT</p>
-				<h3 class="h3 section-title">Altanine technology can dramatically change <i>weight-loss drug market</i></h3>
+				<h2 class="h3 section-title">Altanine technology can dramatically change <i>weight-loss drug market</i></h2>
 			</div>
 		</div>
 		<div class="enhancements-metformin-cards">
@@ -165,7 +200,8 @@
 		</div>
 	</div>
 </section>
-			<section class="section what-metformin" id="metformin">
+
+                    <section class="section what-metformin" id="metformin">
     <div class="container">
         <div class="row">
             <div class="col-md-6">
@@ -248,13 +284,13 @@
     </div>
 </section>
 
-			<section class="section market market-content">
+                    <section class="section market market-content">
     <div class="container">
         <div class="row">
             <div class="col-md-4">
                 <div class="market-sticky">
                     <p class="font-uppercase color-gradient section-subtitle"></p>
-                    <h3 class="h3 section-title">Global weight loss market</h3>
+                    <h2 class="h3 section-title">Global weight loss market</h3>
                     <div class="market-values">
                         <div class="market-values-item">
                             <p class="market-values-num">USD 260.70Bn</p>
@@ -296,14 +332,14 @@
     </div>
 </section>
 
-			<section class="section competition">
+                    <section class="section competition">
     <div class="container">
         <div class="row">
             <div class="col-md-5">
                 <p class="font-uppercase color-gradient section-subtitle">Content</p>
             </div>
             <div class="col-md-6">
-                <h3 class="h3 section-title">The competition</h3>
+                <h2 class="h3 section-title">The competition</h2>
             </div>
         </div>
         <div class="row">
@@ -425,12 +461,12 @@
 </section>
 
 
-			<div class="container">
-				<hr class="hr"/>
-			</div>
-		</div>
-	</div>
-	<footer class="footer">
+                    <div class="container">
+                        <hr class="hr" />
+                    </div>
+                </div>
+            </div>
+            <footer class="footer">
     <div class="footer-abstract">
         <img src="img/footer-abstract.svg" alt="Alt" />
     </div>
@@ -577,7 +613,7 @@
     </div>
 </footer>
 
-</main>
-<script src="js/app.min.js"></script>
-</body>
+        </main>
+        <script src="js/app.min.js"></script>
+    </body>
 </html>

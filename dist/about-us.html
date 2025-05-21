@@ -1,30 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta name="viewport"
-	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <title>Altanine</title>
-	
-	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-	
-	<meta name="msapplication-TileColor" content="#ffffff" />
-	<meta name="theme-color" content="#ffffff">
-	<meta name="msapplication-navbutton-color" content="#ffffff" />
-	<meta name="apple-mobile-web-app-status-bar-style" content="#ffffff" />
-	
-	<link rel="preload" href="fonts/Inter-Regular.woff" as="font" type="font/woff" crossorigin="anonymous" />
-	<link rel="preload" href="fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
-	<link rel="preload" href="fonts/Inter-Medium.woff" as="font" type="font/woff" crossorigin="anonymous" />
-	<link rel="preload" href="fonts/Inter-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
-	<link rel="preload" href="fonts/Inter-Bold.woff" as="font" type="font/woff" crossorigin="anonymous" />
-	<link rel="preload" href="fonts/Inter-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
-	
-	<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-<main class="wrapper" id="wrapper">
-	<div class="preloader" id="preloader"></div>
-	<header class="header" id="header">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Altanine</title>
+
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png" />
+
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="theme-color" content="#ffffff" />
+        <meta name="msapplication-navbutton-color" content="#ffffff" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff" />
+
+        <link
+            rel="preload"
+            href="fonts/Inter-Regular.woff"
+            as="font"
+            type="font/woff"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="fonts/Inter-Regular.woff2"
+            as="font"
+            type="font/woff2"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="fonts/Inter-Medium.woff"
+            as="font"
+            type="font/woff"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="fonts/Inter-Medium.woff2"
+            as="font"
+            type="font/woff2"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="fonts/Inter-Bold.woff"
+            as="font"
+            type="font/woff"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="fonts/Inter-Bold.woff2"
+            as="font"
+            type="font/woff2"
+            crossorigin="anonymous"
+        />
+
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <main class="wrapper" id="wrapper">
+            <div class="preloader" id="preloader"></div>
+            <header class="header" id="header">
     <div class="header-panel">
         <div class="header-panel-logo">
             <a href="/" class="logo">
@@ -37,7 +72,7 @@
                 >
             </div>
         </div>
-        <div class="header-panel-nav">
+        <div class="header-panel-nav" id="mobile-menu">
             <nav>
                 <ul>
                     <li><a href="about-us.html">About us</a></li>
@@ -79,7 +114,7 @@
                     <span class="btn-labels-item">Contact us</span>
                 </span>
             </a>
-            <button class="burger">
+            <button class="burger" aria-label="Open menu" aria-controls="mobile-menu">
                 <span class="burger-box">
                     <span class="burger-box-arrow"></span>
                     <span class="burger-box-arrow"></span>
@@ -90,9 +125,9 @@
     </div>
 </header>
 
-	<div data-router-wrapper>
-		<div data-router-view="default">
-			<section class="section hero hero-about">
+            <div data-router-wrapper>
+                <div data-router-view="default">
+                    <section class="section hero hero-about">
     <div class="bread-crumbs">
         <div class="container">
             <ul>
@@ -125,19 +160,18 @@
         </div>
     </div>
 </section>
-
-			<section class="section about about-page">
+ <section class="section about about-page">
     <div class="container">
         <div class="row">
             <div class="col-12">
                 <p class="font-uppercase color-gradient section-subtitle">Our Mission</p>
-                <h3 class="h3 section-title">
+                <h2 class="h3 section-title">
                     Altanine is a pharmaceutical company advancing medicines to bring meaningful
                     <e
                         >improvement to patients' lives through innovative science and delivery
                         technologies.</e
                     >
-                </h3>
+                </h2>
             </div>
         </div>
     </div>
@@ -154,10 +188,10 @@
             </div>
             <div class="col-md-5 offset-md-1">
                 <div class="about-desc">
-                    <h4>
+                    <h3 class="h4">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore
-                    </h4>
+                    </h3>
                     <b>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua.
@@ -184,18 +218,16 @@
         </div>
     </div>
 </section>
-
-
-			<section class="section benefits benefits-about">
+ <section class="section benefits benefits-about">
     <div class="container">
         <div class="row">
             <div class="col-md-4">
                 <p class="font-uppercase color-gradient section-subtitle">Our Advantage</p>
             </div>
             <div class="col-md-8">
-                <h3 class="h3 section-title">
+                <h2 class="h3 section-title">
                     <i>Strategically poised</i> for both immediate and long-term success.
-                </h3>
+                </h2>
             </div>
         </div>
         <div class="row">
@@ -251,7 +283,7 @@
     </div>
 </section>
 
-			<section class="section enhancements-gray enhancements-about">
+                    <section class="section enhancements-gray enhancements-about">
     <div class="enhancements-about-banner">
         <picture>
             <source
@@ -271,7 +303,7 @@
         <div class="row">
             <div class="col-md-4">
                 <p class="font-uppercase color-gradient section-subtitle">Featured Product</p>
-                <h3 class="h3 section-title">How <i>diabetes is treated</i> today</h3>
+                <h2 class="h3 section-title">How <i>diabetes is treated</i> today</h2>
             </div>
         </div>
         <div class="enhancements-metformin-cards">
@@ -299,14 +331,14 @@
     </div>
 </section>
 
-			<section class="section team">
+                    <section class="section team">
     <div class="container">
         <div class="row team-header">
             <div class="col-md-5">
                 <p class="font-uppercase color-gradient section-subtitle">Leadership Team</p>
             </div>
             <div class="col-md-6">
-                <h3 class="h3 section-title">Our team members <i>are our greatest asset.</i></h3>
+                <h2 class="h3 section-title">Our team members <i>are our greatest asset.</i></h2>
             </div>
         </div>
         <div class="section-tab__tabs">
@@ -609,7 +641,7 @@
     </div>
 </section>
 
-			<section class="section our-mission-core">
+                    <section class="section our-mission-core">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -706,11 +738,11 @@
     </div>
 </section>
 
-			<section class="section content content-second">
+                    <section class="section content content-second">
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <h3 class="h3 section-title">Interested in finding <br /><i>out more?</i></h3>
+                <h2 class="h3 section-title">Interested in finding <br /><i>out more?</i></h2>
                 <div class="join-box-form">
                     <form>
                         <label class="field">
@@ -753,9 +785,9 @@
     </div>
 </section>
 
-		</div>
-	</div>
-	<footer class="footer">
+                </div>
+            </div>
+            <footer class="footer">
     <div class="footer-abstract">
         <img src="img/footer-abstract.svg" alt="Alt" />
     </div>
@@ -902,7 +934,7 @@
     </div>
 </footer>
 
-	<div class="modal" id="investor-modal">
+            <div class="modal" id="investor-modal">
     <div class="modal-bg"></div>
     <div class="modal-close" data-modal-close="#investor-modal"></div>
     <div class="modal-box" data-lenis-prevent>
@@ -912,7 +944,7 @@
                     <svg><use xlink:href="img/icons/icons.svg#close"></use></svg>
                 </div>
                 <div class="investor-modal-content">
-                    <h5 class="h5">We’d love to hear from you.</h5>
+                    <h4 class="h5">We’d love to hear from you.</h4>
                     <form>
                         <label class="field">
                             <span class="field-label">You Full name* </span>
@@ -972,28 +1004,29 @@
     </div>
 </div>
 
-	<div class="modal" id="thanks">
-	<div class="modal-bg"></div>
-	<div class="modal-close" data-modal-close="#thanks"></div>
-	<div class="modal-box" data-lenis-prevent>
-		<div class="modal-box-item">
-			<div class="thanks">
-				<div class="modal-close-btn" data-modal-close="#thanks">
-					<svg><use xlink:href="img/icons/icons.svg#close"></use></svg>
-				</div>
-				<div class="thanks-content">
-					<h4 class="h4 thanks-content-title">Thank You<i>!</i></h4>
-					<p class="thanks-content-subtitle">Your submission has been received!</p>
-					<p class="thanks-content-description">We will reach out to you shortly.</p>
-				</div>
-				<div class="thanks-thumbnail">
-					<img src="../img/logo-mini.svg" alt="Altanine" />
-				</div>
-			</div>
-		</div>
-	</div>
+            <div class="modal" id="thanks">
+    <div class="modal-bg"></div>
+    <div class="modal-close" data-modal-close="#thanks"></div>
+    <div class="modal-box" data-lenis-prevent>
+        <div class="modal-box-item">
+            <div class="thanks">
+                <div class="modal-close-btn" data-modal-close="#thanks">
+                    <svg><use xlink:href="img/icons/icons.svg#close"></use></svg>
+                </div>
+                <div class="thanks-content">
+                    <h3 class="h4 thanks-content-title">Thank You<i>!</i></h3>
+                    <p class="thanks-content-subtitle">Your submission has been received!</p>
+                    <p class="thanks-content-description">We will reach out to you shortly.</p>
+                </div>
+                <div class="thanks-thumbnail">
+                    <img src="../img/logo-mini.svg" alt="Altanine" />
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-</main>
-<script src="js/app.min.js"></script>
-</body>
+
+        </main>
+        <script src="js/app.min.js"></script>
+    </body>
 </html>

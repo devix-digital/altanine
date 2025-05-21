@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta
-            name="viewport"
-            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-        />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Altanine</title>
 
         <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png" />
@@ -75,7 +72,7 @@
                 >
             </div>
         </div>
-        <div class="header-panel-nav">
+        <div class="header-panel-nav" id="mobile-menu">
             <nav>
                 <ul>
                     <li><a href="about-us.html">About us</a></li>
@@ -117,7 +114,7 @@
                     <span class="btn-labels-item">Contact us</span>
                 </span>
             </a>
-            <button class="burger">
+            <button class="burger" aria-label="Open menu" aria-controls="mobile-menu">
                 <span class="burger-box">
                     <span class="burger-box-arrow"></span>
                     <span class="burger-box-arrow"></span>
@@ -162,30 +159,31 @@
 </section>
 
                     <section class="section unlocking-insights" id="insights">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-5">
-			  <p class="font-uppercase color-gradient section-subtitle">Unlocking Insights</p>
-			</div>
-			<div class="col-md-7">
-				<h3 class="h3 section-title">
-					A Deep Dive into Our Latest <i> Quarterly Results</i>
-				</h3>
-				<p  class="text-xl-left">
-					Discover the Momentum in Our Recent Financial Performance
-				</p>
-				<a href="#" class="btn btn-gradient btn-md">
-					<span class="btn-bg"></span>
-					<span class="btn-labels">
-						<span class="btn-labels-item">Download PDF</span>
-						<span class="btn-labels-item">Download PDF</span>
-						<span class="btn-labels-item">Download PDF</span>
-					</span>
-				</a>
-			</div>
-    	</div>
-	</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <p class="font-uppercase color-gradient section-subtitle">Unlocking Insights</p>
+            </div>
+            <div class="col-md-7">
+                <h2 class="h3 section-title">
+                    A Deep Dive into Our Latest <i> Quarterly Results</i>
+                </h2>
+                <p class="text-xl-left">
+                    Discover the Momentum in Our Recent Financial Performance
+                </p>
+                <a href="#" class="btn btn-gradient btn-md">
+                    <span class="btn-bg"></span>
+                    <span class="btn-labels">
+                        <span class="btn-labels-item">Download PDF</span>
+                        <span class="btn-labels-item">Download PDF</span>
+                        <span class="btn-labels-item">Download PDF</span>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
 </section>
+
                     <div class="container">
                         <hr class="hr" />
                     </div>
@@ -196,9 +194,9 @@
 			  <p class="font-uppercase color-gradient section-subtitle">characteristics</p>
 			</div>
 			<div class="col-md-7">
-				<h3 class="h3 section-title">
+				<h2 class="h3 section-title">
 					Investment Highlights: <i>Positioning for Success</i>
-				</h3>
+				</h2>
 				<div class="mission__core-item" data-core="1">
 					<div class="mission__core-title">
 						<p class="h4">Robust Financial Metrics</p>
@@ -235,6 +233,7 @@
     	</div>
 	</div>
 </section>
+
                     <div class="container">
                         <hr class="hr" />
                     </div>
@@ -245,7 +244,7 @@
                 <p class="font-uppercase color-gradient section-subtitle">Benefits</p>
             </div>
             <div class="col-md-6">
-                <h3 class="h3 section-title"><i>‘At a Glance’</i>or <i>‘Why Invest’</i> area</h3>
+                <h2 class="h3 section-title"><i>‘At a Glance’</i>or <i>‘Why Invest’</i> area</h2>
             </div>
         </div>
         <div class="row">
@@ -318,10 +317,10 @@
                 </div>
             </div>
             <div class="col-md-7">
-                <h3 class="h3">
+                <h2 class="h3">
                     To get started, you’ll receive a link to share with your followers when
                     promoting Altanine products.
-                </h3>
+                </h2>
                 <p class="text-xl-left">
                     When your followers use your link to purchase our products, you get paid! We’ll
                     make things easy for you by supplying promotional materials such as banners and
@@ -656,34 +655,38 @@
 </section>
 
                     <section class="section join">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-5">
-				<form>
-					<label for="join-news">
-						<span>And a-mail*</span>
-						<input id="join-news" type="email" placeholder="Your Email">
-					</label>
-					<button class="btn btn-gradient btn-md">
-						<span class="btn-bg"></span>
-						<span class="btn-icon"><svg><use xlink:href="img/icons/icons.svg#arrow-right"></use></svg></span>
-						<span class="btn-labels">
-							<span class="btn-labels-item">Subscribe</span>
-							<span class="btn-labels-item">Subscribe</span>
-							<span class="btn-labels-item">Subscribe</span>
-						</span>
-					</button>
-				</form>
-			</div>
-			<div class="col-md-7">
-				<p class="font-uppercase color-gradient section-subtitle">Stay up-to-date </p>
-				<h3 class="h3 section-title">Join our free <br>
-					<i>e-newsletter today</i>
-				</h3>
-			</div>
-		</div>
-	</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <form>
+                    <label for="join-news">
+                        <span>And a-mail*</span>
+                        <input id="join-news" type="email" placeholder="Your Email" />
+                    </label>
+                    <button class="btn btn-gradient btn-md">
+                        <span class="btn-bg"></span>
+                        <span class="btn-icon"
+                            ><svg><use xlink:href="img/icons/icons.svg#arrow-right"></use></svg
+                        ></span>
+                        <span class="btn-labels">
+                            <span class="btn-labels-item">Subscribe</span>
+                            <span class="btn-labels-item">Subscribe</span>
+                            <span class="btn-labels-item">Subscribe</span>
+                        </span>
+                    </button>
+                </form>
+            </div>
+            <div class="col-md-7">
+                <p class="font-uppercase color-gradient section-subtitle">Stay up-to-date</p>
+                <h2 class="h3 section-title">
+                    Join our free <br />
+                    <i>e-newsletter today</i>
+                </h2>
+            </div>
+        </div>
+    </div>
 </section>
+
                 </div>
             </div>
             <footer class="footer">
