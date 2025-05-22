@@ -30,8 +30,8 @@
   --font-body-s-mobile: 400 12rem / 150% var(--font-family-primary);
   --font-body-u-mobile: 700 12rem / 120% var(--font-family-primary);
   /* Colors */
-  --color-primary-1: #007061;
-  --color-primary-2: #00516e;
+  --color-primary-1: #00efd1;
+  --color-primary-2: #00acea;
   --color-primary-3: #b6c6d7;
   --color-primary-4: #c9dee5;
   --color-primary-gradient: linear-gradient(
@@ -45,7 +45,7 @@
       var(--color-primary-3) 100%
   );
   --color-black: #213245;
-  --color-blue: #01b7e6;
+  --color-blue: #00acea;
   --color-blue-100: #bfd4e4;
   --color-gray-700: #353e4d;
   --color-gray-600: #606c7a;
