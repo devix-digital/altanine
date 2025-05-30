@@ -1,24 +1,31 @@
-.hero-text{
-	background-color: var(--color-gray-200);
-	border-radius: 14px;
-	background-image: url(../img/abstract-bg-grey.jpg);
-	background-size: cover;
-	background-position: center;
-	min-height: 0;
-	height: auto;
-	padding: 184rem 0 54rem;
-	
-		@include maxWidth($sm){
-			padding: 165rem 0 36rem;
-			min-height: 0;
-		}
-	
-		.hero{
-				&-title{
-					color: var(--color-black);
-				}
-				&-description{
-					max-width: 528rem;
-				}
-		}
+.section-policy {
+    margin-bottom: 80rem;
+    @include maxWidth($sm) {
+        margin-bottom: 40rem;
+    }
+}
+
+.hero-text {
+    background-color: var(--color-gray-200);
+    border-radius: 14px;
+    background-image: url(../img/abstract-bg-grey.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 0;
+    height: auto;
+    padding: 184rem 0 54rem;
+
+    @include maxWidth($sm) {
+        padding: 165rem 0 36rem;
+        min-height: 0;
+    }
+
+    .hero {
+        &-title {
+            color: var(--color-black);
+        }
+        &-description {
+            max-width: 528rem;
+        }
+    }
 }

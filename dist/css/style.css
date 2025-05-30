@@ -6605,6 +6605,10 @@ html.lenis {
   background: var(--color-primary-gradient);
 }
 
+.section-policy {
+  margin-bottom: 80rem;
+}
+
 .hero-text {
   background-color: var(--color-gray-200);
   border-radius: 14px;
@@ -12661,6 +12665,10 @@ html.lenis {
 
   .property .row {
     flex-direction: column-reverse;
+  }
+
+  .section-policy {
+    margin-bottom: 40rem;
   }
 
   .hero-text {
