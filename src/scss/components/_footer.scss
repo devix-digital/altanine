@@ -1,257 +1,253 @@
-.footer{
-	border-radius: 14px;
-	background-color: var(--color-black);
-	padding: 64rem 0 25rem;
-	margin-top: 8rem;
-	position: relative;
-	overflow: hidden;
-	
-		@include maxWidth($sm){
-			padding: 40rem 0;
+.footer {
+    border-radius: 14px;
+    background-color: var(--color-black);
+    padding: 64rem 0 25rem;
+    margin-top: 8rem;
+    position: relative;
+    overflow: hidden;
+
+    @include maxWidth($sm) {
+        padding: 40rem 0;
     }
-	
-		&-abstract{
-			position: absolute;
-			inset: -150rem;
-			pointer-events: none;
-			
-				img{
-					@include imageCover(center);
-				}
-		}
-	
-		&-label{
-			text-transform: uppercase;
-			font-size: 10rem;
-			font-weight: 500;
-			letter-spacing: 0.04em;
-			color: var(--color-gray-500);
-			margin-bottom: 20rem;
-		}
-	
-		&-nav{
-			.footer-label{
-				margin: 24rem 0;
 
-				@include maxWidth($sm){
-					margin-top: 0;
-				}
-			}
-			color: var(--color-white);
-			
-				ul{
-					margin: 24rem 0;
-					display: flex;
-					flex-direction: column;
-					gap: 8rem;
-					
-						@include maxWidth($sm){
-              				gap: 12rem;
-							flex-wrap: wrap;
-							height: 161rem;
-            			}
-				}
+    &-abstract {
+        position: absolute;
+        inset: -150rem;
+        pointer-events: none;
 
+        img {
+            @include imageCover(center);
+        }
+    }
 
-				a{
-					@extend h5;
-					color: inherit;
-					text-transform: capitalize;
-					transition: color var(--transition-duration) var(--transition-easing);
-					
-						@include hover($md){
-							&:hover{
-								color: var(--color-blue)
-							}
-						}
-				}
-		}
-	
-		&-medicines,
-		&-contacts,
-		&-social{
-			padding-top: 64rem;
-			
-				@include maxWidth($sm){
-					padding-top: 20rem;
-				}
-		}
-	
-		&-contacts{
-				&-list{
-					display: flex;
-					flex-direction: column;
-					gap: 12rem;
-				}
-			
-				&-item{
-					color: var(--color-gray-400);
-					display: inline-block;
-					transition: color var(--transition-duration) var(--transition-easing);
-					
-						@include hover($md){
-							&:hover{
-								color: var(--color-blue)
-							}
-						}
-				}
-		}
-	
-		&-social{
-			display: flex;
-			flex-direction: column;
-			align-items: flex-end;
+    &-label {
+        text-transform: uppercase;
+        font-size: 10rem;
+        font-weight: 500;
+        letter-spacing: 0.04em;
+        color: var(--color-gray-500);
+        margin-bottom: 20rem;
+    }
 
-				@include maxWidth($sm){
-					align-items: flex-start;
-				}
+    &-nav {
+        .footer-label {
+            margin: 24rem 0;
 
-				&-list{
-					display: flex;
-					flex-direction: column;
-					align-items: flex-start;
-					gap: 15rem;
-				}
-				&-item{
-					color: var(--color-gray-400);
-					transition: color var(--transition-duration) var(--transition-easing);
-					
-						@include hover($md){
-							&:hover{
-								color: var(--color-blue)
-							}
-						}
-				}
-		}
-		&-medicines{
-				&-list{
-					display: flex;
-					flex-direction: column;
-					align-items: flex-start;
-					gap: 15rem;
-				}
-				&-item{
-					color: var(--color-gray-400);
-					transition: color var(--transition-duration) var(--transition-easing);
+            @include maxWidth($sm) {
+                margin-top: 0;
+            }
+        }
+        color: var(--color-white);
 
-						@include hover($md){
-							&:hover{
-								color: var(--color-blue)
-							}
-						}
-				}
-		}
+        ul {
+            margin: 24rem 0;
+            display: flex;
+            flex-direction: column;
+            gap: 8rem;
 
-		&-logo{
-
-				@include maxWidth($sm){
-          			text-align: left;
-					padding-top: 40rem;
+            @include maxWidth($sm) {
+                gap: 12rem;
+                flex-wrap: wrap;
+                height: 161rem;
+            }
         }
 
-			.logo{
-				margin: 5rem 0;
+        a {
+            @extend h5;
+            color: inherit;
+            text-transform: capitalize;
+            transition: color var(--transition-duration) var(--transition-easing);
 
-				@include maxWidth($sm){
-					width: 152rem;
-					height: 42rem;
-            	}
-			}
-		}
-	
-		&-developer,
-		&-copyright,
-		&-additional{
-			color: var(--color-gray-500);
-			font: var(--font-body-s);
-			margin-top: 101rem;
-			
-				@include maxWidth($sm){
-					margin-top: 12rem;
-				}
-			
-				a{
-					color: var(--color-gray-500);
-				}
-		}
-	
-		&-developer{
-			display: inline-flex;
-			align-items: center;
-			gap: 12rem;
-			
-				@include maxWidth($sm){
-					margin-top: 40rem;
-				}
-			
-				&-logo{
-					width: 121rem;
-					height: 20rem;
-					position: relative;
-					display: inline-block;
-						
-						img{
-							position: absolute;
-							top: 0;
-							left: 0;
-							@include imageContain(center);
-							transition: opacity var(--transition-duration) var(--transition-easing);
-							
-								&:nth-child(1){
-									opacity: 1;
-								}
-							
-								&:nth-child(2){
-									opacity: 0;
-								}
-						}
-				}
-			
-				@include hover($md){
-					&:hover{
-							img{
-								&:nth-child(1){
-									opacity: 0;
-								}
-								
-								&:nth-child(2){
-									opacity: 1;
-								}
-							}
-					}
-				}
-		}
-	
-		&-additional{
-			text-align: right;
-			
-				ul{
-					display: flex;
-					flex-wrap: wrap;
-					justify-content: flex-end;
-					align-items: center;
-					gap: 12rem;
+            @include hover($md) {
+                &:hover {
+                    color: var(--color-blue);
+                }
+            }
+        }
+    }
 
-					@include maxWidth($sm){
-						justify-content: space-between;
-					}
-				}
-			
-				a{
-					transition: color var(--transition-duration) var(--transition-easing);
-					
-						@include hover($md){
-							&:hover{
-								color: var(--color-blue)
-							}
-						}
-				}
-		}
-	
-		.hr{
-			background-color: var(--color-gray-500);
-			margin: 5rem 0 -5rem;
-			
+    &-medicines,
+    &-contacts,
+    &-social {
+        padding-top: 64rem;
 
-		}
+        @include maxWidth($sm) {
+            padding-top: 20rem;
+        }
+    }
+
+    &-contacts {
+        &-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12rem;
+        }
+
+        &-item {
+            color: var(--color-white);
+            display: inline-block;
+            transition: color var(--transition-duration) var(--transition-easing);
+
+            @include hover($md) {
+                &:hover {
+                    color: var(--color-blue);
+                }
+            }
+        }
+    }
+
+    &-social {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        @include maxWidth($sm) {
+            align-items: flex-start;
+        }
+
+        &-list {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 15rem;
+        }
+        &-item {
+            color: var(--color-white);
+            transition: color var(--transition-duration) var(--transition-easing);
+
+            @include hover($md) {
+                &:hover {
+                    color: var(--color-blue);
+                }
+            }
+        }
+    }
+    &-medicines {
+        &-list {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 15rem;
+        }
+        &-item {
+            color: var(--color-white);
+            transition: color var(--transition-duration) var(--transition-easing);
+
+            @include hover($md) {
+                &:hover {
+                    color: var(--color-blue);
+                }
+            }
+        }
+    }
+
+    &-logo {
+        @include maxWidth($sm) {
+            text-align: left;
+            padding-top: 40rem;
+        }
+
+        .logo {
+            margin: 5rem 0;
+
+            @include maxWidth($sm) {
+                width: 152rem;
+                height: 42rem;
+            }
+        }
+    }
+
+    &-developer,
+    &-copyright,
+    &-additional {
+        color: var(--color-gray-500);
+        font: var(--font-body-s);
+        margin-top: 101rem;
+
+        @include maxWidth($sm) {
+            margin-top: 12rem;
+        }
+
+        a {
+            color: var(--color-gray-500);
+        }
+    }
+
+    &-developer {
+        display: inline-flex;
+        align-items: center;
+        gap: 12rem;
+
+        @include maxWidth($sm) {
+            margin-top: 40rem;
+        }
+
+        &-logo {
+            width: 121rem;
+            height: 20rem;
+            position: relative;
+            display: inline-block;
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                @include imageContain(center);
+                transition: opacity var(--transition-duration) var(--transition-easing);
+
+                &:nth-child(1) {
+                    opacity: 1;
+                }
+
+                &:nth-child(2) {
+                    opacity: 0;
+                }
+            }
+        }
+
+        @include hover($md) {
+            &:hover {
+                img {
+                    &:nth-child(1) {
+                        opacity: 0;
+                    }
+
+                    &:nth-child(2) {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+
+    &-additional {
+        text-align: right;
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 12rem;
+
+            @include maxWidth($sm) {
+                justify-content: space-between;
+            }
+        }
+
+        a {
+            transition: color var(--transition-duration) var(--transition-easing);
+
+            @include hover($md) {
+                &:hover {
+                    color: var(--color-blue);
+                }
+            }
+        }
+    }
+
+    .hr {
+        background-color: var(--color-gray-500);
+        margin: 5rem 0 -5rem;
+    }
 }

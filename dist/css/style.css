@@ -3018,7 +3018,7 @@ svg {
 }
 
 .footer-contacts-item {
-  color: var(--color-gray-400);
+  color: var(--color-white);
   display: inline-block;
   transition: color var(--transition-duration) var(--transition-easing);
 }
@@ -3037,7 +3037,7 @@ svg {
 }
 
 .footer-social-item {
-  color: var(--color-gray-400);
+  color: var(--color-white);
   transition: color var(--transition-duration) var(--transition-easing);
 }
 
@@ -3049,7 +3049,7 @@ svg {
 }
 
 .footer-medicines-item {
-  color: var(--color-gray-400);
+  color: var(--color-white);
   transition: color var(--transition-duration) var(--transition-easing);
 }
 
