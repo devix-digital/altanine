@@ -60,7 +60,7 @@
 
             @include hover($md) {
                 &:hover {
-                    color: var(--color-blue);
+                    color: var(--color-footer-hover);
                 }
             }
         }
@@ -90,7 +90,7 @@
 
             @include hover($md) {
                 &:hover {
-                    color: var(--color-blue);
+                    color: var(--color-footer-hover);
                 }
             }
         }
@@ -117,7 +117,7 @@
 
             @include hover($md) {
                 &:hover {
-                    color: var(--color-blue);
+                    color: var(--color-footer-hover);
                 }
             }
         }
@@ -135,7 +135,7 @@
 
             @include hover($md) {
                 &:hover {
-                    color: var(--color-blue);
+                    color: var(--color-footer-hover);
                 }
             }
         }

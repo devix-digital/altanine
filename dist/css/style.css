@@ -59,6 +59,7 @@
   --color-success: #21d184;
   --color-error: #ff5c5c;
   --color-link: #3870ff;
+  --color-footer-hover: #02ccff;
   --transition-duration: 0.5s;
   --transition-easing: ease;
 }
@@ -9115,19 +9116,19 @@ html.lenis {
   }
 
   .footer-nav a:hover {
-    color: var(--color-blue);
+    color: var(--color-footer-hover);
   }
 
   .footer-contacts-item:hover {
-    color: var(--color-blue);
+    color: var(--color-footer-hover);
   }
 
   .footer-social-item:hover {
-    color: var(--color-blue);
+    color: var(--color-footer-hover);
   }
 
   .footer-medicines-item:hover {
-    color: var(--color-blue);
+    color: var(--color-footer-hover);
   }
 
   .footer-developer:hover img:nth-child(1) {
