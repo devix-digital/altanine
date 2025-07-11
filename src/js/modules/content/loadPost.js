@@ -57,6 +57,35 @@ export const initLoadPosts = () => {
     let postContainer = document.querySelector(".loadMore")
     let loadMoreButton = document.querySelector(".postsShowMore")
     let category = ""
+    const newsFilter = document.querySelector(".news-filter")
+    const newsFilterOpener = newsFilter.querySelector(".opener")
+    const newsFilterButtons = newsFilter.querySelectorAll(".news-filter-dropdown .btn")
+    const newsFilterOpenerLabels = newsFilterOpener.querySelectorAll(".btn-labels-item")
+
+    newsFilterOpener.addEventListener("click", function (e) {
+        e.preventDefault()
+        newsFilter.classList.toggle("expanded")
+        newsFilterOpener.classList.toggle("is-active")
+    })
+
+    newsFilterButtons.forEach((btn) => {
+        btn.addEventListener("click", function (e) {
+            e.preventDefault()
+            const filterLabel = e.currentTarget.querySelector(".btn-labels-item")
+
+            newsFilterButtons.forEach((item) => {
+                item.classList.remove("is-active")
+            })
+
+            btn.classList.add("is-active")
+
+            newsFilterOpenerLabels.forEach((label) => {
+                label.textContent = filterLabel.textContent
+            })
+
+            newsFilter.classList.remove("expanded")
+        })
+    })
 
     document.querySelectorAll(".blog-filter-row p").forEach((input) => {
         input.addEventListener("click", function (e) {

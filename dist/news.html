@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"/>
+        <title>Altanine</title>
+
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png" />
+
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="theme-color" content="#ffffff" />
+        <meta name="msapplication-navbutton-color" content="#ffffff" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff" />
+
+        <link
+            rel="preload"
+            href="fonts/Inter-Regular.woff"
+            as="font"
+            type="font/woff"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="fonts/Inter-Regular.woff2"
+            as="font"
+            type="font/woff2"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="fonts/Inter-Medium.woff"
+            as="font"
+            type="font/woff"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="fonts/Inter-Medium.woff2"
+            as="font"
+            type="font/woff2"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="fonts/Inter-Bold.woff"
+            as="font"
+            type="font/woff"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="fonts/Inter-Bold.woff2"
+            as="font"
+            type="font/woff2"
+            crossorigin="anonymous"
+        />
+
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <main class="wrapper" id="wrapper">
+            <div class="preloader" id="preloader"></div>
+            <header class="header" id="header">
+    <div class="header-panel">
+        <div class="header-panel-logo">
+            <a href="/" class="logo">
+                <img src="../img/logo.svg" alt="Altanine" />
+            </a>
+            <div class="header-contacts">
+                <a href="tel:+66 666 66 66 666" class="header-contacts-item">+66 666 66 66 666</a>
+                <a href="mailto:info@altanine.com" class="header-contacts-item"
+                    >info@altanine.com</a
+                >
+            </div>
+        </div>
+        <div class="header-panel-nav" id="mobile-menu">
+            <nav>
+                <ul>
+                    <li><a href="about-us.html">About us</a></li>
+                    <li><a href="innovation.html">Innovation</a></li>
+                    <li><a href="markets.html">Markets</a></li>
+                    <li>
+                        <a href="metformin.html">Medicines</a>
+                        <ul>
+                            <li><a href="metformin.html">Metformin</a></li>
+                            <li><a href="sildenafil.html">Sildenafil</a></li>
+                            <li><a href="sumatriptan.html">Sumatriptan</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="investor.html">Investor relations</a></li>
+                    <li>
+                        <a href="blog.html">Insights</a>
+                        <ul>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="news.html">News</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-contacts">
+                <a href="tel:+66 666 66 66 666" class="header-contacts-item">+66 666 66 66 666</a>
+                <a href="mailto:info@altanine.com" class="header-contacts-item"
+                    >info@altanine.com</a
+                >
+            </div>
+            <a href="contact-us.html" class="btn btn-gradient">
+                <span class="btn-bg"></span>
+                <span class="btn-labels">
+                    <span class="btn-labels-item">Contact us</span>
+                    <span class="btn-labels-item">Contact us</span>
+                    <span class="btn-labels-item">Contact us</span>
+                </span>
+            </a>
+        </div>
+        <div class="header-panel-action">
+            <a href="contact-us.html" class="btn btn-gradient">
+                <span class="btn-bg"></span>
+                <span class="btn-labels">
+                    <span class="btn-labels-item">Contact us</span>
+                    <span class="btn-labels-item">Contact us</span>
+                    <span class="btn-labels-item">Contact us</span>
+                </span>
+            </a>
+            <button class="burger" aria-label="Open menu" aria-controls="mobile-menu">
+                <span class="burger-box">
+                    <span class="burger-box-arrow"></span>
+                    <span class="burger-box-arrow"></span>
+                    <span class="burger-box-arrow"></span>
+                </span>
+            </button>
+        </div>
+    </div>
+</header>
+
+            <div data-router-wrapper>
+                <div data-router-view="default">
+                    <section class="section hero hero-news">
+    <div class="bread-crumbs">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><span>News & Events</span></li>
+            </ul>
+        </div>
+    </div>
+    <div class="hero-banner" id="hero-banner">
+        <div class="hero-banner-item">
+            <picture>
+                <source srcset="img/investor/hero-banner.webp" type="image/webp" />
+                <source srcset="img/investor/hero-banner.jpg" type="image/jpeg" />
+                <img src="img/investor/hero-banner.jpg" />
+            </picture>
+        </div>
+    </div>
+    <div class="hero-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10">
+                    <p class="hero-subtitle font-uppercase color-white" data-load-order="1">
+                        News & Events
+                    </p>
+                    <h1 class="hero-title h1" data-split-text>
+                        Press Releases
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+                    <section class="section news page-news">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h2 class="h3 section-title">Our rress releases </h2>
+            </div>
+            <div class="col-md-4 my-auto">
+                <div class="news-filter">
+                    <button class="btn btn-line btn-md opener">
+                        <span class="btn-bg"></span>
+                        <span class="btn-labels">
+                            <span class="btn-labels-item">Latest</span>
+                            <span class="btn-labels-item">Latest</span>
+                            <span class="btn-labels-item">Latest</span>
+                        </span>
+                    </button>
+                    <div class="news-filter-dropdown">
+                        <div class="news-filter-dropdown-frame">
+                            <a href="#" class="btn btn-line btn-md is-active">
+                                <span class="btn-bg"></span>
+                                <span class="btn-labels">
+                                    <span class="btn-labels-item">Latest</span>
+                                    <span class="btn-labels-item">Latest</span>
+                                    <span class="btn-labels-item">Latest</span>
+                                </span>
+                            </a>
+                            <a href="#" class="btn btn-line btn-md">
+                                <span class="btn-bg"></span>
+                                <span class="btn-labels">
+                                    <span class="btn-labels-item">2025</span>
+                                    <span class="btn-labels-item">2025</span>
+                                    <span class="btn-labels-item">2025</span>
+                                </span>
+                            </a>
+                            <a href="#" class="btn btn-line btn-md">
+                                <span class="btn-bg"></span>
+                                <span class="btn-labels">
+                                    <span class="btn-labels-item">2024</span>
+                                    <span class="btn-labels-item">2024</span>
+                                    <span class="btn-labels-item">2024</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="news-wrap">
+            <div class="news__item">
+                <div class="post">
+                    <div class="row align-items-center">
+                        <div class="col-md-4">
+                            <div class="post-thumbnail">
+                                <img
+                                    src="img/home/news-1.jpg"
+                                    alt="ROSEN, LEADING TRIAL ATTORNEYS, Encourages Apple Inc. Investors to Secure Counsel Before Important Deadline in Securities Class Action - AAPL"
+                                />
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <h3 class="post-title text-4xl">
+                                ROSEN, LEADING TRIAL ATTORNEYS, Encourages Apple Inc. Investors to Secure Counsel Before Important Deadline in Securities Class Action - AAPL
+                            </h3>
+                            <div class="post-action">
+                                <a href="news-details.html" class="btn btn-arrow">
+                                    <span class="btn-icon">
+                                        <span class="btn-icon-item"></span>
+                                        <span class="btn-icon-item"></span>
+                                        <span class="btn-icon-item"></span>
+                                        <span class="btn-icon-item"></span>
+                                    </span>
+                                    <span class="btn-labels">
+                                        <span class="btn-labels-item">Learn more</span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="news__item">
+                <div class="post">
+                    <div class="row align-items-center">
+                        <div class="col-md-4">
+                            <div class="post-thumbnail">
+                                <img
+                                    src="img/home/news-1.jpg"
+                                    alt="ROSEN, LEADING TRIAL ATTORNEYS, Encourages Apple Inc. Investors to Secure Counsel Before Important Deadline in Securities Class Action - AAPL"
+                                />
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <h3 class="post-title text-4xl">
+                                ROSEN, LEADING TRIAL ATTORNEYS, Encourages Apple Inc. Investors to Secure Counsel Before Important Deadline in Securities Class Action - AAPL
+                            </h3>
+                            <div class="post-action">
+                                <a href="news-details.html" class="btn btn-arrow">
+                                    <span class="btn-icon">
+                                        <span class="btn-icon-item"></span>
+                                        <span class="btn-icon-item"></span>
+                                        <span class="btn-icon-item"></span>
+                                        <span class="btn-icon-item"></span>
+                                    </span>
+                                    <span class="btn-labels">
+                                        <span class="btn-labels-item">Learn more</span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="news__item">
+                <div class="post">
+                    <div class="row align-items-center">
+                        <div class="col-md-4">
+                            <div class="post-thumbnail">
+                                <img
+                                    src="img/home/news-1.jpg"
+                                    alt="ROSEN, LEADING TRIAL ATTORNEYS, Encourages Apple Inc. Investors to Secure Counsel Before Important Deadline in Securities Class Action - AAPL"
+                                />
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <h3 class="post-title text-4xl">
+                                ROSEN, LEADING TRIAL ATTORNEYS, Encourages Apple Inc. Investors to Secure Counsel Before Important Deadline in Securities Class Action - AAPL
+                            </h3>
+                            <div class="post-action">
+                                <a href="news-details.html" class="btn btn-arrow">
+                                    <span class="btn-icon">
+                                        <span class="btn-icon-item"></span>
+                                        <span class="btn-icon-item"></span>
+                                        <span class="btn-icon-item"></span>
+                                        <span class="btn-icon-item"></span>
+                                    </span>
+                                    <span class="btn-labels">
+                                        <span class="btn-labels-item">Learn more</span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="news__item">
+                <div class="post">
+                    <div class="row align-items-center">
+                        <div class="col-md-4">
+                            <div class="post-thumbnail">
+                                <img
+                                    src="img/home/news-1.jpg"
+                                    alt="ROSEN, LEADING TRIAL ATTORNEYS, Encourages Apple Inc. Investors to Secure Counsel Before Important Deadline in Securities Class Action - AAPL"
+                                />
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <h3 class="post-title text-4xl">
+                                ROSEN, LEADING TRIAL ATTORNEYS, Encourages Apple Inc. Investors to Secure Counsel Before Important Deadline in Securities Class Action - AAPL
+                            </h3>
+                            <div class="post-action">
+                                <a href="news-details.html" class="btn btn-arrow">
+                                    <span class="btn-icon">
+                                        <span class="btn-icon-item"></span>
+                                        <span class="btn-icon-item"></span>
+                                        <span class="btn-icon-item"></span>
+                                        <span class="btn-icon-item"></span>
+                                    </span>
+                                    <span class="btn-labels">
+                                        <span class="btn-labels-item">Learn more</span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="news__item">
+                <div class="post">
+                    <div class="row align-items-center">
+                        <div class="col-md-4">
+                            <div class="post-thumbnail">
+                                <img
+                                    src="img/home/news-1.jpg"
+                                    alt="ROSEN, LEADING TRIAL ATTORNEYS, Encourages Apple Inc. Investors to Secure Counsel Before Important Deadline in Securities Class Action - AAPL"
+                                />
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <h3 class="post-title text-4xl">
+                                ROSEN, LEADING TRIAL ATTORNEYS, Encourages Apple Inc. Investors to Secure Counsel Before Important Deadline in Securities Class Action - AAPL
+                            </h3>
+                            <div class="post-action">
+                                <a href="news-details.html" class="btn btn-arrow">
+                                    <span class="btn-icon">
+                                        <span class="btn-icon-item"></span>
+                                        <span class="btn-icon-item"></span>
+                                        <span class="btn-icon-item"></span>
+                                        <span class="btn-icon-item"></span>
+                                    </span>
+                                    <span class="btn-labels">
+                                        <span class="btn-labels-item">Learn more</span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="news__item">
+                <div class="post">
+                    <div class="row align-items-center">
+                        <div class="col-md-4">
+                            <div class="post-thumbnail">
+                                <img
+                                    src="img/home/news-1.jpg"
+                                    alt="ROSEN, LEADING TRIAL ATTORNEYS, Encourages Apple Inc. Investors to Secure Counsel Before Important Deadline in Securities Class Action - AAPL"
+                                />
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <h3 class="post-title text-4xl">
+                                ROSEN, LEADING TRIAL ATTORNEYS, Encourages Apple Inc. Investors to Secure Counsel Before Important Deadline in Securities Class Action - AAPL
+                            </h3>
+                            <div class="post-action">
+                                <a href="news-details.html" class="btn btn-arrow">
+                                    <span class="btn-icon">
+                                        <span class="btn-icon-item"></span>
+                                        <span class="btn-icon-item"></span>
+                                        <span class="btn-icon-item"></span>
+                                        <span class="btn-icon-item"></span>
+                                    </span>
+                                    <span class="btn-labels">
+                                        <span class="btn-labels-item">Learn more</span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="news__item">
+                <div class="post">
+                    <div class="row align-items-center">
+                        <div class="col-md-4">
+                            <div class="post-thumbnail">
+                                <img
+                                    src="img/home/news-1.jpg"
+                                    alt="ROSEN, LEADING TRIAL ATTORNEYS, Encourages Apple Inc. Investors to Secure Counsel Before Important Deadline in Securities Class Action - AAPL"
+                                />
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <h3 class="post-title text-4xl">
+                                ROSEN, LEADING TRIAL ATTORNEYS, Encourages Apple Inc. Investors to Secure Counsel Before Important Deadline in Securities Class Action - AAPL
+                            </h3>
+                            <div class="post-action">
+                                <a href="news-details.html" class="btn btn-arrow">
+                                    <span class="btn-icon">
+                                        <span class="btn-icon-item"></span>
+                                        <span class="btn-icon-item"></span>
+                                        <span class="btn-icon-item"></span>
+                                        <span class="btn-icon-item"></span>
+                                    </span>
+                                    <span class="btn-labels">
+                                        <span class="btn-labels-item">Learn more</span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="news-wrap-more">
+            <a href="#" class="btn btn-gradient btn-md">
+                <span class="btn-bg"></span>
+                <span class="btn-labels">
+                    <span class="btn-labels-item">View More</span>
+                    <span class="btn-labels-item">View More</span>
+                    <span class="btn-labels-item">View More</span>
+                </span>
+            </a>
+        </div>
+    </div>
+</section>
+
+                    <section class="section content content-second">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="h3 section-title">Interested in finding <br /><i>out more?</i></h2>
+                <div class="join-box-form">
+                    <form>
+                        <label class="field">
+                            <span class="field-label">E-mail*</span>
+                            <input
+                                type="email"
+                                placeholder="Your Email"
+                                class="field-item"
+                                required
+                            />
+                            <span class="field-message __success">Success message</span>
+                            <span class="field-message __error">Error message</span>
+                        </label>
+                        <button class="btn btn-gradient btn-md btn-full-width">
+                            <span class="btn-bg"></span>
+                            <span class="btn-icon"
+                                ><svg><use xlink:href="img/icons/icons.svg#arrow-right"></use></svg
+                            ></span>
+                            <span class="btn-labels">
+                                <span class="btn-labels-item">Subscribe</span>
+                                <span class="btn-labels-item">Subscribe</span>
+                                <span class="btn-labels-item">Subscribe</span>
+                            </span>
+                        </button>
+                    </form>
+                </div>
+                <p class="content-info">
+                    <i class="color-gradient">* </i> For information about our patents, intellectual
+                    property or products.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="content-banner show-on-scroll">
+        <picture>
+            <source srcset="img/home/content-1.webp" type="image/webp" />
+            <source srcset="img/home/content-1.png" type="image/jpeg" />
+            <img src="img/home/content-1.png" class="content-banner-image" />
+        </picture>
+    </div>
+</section>
+
+                </div>
+            </div>
+            <footer class="footer">
+    <div class="footer-abstract">
+        <img src="img/footer-abstract.svg" alt="Alt" />
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7 offset-md-5 d-none d-md-block">
+                <hr class="hr" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-5 order-md-1">
+                <div class="footer-logo d-none d-md-block">
+                    <a href="/" class="logo">
+                        <img src="img/logo-white.svg" alt="Altanine" />
+                    </a>
+                </div>
+                <div class="footer-nav">
+                    <p class="footer-label">Site map</p>
+                    <ul>
+                        <li><a href="about-us.html">About us</a></li>
+                        <li><a href="innovation.html">Innovation</a></li>
+                        <li><a href="markets.html">Markets</a></li>
+                        <li><a href="investor.html">Investor Relations</a></li>
+                        <li><a href="blog.html">News</a></li>
+                        <li><a href="contact-us.html">Contact us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 d-md-none">
+                <hr class="hr" />
+            </div>
+            <div class="col-md-7 order-md-2">
+                <div class="row justify-content-between">
+                    <div class="col-md-3 order-md-3 col-6">
+                        <div class="footer-medicines">
+                            <p class="footer-label">Medicines</p>
+                            <div class="footer-medicines-list">
+                                <a href="metformin.html" class="footer-medicines-item">Metformin</a>
+                                <a href="sildenafil.html" class="footer-medicines-item"
+                                    >Sildenafil</a
+                                >
+                                <a href="sumatriptan.html" class="footer-medicines-item"
+                                    >Sumatriptan</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 order-md-3 col-6 order-1">
+                        <div class="footer-contacts">
+                            <p class="footer-label">Contacts us</p>
+                            <div class="footer-contacts-list">
+                                <a href="tel:+66 666 66 66 666" class="footer-contacts-item"
+                                    >+66 666 66 66 666</a
+                                >
+                                <a href="mailto:info@altanine.com" class="footer-contacts-item"
+                                    >info@altanine.com</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 order-md-3 col-6">
+                        <div class="footer-social">
+                            <p class="footer-label">Social networks</p>
+                            <div class="footer-social-list">
+                                <a
+                                    href="#"
+                                    target="_blank"
+                                    class="btn btn-arrow color-gray-400 footer-social-item"
+                                >
+                                    <span class="btn-icon">
+                                        <span class="btn-icon-item"></span>
+                                        <span class="btn-icon-item"></span>
+                                        <span class="btn-icon-item"></span>
+                                        <span class="btn-icon-item"></span>
+                                    </span>
+                                    <span class="btn-labels">
+                                        <span class="btn-labels-item">Instagram</span>
+                                    </span>
+                                </a>
+                                <a
+                                    href="#"
+                                    target="_blank"
+                                    class="btn btn-arrow color-gray-400 footer-social-item"
+                                >
+                                    <span class="btn-icon">
+                                        <span class="btn-icon-item"></span>
+                                        <span class="btn-icon-item"></span>
+                                        <span class="btn-icon-item"></span>
+                                        <span class="btn-icon-item"></span>
+                                    </span>
+                                    <span class="btn-labels">
+                                        <span class="btn-labels-item">Linkedin</span>
+                                    </span>
+                                </a>
+                                <a
+                                    href="#"
+                                    target="_blank"
+                                    class="btn btn-arrow color-gray-400 footer-social-item"
+                                >
+                                    <span class="btn-icon">
+                                        <span class="btn-icon-item"></span>
+                                        <span class="btn-icon-item"></span>
+                                        <span class="btn-icon-item"></span>
+                                        <span class="btn-icon-item"></span>
+                                    </span>
+                                    <span class="btn-labels">
+                                        <span class="btn-labels-item">Facebook</span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-logo d-md-none">
+                    <a href="/" class="logo">
+                        <img src="img/logo-white.svg" alt="Altanine" />
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 order-md-2">
+                <p class="footer-copyright">&copy; 2024 — Altanine, All Rights Reserved</p>
+            </div>
+            <div class="col-md-3 order-md-3">
+                <div class="footer-additional">
+                    <ul>
+                        <li><a href="text-template.html">Lorem Ipsum</a></li>
+                        <li><a href="text-template.html">Lorem Ipsum</a></li>
+                        <li><a href="text-template.html">Privacy policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <a href="https://www.studiopresto.com/" target="_blank" class="footer-developer">
+                    Made by
+                    <span class="footer-developer-logo">
+                        <img src="img/developer-logo.svg" alt="Studiopresto" />
+                        <img src="img/developer-logo-blue.svg" alt="Studiopresto" />
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+            <div class="modal" id="investor-modal">
+    <div class="modal-bg"></div>
+    <div class="modal-close" data-modal-close="#investor-modal"></div>
+    <div class="modal-box" data-lenis-prevent>
+        <div class="modal-box-item">
+            <div class="investor-modal">
+                <div class="modal-close-btn" data-modal-close="#investor-modal">
+                    <svg><use xlink:href="img/icons/icons.svg#close"></use></svg>
+                </div>
+                <div class="investor-modal-content">
+                    <h4 class="h5">We’d love to hear from you.</h4>
+                    <form>
+                        <label class="field">
+                            <span class="field-label">You Full name* </span>
+                            <input
+                                type="email"
+                                placeholder="Full name"
+                                class="field-item"
+                                required
+                            />
+                            <span class="field-message __success">Success message</span>
+                            <span class="field-message __error">Error message</span>
+                        </label>
+                        <label class="field">
+                            <span class="field-label">And email*</span>
+                            <input
+                                type="email"
+                                placeholder="You email"
+                                class="field-item"
+                                required
+                            />
+                            <span class="field-message __success">Success message</span>
+                            <span class="field-message __error">Error message</span>
+                        </label>
+                        <label class="field">
+                            <span class="field-label">Now write down your message *</span>
+                            <span class="field-resize"></span>
+                            <textarea
+                                placeholder="You message"
+                                class="field-item"
+                                required
+                            ></textarea>
+                            <span class="field-message __success">Success message</span>
+                            <span class="field-message __error">Error message</span>
+                        </label>
+                        <button class="btn btn-gradient btn-md btn-full-width">
+                            <span class="btn-bg"></span>
+                            <span class="btn-icon"
+                                ><svg><use xlink:href="img/icons/icons.svg#arrow-right"></use></svg
+                            ></span>
+                            <span class="btn-labels">
+                                <span class="btn-labels-item">Become an investor</span>
+                                <span class="btn-labels-item">Become an investor</span>
+                                <span class="btn-labels-item">Become an investor</span>
+                            </span>
+                        </button>
+                    </form>
+                </div>
+                <div class="investor-modal-thumbnail">
+                    <picture>
+                        <source srcset="img/investor/modal-banner.webp" type="image/webp" />
+                        <source srcset="img/investor/modal-banner.jpg" type="image/jpeg" />
+                        <img src="img/investor/modal-banner.jpg" />
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+            <div class="modal" id="thanks">
+    <div class="modal-bg"></div>
+    <div class="modal-close" data-modal-close="#thanks"></div>
+    <div class="modal-box" data-lenis-prevent>
+        <div class="modal-box-item">
+            <div class="thanks">
+                <div class="modal-close-btn" data-modal-close="#thanks">
+                    <svg><use xlink:href="img/icons/icons.svg#close"></use></svg>
+                </div>
+                <div class="thanks-content">
+                    <h3 class="h4 thanks-content-title">Thank You<i>!</i></h3>
+                    <p class="thanks-content-subtitle">Your submission has been received!</p>
+                    <p class="thanks-content-description">We will reach out to you shortly.</p>
+                </div>
+                <div class="thanks-thumbnail">
+                    <img src="../img/logo-mini.svg" alt="Altanine" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </main>
+        <script src="js/app.min.js"></script>
+    </body>
+</html>
