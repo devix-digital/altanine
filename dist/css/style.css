@@ -4449,8 +4449,8 @@ svg {
 }
 
 .hero-news .hero-banner-item img {
-  -o-object-position: 60%;
-     object-position: 60%;
+  -o-object-position: right top;
+     object-position: right top;
 }
 
 .hero-news .hero-content {
