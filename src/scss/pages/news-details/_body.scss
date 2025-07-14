@@ -1,6 +1,7 @@
 .news-details {
     padding: 50rem 0 0;
     margin-top: -144rem;
+    margin-bottom: 60rem;
 
     @include maxWidth($sm) {
         margin-top: -80rem;

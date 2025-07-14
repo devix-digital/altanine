@@ -1,4 +1,9 @@
 .hero-news {
+    max-height: 400rem;
+    min-height: 0;
+    margin-bottom: 64rem;
+    z-index: 3;
+
     .bread-crumbs {
         li {
             &:last-child {

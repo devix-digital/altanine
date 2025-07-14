@@ -41,6 +41,16 @@
 					font: var(--font-body-l-mobile);
 					margin: 12rem 0 9rem;
 				}
+
+			> a {
+				color: currentColor;
+				transition: color var(--transition-duration) var(--transition-easing);
+
+				&:hover,
+				&:focus {
+					color: var(--color-primary-2);
+				}
+			}
 		}
 		
 		&-description{

@@ -1,19 +1,6 @@
 .hero-news-details{
-	padding: 200rem 0 0;
-	background-color: var(--color-gray-200);
-	border-radius: 14px 14px 8px 8px;
+	padding: 176rem 0 0;
 	overflow: hidden;
-	
-		@include maxWidth($sm){
-			padding: 176rem 0 0;
-		}
-	
-		.post-time{
-			position: relative;
-			top: 0;
-			left: 0;
-			display: inline-block;
-		}
 	
 		.hero{
 				&-description{
@@ -29,12 +16,11 @@
 	
 		.section-banner{
 			border-radius: 8px;
-			margin-top: 41rem;
-			height: 600rem;
-			
-				@include maxWidth($sm){
-					margin-top: 24rem;
-					height: 370rem;
-				}
+			margin-bottom: 40rem;
+			height: auto;
+
+			@include maxWidth($sm){
+				margin-bottom: 24rem;
+			}
 		}
 }
