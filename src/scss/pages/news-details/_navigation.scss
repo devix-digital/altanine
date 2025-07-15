@@ -1,7 +1,7 @@
 .post-navigation {
     display: flex;
     flex-flow: row wrap;
-    gap: 24px;
+    gap: 50rem;
     margin-bottom: 144rem;
     justify-content: space-between;
     
@@ -14,7 +14,11 @@
             padding: 20rem;
             font-size: 22rem;
             gap: 16rem;
-            width: calc(50% - 12px);
+            width: calc(50% - 25rem);
+
+            @include maxWidth($sm){
+                width: 100%;
+            }
     
             .btn-icon {
                 min-width: 24px;

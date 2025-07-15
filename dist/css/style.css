@@ -5012,7 +5012,6 @@ svg {
   max-height: none;
   height: auto;
   margin-bottom: 24rem;
-  height: auto;
 }
 
 .hero-news-details .post-date {
@@ -5032,6 +5031,10 @@ svg {
 
 .news-details-info {
   color: var(--color-gray-600);
+}
+
+.news-details-info > *:first-child {
+  margin-top: 0;
 }
 
 .news-details-info h1,
@@ -5158,7 +5161,7 @@ svg {
 .share-icons {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
 }
 
 .share-icons ul {
@@ -5187,40 +5190,10 @@ svg {
   color: inherit;
 }
 
-.blog-last {
-  background-color: var(--color-gray-200);
-  padding: 144rem 0 110rem;
-  margin: 44rem 0 -20rem;
-  border-radius: 14px;
-  background-image: url("../img/home/enhancements-abstract.svg");
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
-}
-
-.news-details-info .btn-arrow:not([class*=color-]) .btn-icon {
-  color: var(--color-link);
-}
-
-.news-details-info .btn-labels {
-  white-space: wrap;
-  margin-bottom: 12rem;
-}
-
-.news-details-info .btn-arrow:not([class*=color-]) .btn-labels-item {
-  background: var(--color-link);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.news-details-info .btn-icon {
-  top: 10rem;
-}
-
 .post-navigation {
   display: flex;
   flex-flow: row wrap;
-  gap: 24px;
+  gap: 50rem;
   margin-bottom: 144rem;
   justify-content: space-between;
 }
@@ -5233,7 +5206,7 @@ svg {
   padding: 20rem;
   font-size: 22rem;
   gap: 16rem;
-  width: calc(50% - 12px);
+  width: calc(50% - 25rem);
 }
 
 .post-navigation .btn.prev .btn-icon,
@@ -5282,6 +5255,25 @@ svg {
 
 .post-navigation .btn.back .btn-icon {
   transform: scaleX(-1) translateY(-50%);
+}
+
+.news-details-info .btn-arrow:not([class*=color-]) .btn-icon {
+  color: var(--color-link);
+}
+
+.news-details-info .btn-labels {
+  white-space: wrap;
+  margin-bottom: 12rem;
+}
+
+.news-details-info .btn-arrow:not([class*=color-]) .btn-labels-item {
+  background: var(--color-link);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.news-details-info .btn-icon {
+  top: 10rem;
 }
 
 .hero-investor .bread-crumbs li:last-child {
@@ -12429,7 +12421,6 @@ html.lenis {
   }
 
   .news-details {
-    margin-top: -80rem;
     padding: 27rem 0 0;
   }
 
@@ -12496,13 +12487,9 @@ html.lenis {
     justify-content: space-around;
   }
 
-  .blog-last {
-    padding: 80rem 0 48rem;
-    margin: 44rem 0 40rem;
-  }
-
-  .blog-last .blog-carousel {
-    padding-top: 25rem;
+  .post-navigation .btn.prev,
+  .post-navigation .btn.next {
+    width: 100%;
   }
 
   .investor.our-strategy .banner.section-banner {
