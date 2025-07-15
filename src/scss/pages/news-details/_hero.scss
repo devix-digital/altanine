@@ -1,6 +1,13 @@
 .hero-news-details{
 	padding: 176rem 0 0;
-	overflow: hidden;
+	max-height: none;
+	height: auto;
+	margin-bottom: 24rem;
+	height: auto;
+
+	@include maxWidth($sm){
+		margin-bottom: 16rem;
+	}
 	
 	.post-date {
 		position: relative;
@@ -8,24 +15,14 @@
 	}
 	
 	.hero{
-			&-description{
-				margin: 23rem 0;
-				max-width: 80%;
-				
-					@include maxWidth($sm){
-						margin: 17rem 0;
-						max-width: 90%;
-					}
+		&-description{
+			margin: 23rem 0;
+			max-width: 80%;
+			
+			@include maxWidth($sm){
+				margin: 17rem 0;
+				max-width: 90%;
 			}
-	}
-
-	.section-banner{
-		border-radius: 8px;
-		margin-bottom: 40rem;
-		height: auto;
-
-		@include maxWidth($sm){
-			margin-bottom: 24rem;
 		}
 	}
 }

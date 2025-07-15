@@ -5009,7 +5009,10 @@ svg {
 
 .hero-news-details {
   padding: 176rem 0 0;
-  overflow: hidden;
+  max-height: none;
+  height: auto;
+  margin-bottom: 24rem;
+  height: auto;
 }
 
 .hero-news-details .post-date {
@@ -5022,15 +5025,8 @@ svg {
   max-width: 80%;
 }
 
-.hero-news-details .section-banner {
-  border-radius: 8px;
-  margin-bottom: 40rem;
-  height: auto;
-}
-
 .news-details {
   padding: 50rem 0 0;
-  margin-top: -144rem;
   margin-bottom: 60rem;
 }
 
@@ -12423,13 +12419,13 @@ html.lenis {
     padding-top: 25rem;
   }
 
+  .hero-news-details {
+    margin-bottom: 16rem;
+  }
+
   .hero-news-details .hero-description {
     margin: 17rem 0;
     max-width: 90%;
-  }
-
-  .hero-news-details .section-banner {
-    margin-bottom: 24rem;
   }
 
   .news-details {
