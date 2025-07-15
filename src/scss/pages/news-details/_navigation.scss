@@ -1,37 +1,41 @@
 .post-navigation {
     display: flex;
+    flex-flow: row wrap;
     gap: 24px;
     margin-bottom: 144rem;
     justify-content: space-between;
     
     .btn {
-        justify-content: flex-end;
-        text-align: right;
-        height: auto;
-        padding: 20rem;
-        font-size: 22rem;
-        gap: 16rem;
-        width: calc(50% - 12px);
-
-        &-icon {
-            min-width: 24px;
-
-            svg {
-                width: 100%;
+        &.prev,
+        &.next {
+            justify-content: flex-end;
+            text-align: right;
+            height: auto;
+            padding: 20rem;
+            font-size: 22rem;
+            gap: 16rem;
+            width: calc(50% - 12px);
+    
+            .btn-icon {
+                min-width: 24px;
+    
+                svg {
+                    width: 100%;
+                }
             }
-        }
-
-        &-labels {
-            display: inline-flex;
-            text-align: inherit;
-            margin: 0;
-            white-space: normal;
-
-            > span {
-                display: -webkit-box;
-                -webkit-box-orient: vertical;
-                -webkit-line-clamp: 3;
-                overflow: hidden;
+    
+            .btn-labels {
+                display: inline-flex;
+                text-align: inherit;
+                margin: 0;
+                white-space: normal;
+    
+                > span {
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 3;
+                    overflow: hidden;
+                }
             }
         }
 
@@ -45,6 +49,15 @@
 
             .btn-icon {
                 transform: scaleX(-1);
+            }
+        }
+
+        &.back {
+            margin: 24rem auto;
+            font-size: 22rem;
+
+            .btn-icon {
+                transform: scaleX(-1) translateY(-50%);
             }
         }
     }

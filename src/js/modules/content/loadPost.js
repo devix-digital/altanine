@@ -52,40 +52,46 @@ export const loadPosts = (page = 1, category = "") => {
     }
 }
 
-export const initLoadPosts = () => {
-    let page = 1
-    let postContainer = document.querySelector(".loadMore")
-    let loadMoreButton = document.querySelector(".postsShowMore")
-    let category = ""
-    const newsFilter = document.querySelector(".news-filter")
-    const newsFilterOpener = newsFilter.querySelector(".opener")
-    const newsFilterButtons = newsFilter.querySelectorAll(".news-filter-dropdown .btn")
-    const newsFilterOpenerLabels = newsFilterOpener.querySelectorAll(".btn-labels-item")
+export const filterMenu = () => {
+    const filterMenu = document.querySelector("[data-filter-menu]")
+    if (!filterMenu) return;
 
-    newsFilterOpener.addEventListener("click", function (e) {
+    const filterOpener = filterMenu.querySelector("[data-filter-opener]")
+    const filterOpenerLabels = filterOpener.querySelectorAll(".btn-labels-item")
+    const filterItems = filterMenu.querySelectorAll("[data-filter-item]")
+
+    filterOpener.addEventListener("click", function (e) {
         e.preventDefault()
-        newsFilter.classList.toggle("expanded")
-        newsFilterOpener.classList.toggle("is-active")
+        filterMenu.classList.toggle("expanded")
+        filterOpener.classList.toggle("is-active")
     })
 
-    newsFilterButtons.forEach((btn) => {
+    filterItems.forEach((btn) => {
         btn.addEventListener("click", function (e) {
             e.preventDefault()
             const filterLabel = e.currentTarget.querySelector(".btn-labels-item")
 
-            newsFilterButtons.forEach((item) => {
+            filterItems.forEach((item) => {
                 item.classList.remove("is-active")
             })
 
             btn.classList.add("is-active")
 
-            newsFilterOpenerLabels.forEach((label) => {
+            filterOpenerLabels.forEach((label) => {
                 label.textContent = filterLabel.textContent
             })
 
-            newsFilter.classList.remove("expanded")
+            filterOpener.classList.remove("is-active")
+            filterMenu.classList.remove("expanded")
         })
     })
+}
+
+export const initLoadPosts = () => {
+    let page = 1
+    let postContainer = document.querySelector(".loadMore")
+    let loadMoreButton = document.querySelector(".postsShowMore")
+    let category = ""
 
     document.querySelectorAll(".blog-filter-row p").forEach((input) => {
         input.addEventListener("click", function (e) {

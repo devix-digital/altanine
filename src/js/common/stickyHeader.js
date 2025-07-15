@@ -10,7 +10,7 @@ export const stickyHeader = () => {
         throttle(function () {
             let currentScroll = window.scrollY || document.documentElement.scrollTop
             hero = document.querySelector(".hero") // update after changed page
-            let heroHeight = hero.offsetHeight
+            let heroHeight = hero?.offsetHeight ?? header.offsetHeight
 
             if (currentScroll > lastScrollTop && currentScroll > heroHeight) {
                 header.style.top = "-100rem"

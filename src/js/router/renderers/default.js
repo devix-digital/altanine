@@ -14,7 +14,7 @@ import { initHorizontalScroll } from "../../modules/scroll/horizontalScroll.js"
 import { toggleTab } from "../../common/tabs.js"
 import { stickyHeader } from "../../common/stickyHeader.js"
 import { initTeamCarousel } from "../../modules/carousels/teamCarousel.js"
-import { initLoadPosts, loadPosts } from "../../modules/content/loadPost.js"
+import { initLoadPosts, loadPosts, filterMenu } from "../../modules/content/loadPost.js"
 import { initCaptcha } from "../../common/captcha.js"
 
 class DefaultRenderer extends Highway.Renderer {
@@ -36,6 +36,7 @@ class DefaultRenderer extends Highway.Renderer {
             loadPosts(1, "")
             initLoadPosts()
         }
+        filterMenu()
     }
     onEnterCompleted() {
         scrollTo()

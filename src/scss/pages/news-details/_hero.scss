@@ -2,25 +2,30 @@
 	padding: 176rem 0 0;
 	overflow: hidden;
 	
-		.hero{
-				&-description{
-					margin: 23rem 0;
-					max-width: 80%;
-					
-						@include maxWidth($sm){
-							margin: 17rem 0;
-							max-width: 90%;
-						}
-				}
-		}
+	.post-date {
+		position: relative;
+		margin-bottom: 24rem;
+	}
 	
-		.section-banner{
-			border-radius: 8px;
-			margin-bottom: 40rem;
-			height: auto;
-
-			@include maxWidth($sm){
-				margin-bottom: 24rem;
+	.hero{
+			&-description{
+				margin: 23rem 0;
+				max-width: 80%;
+				
+					@include maxWidth($sm){
+						margin: 17rem 0;
+						max-width: 90%;
+					}
 			}
+	}
+
+	.section-banner{
+		border-radius: 8px;
+		margin-bottom: 40rem;
+		height: auto;
+
+		@include maxWidth($sm){
+			margin-bottom: 24rem;
 		}
+	}
 }
