@@ -3,12 +3,15 @@
     margin-bottom: 60rem;
 
     @include maxWidth($sm) {
-        margin-top: -80rem;
         padding: 27rem 0 0;
     }
 
     &-info {
         color: var(--color-gray-600);
+
+        > *:first-child {
+            margin-top: 0;
+        }
 
         h1,
         h2,
@@ -170,7 +173,7 @@
 .share-icons {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
 
     @include maxWidth($sm) {
         flex-direction: column;
@@ -211,28 +214,6 @@
             &:hover {
                 color: var(--color-blue);
             }
-        }
-    }
-}
-
-.blog-last {
-    background-color: var(--color-gray-200);
-    padding: 144rem 0 110rem;
-    margin: 44rem 0 -20rem;
-    border-radius: 14px;
-    background-image: url("../img/home/enhancements-abstract.svg");
-    background-size: cover;
-    background-position: center;
-    overflow: hidden;
-
-    @include maxWidth($sm) {
-        padding: 80rem 0 48rem;
-        margin: 44rem 0 40rem;
-    }
-
-    .blog-carousel {
-        @include maxWidth($sm) {
-            padding-top: 25rem;
         }
     }
 }
