@@ -1,0 +1,24 @@
+.hero-news {
+    max-height: 400rem;
+    min-height: 0;
+    margin-bottom: 64rem;
+    z-index: 3;
+
+    .bread-crumbs {
+        li {
+            &:last-child {
+                color: var(--color-gray-300);
+            }
+        }
+    }
+    .hero-banner-item img {
+        object-position: right top;
+    }
+    .hero-content {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding-bottom: 41rem;
+    }
+}

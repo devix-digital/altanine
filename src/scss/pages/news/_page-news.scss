@@ -1,0 +1,170 @@
+.page-news {
+    margin-bottom: 144rem;
+
+    @include maxWidth($sm) {
+        margin-bottom: 80rem;
+    }
+
+    .news {
+        &-wrap {
+            margin-top: 23rem;
+
+            &-more {
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+        &__item {
+            margin-top: 44rem;
+            padding-bottom: 44rem;
+            border-bottom: 1px solid var(--color-gray-400);
+
+            &:first-child {
+                margin-top: 0;
+            }
+
+            &:last-child {
+                border-bottom: none;
+            }
+
+            @include maxWidth($sm) {
+                margin-top: 22rem;
+                padding-bottom: 22rem;
+            }
+
+            .post-thumbnail {
+                height: 200rem;
+                
+                @include minWidth($sm + 1) {
+                    margin: 0;
+                }
+            }
+
+            .post-title {
+                @include minWidth($sm + 1) {
+                    font: var(--font-h5);
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 4;
+                }
+            }
+        }
+        
+    }
+}
+
+.news {
+    &-filter {
+        width: 165px;
+        padding: 0;
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        z-index: 2;
+
+        .btn {
+            width: 100%;
+            text-align: left;
+            justify-content: flex-start;
+        }
+
+        .opener {
+            position: relative;
+            padding-right: 40px;
+
+            &:before {
+                content: '';
+                position: absolute;
+                right: 16rem;
+                top: 50%;
+                margin: -10rem 0 0;
+                width: 14rem;
+                height: 14rem;
+                border: solid transparent;
+                border-width: 0 0 2px 2px;
+                border-color: transparent transparent currentColor currentColor;
+                border-radius: 0 0 0 2px;
+                transform: rotate(-45deg);
+                z-index: 5;
+                transition: all var(--transition-duration) var(--transition-easing);
+            }
+
+            &.is-active,
+            &:hover {
+                &:before {
+                    color: var(--color-white);
+                }
+            }
+
+            &.is-active {
+                &:before {
+                    margin-top: -4rem;
+                    transform: rotate(135deg);
+                }
+            }
+        }
+
+        @include maxWidth($sm) {
+            width: 100%;
+        }
+
+        &.expanded {
+            > div {
+                opacity: 1;
+                visibility: visible;
+                transform: translateY(0);
+            }
+        }
+
+        &-opener {
+            width: 100%;
+        }
+        
+
+        &-dropdown {
+            display: block;
+            position: absolute;
+            width: 100%;
+            top: 100%;
+            right: 0;
+            overflow: hidden;
+            border-radius: 8px;
+            border: 1rem solid var(--color-gray-300);
+            background: var(--color-white);
+            transition: transform var(--transition-duration) var(--transition-easing),
+                        opacity var(--transition-duration) var(--transition-easing),
+                        visibility var(--transition-duration) var(--transition-easing);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+
+            @include maxWidth($sm) {
+                width: 100%;
+            }
+
+            .btn {
+                width: 100%;
+                margin: 0;
+                border-width: 1px 0 0;
+                border-radius: 0;
+
+                @include maxWidth($sm) {
+                    height: 50rem;
+                    padding: 0 16rem;
+                }
+
+                &.is-active {
+                    pointer-events: none;
+                }
+            }
+
+            &-frame {
+                margin-top: -1px;
+                max-height: 300px;
+                overflow-y: auto;
+            }
+        }
+        
+    }
+}
