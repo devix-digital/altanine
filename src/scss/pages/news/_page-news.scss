@@ -18,7 +18,11 @@
         &__item {
             margin-top: 44rem;
             padding-bottom: 44rem;
-            border-bottom: 1px solid var(--color-gray-400);
+            border-bottom: 1px solid var(--color-gray-300);
+
+            .row > *:only-child {
+                min-width: 100%;
+            }
 
             &:first-child {
                 margin-top: 0;
@@ -41,7 +45,23 @@
                 }
             }
 
+            .post-date {
+                color: var(--color-gray-700);
+            }
+
             .post-title {
+                font-weight: normal;
+                letter-spacing: 0;
+                color: var(--color-black);
+
+                a {
+                    color: inherit;
+
+                    &:hover {
+                        color: var(--color-blue);
+                    }
+                }
+
                 @include minWidth($sm + 1) {
                     font: var(--font-h5);
                     display: -webkit-box;
@@ -56,8 +76,9 @@
 
 .news {
     &-filter {
-        width: 165px;
+        width: 185px;
         padding: 0;
+        margin-bottom: 44rem;
         display: flex;
         justify-content: flex-end;
         position: relative;
