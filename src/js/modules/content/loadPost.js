@@ -52,41 +52,6 @@ export const loadPosts = (page = 1, category = "") => {
     }
 }
 
-export const filterMenu = () => {
-    const filterMenu = document.querySelector("[data-filter-menu]")
-    if (!filterMenu) return;
-
-    const filterOpener = filterMenu.querySelector("[data-filter-opener]")
-    const filterOpenerLabels = filterOpener.querySelectorAll(".btn-labels-item")
-    const filterItems = filterMenu.querySelectorAll("[data-filter-item]")
-
-    filterOpener.addEventListener("click", function (e) {
-        e.preventDefault()
-        filterMenu.classList.toggle("expanded")
-        filterOpener.classList.toggle("is-active")
-    })
-
-    filterItems.forEach((btn) => {
-        btn.addEventListener("click", function (e) {
-            e.preventDefault()
-            const filterLabel = e.currentTarget.querySelector(".btn-labels-item")
-
-            filterItems.forEach((item) => {
-                item.classList.remove("is-active")
-            })
-
-            btn.classList.add("is-active")
-
-            filterOpenerLabels.forEach((label) => {
-                label.textContent = filterLabel.textContent
-            })
-
-            filterOpener.classList.remove("is-active")
-            filterMenu.classList.remove("expanded")
-        })
-    })
-}
-
 export const initLoadPosts = () => {
     let page = 1
     let postContainer = document.querySelector(".loadMore")
