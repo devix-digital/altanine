@@ -8,7 +8,7 @@
     }
 
     &-info {
-        color: var(--color-gray-600);
+        color: var(--color-gray-700);
 
         h1,
         h2,
@@ -26,6 +26,7 @@
 
         hr {
             @extend .hr;
+            background-color: var(--color-gray-400);
             margin: 48rem 0;
 
             @include maxWidth($sm) {
@@ -51,7 +52,7 @@
         }
 
         p {
-            margin: 12rem 0;
+            margin: 20rem 0;
         }
 
         ul {
