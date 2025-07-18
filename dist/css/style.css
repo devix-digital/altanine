@@ -4982,6 +4982,9 @@ svg {
 .share-icons ul {
   display: flex;
   justify-content: flex-end;
+  gap: 4rem;
+  transform: translateY(3px);
+  margin-left: 10px;
 }
 
 .share-icons li {
@@ -4993,13 +4996,15 @@ svg {
 }
 
 .share-icons a {
+  display: inline-block;
+  vertical-align: top;
   color: var(--color-black);
-  transition: color var(--transition-duration) var(--transition-easing);
+  transition: color var(--transition-duration) var(--transition-easing), opacity var(--transition-duration) var(--transition-easing);
 }
 
 .share-icons a svg {
-  width: 16rem;
-  height: 16rem;
+  width: 32rem;
+  height: 32rem;
   color: inherit;
 }
 
@@ -5195,6 +5200,7 @@ svg {
 .share-icons ul {
   display: flex;
   justify-content: flex-end;
+  gap: 4rem;
   transform: translateY(3px);
   margin-left: 10px;
 }
@@ -5208,13 +5214,15 @@ svg {
 }
 
 .share-icons a {
+  display: inline-block;
+  vertical-align: top;
   color: var(--color-black);
-  transition: color var(--transition-duration) var(--transition-easing);
+  transition: color var(--transition-duration) var(--transition-easing), opacity var(--transition-duration) var(--transition-easing);
 }
 
 .share-icons a svg {
-  width: 16rem;
-  height: 16rem;
+  width: 32rem;
+  height: 32rem;
   color: inherit;
 }
 
@@ -9641,10 +9649,12 @@ html.lenis {
   }
 
   .share-icons a:hover {
+    opacity: 0.8;
     color: var(--color-blue);
   }
 
   .share-icons a:hover {
+    opacity: 0.8;
     color: var(--color-blue);
   }
 
