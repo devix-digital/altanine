@@ -180,6 +180,9 @@
     ul {
         display: flex;
         justify-content: flex-end;
+        gap: 4rem;
+        transform: translateY(3px);
+        margin-left: 10px;
 
         @include maxWidth($sm) {
             width: 100%;
@@ -196,17 +199,21 @@
     }
 
     a {
+        display: inline-block;
+        vertical-align: top;
         color: var(--color-black);
-        transition: color var(--transition-duration) var(--transition-easing);
+        transition: color var(--transition-duration) var(--transition-easing),
+                    opacity var(--transition-duration) var(--transition-easing);
 
         svg {
-            width: 16rem;
-            height: 16rem;
+            width: 32rem;
+            height: 32rem;
             color: inherit;
         }
 
         @include hover($md) {
             &:hover {
+                opacity: 0.8;
                 color: var(--color-blue);
             }
         }
