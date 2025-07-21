@@ -4681,9 +4681,18 @@ svg {
   max-width: 300rem;
 }
 
+.contact-time + .contact-time {
+  margin-top: 30rem;
+}
+
 .contact-time-title,
 .contact-time-subtitle {
   font: var(--font-body-s);
+}
+
+.contact-time-title.time,
+.contact-time-subtitle.time {
+  font-family: monospace;
 }
 
 .contact-time-subtitle {
@@ -12321,6 +12330,10 @@ html.lenis {
     margin-top: 13rem;
     -moz-column-gap: 22rem;
          column-gap: 22rem;
+  }
+
+  .contact-time + .contact-time-time {
+    margin-top: 13rem;
   }
 
   .contact-time-title,
