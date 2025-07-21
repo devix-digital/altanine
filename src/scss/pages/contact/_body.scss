@@ -99,9 +99,17 @@
         margin-top: 75rem;
         max-width: 300rem;
 
+        & + & {
+            margin-top: 30rem;
+        }
+
         @include maxWidth($sm) {
             margin-top: 13rem;
             column-gap: 22rem;
+            
+            & + &-time {
+                margin-top: 13rem;
+            }
         }
 
         &-title,
@@ -110,6 +118,10 @@
 
             @include maxWidth($sm) {
                 font: var(--font-body-s-mobile);
+            }
+
+            &.time {
+                font-family: monospace;
             }
         }
 
