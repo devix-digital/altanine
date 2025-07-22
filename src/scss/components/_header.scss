@@ -64,7 +64,7 @@
             background: rgba(238, 238, 238, 0.9);
             padding: 26rem 40rem;
 
-            @include minWidth($sm + 1) {
+            @include minWidth($sm) {
                 display: block !important;
                 opacity: 1 !important;
             }
@@ -341,7 +341,7 @@
             }
 
             .burger {
-                @include minWidth($sm + 1) {
+                @include minWidth($sm) {
                     display: none;
                 }
             }

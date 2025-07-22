@@ -27,7 +27,7 @@
         }
         &:nth-child(even) {
             [class*="col-"] {
-                @include minWidth($sm + 1) {
+                @include minWidth($sm) {
                     &:nth-child(1) {
                         order: 2;
                     }

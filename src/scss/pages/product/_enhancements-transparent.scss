@@ -36,7 +36,7 @@
     }
 
     [class*="-4"] {
-        @include minWidth($sm + 1) {
+        @include minWidth($sm) {
             display: block;
         }
     }

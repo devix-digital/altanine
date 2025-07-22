@@ -61,7 +61,7 @@
         }
 
         &:hover {
-            @include minWidth($sm + 1) {
+            @include minWidth($sm) {
                 & + .carousel-cursor {
                     opacity: 1;
                 }

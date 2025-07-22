@@ -8,13 +8,13 @@
 		.section {
 				&-title{
 					
-						@include minWidth($sm + 1){
+						@include minWidth($sm){
 							max-width: 80%;
 						}
 				}
 				&-subtitle {
 					
-						@include minWidth($sm + 1){
+						@include minWidth($sm){
 							margin-top: 38rem;
 						}
 				}
