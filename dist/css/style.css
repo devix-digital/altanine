@@ -4677,8 +4677,11 @@ svg {
   align-items: center;
   -moz-column-gap: 24rem;
        column-gap: 24rem;
-  margin-top: 30rem;
   max-width: 300rem;
+}
+
+.contact-time-holder {
+  margin-top: 75rem;
 }
 
 .contact-time-title,
@@ -12334,6 +12337,11 @@ html.lenis {
 
   .contact-time + .contact-time-time {
     margin-top: 13rem;
+  }
+
+  .contact-time-holder {
+    margin-top: 13rem;
+    margin-bottom: 13rem;
   }
 
   .contact-time-title,
