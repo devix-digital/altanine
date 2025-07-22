@@ -41,7 +41,7 @@
                 height: 200rem;
                 border: 1px solid var(--color-gray-300);
                 
-                @include minWidth($sm + 1) {
+                @include minWidth($sm) {
                     margin: 0;
                 }
             }
@@ -63,7 +63,7 @@
                     }
                 }
 
-                @include minWidth($sm + 1) {
+                @include minWidth($sm) {
                     font: var(--font-h5);
                     display: -webkit-box;
                     -webkit-box-orient: vertical;

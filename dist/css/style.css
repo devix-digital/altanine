@@ -4677,12 +4677,8 @@ svg {
   align-items: center;
   -moz-column-gap: 24rem;
        column-gap: 24rem;
-  margin-top: 75rem;
-  max-width: 300rem;
-}
-
-.contact-time + .contact-time {
   margin-top: 30rem;
+  max-width: 300rem;
 }
 
 .contact-time-title,
@@ -5012,8 +5008,8 @@ svg {
 }
 
 .share-icons a svg {
-  width: 32rem;
-  height: 32rem;
+  width: 28rem;
+  height: 28rem;
   color: inherit;
 }
 
@@ -5230,8 +5226,8 @@ svg {
 }
 
 .share-icons a svg {
-  width: 32rem;
-  height: 32rem;
+  width: 28rem;
+  height: 28rem;
   color: inherit;
 }
 
@@ -8624,26 +8620,6 @@ html.lenis {
   }
 }
 
-@media only screen and (min-width: 767px) {
-  .header-panel-nav .btn {
-    display: none;
-  }
-
-  .enhancements-transparent .section-title {
-    margin-top: -18rem;
-  }
-
-  .investor-modal-content {
-    flex: 1;
-  }
-
-  .investor-modal .modal-close-btn {
-    color: var(--color-white);
-    top: 30rem;
-    right: 30rem;
-  }
-}
-
 @media (min-width: 768px) {
   .container {
     max-width: 720px;
@@ -9456,6 +9432,10 @@ html.lenis {
     opacity: 1 !important;
   }
 
+  .header-panel-nav .btn {
+    display: none;
+  }
+
   .header-panel-action .burger {
     display: none;
   }
@@ -9498,6 +9478,16 @@ html.lenis {
 
   .contact-form-action .btn {
     max-width: 224rem;
+  }
+
+  .contact-time {
+    gap: 16rem;
+    flex-flow: column nowrap;
+    text-align: center;
+  }
+
+  .enhancements-transparent .section-title {
+    margin-top: -18rem;
   }
 
   .enhancements-transparent [class*="-4"] {
@@ -9565,6 +9555,16 @@ html.lenis {
 
   .enhancements-line.enhancements .enhancements-metformin-card:nth-child(3) {
     width: 416rem;
+  }
+
+  .investor-modal-content {
+    flex: 1;
+  }
+
+  .investor-modal .modal-close-btn {
+    color: var(--color-white);
+    top: 30rem;
+    right: 30rem;
   }
 }
 
@@ -11290,7 +11290,7 @@ html.lenis {
   }
 }
 
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1401px) {
   .what-metformin-top {
     margin-bottom: 80rem;
   }
