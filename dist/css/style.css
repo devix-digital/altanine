@@ -2032,6 +2032,10 @@ svg {
   gap: 6rem;
 }
 
+.header-panel-nav li .wrap {
+  white-space: wrap;
+}
+
 .header-panel-nav li:not(:last-child):before {
   content: "";
   position: absolute;
@@ -2098,6 +2102,10 @@ svg {
 
 .header-panel-nav .has-submenu > a {
   pointer-events: none;
+}
+
+.header-panel-nav .has-submenu > .about-us-link {
+  pointer-events: painted;
 }
 
 .header-panel-nav .opened::after {

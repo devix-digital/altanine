@@ -11,12 +11,13 @@ import { initHeroCarousel } from "../../modules/carousels/heroCarousel.js"
 import { initProcessCarousel } from "../../modules/carousels/processCarousel.js"
 import { initModal } from "../../modules/modal/initModal.js"
 import { initHorizontalScroll } from "../../modules/scroll/horizontalScroll.js"
-import { toggleTab } from "../../common/tabs.js"
+import { toggleTab, toggleTabInMenu } from "../../common/tabs.js"
 import { stickyHeader } from "../../common/stickyHeader.js"
 import { initTeamCarousel } from "../../modules/carousels/teamCarousel.js"
 import { initLoadPosts, loadPosts } from "../../modules/content/loadPost.js"
 import { initLoadNews, loadNews, filterMenu } from "../../modules/content/loadNews.js"
 import { initCaptcha } from "../../common/captcha.js"
+import { handleScrollFromOtherPage } from "../../common/scrollToTab.js"
 
 class DefaultRenderer extends Highway.Renderer {
     onEnter() {
@@ -32,6 +33,7 @@ class DefaultRenderer extends Highway.Renderer {
             initHorizontalScroll()
         }
         toggleTab()
+        toggleTabInMenu()
         stickyHeader()
         if (!!document.querySelector(".loadMore")) {
             loadPosts(1, "")
@@ -44,6 +46,7 @@ class DefaultRenderer extends Highway.Renderer {
         filterMenu()
     }
     onEnterCompleted() {
+        handleScrollFromOtherPage()
         scrollTo()
         loadContent()
         parallax()

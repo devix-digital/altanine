@@ -102,6 +102,10 @@
                     padding: 18rem 0;
                 }
 
+                .wrap {
+                    white-space: wrap;
+                }
+
                 &:not(:last-child) {
                     &:before {
                         content: "";
@@ -274,6 +278,9 @@
 
                 & > a {
                     pointer-events: none;
+                }
+                & > .about-us-link {
+                    pointer-events: painted;
                 }
             }
 
