@@ -19,6 +19,7 @@
 
     .section-tab__tabs {
         margin-bottom: 24rem;
+        padding-top: 24rem;
 
         .btn {
             flex: 1;
@@ -29,9 +30,9 @@
     }
 
     &-header {
-        margin-bottom: 48rem;
+        margin-bottom: 24rem;
         @include maxWidth($sm) {
-            margin-bottom: 24rem;
+            margin-bottom: 0;
         }
     }
 

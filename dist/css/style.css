@@ -4026,6 +4026,7 @@ svg {
 
 .team .section-tab__tabs {
   margin-bottom: 24rem;
+  padding-top: 24rem;
 }
 
 .team .section-tab__tabs .btn {
@@ -4033,7 +4034,7 @@ svg {
 }
 
 .team-header {
-  margin-bottom: 48rem;
+  margin-bottom: 24rem;
 }
 
 .team__item {
@@ -12035,7 +12036,7 @@ html.lenis {
   }
 
   .team-header {
-    margin-bottom: 24rem;
+    margin-bottom: 0;
   }
 
   .team__item {
