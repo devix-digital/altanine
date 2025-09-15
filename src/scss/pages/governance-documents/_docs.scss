@@ -1,0 +1,39 @@
+.documents {
+    @include maxWidth($sm) {
+        font-size: 13rem;
+        font-weight: 500;
+    }
+
+    &-btn {
+        @include maxWidth($sm) {
+            display: none;
+        }
+    }
+    .divider {
+        width: 100%;
+        height: 1rem;
+        background: #f2f2f2;
+        margin: 16rem 0;
+    }
+
+    .container {
+        padding: 0 144rem;
+        @include maxWidth($sm) {
+            padding: 16rem;
+        }
+    }
+
+    .text-link {
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        a:visited,
+        a:focus,
+        a:active {
+            color: inherit;
+            outline: none;
+        }
+    }
+}

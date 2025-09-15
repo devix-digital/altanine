@@ -1,0 +1,7 @@
+.investor-faqs {
+    padding: 0 144rem;
+
+    @include maxWidth($sm) {
+        padding: 0;
+    }
+}

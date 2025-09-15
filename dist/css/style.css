@@ -5735,6 +5735,181 @@ html.lenis {
   margin-top: 26rem;
 }
 
+.hero-presentation .bread-crumbs li:last-child {
+  color: var(--color-gray-300);
+}
+
+.hero-presentation .hero-banner-item img {
+  -o-object-position: 60%;
+     object-position: 60%;
+}
+
+.hero-presentation .hero-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 41rem;
+}
+
+.upcoming-events a {
+  color: #0077da;
+}
+
+.upcoming-events-title {
+  margin-bottom: 72rem;
+}
+
+.upcoming-events .section-banner {
+  margin-top: 48rem;
+}
+
+.hero-documents .bread-crumbs li:last-child {
+  color: var(--color-gray-300);
+}
+
+.hero-documents .hero-banner-item img {
+  -o-object-position: 60%;
+     object-position: 60%;
+}
+
+.hero-documents .hero-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 41rem;
+}
+
+.documents .divider {
+  width: 100%;
+  height: 1rem;
+  background: #f2f2f2;
+  margin: 16rem 0;
+}
+
+.documents .container {
+  padding: 0 144rem;
+}
+
+.documents .text-link a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.documents .text-link a:visited,
+.documents .text-link a:focus,
+.documents .text-link a:active {
+  color: inherit;
+  outline: none;
+}
+
+.hero-documents .bread-crumbs li:last-child {
+  color: var(--color-gray-300);
+}
+
+.hero-documents .hero-banner-item img {
+  -o-object-position: 60%;
+     object-position: 60%;
+}
+
+.hero-documents .hero-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 41rem;
+}
+
+.committee {
+  padding: 0 144rem;
+}
+
+.committee-table {
+  border-collapse: collapse;
+  width: 100%;
+  color: #001e3c;
+}
+
+.committee-table th {
+  font-weight: bold;
+  padding: 18rem 25rem;
+  text-align: center;
+}
+
+.committee-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.committee-table td {
+  padding: 18rem 25rem;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.committee-table td:first-child {
+  text-align: left;
+}
+
+.committee-table img {
+  width: 22rem;
+  height: 22rem;
+  display: inline-block;
+}
+
+.committee .legend {
+  margin-top: 48rem;
+}
+
+.committee .legend img {
+  width: 22rem;
+  height: 22rem;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+
+.investor-faqs {
+  padding: 0 144rem;
+}
+
+.ir-inquiries-box {
+  justify-content: center;
+}
+
+.ir-inquiries-title {
+  margin-bottom: 8rem;
+}
+
+.ir-inquiries-desc {
+  margin-bottom: 60rem;
+}
+
+.ir-inquiries .field-row {
+  display: flex;
+  gap: 16rem;
+}
+
+.ir-inquiries .field-row .field {
+  flex: 1;
+}
+
+.ir-contacts {
+  padding: 96rem 144rem;
+  background-color: var(--color-gray-200);
+}
+
+.ir-contacts-title {
+  margin-bottom: 24rem;
+}
+
+.ir-contacts-item {
+  margin-bottom: 16rem;
+}
+
+.ir-contacts-item-title {
+  margin-bottom: 10rem;
+}
+
 .hero-metformin .bread-crumbs li:last-child {
   color: var(--color-gray-300);
 }
@@ -11314,6 +11489,20 @@ html.lenis {
   }
 }
 
+@media only screen and (max-width: 991px) {
+  .ir-inquiries {
+    margin-bottom: 80rem;
+  }
+
+  .ir-inquiries .contact-form {
+    width: 100%;
+  }
+
+  .ir-contacts {
+    padding: 24rem 0;
+  }
+}
+
 @media only screen and (max-width: 767px) {
   h1,
   .h1 {
@@ -12776,6 +12965,61 @@ html.lenis {
 
   .need .btn {
     margin-top: 32rem;
+  }
+
+  .documents {
+    font-size: 13rem;
+    font-weight: 500;
+  }
+
+  .documents-btn {
+    display: none;
+  }
+
+  .documents .container {
+    padding: 16rem;
+  }
+
+  .committee {
+    padding: 0;
+  }
+
+  .committee-table th {
+    padding: 5rem 2.5rem;
+    font-size: 9rem;
+    vertical-align: top;
+  }
+
+  .committee-table td {
+    padding: 5rem 2.5rem;
+    font-size: 12rem;
+  }
+
+  .committee-table td:first-child {
+    white-space: wrap;
+  }
+
+  .committee-table img {
+    width: 12rem;
+    height: 12rem;
+  }
+
+  .committee .legend {
+    font-size: 12rem;
+  }
+
+  .committee .legend img {
+    width: 12rem;
+    height: 12rem;
+  }
+
+  .investor-faqs {
+    padding: 0;
+  }
+
+  .ir-inquiries .field-row {
+    flex-direction: column;
+    gap: 0;
   }
 
   .delivery {

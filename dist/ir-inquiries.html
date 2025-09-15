@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Altanine</title>
+
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png" />
+
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="theme-color" content="#ffffff" />
+        <meta name="msapplication-navbutton-color" content="#ffffff" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff" />
+
+        <link
+            rel="preload"
+            href="fonts/Inter-Regular.woff"
+            as="font"
+            type="font/woff"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="fonts/Inter-Regular.woff2"
+            as="font"
+            type="font/woff2"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="fonts/Inter-Medium.woff"
+            as="font"
+            type="font/woff"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="fonts/Inter-Medium.woff2"
+            as="font"
+            type="font/woff2"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="fonts/Inter-Bold.woff"
+            as="font"
+            type="font/woff"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="fonts/Inter-Bold.woff2"
+            as="font"
+            type="font/woff2"
+            crossorigin="anonymous"
+        />
+
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <main class="wrapper" id="wrapper">
+            <div class="preloader" id="preloader"></div>
+            <header class="header" id="header">
+    <div class="header-panel">
+        <div class="header-panel-logo">
+            <a href="/" class="logo">
+                <img src="img/logo.svg" alt="Altanine" />
+            </a>
+            <div class="header-contacts">
+                <a href="tel:+66 666 66 66 666" class="header-contacts-item">+66 666 66 66 666</a>
+                <a href="mailto:info@altanine.com" class="header-contacts-item"
+                    >info@altanine.com</a
+                >
+            </div>
+        </div>
+        <div class="header-panel-nav" id="mobile-menu">
+            <nav>
+                <ul>
+                    <li>
+                        <a class="about-us-link" href="about-us.html">About us</a>
+                        <ul>
+                            <li>
+                                <a
+                                    href="about-us.html"
+                                    class="scroll-action js-tab-menulink wrap"
+                                    data-target="#team"
+                                    data-href="tab1"
+                                    data-hash="executive-management"
+                                    >Executive Management</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="about-us.html"
+                                    class="scroll-action js-tab-menulink wrap"
+                                    data-target="#team"
+                                    data-href="tab2"
+                                    data-hash="board-of-directors"
+                                    >Board Of Directors</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="about-us.html"
+                                    class="scroll-action js-tab-menulink wrap"
+                                    data-target="#team"
+                                    data-href="tab3"
+                                    data-hash="scientific-advisory"
+                                    >Scientific Advisory Board</a
+                                >
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="innovation.html">Innovation</a></li>
+                    <li><a href="markets.html">Markets</a></li>
+                    <li>
+                        <a href="metformin.html">Medicines</a>
+                        <ul>
+                            <li><a href="metformin.html">Metformin</a></li>
+                            <li><a href="sildenafil.html">Sildenafil</a></li>
+                            <li><a href="sumatriptan.html">Sumatriptan</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="investor.html">Investor relations</a>
+                        <ul>
+                            <li><a href="events-presentations.html">Events & Presentations</a></li>
+                            <li><a href="governance-documents.html">Governance Documents</a></li>
+                            <li><a href="committee-composition.html">Committee Composition</a></li>
+                            <li><a href="investor-faqs.html">Investor FAQs</a></li>
+                            <li><a href="ir-inquiries.html">IR Inquiries</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="blog.html">Resources</a>
+                        <ul>
+                            <li><a href="blog.html">Insights</a></li>
+                            <li><a href="news.html">News</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-contacts">
+                <a href="tel:+66 666 66 66 666" class="header-contacts-item">+66 666 66 66 666</a>
+                <a href="mailto:info@altanine.com" class="header-contacts-item"
+                    >info@altanine.com</a
+                >
+            </div>
+            <a href="contact-us.html" class="btn btn-gradient">
+                <span class="btn-bg"></span>
+                <span class="btn-labels">
+                    <span class="btn-labels-item">Contact us</span>
+                    <span class="btn-labels-item">Contact us</span>
+                    <span class="btn-labels-item">Contact us</span>
+                </span>
+            </a>
+        </div>
+        <div class="header-panel-action">
+            <a href="contact-us.html" class="btn btn-gradient">
+                <span class="btn-bg"></span>
+                <span class="btn-labels">
+                    <span class="btn-labels-item">Contact us</span>
+                    <span class="btn-labels-item">Contact us</span>
+                    <span class="btn-labels-item">Contact us</span>
+                </span>
+            </a>
+            <button class="burger" aria-label="Open menu" aria-controls="mobile-menu">
+                <span class="burger-box">
+                    <span class="burger-box-arrow"></span>
+                    <span class="burger-box-arrow"></span>
+                    <span class="burger-box-arrow"></span>
+                </span>
+            </button>
+        </div>
+    </div>
+</header>
+
+            <div data-router-wrapper>
+                <div data-router-view="default">
+                    <section class="section hero hero-ir-inquiries">
+    <div class="bread-crumbs">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><span>IR Resources</span></li>
+            </ul>
+        </div>
+    </div>
+    <div class="hero-banner" id="hero-banner">
+        <div class="hero-banner-item">
+            <picture>
+                <source srcset="img/investor/hero-banner.webp" type="image/webp" />
+                <source srcset="img/investor/hero-banner.jpg" type="image/jpeg" />
+                <img src="img/investor/hero-banner.jpg" />
+            </picture>
+        </div>
+    </div>
+    <div class="hero-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10">
+                    <p class="hero-subtitle font-uppercase color-white" data-load-order="1">
+                        IR Resources
+                    </p>
+                    <h1 class="hero-title h1" data-split-text>IR Inquiries</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+                    <section class="contact ir-inquiries">
+    <div class="container">
+        <div class="row ir-inquiries-box">
+            <div class="contact-form" data-load-order>
+                <h2 class="h3 ir-inquiries-title">Investor Relations</h2>
+                <p class="ir-inquiries-desc">
+                    For investor-related questions or opportunities, please contact us using the
+                    form below. Thank you.
+                </p>
+                <form>
+                    <div class="field-row">
+                        <label class="field">
+                            <span class="field-label">Enter first name</span>
+                            <input type="email" placeholder="First name" class="field-item" />
+                            <span class="field-message __success">Success message</span>
+                            <span class="field-message __error">Error message</span>
+                        </label>
+                        <label class="field">
+                            <span class="field-label">Enter last name</span>
+                            <input type="email" placeholder="Last name" class="field-item" />
+                            <span class="field-message __success">Success message</span>
+                            <span class="field-message __error">Error message</span>
+                        </label>
+                    </div>
+                    <div class="field-row">
+                        <label class="field">
+                            <span class="field-label">Company Name</span>
+                            <input type="email" placeholder="Company Name" class="field-item" />
+                            <span class="field-message __success">Success message</span>
+                            <span class="field-message __error">Error message</span>
+                        </label>
+                        <label class="field">
+                            <span class="field-label">Email</span>
+                            <input type="email" placeholder="Email" class="field-item" />
+                            <span class="field-message __success">Success message</span>
+                            <span class="field-message __error">Error message</span>
+                        </label>
+                    </div>
+                    <label class="field">
+                        <span class="field-label">We look forward to hearing from you</span>
+                        <span class="field-resize"></span>
+                        <textarea placeholder="Message" class="field-item"></textarea>
+                        <span class="field-message __success">Success message</span>
+                        <span class="field-message __error">Error message</span>
+                    </label>
+                    <div class="contact-form-action">
+                        <p>
+                            By sending this form I confirm that I have read and accept the
+                            <a href="text-template.html">Privacy Policy</a>
+                        </p>
+                        <button class="btn btn-gradient btn-md" data-modal-open="#thanks">
+                            <span class="btn-bg"></span>
+                            <span class="btn-icon"
+                                ><svg>
+                                    <use xlink:href="img/icons/icons.svg#arrow-right"></use></svg
+                            ></span>
+                            <span class="btn-labels">
+                                <span class="btn-labels-item">Send </span>
+                                <span class="btn-labels-item">Send </span>
+                                <span class="btn-labels-item">Send </span>
+                            </span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section ir-contacts">
+    <div class="container">
+        <h2 class="h4 ir-contacts-title justify-content-center">IR Contacts</h2>
+        <div class="row">
+            <div class="col-md-4 ir-contacts-item">
+                <h3 class="h5 ir-contacts-item-title">Company</h3>
+                <p>
+                    <strong>Altanine, Inc.<br /></strong>10940 Wilshire Boulevard, <br />Suite 705
+                    <br />Los Angeles, CA 90024 <br />(213) 521.4780 <br /><a
+                        href="mailto:info@altanine.com"
+                        >info@altanine.com</a
+                    >
+                </p>
+            </div>
+            <div class="col-md-4 ir-contacts-item">
+                <h3 class="h5">IR Contact</h3>
+                <p><strong>Investor Relations</strong></p>
+                <a href="mailto:investors@altanine.com">investors@altanine.com</a>
+            </div>
+            <div class="col-md-4 ir-contacts-item">
+                <h3 class="h5">Transfer Agent</h3>
+                <p>
+                    <strong>Continental Stock Transfer &amp; Trust</strong>
+                </p>
+                <p>
+                    Email:
+                    <a href="mailto:cstmail@continentalstock.com">cstmail@continentalstock.com</a>
+                </p>
+                <p>Phone: +1 (800) 509-5586</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+                </div>
+            </div>
+            <footer class="footer">
+    <div class="footer-abstract">
+        <img src="img/footer-abstract.svg" alt="Alt" />
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7 offset-md-5 d-none d-md-block">
+                <hr class="hr" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-5 order-md-1">
+                <div class="footer-logo d-none d-md-block">
+                    <a href="/" class="logo">
+                        <img src="img/logo-white.svg" alt="Altanine" />
+                    </a>
+                </div>
+                <div class="footer-nav">
+                    <p class="footer-label">Site map</p>
+                    <ul>
+                        <li><a href="about-us.html">About us</a></li>
+                        <li><a href="innovation.html">Innovation</a></li>
+                        <li><a href="markets.html">Markets</a></li>
+                        <li><a href="investor.html">Investor Relations</a></li>
+                        <li><a href="blog.html">News</a></li>
+                        <li><a href="contact-us.html">Contact us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 d-md-none">
+                <hr class="hr" />
+            </div>
+            <div class="col-md-7 order-md-2">
+                <div class="row justify-content-between">
+                    <div class="col-md-3 order-md-3 col-6">
+                        <div class="footer-medicines">
+                            <p class="footer-label">Medicines</p>
+                            <div class="footer-medicines-list">
+                                <a href="metformin.html" class="footer-medicines-item">Metformin</a>
+                                <a href="sildenafil.html" class="footer-medicines-item"
+                                    >Sildenafil</a
+                                >
+                                <a href="sumatriptan.html" class="footer-medicines-item"
+                                    >Sumatriptan</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 order-md-3 col-6 order-1">
+                        <div class="footer-contacts">
+                            <p class="footer-label">Contacts us</p>
+                            <div class="footer-contacts-list">
+                                <a href="tel:+66 666 66 66 666" class="footer-contacts-item"
+                                    >+66 666 66 66 666</a
+                                >
+                                <a href="mailto:info@altanine.com" class="footer-contacts-item"
+                                    >info@altanine.com</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 order-md-3 col-6">
+                        <div class="footer-social">
+                            <p class="footer-label">Social networks</p>
+                            <div class="footer-social-list">
+                                <a
+                                    href="#"
+                                    target="_blank"
+                                    class="btn btn-arrow color-gray-400 footer-social-item"
+                                >
+                                    <span class="btn-icon">
+                                        <span class="btn-icon-item"></span>
+                                        <span class="btn-icon-item"></span>
+                                        <span class="btn-icon-item"></span>
+                                        <span class="btn-icon-item"></span>
+                                    </span>
+                                    <span class="btn-labels">
+                                        <span class="btn-labels-item">Instagram</span>
+                                    </span>
+                                </a>
+                                <a
+                                    href="#"
+                                    target="_blank"
+                                    class="btn btn-arrow color-gray-400 footer-social-item"
+                                >
+                                    <span class="btn-icon">
+                                        <span class="btn-icon-item"></span>
+                                        <span class="btn-icon-item"></span>
+                                        <span class="btn-icon-item"></span>
+                                        <span class="btn-icon-item"></span>
+                                    </span>
+                                    <span class="btn-labels">
+                                        <span class="btn-labels-item">Linkedin</span>
+                                    </span>
+                                </a>
+                                <a
+                                    href="#"
+                                    target="_blank"
+                                    class="btn btn-arrow color-gray-400 footer-social-item"
+                                >
+                                    <span class="btn-icon">
+                                        <span class="btn-icon-item"></span>
+                                        <span class="btn-icon-item"></span>
+                                        <span class="btn-icon-item"></span>
+                                        <span class="btn-icon-item"></span>
+                                    </span>
+                                    <span class="btn-labels">
+                                        <span class="btn-labels-item">Facebook</span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-logo d-md-none">
+                    <a href="/" class="logo">
+                        <img src="img/logo-white.svg" alt="Altanine" />
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 order-md-2">
+                <p class="footer-copyright">&copy; 2024 — Altanine, All Rights Reserved</p>
+            </div>
+            <div class="col-md-3 order-md-3">
+                <div class="footer-additional">
+                    <ul>
+                        <li><a href="text-template.html">Lorem Ipsum</a></li>
+                        <li><a href="text-template.html">Lorem Ipsum</a></li>
+                        <li><a href="text-template.html">Privacy policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <a href="https://www.studiopresto.com/" target="_blank" class="footer-developer">
+                    Made by
+                    <span class="footer-developer-logo">
+                        <img src="img/developer-logo.svg" alt="Studiopresto" />
+                        <img src="img/developer-logo-blue.svg" alt="Studiopresto" />
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+        </main>
+        <script src="js/app.min.js"></script>
+    </body>
+</html>

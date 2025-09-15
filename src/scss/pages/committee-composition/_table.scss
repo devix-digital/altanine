@@ -1,0 +1,72 @@
+.committee {
+    padding: 0 144rem;
+    @include maxWidth($sm) {
+        padding: 0;
+    }
+
+    &-table {
+        border-collapse: collapse;
+        width: 100%;
+        color: #001e3c;
+
+        th {
+            font-weight: bold;
+            padding: 18rem 25rem;
+            text-align: center;
+            @include maxWidth($sm) {
+                padding: 5rem 2.5rem;
+                font-size: 9rem;
+                vertical-align: top;
+            }
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        td {
+            padding: 18rem 25rem;
+            text-align: center;
+            vertical-align: middle;
+            @include maxWidth($sm) {
+                padding: 5rem 2.5rem;
+                font-size: 12rem;
+            }
+        }
+
+        td:first-child {
+            text-align: left;
+            @include maxWidth($sm) {
+                white-space: wrap;
+            }
+        }
+
+        img {
+            width: 22rem;
+            height: 22rem;
+            display: inline-block;
+            @include maxWidth($sm) {
+                width: 12rem;
+                height: 12rem;
+            }
+        }
+    }
+
+    .legend {
+        margin-top: 48rem;
+        @include maxWidth($sm) {
+            font-size: 12rem;
+        }
+    }
+
+    .legend img {
+        width: 22rem;
+        height: 22rem;
+        margin-right: 4px;
+        vertical-align: middle;
+        @include maxWidth($sm) {
+            width: 12rem;
+            height: 12rem;
+        }
+    }
+}
