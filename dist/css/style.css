@@ -5869,6 +5869,51 @@ html.lenis {
   justify-content: center;
 }
 
+.events-wrap .accordion-item-header .h5,
+.events-wrap .accordion-item-header .accordion-md .accordion-item-title,
+.accordion-md .events-wrap .accordion-item-header .accordion-item-title,
+.events-wrap .accordion-item-header .post-hero .post-title,
+.post-hero .events-wrap .accordion-item-header .post-title,
+.events-wrap .accordion-item-header .blog-details-info blockquote,
+.blog-details-info .events-wrap .accordion-item-header blockquote,
+.events-wrap .accordion-item-header .news-details-info blockquote,
+.news-details-info .events-wrap .accordion-item-header blockquote {
+  margin: 12rem 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.events-wrap .accordion-item-description a {
+  color: var(--color-black);
+}
+
+.events-wrap .accordion-item-description a[href]:not([href="#"], [href=""]):hover {
+  color: var(--color-primary-2);
+}
+
+.events-wrap .accordion-item-description a[href="#"],
+.events-wrap .accordion-item-description a[href=""],
+.events-wrap .accordion-item-description a:not([href]) {
+  pointer-events: none;
+  cursor: default;
+}
+
+.events-wrap .accordion-item.is-active .accordion-item-header .h5,
+.events-wrap .accordion-item.is-active .accordion-item-header .accordion-md .accordion-item-title,
+.accordion-md .events-wrap .accordion-item.is-active .accordion-item-header .accordion-item-title,
+.events-wrap .accordion-item.is-active .accordion-item-header .post-hero .post-title,
+.post-hero .events-wrap .accordion-item.is-active .accordion-item-header .post-title,
+.events-wrap .accordion-item.is-active .accordion-item-header .blog-details-info blockquote,
+.blog-details-info .events-wrap .accordion-item.is-active .accordion-item-header blockquote,
+.events-wrap .accordion-item.is-active .accordion-item-header .news-details-info blockquote,
+.news-details-info .events-wrap .accordion-item.is-active .accordion-item-header blockquote {
+  -webkit-line-clamp: unset;
+  overflow: visible;
+}
+
 .hero-documents .bread-crumbs li:last-child {
   color: var(--color-gray-300);
 }
