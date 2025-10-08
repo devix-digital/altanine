@@ -149,7 +149,7 @@
             justify-content: center;
         }
 
-        .accordion-item-header .h5 {
+        .accordion-events-item-header .h5 {
             margin: 12rem 0;
             display: -webkit-box;
             -webkit-line-clamp: 2;
@@ -159,7 +159,7 @@
             transition: max-height 0.6s ease;
         }
 
-        .accordion-item.is-active .accordion-item-header .h5 {
+        .accordion-events-item.is-active .accordion-events-item-header .h5 {
             -webkit-line-clamp: unset;
             max-height: 100em;
         }

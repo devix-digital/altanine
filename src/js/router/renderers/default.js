@@ -3,7 +3,11 @@ import { splitText } from "../../common/splitText.js"
 import { loadContent } from "../../common/loadContent.js"
 import { initHover } from "../../modules/buttons/initHover.js"
 import { parallax } from "../../common/parallax.js"
-import { initAccordion, initAccordionCore } from "../../modules/accordion/initAccordion.js"
+import {
+    initAccordion,
+    initAccordionCore,
+    initEventsAccordion,
+} from "../../modules/accordion/initAccordion.js"
 import { initBlogCarousel } from "../../modules/carousels/blogCarousel.js"
 import { cardsMouseFollow } from "../../modules/benefits/cardsMouseFollow.js"
 import { scrollTo } from "../../common/scrollTo.js"
@@ -25,6 +29,7 @@ class DefaultRenderer extends Highway.Renderer {
         splitText()
         initHover()
         initAccordion()
+        initEventsAccordion()
         initAccordionCore()
         initHeroCarousel()
         initBlogCarousel()

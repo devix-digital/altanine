@@ -221,7 +221,8 @@ h5,
 .news-details-info blockquote,
 .blog-details-info blockquote,
 .post-hero .post-title,
-.accordion-md .accordion-item-title {
+.accordion-md .accordion-item-title,
+.accordion-events-md .accordion-item-title {
   font: var(--font-h5);
   letter-spacing: -0.01em;
 }
@@ -251,7 +252,8 @@ b {
 .news-details-info blockquote i,
 .blog-details-info blockquote i,
 .post-hero .post-title i,
-.accordion-md .accordion-item-title i {
+.accordion-md .accordion-item-title i,
+.accordion-events-md .accordion-item-title i {
   font-style: normal;
 }
 
@@ -264,7 +266,8 @@ b {
 .news-details-info blockquote,
 .blog-details-info blockquote,
 .contact-form-action a,
-.accordion-item.is-active .accordion-item-title {
+.accordion-item.is-active .accordion-item-title,
+.accordion-events-item.is-active .accordion-item-title {
   background: var(--color-primary-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -2646,22 +2649,26 @@ svg {
   right: 6rem;
 }
 
-.accordion-item {
+.accordion-item,
+.accordion-events-item {
   border-bottom: 1rem var(--color-gray-400) solid;
   padding-bottom: 19rem;
   margin-bottom: 20rem;
 }
 
-.accordion-item-header {
+.accordion-item-header,
+.accordion-events-item-header {
   padding: 12rem 56rem 12rem 0;
   position: relative;
 }
 
-.accordion-item-title {
+.accordion-item-title,
+.accordion-events-item-title {
   font: var(--font-body-l);
 }
 
-.accordion-item-icon {
+.accordion-item-icon,
+.accordion-events-item-icon {
   position: absolute;
   top: 16rem;
   right: 0;
@@ -2671,66 +2678,81 @@ svg {
   transition: transform var(--transition-duration) var(--transition-easing), top var(--transition-duration) var(--transition-easing);
 }
 
-.accordion-item-icon .btn-arrow {
+.accordion-item-icon .btn-arrow,
+.accordion-events-item-icon .btn-arrow {
   color: var(--color-black);
 }
 
-.accordion-item-body {
+.accordion-item-body,
+.accordion-events-item-body {
   padding-right: 56rem;
   height: 0;
   overflow: hidden;
 }
 
 .accordion-item-body .btn-arrow,
-.accordion-item-body .btn {
+.accordion-item-body .btn,
+.accordion-events-item-body .btn-arrow,
+.accordion-events-item-body .btn {
   margin-bottom: 14rem;
 }
 
-.accordion-item-description {
+.accordion-item-description,
+.accordion-events-item-description {
   margin-bottom: 13rem;
   padding-top: 10rem;
 }
 
-.accordion-item-description p:not(:last-child) {
+.accordion-item-description p:not(:last-child),
+.accordion-events-item-description p:not(:last-child) {
   margin-bottom: 8rem;
 }
 
-.accordion-item.is-active .accordion-item-icon {
+.accordion-item.is-active .accordion-item-icon,
+.accordion-events-item.is-active .accordion-item-icon {
   transform: rotate(-90deg);
   top: 8rem;
 }
 
-.accordion-item.is-active .accordion-item-icon .btn-arrow .btn-icon {
+.accordion-item.is-active .accordion-item-icon .btn-arrow .btn-icon,
+.accordion-events-item.is-active .accordion-item-icon .btn-arrow .btn-icon {
   color: var(--color-blue);
 }
 
-.accordion-md .accordion-item {
+.accordion-md .accordion-item,
+.accordion-events-md .accordion-item {
   padding: 24rem 0 23rem;
   margin-bottom: 0;
 }
 
-.accordion-md .accordion-item:nth-child(1) {
+.accordion-md .accordion-item:nth-child(1),
+.accordion-events-md .accordion-item:nth-child(1) {
   border-top: 1rem var(--color-gray-400) solid;
 }
 
-.accordion-md .accordion-item-header {
+.accordion-md .accordion-item-header,
+.accordion-events-md .accordion-item-header {
   padding: 0;
 }
 
-.accordion-md .accordion-item-title {
+.accordion-md .accordion-item-title,
+.accordion-events-md .accordion-item-title {
   color: var(--color-gray-400);
 }
 
-.accordion-md .accordion-item-description {
+.accordion-md .accordion-item-description,
+.accordion-events-md .accordion-item-description {
   margin-bottom: 0;
   padding-top: 12rem;
 }
 
-.accordion-md .accordion-item-body {
+.accordion-md .accordion-item-body,
+.accordion-events-md .accordion-item-body {
   padding-right: 0;
 }
 
-.accordion-md .accordion-item.is-active .accordion-item-title {
+.accordion-md .accordion-item.is-active .accordion-item-title,
+.accordion-events-md .accordion-item.is-active .accordion-item-title {
   color: var(--color-black);
   -webkit-text-fill-color: var(--color-black);
   background: none;
@@ -5454,6 +5476,8 @@ svg {
 .enhancements-investor-card .h5,
 .enhancements-investor-card .accordion-md .accordion-item-title,
 .accordion-md .enhancements-investor-card .accordion-item-title,
+.enhancements-investor-card .accordion-events-md .accordion-item-title,
+.accordion-events-md .enhancements-investor-card .accordion-item-title,
 .enhancements-investor-card .post-hero .post-title,
 .post-hero .enhancements-investor-card .post-title,
 .enhancements-investor-card .blog-details-info blockquote,
@@ -5637,6 +5661,8 @@ html.lenis {
 .horizon .section.section_to-pin .block_wrapper .h5,
 .horizon .section.section_to-pin .block_wrapper .accordion-md .accordion-item-title,
 .accordion-md .horizon .section.section_to-pin .block_wrapper .accordion-item-title,
+.horizon .section.section_to-pin .block_wrapper .accordion-events-md .accordion-item-title,
+.accordion-events-md .horizon .section.section_to-pin .block_wrapper .accordion-item-title,
 .horizon .section.section_to-pin .block_wrapper .post-hero .post-title,
 .post-hero .horizon .section.section_to-pin .block_wrapper .post-title,
 .horizon .section.section_to-pin .block_wrapper .blog-details-info blockquote,
@@ -5879,15 +5905,17 @@ html.lenis {
   justify-content: center;
 }
 
-.events-wrap .accordion-item-header .h5,
-.events-wrap .accordion-item-header .accordion-md .accordion-item-title,
-.accordion-md .events-wrap .accordion-item-header .accordion-item-title,
-.events-wrap .accordion-item-header .post-hero .post-title,
-.post-hero .events-wrap .accordion-item-header .post-title,
-.events-wrap .accordion-item-header .blog-details-info blockquote,
-.blog-details-info .events-wrap .accordion-item-header blockquote,
-.events-wrap .accordion-item-header .news-details-info blockquote,
-.news-details-info .events-wrap .accordion-item-header blockquote {
+.events-wrap .accordion-events-item-header .h5,
+.events-wrap .accordion-events-item-header .accordion-md .accordion-item-title,
+.accordion-md .events-wrap .accordion-events-item-header .accordion-item-title,
+.events-wrap .accordion-events-item-header .accordion-events-md .accordion-item-title,
+.accordion-events-md .events-wrap .accordion-events-item-header .accordion-item-title,
+.events-wrap .accordion-events-item-header .post-hero .post-title,
+.post-hero .events-wrap .accordion-events-item-header .post-title,
+.events-wrap .accordion-events-item-header .blog-details-info blockquote,
+.blog-details-info .events-wrap .accordion-events-item-header blockquote,
+.events-wrap .accordion-events-item-header .news-details-info blockquote,
+.news-details-info .events-wrap .accordion-events-item-header blockquote {
   margin: 12rem 0;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -5897,15 +5925,17 @@ html.lenis {
   transition: max-height 0.6s ease;
 }
 
-.events-wrap .accordion-item.is-active .accordion-item-header .h5,
-.events-wrap .accordion-item.is-active .accordion-item-header .accordion-md .accordion-item-title,
-.accordion-md .events-wrap .accordion-item.is-active .accordion-item-header .accordion-item-title,
-.events-wrap .accordion-item.is-active .accordion-item-header .post-hero .post-title,
-.post-hero .events-wrap .accordion-item.is-active .accordion-item-header .post-title,
-.events-wrap .accordion-item.is-active .accordion-item-header .blog-details-info blockquote,
-.blog-details-info .events-wrap .accordion-item.is-active .accordion-item-header blockquote,
-.events-wrap .accordion-item.is-active .accordion-item-header .news-details-info blockquote,
-.news-details-info .events-wrap .accordion-item.is-active .accordion-item-header blockquote {
+.events-wrap .accordion-events-item.is-active .accordion-events-item-header .h5,
+.events-wrap .accordion-events-item.is-active .accordion-events-item-header .accordion-md .accordion-item-title,
+.accordion-md .events-wrap .accordion-events-item.is-active .accordion-events-item-header .accordion-item-title,
+.events-wrap .accordion-events-item.is-active .accordion-events-item-header .accordion-events-md .accordion-item-title,
+.accordion-events-md .events-wrap .accordion-events-item.is-active .accordion-events-item-header .accordion-item-title,
+.events-wrap .accordion-events-item.is-active .accordion-events-item-header .post-hero .post-title,
+.post-hero .events-wrap .accordion-events-item.is-active .accordion-events-item-header .post-title,
+.events-wrap .accordion-events-item.is-active .accordion-events-item-header .blog-details-info blockquote,
+.blog-details-info .events-wrap .accordion-events-item.is-active .accordion-events-item-header blockquote,
+.events-wrap .accordion-events-item.is-active .accordion-events-item-header .news-details-info blockquote,
+.news-details-info .events-wrap .accordion-events-item.is-active .accordion-events-item-header blockquote {
   -webkit-line-clamp: unset;
   max-height: 100em;
 }
@@ -6957,6 +6987,8 @@ html.lenis {
 .market.market-content .market-data-element .color-gradient,
 .market.market-content .market-data-element .accordion-item.is-active .accordion-item-title,
 .accordion-item.is-active .market.market-content .market-data-element .accordion-item-title,
+.market.market-content .market-data-element .accordion-events-item.is-active .accordion-item-title,
+.accordion-events-item.is-active .market.market-content .market-data-element .accordion-item-title,
 .market.market-content .market-data-element .contact-form-action a,
 .contact-form-action .market.market-content .market-data-element a,
 .market.market-content .market-data-element .blog-details-info blockquote,
@@ -8110,6 +8142,8 @@ html.lenis {
 .investor-modal-content .h5,
 .investor-modal-content .accordion-md .accordion-item-title,
 .accordion-md .investor-modal-content .accordion-item-title,
+.investor-modal-content .accordion-events-md .accordion-item-title,
+.accordion-events-md .investor-modal-content .accordion-item-title,
 .investor-modal-content .post-hero .post-title,
 .post-hero .investor-modal-content .post-title,
 .investor-modal-content .blog-details-info blockquote,
@@ -9950,11 +9984,13 @@ html.lenis {
     cursor: pointer;
   }
 
-  .accordion-item-header:hover {
+  .accordion-item-header:hover,
+  .accordion-events-item-header:hover {
     cursor: pointer;
   }
 
-  .accordion-item-header:hover .accordion-item-icon .btn-icon {
+  .accordion-item-header:hover .accordion-item-icon .btn-icon,
+  .accordion-events-item-header:hover .accordion-item-icon .btn-icon {
     width: 21rem;
   }
 
@@ -11679,7 +11715,8 @@ html.lenis {
   .news-details-info blockquote,
   .blog-details-info blockquote,
   .post-hero .post-title,
-  .accordion-md .accordion-item-title {
+  .accordion-md .accordion-item-title,
+  .accordion-events-md .accordion-item-title {
     font: var(--font-h5-mobile);
   }
 
@@ -11891,24 +11928,29 @@ html.lenis {
     display: none;
   }
 
-  .accordion {
+  .accordion,
+  .accordion-events {
     padding: 4rem 0;
   }
 
-  .accordion-item {
+  .accordion-item,
+  .accordion-events-item {
     padding-bottom: 12rem;
     margin-bottom: 12rem;
   }
 
-  .accordion-item-title {
+  .accordion-item-title,
+  .accordion-events-item-title {
     font: var(--font-body-l-mobile);
   }
 
-  .accordion-item-body {
+  .accordion-item-body,
+  .accordion-events-item-body {
     padding-right: 25rem;
   }
 
-  .accordion-item-description {
+  .accordion-item-description,
+  .accordion-events-item-description {
     padding-top: 3rem;
     margin-bottom: 17rem;
   }
@@ -13046,6 +13088,8 @@ html.lenis {
   .horizon .section.section_to-pin .block_wrapper .h5,
   .horizon .section.section_to-pin .block_wrapper .accordion-md .accordion-item-title,
   .accordion-md .horizon .section.section_to-pin .block_wrapper .accordion-item-title,
+  .horizon .section.section_to-pin .block_wrapper .accordion-events-md .accordion-item-title,
+  .accordion-events-md .horizon .section.section_to-pin .block_wrapper .accordion-item-title,
   .horizon .section.section_to-pin .block_wrapper .post-hero .post-title,
   .post-hero .horizon .section.section_to-pin .block_wrapper .post-title,
   .horizon .section.section_to-pin .block_wrapper .blog-details-info blockquote,
