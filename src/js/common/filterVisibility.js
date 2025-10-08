@@ -1,0 +1,7 @@
+export function filterVisibility() {
+    const eventsWrap = document.querySelector(".events-wrap")
+    const filter = document.querySelector(".events-filter")
+
+    const hasItems = eventsWrap.querySelectorAll(".accordion-item").length > 0
+    filter.style.display = hasItems ? "" : "none"
+}

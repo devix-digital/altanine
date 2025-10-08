@@ -9,34 +9,36 @@ export const initAccordion = () => {
             const accordionRows = accordion.querySelectorAll(".accordion-item")
             let currentAccordionRow = null
 
-            accordionRows.forEach((accordionRow, i) => {
-                const accordionContent = accordionRow.querySelector(".accordion-item-body")
-                const accordionHeader = accordionRow.querySelector(".accordion-item-header")
-                const t = Tween.to(accordionContent, {
-                    height: "auto",
-                    paused: true,
-                    duration: transition.move.duration,
-                    ease: transition.move.ease,
-                })
+            if (accordionRows.length > 0) {
+                accordionRows.forEach((accordionRow, i) => {
+                    const accordionContent = accordionRow.querySelector(".accordion-item-body")
+                    const accordionHeader = accordionRow.querySelector(".accordion-item-header")
+                    const t = Tween.to(accordionContent, {
+                        height: "auto",
+                        paused: true,
+                        duration: transition.move.duration,
+                        ease: transition.move.ease,
+                    })
 
-                accordionRow._accordionTween = t
+                    accordionRow._accordionTween = t
 
-                accordionHeader.addEventListener("click", () => {
-                    if (currentAccordionRow !== null) {
-                        accordionRows[currentAccordionRow].classList.toggle("is-active")
-                        if (currentAccordionRow === i) {
-                            currentAccordionRow = null
-                            return t.reverse()
+                    accordionHeader.addEventListener("click", () => {
+                        if (currentAccordionRow !== null) {
+                            accordionRows[currentAccordionRow].classList.toggle("is-active")
+                            if (currentAccordionRow === i) {
+                                currentAccordionRow = null
+                                return t.reverse()
+                            }
+                            accordionRows[currentAccordionRow]._accordionTween.reverse()
                         }
-                        accordionRows[currentAccordionRow]._accordionTween.reverse()
-                    }
-                    accordionRow.classList.toggle("is-active")
-                    t.play()
-                    currentAccordionRow = i
+                        accordionRow.classList.toggle("is-active")
+                        t.play()
+                        currentAccordionRow = i
+                    })
                 })
-            })
 
-            accordionRows[0].querySelector(".accordion-item-header").click()
+                accordionRows[0].querySelector(".accordion-item-header").click()
+            }
         })
     }
 }

@@ -18,6 +18,7 @@ import { initLoadPosts, loadPosts } from "../../modules/content/loadPost.js"
 import { initLoadNews, loadNews, filterMenu } from "../../modules/content/loadNews.js"
 import { initCaptcha } from "../../common/captcha.js"
 import { handleScrollFromOtherPage } from "../../common/scrollToTab.js"
+import { filterVisibility } from "../../common/filterVisibility.js"
 
 class DefaultRenderer extends Highway.Renderer {
     onEnter() {
@@ -44,6 +45,7 @@ class DefaultRenderer extends Highway.Renderer {
             initLoadNews()
         }
         filterMenu()
+        filterVisibility()
     }
     onEnterCompleted() {
         handleScrollFromOtherPage()
