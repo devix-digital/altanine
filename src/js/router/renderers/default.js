@@ -50,9 +50,9 @@ class DefaultRenderer extends Highway.Renderer {
             initLoadNews()
         }
         filterMenu()
-        filterVisibility()
     }
     onEnterCompleted() {
+        filterVisibility()
         handleScrollFromOtherPage()
         scrollTo()
         loadContent()

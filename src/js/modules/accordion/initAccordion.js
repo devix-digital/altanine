@@ -45,36 +45,40 @@ export const initAccordion = () => {
 
 export const initEventsAccordion = () => {
     const accordionRows = document.querySelectorAll(".accordion-events-item")
+
+    if (!accordionRows.length) return
+
     let currentAccordionRow = null
 
-    if (accordionRows.length > 0) {
-        accordionRows.forEach((accordionRow, i) => {
-            const accordionContent = accordionRow.querySelector(".accordion-events-item-body")
-            const accordionHeader = accordionRow.querySelector(".accordion-events-item-header")
-            const t = Tween.to(accordionContent, {
-                height: "auto",
-                paused: true,
-                duration: transition.move.duration,
-                ease: transition.move.ease,
-            })
+    accordionRows.forEach((accordionRow, i) => {
+        const accordionContent = accordionRow.querySelector(".accordion-events-item-body")
+        const accordionHeader = accordionRow.querySelector(".accordion-events-item-header")
 
-            accordionRow._accordionTween = t
+        if (!accordionContent || !accordionHeader) return
 
-            accordionHeader.addEventListener("click", () => {
-                if (currentAccordionRow !== null) {
-                    accordionRows[currentAccordionRow].classList.toggle("is-active")
-                    if (currentAccordionRow === i) {
-                        currentAccordionRow = null
-                        return t.reverse()
-                    }
-                    accordionRows[currentAccordionRow]._accordionTween.reverse()
-                }
-                accordionRow.classList.toggle("is-active")
-                t.play()
-                currentAccordionRow = i
-            })
+        const t = Tween.to(accordionContent, {
+            height: "auto",
+            paused: true,
+            duration: transition.move.duration,
+            ease: transition.move.ease,
         })
-    }
+
+        accordionRow._accordionTween = t
+
+        accordionHeader.addEventListener("click", () => {
+            if (currentAccordionRow !== null) {
+                accordionRows[currentAccordionRow].classList.toggle("is-active")
+                if (currentAccordionRow === i) {
+                    currentAccordionRow = null
+                    return t.reverse()
+                }
+                accordionRows[currentAccordionRow]._accordionTween.reverse()
+            }
+            accordionRow.classList.toggle("is-active")
+            t.play()
+            currentAccordionRow = i
+        })
+    })
 }
 
 export const initAccordionCore = () => {
