@@ -84,7 +84,8 @@
         }
 
         &.is-active {
-            .accordion {
+            .accordion,
+            .accordion-events {
                 &-item {
                     &-title {
                         @extend .color-gradient;
