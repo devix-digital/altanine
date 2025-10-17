@@ -4101,6 +4101,10 @@ svg {
   padding: 0 8rem;
 }
 
+.team-wrap .blog-carousel-slide {
+  padding-bottom: 0;
+}
+
 .team-item {
   width: 100%;
   max-width: 416rem;
@@ -12436,7 +12440,6 @@ html.lenis {
 
   .team-wrap .blog-carousel-slide {
     max-width: 100%;
-    padding-bottom: 24rem;
   }
 
   .team-item .img-missing {

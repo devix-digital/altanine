@@ -80,6 +80,11 @@
     }
     &-wrap {
         padding: 0 8rem;
+
+        .blog-carousel-slide {
+            padding-bottom: 0;
+        }
+
         @include maxWidth($sm) {
             padding: 0;
 
@@ -91,7 +96,6 @@
             }
             .blog-carousel-slide {
                 max-width: 100%;
-                padding-bottom: 24rem;
             }
         }
     }
