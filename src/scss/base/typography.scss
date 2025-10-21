@@ -1,67 +1,48 @@
-h1, .h1 {
-	font: var(--font-h1);
-	letter-spacing: -0.024em;
-	
-		@include maxWidth($sm){
-			font: var(--font-h1-mobile);
-		}
-}
+h1,
+.h1 {
+    font: var(--font-h1);
+    letter-spacing: -0.03em;
 
-h2, .h2 {
-	font: var(--font-h2);
-	letter-spacing: -0.02em;
-	
-		@include maxWidth($sm){
-      font: var(--font-h2-mobile);
+    @include maxWidth($sm) {
+        font: var(--font-h1-mobile);
     }
 }
 
-h3,.h3 {
-  font: var(--font-h3);
-  letter-spacing: -0.02em;
-	
-	  @include maxWidth($sm){
-      font: var(--font-h3-mobile);
+h2,
+.h2 {
+    font: var(--font-h2);
+    letter-spacing: 0;
+
+    @include maxWidth($sm) {
+        font: var(--font-h2-mobile);
     }
 }
 
-h4,.h4 {
-  font: var(--font-h4);
-  letter-spacing: -0.032em;
-	
-	  @include maxWidth($sm){
-      font: var(--font-h4-mobile);
+h3,
+.h3 {
+    font: var(--font-h3);
+    letter-spacing: -0.02em;
+
+    @include maxWidth($sm) {
+        font: var(--font-h3-mobile);
     }
 }
 
-h5,.h5 {
-  font: var(--font-h5);
-  letter-spacing: -0.01em;
-	
-	  @include maxWidth($sm){
-      font: var(--font-h5-mobile);
+p {
+    font: inherit;
+}
+
+strong,
+b {
+    font-weight: 700;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5 {
+    i {
+        font-style: normal;
     }
-}
-
-h6, .h6{
-	font: var(--font-body-l);
-	letter-spacing: -0.01em;
-	
-		@include maxWidth($sm){
-			font: var(--font-body-l-mobile);
-		}
-}
-
-p{
-	font: inherit;
-}
-
-strong, b{
-	font-weight: 700;
-}
-
-.h1, .h2, .h3, .h4, .h5 {
-		i{
-			font-style: normal;
-		}
 }

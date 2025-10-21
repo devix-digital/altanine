@@ -1,0 +1,99 @@
+.adventages {
+    &-top {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 168rem;
+
+        @include maxWidth($sm) {
+            flex-direction: column;
+            margin-right: 0;
+            gap: 40rem;
+        }
+    }
+
+    &-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 210rem;
+
+        @include maxWidth($sm) {
+            width: 100%;
+            gap: 20rem;
+        }
+    }
+
+    &-title {
+        max-width: 750rem;
+        text-indent: 180rem;
+
+        @include maxWidth($sm) {
+            width: 100%;
+            text-indent: 0;
+        }
+    }
+
+    hr {
+        width: 100%;
+        height: 1rem;
+        background: var(--color-white);
+        opacity: 0.3;
+        margin: 116rem 0;
+
+        @include maxWidth($sm) {
+            margin: 40rem 0;
+        }
+    }
+
+    &-cards {
+        display: flex;
+        justify-content: space-between;
+        gap: 24rem;
+
+        @include maxWidth($sm) {
+            flex-direction: column;
+        }
+    }
+
+    &-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex: 1;
+        height: 627rem;
+        background: var(--color-gray);
+        padding: 48rem;
+        text-align: center;
+        transition: color 0.3s ease, background 0.3s ease;
+
+        .hidden {
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        &:hover {
+            color: var(--color-hover);
+            background: var(--color-gray-200);
+        }
+        &:hover .hidden {
+            opacity: 1;
+        }
+
+        @include maxWidth($sm) {
+            padding: 40rem;
+            gap: 40rem;
+        }
+
+        &-wrapper {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 80rem;
+
+            @include maxWidth($sm) {
+                gap: 30rem;
+            }
+        }
+    }
+}

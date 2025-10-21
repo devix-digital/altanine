@@ -1,0 +1,104 @@
+.contact-us {
+    background: var(--color-white);
+    color: var(--color-black);
+
+    &-visible {
+        display: flex;
+        justify-content: space-between;
+        padding: 26rem 0 26rem 32rem;
+
+        @include maxWidth($sm) {
+            padding: 0;
+
+            .h3,
+            p {
+                letter-spacing: -0.04em;
+            }
+        }
+    }
+    .scroll-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 8rem;
+
+        img {
+            width: 16rem;
+            height: 16rem;
+        }
+    }
+
+    &-hidden {
+        // display: none;
+        padding: 122rem 212rem 182rem 0;
+
+        @include maxWidth($sm) {
+            padding: 40rem 0;
+        }
+    }
+
+    &-label {
+        color: var(--color-gray-100);
+    }
+
+    &-content {
+        margin-left: 312rem;
+        display: flex;
+        flex-direction: column;
+        gap: 90rem;
+        @include maxWidth($sm) {
+            margin-left: 0;
+        }
+
+        &-top,
+        &-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            @include maxWidth($sm) {
+                flex-direction: column;
+                gap: 20rem;
+            }
+        }
+    }
+
+    &-title {
+        width: 750rem;
+        text-indent: 270rem;
+        @include maxWidth($sm) {
+            width: 100%;
+            text-indent: 0;
+        }
+    }
+
+    &-mini-img {
+        width: 227rem;
+    }
+
+    &-img {
+        width: 367rem;
+    }
+
+    &-form {
+        width: 707rem;
+        display: flex;
+        flex-direction: column;
+        gap: 40rem;
+
+        @include maxWidth($sm) {
+            width: 100%;
+        }
+    }
+
+    .btn {
+        color: var(--color-black);
+        border: solid var(--color-black) 1rem;
+        background: var(--color-white);
+        margin-top: 60rem;
+        transition: color 0.3s ease, background-color 0.3s ease;
+
+        &:hover {
+            color: var(--color-white);
+            background: var(--color-black);
+        }
+    }
+}

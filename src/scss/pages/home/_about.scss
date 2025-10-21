@@ -1,42 +1,107 @@
-.about.home {
-    padding: 0;
-    background-color: transparent;
+.about {
+    &-top {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 250rem;
+        margin-bottom: 140rem;
 
-    .section-banner {
-        margin-bottom: 24rem;
+        @include maxWidth($sm) {
+            width: 100%;
+            flex-direction: column;
+            gap: 60rem;
+            margin-right: 0;
+            margin-bottom: 40rem;
+        }
+
+        &-wrapper {
+            display: flex;
+            gap: 546rem;
+
+            .btn-circle {
+                @include maxWidth($sm) {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 140rem;
+                    height: 140rem;
+                }
+            }
+        }
     }
 
-    .about-desc {
-        margin: 0;
+    &-img {
+        max-width: 542rem;
 
-        &-title {
-            max-width: 480rem;
-            width: 100%;
-            margin-bottom: 16rem;
+        @include maxWidth($sm) {
+            max-width: 100%;
         }
-        .bold {
-            font: var(--font-body-b);
-            color: var(--color-gray-600);
-            margin-bottom: 24rem;
-            @include maxWidth($sm) {
-                font: var(--font-body-b-mobile);
-            }
+    }
+
+    &-mini-img {
+        max-width: 146rem;
+
+        @include maxWidth($sm) {
+            display: none;
         }
-        p {
-            font: var(--font-body-r);
-            max-width: 416rem;
-            @include maxWidth($sm) {
-                font: var(--font-body-r-mobile);
-            }
-            &:last-of-type {
-                margin-bottom: 24rem;
-            }
+    }
+
+    &-decor-img {
+        position: absolute;
+        top: 40rem;
+        right: -40rem;
+        width: 480rem;
+        z-index: 0;
+    }
+
+    &-bottom {
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        gap: 774rem;
+        margin-top: -380rem;
+        overflow: hidden;
+
+        @include maxWidth($sm) {
+            flex-direction: column;
+            gap: 20rem;
+            margin-top: 0;
         }
 
-        .btn {
+        &-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 154rem;
+            z-index: 1;
+
             @include maxWidth($sm) {
                 width: 100%;
+                gap: 200rem;
             }
+        }
+    }
+
+    &-title {
+        width: 750rem;
+
+        @include maxWidth($sm) {
+            width: 100%;
+        }
+
+        span {
+            font-size: 18rem;
+            opacity: 0.3;
+            vertical-align: super;
+            line-height: 80%;
+            margin-right: 20rem;
+        }
+    }
+
+    &-text {
+        width: 358rem;
+
+        @include maxWidth($sm) {
+            width: 100%;
+            color: var(--color-gray-100);
         }
     }
 }

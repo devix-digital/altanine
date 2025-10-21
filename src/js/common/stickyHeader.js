@@ -17,7 +17,7 @@ export const stickyHeader = () => {
             } else if (currentScroll === lastScrollTop) {
                 return
             } else {
-                header.style.top = "16rem"
+                header.style.top = "40rem"
             }
 
             lastScrollTop = currentScroll

@@ -3,77 +3,46 @@ $xs: 575;
 $sm: 767;
 $md: 991;
 $lg: 1200;
-$xl: 1400;
+$xl: 1920;
 
 :root {
     /* Fonts */
-    --font-family-primary: "Inter";
+    --font-family-primary: "DarkerGrotesque";
 
     /* Headings */
-    --font-h1: 500 80rem / 104% var(--font-family-primary);
-    --font-h2: 500 56rem / 124% var(--font-family-primary);
-    --font-h3: 500 48rem / 124% var(--font-family-primary);
-    --font-h4: 500 32rem / 124% var(--font-family-primary);
-    --font-h5: 500 24rem / 124% var(--font-family-primary);
+    --font-h1: 900 200rem / 70% var(--font-family-primary);
+    --font-h2: 600 96rem / 80% var(--font-family-primary);
+    --font-h3: 600 72rem / 80% var(--font-family-primary);
     /* Headings mobile */
-    --font-h1-mobile: 500 48rem / 104% var(--font-family-primary);
-    --font-h2-mobile: 500 32rem / 124% var(--font-family-primary);
-    --font-h3-mobile: 500 32rem / 124% var(--font-family-primary);
-    --font-h4-mobile: 500 24rem / 124% var(--font-family-primary);
-    --font-h5-mobile: 500 20rem / 124% var(--font-family-primary);
+    --font-h1-mobile: 900 70rem / 70% var(--font-family-primary);
+    --font-h2-mobile: 600 38rem / 80% var(--font-family-primary);
+    --font-h3-mobile: 600 34rem / 80% var(--font-family-primary);
 
     /* Body */
-    --font-body-r: 400 16rem / 145% var(--font-family-primary);
-    --font-body-m: 500 16rem / 145% var(--font-family-primary);
-    --font-body-l: 500 18rem / 145% var(--font-family-primary);
-    --font-body-b: 700 16rem / 145% var(--font-family-primary);
-    --font-body-s: 400 13rem / 150% var(--font-family-primary);
-    --font-body-u: 700 14rem / 120% var(--font-family-primary);
+    --font-body-s: 600 18rem / 100% var(--font-family-primary);
+    --font-body-m: 600 20rem / 100% var(--font-family-primary);
     /* Body mobile */
-    --font-body-r-mobile: 400 15rem / 145% var(--font-family-primary);
-    --font-body-m-mobile: 500 15rem / 145% var(--font-family-primary);
-    --font-body-l-mobile: 500 17rem / 145% var(--font-family-primary);
-    --font-body-b-mobile: 700 15rem / 145% var(--font-family-primary);
-    --font-body-s-mobile: 400 12rem / 150% var(--font-family-primary);
-    --font-body-u-mobile: 700 12rem / 120% var(--font-family-primary);
+    --font-body-s-mobile: 600 15rem / 100% var(--font-family-primary);
+    --font-body-m-mobile: 600 16rem / 100% var(--font-family-primary);
 
     /* Colors */
     --color-primary-1: #00204d;
     --color-primary-2: #003cbf;
-    --color-primary-3: #b6c6d7;
-    --color-primary-4: #c9dee5;
-    --color-primary-gradient: linear-gradient(
-        297deg,
-        var(--color-primary-1) 0%,
-        var(--color-primary-2) 100%
-    );
-    --color-primary-gradient-reverse: linear-gradient(
-        297deg,
-        var(--color-primary-2) 0%,
-        var(--color-primary-1) 100%
-    );
-    --color-secondary-gradient: linear-gradient(
-        124deg,
-        var(--color-primary-2) 0%,
-        var(--color-primary-3) 100%
-    );
-    --color-black: #213245;
-    --color-blue: #00204d;
-    --color-blue-100: #bfd4e4;
-    --color-gray-700: #353e4d;
-    --color-gray-600: #606c7a;
-    --color-gray-500: #686f79;
-    --color-gray-400: #b3b7bc;
-    --color-gray-300: #e5e7e8;
-    --color-gray-200: #f2f6f8;
-    --color-gray-800: #ececec;
+
+    --color-gradient-1: #67d7fb;
+    --color-gradient-2: #126cd8;
+
     --color-white: #ffffff;
-    --color-blur: #f0f5f7;
+    --color-black: #000;
+    --color-gray: #1b1b1b;
+    --color-gray-100: #b0b0b0;
+    --color-gray-200: #262525;
 
     --color-success: #21d184;
     --color-error: #ff5c5c;
     --color-link: #3870ff;
-    --color-footer-hover: #02ccff;
+
+    --color-hover: #9e94f5;
 
     --transition-duration: 0.5s;
     --transition-easing: ease;

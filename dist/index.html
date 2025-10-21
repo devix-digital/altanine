@@ -1,168 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Altanine</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Devix</title>
 
-        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="img/logo-mini.png" />
 
-        <meta name="msapplication-TileColor" content="#ffffff" />
-        <meta name="theme-color" content="#ffffff" />
-        <meta name="msapplication-navbutton-color" content="#ffffff" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="msapplication-navbutton-color" content="#ffffff" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff" />
 
-        <link
-            rel="preload"
-            href="fonts/Inter-Regular.woff"
-            as="font"
-            type="font/woff"
-            crossorigin="anonymous"
-        />
-        <link
-            rel="preload"
-            href="fonts/Inter-Regular.woff2"
-            as="font"
-            type="font/woff2"
-            crossorigin="anonymous"
-        />
-        <link
-            rel="preload"
-            href="fonts/Inter-Medium.woff"
-            as="font"
-            type="font/woff"
-            crossorigin="anonymous"
-        />
-        <link
-            rel="preload"
-            href="fonts/Inter-Medium.woff2"
-            as="font"
-            type="font/woff2"
-            crossorigin="anonymous"
-        />
-        <link
-            rel="preload"
-            href="fonts/Inter-Bold.woff"
-            as="font"
-            type="font/woff"
-            crossorigin="anonymous"
-        />
-        <link
-            rel="preload"
-            href="fonts/Inter-Bold.woff2"
-            as="font"
-            type="font/woff2"
-            crossorigin="anonymous"
-        />
+    <link
+        rel="preload"
+        href="fonts/DarkerGrotesque-Black.woff"
+        as="font"
+        type="font/woff"
+        crossorigin="anonymous"
+    />
+    <link
+        rel="preload"
+        href="fonts/DarkerGrotesque-Black.woff2"
+        as="font"
+        type="font/woff2"
+        crossorigin="anonymous"
+    />
+    <link
+        rel="preload"
+        href="fonts/DarkerGrotesque-ExtraBold.woff"
+        as="font"
+        type="font/woff"
+        crossorigin="anonymous"
+    />
+    <link
+        rel="preload"
+        href="fonts/DarkerGrotesque-ExtraBold.woff2"
+        as="font"
+        type="font/woff2"
+        crossorigin="anonymous"
+    />
+    <link
+        rel="preload"
+        href="fonts/DarkerGrotesque-SemiBold.woff"
+        as="font"
+        type="font/woff"
+        crossorigin="anonymous"
+    />
+    <link
+        rel="preload"
+        href="fonts/DarkerGrotesque-SemiBold.woff2"
+        as="font"
+        type="font/woff2"
+        crossorigin="anonymous"
+    />
 
-        <link rel="stylesheet" href="css/style.css" />
-    </head>
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/themes/odometer-theme-minimal.min.css"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+</head>
 
     <body>
-        <main class="wrapper" id="wrapper">
+        <main id="wrapper">
             <div class="preloader" id="preloader"></div>
             <header class="header" id="header">
     <div class="header-panel">
-        <div class="header-panel-logo">
-            <a href="/" class="logo">
-                <img src="img/logo.svg" alt="Altanine" />
-            </a>
-            <div class="header-contacts">
-                <a href="tel:+66 666 66 66 666" class="header-contacts-item">+66 666 66 66 666</a>
-                <a href="mailto:info@altanine.com" class="header-contacts-item"
-                    >info@altanine.com</a
-                >
-            </div>
-        </div>
-        <div class="header-panel-nav" id="mobile-menu">
-            <nav>
+        <a href="/" class="header-panel-logo">
+            <img src="img/logo-mini.svg" alt="Devix logo" />
+        </a>
+        <div class="header-panel-wrapper">
+            <div class="header-panel-info">347 Riverside Lane, Heart of Metropolis USA</div>
+            <nav class="header-panel-nav-desk">
                 <ul>
                     <li>
-                        <a class="about-us-link" href="about-us.html">About us</a>
-                        <ul>
-                            <li>
-                                <a
-                                    href="about-us.html"
-                                    class="scroll-action js-tab-menulink wrap"
-                                    data-target="#team"
-                                    data-href="tab1"
-                                    data-hash="executive-management"
-                                    >Executive Management</a
-                                >
-                            </li>
-                            <li>
-                                <a
-                                    href="about-us.html"
-                                    class="scroll-action js-tab-menulink wrap"
-                                    data-target="#team"
-                                    data-href="tab2"
-                                    data-hash="board-of-directors"
-                                    >Board Of Directors</a
-                                >
-                            </li>
-                            <li>
-                                <a
-                                    href="about-us.html"
-                                    class="scroll-action js-tab-menulink wrap"
-                                    data-target="#team"
-                                    data-href="tab3"
-                                    data-hash="scientific-advisory"
-                                    >Scientific Advisory Board</a
-                                >
-                            </li>
-                        </ul>
-                    </li>
-                    <li><a href="innovation.html">Innovation</a></li>
-                    <li><a href="markets.html">Markets</a></li>
-                    <li>
-                        <a href="metformin.html">Medicines</a>
-                        <ul>
-                            <li><a href="metformin.html">Metformin</a></li>
-                            <li><a href="sildenafil.html">Sildenafil</a></li>
-                            <li><a href="sumatriptan.html">Sumatriptan</a></li>
-                        </ul>
+                        <a href="#">Apartments</a>
                     </li>
                     <li>
-                        <a href="investor.html">Investor relations</a>
-                    </li>
-                    <li>
-                        <a href="blog.html">Resources</a>
-                        <ul>
-                            <li><a href="blog.html">Insights</a></li>
-                            <li><a href="news.html">News</a></li>
-                        </ul>
+                        <a href="#">Gallery</a>
                     </li>
                 </ul>
             </nav>
-            <div class="header-contacts">
-                <a href="tel:+66 666 66 66 666" class="header-contacts-item">+66 666 66 66 666</a>
-                <a href="mailto:info@altanine.com" class="header-contacts-item"
-                    >info@altanine.com</a
-                >
-            </div>
-            <a href="contact-us.html" class="btn btn-gradient">
-                <span class="btn-bg"></span>
-                <span class="btn-labels">
-                    <span class="btn-labels-item">Contact us</span>
-                    <span class="btn-labels-item">Contact us</span>
-                    <span class="btn-labels-item">Contact us</span>
-                </span>
-            </a>
         </div>
+        <nav class="header-panel-nav-mob" id="mobile-menu">
+            <ul>
+                <li>
+                    <a href="#">Apartments</a>
+                </li>
+                <li>
+                    <a href="#">Gallery</a>
+                </li>
+            </ul>
+        </nav>
         <div class="header-panel-action">
-            <a href="contact-us.html" class="btn btn-gradient">
-                <span class="btn-bg"></span>
-                <span class="btn-labels">
-                    <span class="btn-labels-item">Contact us</span>
-                    <span class="btn-labels-item">Contact us</span>
-                    <span class="btn-labels-item">Contact us</span>
-                </span>
-            </a>
-            <button class="burger" aria-label="Open menu" aria-controls="mobile-menu">
-                <span class="burger-box">
-                    <span class="burger-box-arrow"></span>
-                    <span class="burger-box-arrow"></span>
-                    <span class="burger-box-arrow"></span>
-                </span>
+            <a href="#" class="btn"> Contact </a>
+            <button class="burger" id="burger">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
             </button>
         </div>
     </div>
@@ -170,780 +106,459 @@
 
             <div data-router-wrapper>
                 <div data-router-view="default">
-                    <section class="section hero hero-home">
-    <div class="hero-banner" id="hero-banner">
-        <div class="full-carousel splide" id="hero-carousel">
-            <div class="splide__track">
-                <div class="splide__list">
-                    <div class="splide__slide full-carousel-slide">
-                        <video
-                            class="video"
-                            autoplay
-                            loop
-                            muted
-                            playsinline
-                            poster="img/home/hero-poster-1.jpg"
-                        >
-                            <source src="../../files/video1.mp4" type="video/mp4" />
-                        </video>
-                    </div>
-                    <div class="splide__slide full-carousel-slide">
-                        <video
-                            class="video"
-                            autoplay
-                            loop
-                            muted
-                            playsinline
-                            poster="img/home/hero-poster-1.jpg"
-                        >
-                            <source src="../../files/video2.mp4" type="video/mp4" />
-                        </video>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="users" data-load-order="2">
-            <div class="users-list">
-                <div class="users-list-item">
-                    <img
-                        src="https://media.istockphoto.com/id/92347250/uk/%D1%84%D0%BE%D1%82%D0%BE/portrait-of-a-doctor.jpg?s=612x612&w=0&k=20&c=LzTAA0O_bSuxh55KiH_SkHd9HM7T3vuBHvaG3-xH1sU="
-                        alt="Alt"
-                    />
-                </div>
-                <div class="users-list-item">
-                    <img
-                        src="https://media.istockphoto.com/id/1285872850/uk/%D1%84%D0%BE%D1%82%D0%BE/%D0%BA%D1%80%D1%83%D0%BF%D0%BD%D0%B8%D0%BC-%D0%BF%D0%BB%D0%B0%D0%BD%D0%BE%D0%BC-%D0%BF%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82-%D0%BC%D0%BE%D0%BB%D0%BE%D0%B4%D0%BE%D1%97-%D0%B6%D1%96%D0%BD%D0%BA%D0%B8-%D0%BB%D1%96%D0%BA%D0%B0%D1%80%D1%8F-%D0%BD%D0%BE%D1%81%D0%B8%D1%82%D1%8C-%D0%BF%D0%BE%D1%81%D0%BC%D1%96%D1%85%D0%B0%D1%94%D1%82%D1%8C%D1%81%D1%8F-%D1%96-%D0%B4%D0%B8%D0%B2%D0%B8%D1%82%D1%8C%D1%81%D1%8F-%D0%BD%D0%B0-%D0%BA%D0%B0%D0%BC%D0%B5%D1%80%D1%83.jpg?s=612x612&w=0&k=20&c=UrsvqHuo1DZk4n7UTdbyCLiom8o2-evYOq4zpApb-Lg="
-                        alt="Alt"
-                    />
-                </div>
-                <div class="users-list-item">
-                    <img
-                        src="https://media.istockphoto.com/id/906716642/uk/%D1%84%D0%BE%D1%82%D0%BE/%D0%BF%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82-%D1%83%D1%81%D0%BF%D1%96%D1%88%D0%BD%D0%BE%D0%B3%D0%BE-%D1%87%D0%BE%D0%BB%D0%BE%D0%B2%D1%96%D1%87%D0%BE%D0%B3%D0%BE-%D1%85%D1%96%D1%80%D1%83%D1%80%D0%B3%D0%B0-%D0%B2-%D1%81%D0%BA%D1%80%D0%B0%D0%B1%D0%B0%D1%85.jpg?s=612x612&w=0&k=20&c=61hlHs_whGKaG9q8Pcl6u7C5AfGKcMRXbwU10w-LtjA="
-                        alt="Alt"
-                    />
-                </div>
-                <div class="users-list-item">
-                    <img src="" alt="Alt" />
-                </div>
-            </div>
-            <p class="users-description">
-                <span class="users-description-item">Endorsed by</span>
-                <span class="users-description-item">1 000+ doctors</span>
-            </p>
-        </div>
-    </div>
-    <div class="hero-content">
-        <div class="container">
-            <div class="progress" id="progress">
-                <div class="progress-bar" id="hero-progress-bar">
-                    <div class="progress-bar-follower"></div>
-                </div>
-                <div class="scroll-action" data-target="#about">
-                    <p class="scroll-action-label">Scroll down</p>
-                    <div class="scroll-action-icon">
-                        <svg><use xlink:href="img/icons/icons.svg#arrow-down"></use></svg>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-8">
-                    <p class="hero-subtitle font-uppercase color-white" data-load-order="1">
-                        Engineering Excellence
-                    </p>
-                    <h1 class="hero-title h1" data-split-text>
-                        Creating Innovative Metformin Products
-                    </h1>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
- <section id="about" class="section about home">
-    <div class="container">
+                    <section class="section hero">
+    <div class="container-app">
         <div class="row">
-            <div class="col-12">
-                <p class="font-uppercase color-gradient section-subtitle">Our Mission</p>
-                <h2 class="h3 section-title">
-                    Altanine is a pharmaceutical company advancing medicines to bring meaningful
-                    <i
-                        >improvement to patients' lives through innovative science and delivery
-                        technologies</i
-                    >
-                </h2>
+            <div class="hero-banner col-md-6">
+                <picture><source srcset="img/home/hero.webp" type="image/webp"><img class="hero-banner-img" src="img/home/hero.png" alt="3D Shape" /></picture>
+                <p class="hero-banner-text h3">
+                    <span>Devix digital</span> We automate. You create freely.
+                </p>
             </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="banner section-banner" data-parallax>
-                    <picture>
-                        <source srcset="img/home/enhancements-2.webp" type="image/webp" />
-                        <source srcset="img/home/enhancements-2.jpg" type="image/jpeg" />
-                        <img src="img/home/enhancements-2.jpg" class="about-media-big" />
-                    </picture>
-                </div>
-            </div>
-            <div class="col-md-5 offset-md-1">
-                <div class="about-desc">
-                    <h3 class="h4 about-desc-title">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore
-                    </h3>
-                    <p class="bold">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua.
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                    <a href="product.html" class="btn btn-gradient btn-md">
-                        <span class="btn-bg"></span>
-                        <span class="btn-icon"
-                            ><svg><use xlink:href="img/icons/icons.svg#arrow-right"></use></svg
-                        ></span>
-                        <span class="btn-labels">
-                            <span class="btn-labels-item">Learn More</span>
-                            <span class="btn-labels-item">Learn More</span>
-                            <span class="btn-labels-item">Learn More</span>
-                        </span>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-2 d-none d-md-block">
-                <div class="section-banner section-banner-small" data-parallax>
-                    <picture>
-                        <source srcset="img/about-us/about-media-s.webp" type="image/webp" />
-                        <source srcset="img/about-us/about-media-s.jpg" type="image/jpeg" />
-                        <img src="img/about-us/about-media-s.jpg" class="about-media-small" />
-                    </picture>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-                    <section class="section overview overview-one home">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-5">
-                <div class="overview-sticky">
-                    <p class="font-uppercase color-gradient section-subtitle">Situation overview</p>
-                    <h2 class="h3 section-title">Altanine – a patient-<i>centric treatment</i></h2>
-                    <p class="section-description">
-                        Altanine increases efficiency and improves patient experience in Metformin
-                        treatment
-                    </p>
-                    <div class="overview-detail">
-                        <ul>
-                            <li>Patient-friendly treatment</li>
-                            <li>Special patented enteric coating for targeted release</li>
-                            <li>Enhanced bioavailability of the medication</li>
-                            <li>Improved body absorption</li>
-                            <li>Reduced gastrointestinal side effects</li>
-                            <li>Lowers the necessary dosage of Metformin</li>
-                        </ul>
-                    </div>
-                    <a href="#" class="btn btn-gradient btn-md">
-                        <span class="btn-bg"></span>
-                        <span class="btn-icon"
-                            ><svg><use xlink:href="img/icons/icons.svg#arrow-right"></use></svg
-                        ></span>
-                        <span class="btn-labels">
-                            <span class="btn-labels-item">Learn More</span>
-                            <span class="btn-labels-item">Learn More</span>
-                            <span class="btn-labels-item">Learn More</span>
-                        </span>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-7">
-                <div class="overview-banners">
-                    <div class="section-banner">
-                        <picture>
-                            <source srcset="img/home/overview-banner-3.png" type="image/png" />
-                            <source srcset="img/home/overview-banner-3.webp" type="image/webp" />
-                            <img
-                                src="img/home/overview-banner-3.png"
-                                class="overview-banners-image"
-                            />
-                        </picture>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-                    <section class="section enhancements">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-5">
-                <div class="enhancements-sticky">
-                    <p class="font-uppercase color-gradient section-subtitle">
-                        Phase One, Target Markets
-                    </p>
-                    <h3 class="h4 section-title">
-                        We are strategically positioned within the pharmaceutical industry by
-                        targeting well-established and rapidly expanding markets
-                    </h3>
-                    <p class="section-description">
-                        Set to rapidly gain market share by surpassing current options in
-                        effectiveness and ease of use, our initial focus is diabetes, weight
-                        control, sexual health, and neurocare markets.
-                    </p>
-                    <a href="product.html" class="btn btn-gradient btn-md">
-                        <span class="btn-bg"></span>
-                        <span class="btn-icon"
-                            ><svg><use xlink:href="img/icons/icons.svg#arrow-right"></use></svg
-                        ></span>
-                        <span class="btn-labels">
-                            <span class="btn-labels-item">Learn More</span>
-                            <span class="btn-labels-item">Learn More</span>
-                            <span class="btn-labels-item">Learn More</span>
-                        </span>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-7">
-                <div class="enhancements-row">
-                    <div class="row">
-                        <div class="col-md-8">
-                            <div class="banner section-banner" data-parallax>
-                                <picture>
-                                    <source
-                                        srcset="img/markets/enhancements-1.webp"
-                                        type="image/webp"
-                                    />
-                                    <source
-                                        srcset="img/markets/enhancements-1.jpg"
-                                        type="image/jpeg"
-                                    />
-                                    <img src="img/markets/enhancements-1.jpg" />
-                                </picture>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="products-card">
-                                <div class="products-card-thumbnail" data-parallax>
-                                    <picture>
-                                        <source
-                                            srcset="img/markets/enhancements-2.webp"
-                                            type="image/webp"
-                                        />
-                                        <source
-                                            srcset="img/markets/enhancements-2.jpg"
-                                            type="image/jpeg"
-                                        />
-                                        <img src="img/markets/enhancements-2.jpg" />
-                                    </picture>
-                                </div>
-                                <div class="products-card-body">
-                                    <p class="products-card-description">
-                                        With a suite of groundbreaking products already navigating
-                                        the regulatory approval pipeline, Altanine is poised to set
-                                        new standards in healthcare delivery and patient outcomes.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-                    <section class="section about home mission">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="banner section-banner" data-parallax>
-                    <picture>
-                        <source
-                            srcset="img/investor/silhouette-businessman-with-glasses.webp"
-                            type="image/webp"
-                        />
-                        <source
-                            srcset="img//investor/silhouette-businessman-with-glasses.jpg"
-                            type="image/jpeg"
-                        />
-                        <img src="img/investor/silhouette-businessman-with-glasses.jpg" />
-                    </picture>
-                </div>
-            </div>
-            <div class="col-md-5 offset-md-1">
-                <div class="about-desc">
-                    <h2 class="h3">
-                        We're excited to share an overview of Altanine's strategies and financial
-                        outlook.
-                    </h2>
-                    <p>For detailed information, financial models, or our pitch deck, please</p>
-                </div>
-                <button class="btn btn-gradient btn-md" data-modal-open="#investor-modal">
-                    <span class="btn-bg"></span>
-                    <span class="btn-icon"
-                        ><svg><use xlink:href="img/icons/icons.svg#arrow-right"></use></svg
-                    ></span>
-                    <span class="btn-labels">
-                        <span class="btn-labels-item">Request Information</span>
-                        <span class="btn-labels-item">Request Information</span>
-                        <span class="btn-labels-item">Request Information</span>
-                    </span>
-                </button>
-            </div>
-            <div class="col-md-2 d-none d-md-block">
-                <div class="section-banner section-banner-small" data-parallax>
-                    <picture>
-                        <source srcset="img/investor/glasses.webp" type="image/webp" />
-                        <source srcset="img/investor/glasses.jpg" type="image/jpeg" />
-                        <img src="img/investor/glasses.jpg" />
-                    </picture>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-                    
-                    
-                    
-                    
-                    
-                    
-                    <!--			<div class="container">-->
-                    <!--				<hr class="hr"/>-->
-                    <!--			</div>-->
-                    <section class="section blog home">
-    <div class="container">
-        <div class="row justify-content-between">
-            <div class="col-md-5">
-                <h2 class="h3 section-title">All News and views</h2>
-            </div>
-            <div>
-                <a href="product.html" class="btn btn-gradient btn-md d-none d-md-block">
-                    <span class="btn-bg"></span>
-                    <span class="btn-labels">
-                        <span class="btn-labels-item">Learn More</span>
-                        <span class="btn-labels-item">Learn More</span>
-                        <span class="btn-labels-item">Learn More</span>
-                    </span>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="blog-wrap">
-            <div class="blog__item">
-                <div class="post">
-                    <div class="post-thumbnail">
-                        <img
-                            src="img/home/blog-1.jpg"
-                            alt="Our Head of Care Douglas Twenefour clarifies the main points to be aware of with Wegovy."
-                        />
-                    </div>
-                    <div class="post-time">
-                        <p>5 min read</p>
-                    </div>
-                    <p class="post-title">
-                        Our Head of Care Douglas Twenefour clarifies the main points to be aware of
-                        with Wegovy.
-                    </p>
-                    <p class="post-description">
-                        New research is underway to evaluate how weight loss drugs like Ozempic
-                        impact not only the reduction of body weight but also their potential
-                        effects on overall health, metabolic processes, and long-term sustainability
-                        as part of comprehensive weight management strategies.
-                    </p>
-                    <div class="post-action">
-                        <a href="blog-details.html" class="btn btn-arrow">
-                            <span class="btn-icon">
-                                <span class="btn-icon-item"></span>
-                                <span class="btn-icon-item"></span>
-                                <span class="btn-icon-item"></span>
-                                <span class="btn-icon-item"></span>
-                            </span>
-                            <span class="btn-labels">
-                                <span class="btn-labels-item">Learn more</span>
-                            </span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="blog__item">
-                <div class="post">
-                    <div class="post-thumbnail">
-                        <img
-                            src="img/home/blog-2.jpg"
-                            alt="Our Head of Care Douglas Twenefour clarifies the main points to be aware of with Wegovy."
-                        />
-                    </div>
-                    <div class="post-time">
-                        <p>5 min read</p>
-                    </div>
-                    <p class="post-title">
-                        Wegovy made available in the UK for weight loss in people with prediab
-                    </p>
-                    <p class="post-description">
-                        Our Head of Care Douglas Twenefour clarifies the main points to be aware of
-                        with Wegovy, including who it po
-                    </p>
-                    <div class="post-action">
-                        <a href="blog-details.html" class="btn btn-arrow">
-                            <span class="btn-icon">
-                                <span class="btn-icon-item"></span>
-                                <span class="btn-icon-item"></span>
-                                <span class="btn-icon-item"></span>
-                                <span class="btn-icon-item"></span>
-                            </span>
-                            <span class="btn-labels">
-                                <span class="btn-labels-item">Learn more</span>
-                            </span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="blog__item">
-                <div class="post">
-                    <div class="post-thumbnail">
-                        <img
-                            src="img/home/blog-3.jpg"
-                            alt="Our Head of Care Douglas Twenefour clarifies the main points to be aware of with Wegovy."
-                        />
-                    </div>
-                    <div class="post-time">
-                        <p>5 min read</p>
-                    </div>
-                    <p class="post-title">
-                        Wegovy made available in the UK for weight loss in people with prediab
-                    </p>
-                    <p class="post-description">
-                        Our Head of Care Douglas Twenefour clarifies the main points to be aware of
-                        with Wegovy, including who it po
-                    </p>
-                    <div class="post-action">
-                        <a href="blog-details.html" class="btn btn-arrow">
-                            <span class="btn-icon">
-                                <span class="btn-icon-item"></span>
-                                <span class="btn-icon-item"></span>
-                                <span class="btn-icon-item"></span>
-                                <span class="btn-icon-item"></span>
-                            </span>
-                            <span class="btn-labels">
-                                <span class="btn-labels-item">Learn more</span>
-                            </span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <a href="#" class="btn btn-gradient btn-md d-md-none">
-            <span class="btn-bg"></span>
-            <span class="btn-labels">
-                <span class="btn-labels-item">View More</span>
-                <span class="btn-labels-item">View More</span>
-                <span class="btn-labels-item">View More</span>
-            </span>
-        </a>
-    </div>
-</section>
-
-                    <section class="section content content-second">
-    <div class="container">
-        <div class="row">
             <div class="col-md-6">
-                <h2 class="h3 section-title">Interested in finding <br /><i>out more?</i></h2>
-                <div class="join-box-form">
-                    <form>
-                        <label class="field">
-                            <span class="field-label">E-mail*</span>
-                            <input
-                                type="email"
-                                placeholder="Your Email"
-                                class="field-item"
-                                required
+                <h1 class="hero-title" data-split-text>
+                    Create <br />
+                    Beyond <br />
+                    <span class="indent">Limits</span>
+                </h1>
+                <div class="hero-info">
+                    <button
+                        class="btn-circle scroll-action mouse-move-react"
+                        data-target="#contact-us"
+                    >
+                        Get a free consultation
+                    </button>
+                    <div class="hero-text">
+                        <p>since: 2015</p>
+                        <p>AI-powered digital experiences with beauty and purpose.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+ <section class="section work-areas">
+    <div class="container-app">
+        <div class="row">
+            <div class="sticky-wrapper col-md-2">
+                <p class="section-label label-sticky">[Areas of work]</p>
+            </div>
+            <div class="work-areas-wrapper col-md-10">
+                <div class="work-areas-block scroll-trigger">
+                    <div class="work-areas-block-sticky">
+                        <div class="work-areas-block-top">
+                            <h2 class="work-areas-block-title h2">UX & Product Design</h2>
+                            <img
+                                class="work-areas-block-img show-on-scroll"
+                                src="img/home/service-1.jpg"
+                                alt="our service"
                             />
+                        </div>
+                        <div class="work-areas-block-bottom indent-1">
+                            <a class="work-areas-block-btn btn" href="#">More</a>
+                            <p class="work-areas-block-desc">
+                                Creation of aesthetically perfect and practical digital products
+                                that combine efficiency, visual harmony, and an exceptional user
+                                experience.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-areas-block scroll-trigger">
+                    <div class="work-areas-block-sticky">
+                        <div class="work-areas-block-top indent-2">
+                            <h2 class="work-areas-block-title">Intelligent Web Solutions</h2>
+                            <img
+                                class="work-areas-block-img show-on-scroll"
+                                src="img/home/service-2.jpg"
+                                alt="our service"
+                            />
+                        </div>
+                        <div class="work-areas-block-bottom">
+                            <a class="work-areas-block-btn btn" href="#">More</a>
+                            <p class="work-areas-block-desc">
+                                Development of smart websites on Webflow with AI integration for
+                                personalization, content automation, and conversion optimization.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-areas-block scroll-trigger">
+                    <div class="work-areas-block-sticky">
+                        <div class="work-areas-block-top">
+                            <h2 class="work-areas-block-title h2">AI-Powered MVP Development</h2>
+                            <img
+                                class="work-areas-block-img show-on-scroll"
+                                src="img/home/service-3.jpg"
+                                alt="our service"
+                            />
+                        </div>
+                        <div class="work-areas-block-bottom indent-1">
+                            <a class="work-areas-block-btn btn" href="#">More</a>
+                            <p class="work-areas-block-desc">
+                                Development of smart websites on Webflow with AI integration for
+                                personalization, content automation, and conversion optimization.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+                    <section class="section about">
+    <div class="container-app">
+        <div class="about-top">
+            <p class="section-label">[About us]</p>
+            <div class="about-top-wrapper">
+                <picture><source srcset="img/home/about.webp" type="image/webp"><img class="about-img" src="img/home/about.jpg" alt="Team" /></picture>
+                <a href="#" class="btn-circle mouse-move-react"><p>Get a free consultation</p></a>
+            </div>
+        </div>
+        <div class="about-bottom">
+            <picture><source srcset="img/home/about-small.webp" type="image/webp"><img class="about-mini-img" src="img/home/about-small.jpg" alt="Team" /></picture>
+            <div class="about-bottom-wrapper">
+                <h3 class="about-title h3" data-load-order="1">
+                    <span>Devix digital</span> Is a team that turns ideas into effective digital
+                    products.
+                </h3>
+                <div class="about-text animate-on-scroll">
+                    Our approach blends strategy, creativity, and technology to craft digital
+                    experiences that are intuitive, impactful, and built to last.
+                </div>
+            </div>
+            <picture><source srcset="img/home/about-decor.webp" type="image/webp"><img class="about-decor-img" src="img/home/about-decor.png" alt="Team" /></picture>
+        </div>
+    </div>
+</section>
+ <section class="section reputation">
+    <div class="container-app">
+        <div class="reputation-wrapper">
+            <div class="reputation-row">
+                <div class="reputation-item">
+                    <p class="h2 reputation-title odometer" data-value="2000">0</p>
+                    <p>positive feedbacks</p>
+                </div>
+                <div class="reputation-item">
+                    <div class="h1 reputation-title">
+                        <p class="odometer" data-value="3000">0</p>
+                        <p>+</p>
+                    </div>
+                    <p>Ready-made cases</p>
+                </div>
+            </div>
+            <div class="reputation-row">
+                <div class="reputation-item">
+                    <div class="h3 reputation-title">
+                        <p class="odometer" data-value="25">0</p>
+                        <p>+</p>
+                    </div>
+                    <p>employees in a team</p>
+                </div>
+                <div class="reputation-item">
+                    <div class="h2 reputation-title">
+                        <p class="odometer" data-value="10">0</p>
+                        <p>+</p>
+                    </div>
+                    <p class="reputation-text">years of experience</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+                    <section class="section adventages">
+    <div class="container-app">
+        <div class="adventages-top">
+            <div class="adventages-wrapper">
+                <p class="section-label">[Why Devix Digital?]</p>
+                <p class="adventages-text">
+                    AI-powered digital experiences with beauty and purpose.
+                </p>
+            </div>
+            <h2 class="h3 adventages-title">
+                Future-Ready by Design, Strategy, Innovation, Execution, Impact & Growth
+            </h2>
+        </div>
+        <hr />
+        <div class="adventages-cards">
+            <div class="adventages-card">
+                <div class="adventages-card-wrapper">
+                    <p>[ 1 ]</p>
+                    <h3 class="h3 adventages-card-title">AI-driven automation</h3>
+                </div>
+                <p class="hidden">More efficiency & growth</p>
+            </div>
+            <div class="adventages-card">
+                <div class="adventages-card-wrapper">
+                    <p>[ 2 ]</p>
+                    <h3 class="h3 adventages-card-title">Seamless UX</h3>
+                </div>
+                <p class="hidden">Better user engagement</p>
+            </div>
+            <div class="adventages-card">
+                <div class="adventages-card-wrapper">
+                    <p>[ 3 ]</p>
+                    <h3 class="h3 adventages-card-title">Scalable & Future-proof</h3>
+                </div>
+                <p class="hidden">Solutions built to grow with you</p>
+            </div>
+        </div>
+    </div>
+</section>
+ <section class="section cases">
+    <div class="container-app">
+        <div class="cases-top">
+            <p class="section-label">[cases]</p>
+            <h2 class="h2">Our projects</h2>
+        </div>
+        <div class="cases-tabs">
+            <div class="cases-tabs-wrapper scroll-x">
+                <div class="cases-tabs-item active" data-filter="all">
+                    <div class="inner-text">All</div>
+                </div>
+                <div class="cases-tabs-item" data-filter="product-design">
+                    <div class="inner-text">Product design</div>
+                </div>
+                <div class="cases-tabs-item" data-filter="e-commerce">
+                    <div class="inner-text">e-commerce</div>
+                </div>
+                <div class="cases-tabs-item" data-filter="branding">
+                    <div class="inner-text">branding</div>
+                </div>
+                <div class="cases-tabs-item" data-filter="websites">
+                    <div class="inner-text">websites</div>
+                </div>
+                <div class="cases-tabs-item" data-filter="fintech-tech">
+                    <div class="inner-text">Fintech / Tech</div>
+                </div>
+            </div>
+            <a href="#" class="btn">More</a>
+        </div>
+        <div class="cases-content">
+            <div class="cases-element-box" data-category="e-commerce">
+                <hr />
+                <div class="cases-element follower-box">
+                    <h3 class="h3">The Future of Retail</h3>
+                    <div class="cases-element-wrapper">
+                        <div class="cases-element-categories"><p>e-commerce</p></div>
+                        <p class="cases-element-desc">
+                            Smart design meets automation in a seamless shopping experience.
+                        </p>
+                    </div>
+                    <img
+                        class="cases-element-img follower"
+                        src="img/home/service-1.jpg"
+                        alt="case"
+                    />
+                </div>
+            </div>
+            <div class="cases-element-box" data-category="branding">
+                <hr />
+                <div class="cases-element follower-box">
+                    <h3 class="h3">Brand with a Pulse</h3>
+                    <div class="cases-element-wrapper">
+                        <div class="cases-element-categories"><p>branding</p></div>
+                        <p class="cases-element-desc">
+                            redesigning the shopping flow for performance and clarity
+                        </p>
+                    </div>
+                    <img
+                        class="cases-element-img follower"
+                        src="img/home/service-1.jpg"
+                        alt="case"
+                    />
+                </div>
+            </div>
+            <div class="cases-element-box" data-category="fintech-tech">
+                <hr />
+                <div class="cases-element follower-box">
+                    <h3 class="h3">Pixel Perfect Checkout</h3>
+                    <div class="cases-element-wrapper">
+                        <div class="cases-element-categories"><p>Fintech / Tech</p></div>
+                        <p class="cases-element-desc">
+                            An e-commerce platform optimized for seamless user experience and
+                            automated efficiency.
+                        </p>
+                    </div>
+                    <img
+                        class="cases-element-img follower"
+                        src="img/home/service-1.jpg"
+                        alt="case"
+                    />
+                </div>
+            </div>
+            <div class="cases-element-box" data-category="branding websites">
+                <hr />
+                <div class="cases-element follower-box">
+                    <h3 class="h3">From Zero to Launch</h3>
+                    <div class="cases-element-wrapper">
+                        <div class="cases-element-categories">
+                            <p>branding</p>
+                            <p>website</p>
+                        </div>
+                        <p class="cases-element-desc">
+                            An e-commerce platform optimized for seamless user experience and
+                            automated efficiency.
+                        </p>
+                    </div>
+                    <img
+                        class="cases-element-img follower"
+                        src="img/home/service-1.jpg"
+                        alt="case"
+                    />
+                </div>
+            </div>
+            <div class="cases-element-box" data-category="branding websites">
+                <hr />
+                <div class="cases-element follower-box">
+                    <h3 class="h3">The Future of Retail</h3>
+                    <div class="cases-element-wrapper">
+                        <div class="cases-element-categories">
+                            <p>branding</p>
+                            <p>e-commerce</p>
+                        </div>
+                        <p class="cases-element-desc">
+                            An e-commerce platform optimized for seamless user experience and
+                            automated efficiency.
+                        </p>
+                    </div>
+                    <img
+                        class="cases-element-img follower"
+                        src="img/home/service-1.jpg"
+                        alt="case"
+                    />
+                </div>
+            </div>
+            <div class="cases-element-box" data-category="branding websites">
+                <hr />
+                <div class="cases-element follower-box">
+                    <h3 class="h3">The Future of Retail</h3>
+                    <div class="cases-element-wrapper">
+                        <div class="cases-element-categories">
+                            <p>e-commerce</p>
+                        </div>
+                        <p class="cases-element-desc">
+                            An e-commerce platform optimized for seamless user experience and
+                            automated efficiency.
+                        </p>
+                    </div>
+                    <img
+                        class="cases-element-img follower"
+                        src="img/home/service-1.jpg"
+                        alt="case"
+                    />
+                </div>
+            </div>
+            <div class="cases-element-box" data-category="branding websites">
+                <hr />
+                <div class="cases-element follower-box">
+                    <h3 class="h3">The Future of Retail</h3>
+                    <div class="cases-element-wrapper">
+                        <div class="cases-element-categories">
+                            <p>Website</p>
+                        </div>
+                        <p class="cases-element-desc">
+                            An e-commerce platform optimized for seamless user experience and
+                            automated efficiency.
+                        </p>
+                    </div>
+                    <img
+                        class="cases-element-img follower"
+                        src="img/home/service-1.jpg"
+                        alt="case"
+                    />
+                </div>
+            </div>
+
+            <hr />
+
+            <picture><source srcset="img/home/about-decor.webp" type="image/webp"><img class="cases-decor-img" src="img/home/about-decor.png" alt="Team" /></picture>
+        </div>
+    </div>
+</section>
+
+                    <section class="contact-us" id="contact-us">
+    <div class="container-app">
+        <div class="contact-us-visible">
+            <h2 class="h3">Contact us</h2>
+            <div class="scroll-wrapper">
+                <p>Scroll down</p>
+                <img src="img/icons/scroll-down-icon.svg" alt="icon" />
+            </div>
+        </div>
+        <div class="contact-us-hidden">
+            <p class="contact-us-label">[Contact us]</p>
+            <div class="contact-us-content">
+                <div class="contact-us-content-top">
+                    <h2 class="h3 contact-us-title">
+                        Ready to scale your business with AI&#8209;driven automation?
+                    </h2>
+                    <picture><source srcset="img/home/contact-mini.webp" type="image/webp"><img class="contact-us-mini-img" src="img/home/contact-mini.jpg" alt="" /></picture>
+                </div>
+                <div class="contact-us-content-bottom">
+                    <picture><source srcset="img/home/contact.webp" type="image/webp"><img class="contact-us-img" src="img/home/contact.jpg" alt="service-team" /></picture>
+                    <form class="contact-us-form">
+                        <label class="field">
+                            <span class="field-label">Name</span>
+                            <input type="email" class="field-item" />
                             <span class="field-message __success">Success message</span>
                             <span class="field-message __error">Error message</span>
                         </label>
-                        <button class="btn btn-gradient btn-md btn-full-width">
-                            <span class="btn-bg"></span>
-                            <span class="btn-icon">
-                                <svg><use xlink:href="img/icons/icons.svg#arrow-right"></use></svg>
-                            </span>
-                            <span class="btn-labels">
-                                <span class="btn-labels-item">Subscribe</span>
-                                <span class="btn-labels-item">Subscribe</span>
-                                <span class="btn-labels-item">Subscribe</span>
-                            </span>
-                        </button>
+                        <label class="field">
+                            <span class="field-label">email</span>
+                            <input type="email" class="field-item" />
+                            <span class="field-message __success">Success message</span>
+                            <span class="field-message __error">Error message</span>
+                        </label>
+                        <label class="field">
+                            <span class="field-label">question</span>
+                            <span class="field-resize"></span>
+                            <textarea class="field-item"></textarea>
+                            <span class="field-message __success">Success message</span>
+                            <span class="field-message __error">Error message</span>
+                        </label>
+                        <div class="form-action">
+                            <button class="btn" data-modal-open="#thanks">Send</button>
+                        </div>
                     </form>
                 </div>
-                <p class="content-info">
-                    <i class="color-gradient">* </i> For information about our patents, intellectual
-                    property or products.
-                </p>
             </div>
         </div>
-    </div>
-    <div class="content-banner show-on-scroll">
-        <picture>
-            <source srcset="img/home/content-1.webp" type="image/webp" />
-            <source srcset="img/home/content-1.png" type="image/jpeg" />
-            <img src="img/home/content-1.png" class="content-banner-image" />
-        </picture>
     </div>
 </section>
 
                 </div>
             </div>
             <footer class="footer">
-    <div class="footer-abstract">
-        <img src="img/footer-abstract.svg" alt="Alt" />
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-7 offset-md-5 d-none d-md-block">
-                <hr class="hr" />
-            </div>
+    <div class="row justify-content-between footer-top">
+        <div class="col-md-3 col-6">
+            <p class="footer-label">All rights <br />reserved © 2025</p>
         </div>
-        <div class="row">
-            <div class="col-md-5 order-md-1">
-                <div class="footer-logo d-none d-md-block">
-                    <a href="/" class="logo">
-                        <img src="img/logo-white.svg" alt="Altanine" />
-                    </a>
-                </div>
-                <div class="footer-nav">
-                    <p class="footer-label">Site map</p>
-                    <ul>
-                        <li><a href="about-us.html">About us</a></li>
-                        <li><a href="innovation.html">Innovation</a></li>
-                        <li><a href="markets.html">Markets</a></li>
-                        <li><a href="investor.html">Investor Relations</a></li>
-                        <li><a href="blog.html">News</a></li>
-                        <li><a href="contact-us.html">Contact us</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-12 d-md-none">
-                <hr class="hr" />
-            </div>
-            <div class="col-md-7 order-md-2">
-                <div class="row justify-content-between">
-                    <div class="col-md-3 order-md-3 col-6">
-                        <div class="footer-medicines">
-                            <p class="footer-label">Medicines</p>
-                            <div class="footer-medicines-list">
-                                <a href="metformin.html" class="footer-medicines-item">Metformin</a>
-                                <a href="sildenafil.html" class="footer-medicines-item"
-                                    >Sildenafil</a
-                                >
-                                <a href="sumatriptan.html" class="footer-medicines-item"
-                                    >Sumatriptan</a
-                                >
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 order-md-3 col-6 order-1">
-                        <div class="footer-contacts">
-                            <p class="footer-label">Contacts us</p>
-                            <div class="footer-contacts-list">
-                                <a href="tel:+66 666 66 66 666" class="footer-contacts-item"
-                                    >+66 666 66 66 666</a
-                                >
-                                <a href="mailto:info@altanine.com" class="footer-contacts-item"
-                                    >info@altanine.com</a
-                                >
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 order-md-3 col-6">
-                        <div class="footer-social">
-                            <p class="footer-label">Social networks</p>
-                            <div class="footer-social-list">
-                                <a
-                                    href="#"
-                                    target="_blank"
-                                    class="btn btn-arrow color-gray-400 footer-social-item"
-                                >
-                                    <span class="btn-icon">
-                                        <span class="btn-icon-item"></span>
-                                        <span class="btn-icon-item"></span>
-                                        <span class="btn-icon-item"></span>
-                                        <span class="btn-icon-item"></span>
-                                    </span>
-                                    <span class="btn-labels">
-                                        <span class="btn-labels-item">Instagram</span>
-                                    </span>
-                                </a>
-                                <a
-                                    href="#"
-                                    target="_blank"
-                                    class="btn btn-arrow color-gray-400 footer-social-item"
-                                >
-                                    <span class="btn-icon">
-                                        <span class="btn-icon-item"></span>
-                                        <span class="btn-icon-item"></span>
-                                        <span class="btn-icon-item"></span>
-                                        <span class="btn-icon-item"></span>
-                                    </span>
-                                    <span class="btn-labels">
-                                        <span class="btn-labels-item">Linkedin</span>
-                                    </span>
-                                </a>
-                                <a
-                                    href="#"
-                                    target="_blank"
-                                    class="btn btn-arrow color-gray-400 footer-social-item"
-                                >
-                                    <span class="btn-icon">
-                                        <span class="btn-icon-item"></span>
-                                        <span class="btn-icon-item"></span>
-                                        <span class="btn-icon-item"></span>
-                                        <span class="btn-icon-item"></span>
-                                    </span>
-                                    <span class="btn-labels">
-                                        <span class="btn-labels-item">Facebook</span>
-                                    </span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer-logo d-md-none">
-                    <a href="/" class="logo">
-                        <img src="img/logo-white.svg" alt="Altanine" />
-                    </a>
-                </div>
-            </div>
+        <div class="col-md-2 col-6">
+            <p class="footer-label">General email</p>
+            <a href="mailto:info@altanine.com" class="footer-item">hello@devix.digital</a>
         </div>
-        <div class="row">
-            <div class="col-md-4 order-md-2">
-                <p class="footer-copyright">&copy; 2024 — Altanine, All Rights Reserved</p>
-            </div>
-            <div class="col-md-3 order-md-3">
-                <div class="footer-additional">
-                    <ul>
-                        <li><a href="text-template.html">Lorem Ipsum</a></li>
-                        <li><a href="text-template.html">Lorem Ipsum</a></li>
-                        <li><a href="text-template.html">Privacy policy</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-5 order-md-1">
-                <a href="https://www.studiopresto.com/" target="_blank" class="footer-developer">
-                    Made by
-                    <span class="footer-developer-logo">
-                        <img src="img/developer-logo.svg" alt="Studiopresto" />
-                        <img src="img/developer-logo-blue.svg" alt="Studiopresto" />
-                    </span>
-                </a>
+        <div class="col-md-2 col-12">
+            <p class="footer-label">call us</p>
+            <a href="tel:+66 666 66 66 666" class="footer-item">+380 63 412 58 92</a>
+        </div>
+        <div class="col-md-5 col-12">
+            <p class="footer-label">Social networks</p>
+            <div class="footer-item-list">
+                <a href="#" target="_blank" class="footer-item"> Instagram </a>
+                <a href="#" target="_blank" class="footer-item"> Linkedin </a>
+                <a href="#" target="_blank" class="footer-item"> Dribbble </a>
+                <a href="#" target="_blank" class="footer-item"> behance </a>
             </div>
         </div>
     </div>
+    <p class="footer-copyright">Devix digital</p>
 </footer>
-
-            <div class="modal" id="investor-modal">
-    <div class="modal-bg"></div>
-    <div class="modal-close" data-modal-close="#investor-modal"></div>
-    <div class="modal-box" data-lenis-prevent>
-        <div class="modal-box-item">
-            <div class="investor-modal">
-                <div class="modal-close-btn" data-modal-close="#investor-modal">
-                    <svg><use xlink:href="img/icons/icons.svg#close"></use></svg>
-                </div>
-                <div class="investor-modal-content">
-                    <h4 class="h5">We’d love to hear from you.</h4>
-                    <form>
-                        <label class="field">
-                            <span class="field-label">You Full name* </span>
-                            <input
-                                type="email"
-                                placeholder="Full name"
-                                class="field-item"
-                                required
-                            />
-                            <span class="field-message __success">Success message</span>
-                            <span class="field-message __error">Error message</span>
-                        </label>
-                        <label class="field">
-                            <span class="field-label">And email*</span>
-                            <input
-                                type="email"
-                                placeholder="You email"
-                                class="field-item"
-                                required
-                            />
-                            <span class="field-message __success">Success message</span>
-                            <span class="field-message __error">Error message</span>
-                        </label>
-                        <label class="field">
-                            <span class="field-label">Now write down your message *</span>
-                            <span class="field-resize"></span>
-                            <textarea
-                                placeholder="You message"
-                                class="field-item"
-                                required
-                            ></textarea>
-                            <span class="field-message __success">Success message</span>
-                            <span class="field-message __error">Error message</span>
-                        </label>
-                        <button class="btn btn-gradient btn-md btn-full-width">
-                            <span class="btn-bg"></span>
-                            <span class="btn-icon"
-                                ><svg><use xlink:href="img/icons/icons.svg#arrow-right"></use></svg
-                            ></span>
-                            <span class="btn-labels">
-                                <span class="btn-labels-item">Become an investor</span>
-                                <span class="btn-labels-item">Become an investor</span>
-                                <span class="btn-labels-item">Become an investor</span>
-                            </span>
-                        </button>
-                    </form>
-                </div>
-                <div class="investor-modal-thumbnail">
-                    <picture>
-                        <source srcset="img/investor/modal-banner.webp" type="image/webp" />
-                        <source srcset="img/investor/modal-banner.jpg" type="image/jpeg" />
-                        <img src="img/investor/modal-banner.jpg" />
-                    </picture>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-            <div class="modal" id="thanks">
-    <div class="modal-bg"></div>
-    <div class="modal-close" data-modal-close="#thanks"></div>
-    <div class="modal-box" data-lenis-prevent>
-        <div class="modal-box-item">
-            <div class="thanks">
-                <div class="modal-close-btn" data-modal-close="#thanks">
-                    <svg><use xlink:href="img/icons/icons.svg#close"></use></svg>
-                </div>
-                <div class="thanks-content">
-                    <h3 class="h4 thanks-content-title">Thank You<i>!</i></h3>
-                    <p class="thanks-content-subtitle">Your submission has been received!</p>
-                    <p class="thanks-content-description">We will reach out to you shortly.</p>
-                </div>
-                <div class="thanks-thumbnail">
-                    <img src="img/logo-mini.svg" alt="Altanine" />
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
         </main>
         <script src="js/app.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/odometer.min.js"></script>
     </body>
 </html>

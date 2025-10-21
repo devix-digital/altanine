@@ -2,269 +2,39 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background: var(--color-primary-gradient);
-    color: var(--color-white);
-    font: var(--font-body-m);
-    text-transform: capitalize;
-    padding: 0 24rem;
-    border-radius: 8px;
+    text-transform: uppercase;
+    border: solid var(--color-white) 1rem;
+    border-radius: 24px;
     position: relative;
     overflow: hidden;
     cursor: default;
-    height: 74rem;
-    min-height: 74rem;
+    width: 142rem;
+    height: 32rem;
+    min-height: 32rem;
+    transition: color 0.3s ease, background-color 0.3s ease;
 
-    &.mini {
-        height: 54rem;
-        min-height: 54rem;
-    }
+    &-circle {
+        width: 191rem;
+        height: 191rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-radius: 100%;
+        background: #ffffff17;
+        padding: 40rem;
+        font: var(--font-body-m);
+        text-transform: uppercase;
 
-    &-labels {
-        display: inline-block;
-        position: relative;
-        white-space: nowrap;
-        line-height: 1.2em;
-        overflow: hidden;
-        pointer-events: none;
-
-        &-item {
-            display: inline-block;
-            line-height: 1.2em;
-            transform-origin: 0 0;
-
-            &:nth-child(2),
-            &:nth-child(3) {
-                position: absolute;
-                left: 0;
-            }
-            &:nth-child(1) {
-                transform: translateY(0);
-            }
-            &:nth-child(2) {
-                transform: translateY(100%);
-                background: var(--color-primary-gradient);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-            }
-            &:nth-child(3) {
-                transform: translateY(200%);
-            }
+        @include maxWidth($sm) {
+            width: 140rem;
+            height: 140rem;
+            font: var(--font-body-m-mobile);
         }
     }
 
-    &-icon {
-        width: 13rem;
-        height: 13rem;
-        color: var(--color-white);
-        position: relative;
-        transition: color var(--transition-duration) var(--transition-easing);
-
-        & + * {
-            margin-left: 16rem;
-        }
-
-        svg {
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            inset: 0;
-        }
-    }
-
-    &-bg {
-        position: absolute;
-        background-color: var(--color-gray-200);
-        top: 50%;
-        left: 50%;
-        width: 0;
-        height: 0;
-        border-radius: 50%;
-        pointer-events: none;
-        transform-origin: center;
-    }
-
-    /* sizes */
-    &-md {
-        height: 54rem;
-        min-height: 54rem;
-        padding: 0 24rem;
-    }
-
-    /* types */
-    &-gradient {
-        @include hover($md) {
-            &:hover {
-                cursor: pointer;
-
-                .btn {
-                    &-icon {
-                        color: var(--color-blue);
-                    }
-                }
-            }
-        }
-    }
-
-    &-arrow {
-        padding: 0;
-        height: auto;
-        background: transparent;
-        min-width: 21rem;
-        min-height: 13rem;
-        border-radius: 0;
-
-        &:not([class*="color-"]) {
-            .btn {
-                &-icon {
-                    color: var(--color-blue);
-                }
-
-                &-labels {
-                    &-item {
-                        background: var(--color-primary-gradient);
-                        -webkit-background-clip: text;
-                        -webkit-text-fill-color: transparent;
-                    }
-                }
-            }
-        }
-
-        .btn {
-            &-icon {
-                color: currentColor;
-                position: absolute;
-                top: 50%;
-                left: 0;
-                transform: translateY(-50%);
-                transition: width var(--transition-duration) var(--transition-easing);
-
-                & + * {
-                    margin-left: 30rem;
-                }
-
-                &-item {
-                    position: absolute;
-                    background-color: currentColor;
-
-                    &:nth-child(1) {
-                        width: 2rem;
-                        height: 8rem;
-                        bottom: 0;
-                        left: 0;
-                    }
-                    &:nth-child(2) {
-                        height: 2rem;
-                        width: 85%;
-                        top: 4rem;
-                        left: 0;
-                    }
-                    &:nth-child(3) {
-                        height: 2rem;
-                        width: 8rem;
-                        top: 2rem;
-                        right: 0;
-                        transform: rotate(40deg);
-                    }
-                    &:nth-child(4) {
-                        height: 2rem;
-                        width: 8rem;
-                        right: 0;
-                        top: 6rem;
-                        transform: rotate(-40deg);
-                    }
-                }
-            }
-        }
-
-        @include hover($md) {
-            &:hover {
-                cursor: pointer;
-
-                .btn {
-                    &-icon {
-                        width: 21rem;
-                    }
-                }
-            }
-        }
-
-        &-md {
-            min-width: 24rem;
-            min-height: 24rem;
-
-            .btn {
-                &-icon {
-                    height: 16rem;
-                    width: 16rem;
-                    &-item {
-                        &:nth-child(1) {
-                            height: 10rem;
-                        }
-
-                        &:nth-child(2) {
-                            top: 6rem;
-                        }
-
-                        &:nth-child(3) {
-                            width: 10rem;
-                            top: 3rem;
-                            transform: rotate(50deg);
-                        }
-
-                        &:nth-child(4) {
-                            transform: rotate(-50deg);
-                            width: 10rem;
-                            top: 9rem;
-                        }
-                    }
-                }
-            }
-        }
-    }
-    &-line {
-        background: transparent;
-        color: var(--color-gray-700);
-        border: 1rem solid var(--color-gray-300);
-
-        .btn {
-            &-bg {
-                background: var(--color-primary-gradient);
-            }
-            &-labels {
-                &-item {
-                    &:nth-child(2) {
-                        color: var(--color-white);
-                        transform: translateY(100%);
-                        background: transparent;
-                        -webkit-background-clip: text;
-                        -webkit-text-fill-color: var(--color-white);
-                    }
-                }
-            }
-        }
-
-        @include hover($md) {
-            &:hover {
-                cursor: pointer;
-            }
-        }
-
-        &.is-active {
-            background: var(--color-primary-gradient);
-            color: var(--color-white);
-        }
-    }
-
-    &-full {
-        &-width {
-            width: 100%;
-            text-align: center;
-        }
-    }
-
-    /* states */
-    &[disabled] {
-        opacity: 0.2;
-        pointer-events: none;
+    &:hover {
+        color: var(--color-black);
+        background: var(--color-white);
     }
 }

@@ -1,0 +1,87 @@
+.work-areas {
+    .sticky-wrapper {
+        display: flex;
+        position: relative;
+    }
+    .label-sticky {
+        position: sticky;
+        top: 100rem;
+        height: fit-content;
+    }
+
+    &-wrapper {
+        max-width: 1448rem !important;
+        padding-top: 152rem;
+
+        @include maxWidth($sm) {
+            padding-top: 80rem;
+        }
+    }
+    &-block {
+        display: flex;
+        flex-direction: column;
+        height: 640rem;
+        position: relative;
+
+        &-sticky {
+            position: sticky;
+            top: 0;
+        }
+
+        &-top,
+        &-bottom {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            overflow: hidden;
+
+            @include maxWidth($sm) {
+                flex-direction: column;
+            }
+
+            &.indent-1 {
+                @include minWidth($sm) {
+                    margin-right: 446rem;
+                }
+            }
+            &.indent-2 {
+                @include minWidth($sm) {
+                    margin-right: 515rem;
+                }
+            }
+        }
+
+        &-top {
+            margin-bottom: 120rem;
+            @include maxWidth($sm) {
+                margin-bottom: 40rem;
+            }
+        }
+
+        &-title {
+            max-width: 610rem;
+            @include maxWidth($sm) {
+                margin-bottom: 40rem;
+            }
+        }
+
+        &-img {
+            width: 324rem;
+            scale: 0;
+            transition: scale 0.5s ease;
+        }
+
+        &-btn {
+            @include maxWidth($sm) {
+                order: 1;
+            }
+        }
+
+        &-desc {
+            max-width: 358rem;
+            @include maxWidth($sm) {
+                margin-bottom: 40rem;
+            }
+        }
+    }
+}

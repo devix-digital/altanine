@@ -1,152 +1,143 @@
-.accordion{
+.accordion {
+    @include maxWidth($sm) {
+        padding: 4rem 0;
+    }
 
-		@include maxWidth($sm){
-			padding: 4rem 0;
-		}
-	
-		&-item{
-			border-bottom: 1rem var(--color-gray-400) solid;
-			padding-bottom: 19rem;
-			margin-bottom: 20rem;
-			
-				@include maxWidth($sm){
-					padding-bottom: 12rem;
-					margin-bottom: 12rem;
-				}
-			
-				&-header{
-					padding: 12rem 56rem 12rem 0;
-					position: relative;
-					
-						@include hover($md){
-							&:hover{
-								cursor: pointer;
-								
-									.accordion-item-icon{
-										
-											.btn-icon{
-												width: 21rem;
-											}
-									}
-							}
-						}
-				}
-			
-				&-title{
-					font: var(--font-body-l);
-					
-						@include maxWidth($sm){
-              font: var(--font-body-l-mobile);
+    &-item {
+        border-bottom: 1rem var(--color-gray-400) solid;
+        padding-bottom: 19rem;
+        margin-bottom: 20rem;
+
+        @include maxWidth($sm) {
+            padding-bottom: 12rem;
+            margin-bottom: 12rem;
+        }
+
+        &-header {
+            padding: 12rem 56rem 12rem 0;
+            position: relative;
+
+            @include hover($md) {
+                &:hover {
+                    cursor: pointer;
+
+                    .accordion-item-icon {
+                        .btn-icon {
+                            width: 21rem;
+                        }
+                    }
+                }
             }
-				}
-				
-				&-icon{
-					position: absolute;
-					top: 16rem;
-					right: 0;
-					width: 24rem;
-					height: 24rem;
-					transform: rotate(90deg);
-					transition: transform var(--transition-duration) var(--transition-easing), top var(--transition-duration) var(--transition-easing);
-					
-						.btn-arrow{
-							color: var(--color-black);
-						}
-				}
-			
-				&-body{
-					padding-right: 56rem;
-					height: 0;
-					overflow: hidden;
-					
-						@include maxWidth($sm){
-							padding-right: 25rem;
-						}
-					
-						.btn-arrow,
-						.btn{
-							margin-bottom: 14rem;
-						}
-				}
-			
-				&-description{
-					margin-bottom: 13rem;
-					padding-top: 10rem;
-					
-						@include maxWidth($sm){
-							padding-top: 3rem;
-							margin-bottom: 17rem;
+        }
+
+        &-title {
+            font: var(--font-body-l);
+
+            @include maxWidth($sm) {
+                font: var(--font-body-l-mobile);
             }
-					
-						p:not(:last-child){
-							margin-bottom: 8rem;
-						}
-				}
-			
-				&.is-active{
-					
-						.accordion{
-							
-								&-item{
-									
-										&-title{
-											@extend .color-gradient;
-										}
-									
-										&-icon{
-											transform: rotate(-90deg);
-											top: 8rem;
-											
-											.btn {
-												&-arrow {
-													.btn-icon {
-														color: var(--color-blue);
-													}
-												}
-											}
-										}
-								}
-						}
-				}
-		}
-	
-		&-md{
-			
-				.accordion{
-						&-item{
-							padding: 24rem 0 23rem;
-							margin-bottom: 0;
-							
-								&:nth-child(1){
-									border-top: 1rem var(--color-gray-400) solid;
-								}
-							
-								&-header{
-									padding: 0;
-								}
-							
-								&-title{
-									@extend .h5;
-									color: var(--color-gray-400);
-								}
-							
-								&-description{
-									margin-bottom: 0;
-									padding-top: 12rem;
-								}
-							
-								&-body{
-									padding-right: 0;
-								}
-							
-								&.is-active{
-										.accordion-item-title{
-											color: var(--color-black);
-											-webkit-text-fill-color: var(--color-black);
-											background: none;
-										}
-								}
-						}
-				}
-		}
+        }
+
+        &-icon {
+            position: absolute;
+            top: 16rem;
+            right: 0;
+            width: 24rem;
+            height: 24rem;
+            transform: rotate(90deg);
+            transition: transform var(--transition-duration) var(--transition-easing),
+                top var(--transition-duration) var(--transition-easing);
+
+            .btn-arrow {
+                color: var(--color-black);
+            }
+        }
+
+        &-body {
+            padding-right: 56rem;
+            height: 0;
+            overflow: hidden;
+
+            @include maxWidth($sm) {
+                padding-right: 25rem;
+            }
+
+            .btn-arrow,
+            .btn {
+                margin-bottom: 14rem;
+            }
+        }
+
+        &-description {
+            margin-bottom: 13rem;
+            padding-top: 10rem;
+
+            @include maxWidth($sm) {
+                padding-top: 3rem;
+                margin-bottom: 17rem;
+            }
+
+            p:not(:last-child) {
+                margin-bottom: 8rem;
+            }
+        }
+
+        &.is-active {
+            .accordion {
+                &-item {
+                    &-icon {
+                        transform: rotate(-90deg);
+                        top: 8rem;
+
+                        .btn {
+                            &-arrow {
+                                .btn-icon {
+                                    color: var(--color-blue);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &-md {
+        .accordion {
+            &-item {
+                padding: 24rem 0 23rem;
+                margin-bottom: 0;
+
+                &:nth-child(1) {
+                    border-top: 1rem var(--color-gray-400) solid;
+                }
+
+                &-header {
+                    padding: 0;
+                }
+
+                &-title {
+                    @extend .h5;
+                    color: var(--color-gray-400);
+                }
+
+                &-description {
+                    margin-bottom: 0;
+                    padding-top: 12rem;
+                }
+
+                &-body {
+                    padding-right: 0;
+                }
+
+                &.is-active {
+                    .accordion-item-title {
+                        color: var(--color-black);
+                        -webkit-text-fill-color: var(--color-black);
+                        background: none;
+                    }
+                }
+            }
+        }
+    }
 }

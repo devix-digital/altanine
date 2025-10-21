@@ -1,8 +1,0 @@
-.overview.overview-one.home {
-    padding: 0;
-    .btn {
-        @include maxWidth($sm) {
-            width: 100%;
-        }
-    }
-}

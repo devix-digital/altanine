@@ -1,5 +1,6 @@
 html {
-    font-size: calc(100vw / 1440);
+    font-size: calc(100vw / 1920);
+    background: var(--color-black);
 
     @include maxWidth($sm) {
         font-size: calc(100vw / 360);
@@ -16,16 +17,32 @@ body {
     -webkit-text-size-adjust: 100%;
     backface-visibility: hidden;
     text-rendering: geometricPrecision;
-    font: var(--font-body-r);
-    color: var(--color-black);
+    font: var(--font-body-m);
+    background: var(--color-black);
+    color: var(--color-white);
+    text-transform: uppercase;
 
     @include maxWidth($sm) {
-        font: var(--font-body-r-mobile);
+        font: var(--font-body-m-mobile);
     }
+}
+
+a {
+    color: var(--color-white);
 }
 
 html.lenis {
     height: auto;
+}
+
+button {
+    font: var(--font-body-m);
+    text-transform: uppercase;
+    padding: 8rem;
+
+    @include maxWidth($sm) {
+        font: var(--font-body-m-mobile);
+    }
 }
 
 .lenis.lenis-smooth {
@@ -49,17 +66,22 @@ svg {
     height: 100%;
 }
 
-.wrapper {
-    position: relative;
-    padding: 8rem;
+.section {
+    margin-bottom: 304rem;
+    display: flex;
+    align-items: center;
 
     @include maxWidth($sm) {
-        padding: 6rem;
+        margin-bottom: 40rem;
     }
-}
 
-.section {
-    position: relative;
+    &-label {
+        font: var(--font-body-m);
+        opacity: 0.3;
+        @include maxWidth($sm) {
+            font: var(--font-body-m-mobile);
+        }
+    }
 
     &-title {
         margin: 16rem 0 24rem;
@@ -74,43 +96,16 @@ svg {
             font-style: normal;
         }
     }
-
-    &-subtitle {
-    }
-
-    &-description {
-    }
-
-    &-banner {
-        position: relative;
-        overflow: hidden;
-        border-radius: 14px;
-
-        img {
-            @include imageCover(center);
-        }
-    }
 }
 
-.container {
-    max-width: 1344rem;
-    padding: 0 16rem;
+.container-app {
     position: relative;
-    @include maxWidth($sm) {
-        padding: 0 18rem;
-    }
+    width: 1840rem;
+    margin: auto;
 
-    @media (min-width: 1200px) {
-        max-width: 1344rem;
-    }
-    @media (min-width: 992px) {
-        max-width: 1344rem;
-    }
-    @media (min-width: 768px) {
-        max-width: 1344rem;
-    }
-    @media (min-width: 576px) {
-        max-width: 1344rem;
+    @include maxWidth($sm) {
+        width: 100%;
+        padding: 20rem;
     }
 }
 
@@ -164,8 +159,9 @@ svg {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: var(--color-white);
+    background-color: var(--color-black);
     z-index: 4;
+    will-change: transform, opacity, filter;
 }
 
 .word {
@@ -176,4 +172,13 @@ svg {
 
 [data-load-order] {
     opacity: 0;
+}
+
+.hover-element {
+    overflow: hidden;
+}
+
+.hover-element:hover .hover-image {
+    margin-bottom: 0;
+    opacity: 1;
 }

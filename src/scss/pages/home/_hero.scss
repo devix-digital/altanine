@@ -1,43 +1,89 @@
-.hero-home {
-    .bread-crumbs {
-        li {
-            span {
-                color: var(--color-gray-300);
-            }
-        }
-    }
+.hero {
+    min-height: 100svh;
+    padding-top: 50rem;
 
-    .users {
-        position: absolute;
-        top: 145rem;
-        right: 17rem;
-        width: 100%;
-        max-width: 235rem;
+    &-banner {
+        position: relative;
 
-        @include maxWidth($sm) {
-            display: none;
-        }
-    }
-
-    .video {
-        width: 100%;
-        //height: 100%;
-        object-fit: cover;
-        object-position: center;
-        min-height: 600rem;
-        height: calc(100svh - 16rem);
-
-        @include maxWidth($sm) {
-            min-height: 480rem;
-        }
-
-        &-poster {
+        &-img {
             position: absolute;
-            inset: 0;
+            top: 15%;
+            left: -3%;
+            width: 900rem;
+            max-height: none;
 
-            img {
-                @include imageCover(center);
+            @include maxWidth($sm) {
+                width: 320rem;
+                top: 120rem;
+                left: 10rem;
             }
+        }
+
+        &-text {
+            position: absolute;
+            top: 55%;
+            left: 40%;
+            width: 400rem;
+
+            @include maxWidth($sm) {
+                width: 310rem;
+                top: 260rem;
+                left: 10rem;
+            }
+
+            span {
+                font-size: 18rem;
+                opacity: 0.3;
+                vertical-align: super;
+                line-height: 80%;
+                margin-right: 12rem;
+
+                @include maxWidth($sm) {
+                    font-size: 14rem;
+                }
+            }
+        }
+    }
+
+    &-title {
+        margin-bottom: 240rem;
+        .indent {
+            margin-left: 300rem;
+        }
+
+        @include maxWidth($sm) {
+            margin-bottom: 300rem;
+            .indent {
+                margin-left: 100rem;
+            }
+        }
+    }
+
+    &-info {
+        display: flex;
+        align-items: flex-end;
+        gap: 290rem;
+
+        @include maxWidth($sm) {
+            align-items: center;
+            gap: 0;
+        }
+    }
+
+    &-text {
+        display: flex;
+        flex-direction: column;
+        gap: 12rem;
+        width: 210rem;
+        margin-left: 40rem;
+
+        @include maxWidth($sm) {
+            width: 160rem;
+            margin-left: 20rem;
+        }
+
+        & p:nth-of-type(2) {
+            color: var(--color-gray-100);
         }
     }
 }

@@ -7,7 +7,7 @@ export const scrollTo = () => {
             button.addEventListener("click", () => {
                 const target = document.querySelector(button.dataset.target)
                 if (target) {
-                    lenis.scrollTo(target, { duration: 1.5 })
+                    lenis.scrollTo(target, { duration: 3 })
                 }
 
                 sessionStorage.setItem("scrollTarget", button.dataset.target)

@@ -1,0 +1,52 @@
+.reputation {
+    &-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 140rem;
+        max-width: 1580rem;
+
+        @include maxWidth($sm) {
+            width: 100%;
+            gap: 40rem;
+        }
+    }
+
+    &-row {
+        display: flex;
+        justify-content: space-between;
+
+        @include maxWidth($sm) {
+            flex-direction: column;
+            gap: 40rem;
+        }
+
+        &:nth-of-type(1) {
+            margin-right: 350rem;
+            @include maxWidth($sm) {
+                margin-right: 0;
+            }
+        }
+        &:nth-of-type(2) {
+            margin-left: 312rem;
+            @include maxWidth($sm) {
+                margin-left: 0;
+            }
+        }
+    }
+
+    &-item {
+        &:nth-of-type(2) {
+            @include maxWidth($sm) {
+                display: flex;
+                justify-content: end;
+                flex-direction: column;
+                align-items: flex-end;
+            }
+        }
+    }
+
+    &-title {
+        margin-bottom: 24rem;
+        display: flex;
+    }
+}
